@@ -10,7 +10,7 @@ Where do you find those ?
     - Party List > Party List Sorting
         - (Role Sort Settings if you changed the defaults)  
 
-![gamePartyListSettings](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/gamePartyListSettings.PNG)
+![gamePartyListSettings](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/gamePartyListSettings.PNG)
   
 - Triggernometry : 
     - Triggernometry plugin tab in ACT
@@ -19,13 +19,13 @@ Where do you find those ?
     - Final Fantasy XIV Tab
     - Party List Odering
 
-![TriggPartyListSettings](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/TriggPartyListSettings.PNG)
+![TriggPartyListSettings](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/TriggPartyListSettings.PNG)
 
 ### MAKE SURE BOTH MATCHES !
 
 ## Step 2
 Edit `Gaols Priority List` Trigger if you want to change the order players get marked. For example, if you want the Player 4 in your partylist to be marker first, then move it at the top. (Use the Move UP/Down buttons to do so)  
-![MarkPriority](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/PlayerOrder.PNG)
+![MarkPriority](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/PlayerOrder.PNG)
 
 ## Step 3
 Make in-game macros to mark players. You should end up with 9 macros : one for each player, and one that removes all the marks.  
@@ -45,16 +45,16 @@ Then, macro 9 will be
 /mk clear <7>
 /mk clear <8>
 ```
-![ingameMacro1](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/ingame-macros1.PNG)  
-![ingameMacro2](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/ingame-macro2.PNG)  
-![ingameMacro3](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/ingame-macros3.PNG)
+![ingameMacro1](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/ingame-macros1.PNG)  
+![ingameMacro2](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/ingame-macro2.PNG)  
+![ingameMacro3](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/ingame-macros3.PNG)
 
 ## Step 4
 Change keybinds if you want to use other keys than F1-F9  
 WARNING: Modifiers-Keys (Shift+A for example) tend to get ignored by the game as well as numpad, so you kinda have to stick to regular keys.  
 Here's the link if you need to lookup the keycodes  
 https://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send.aspx
-![keybindsChange](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols/keybinds.PNG)
+![keybindsChange](https://raw.githubusercontent.com/Aho-Senpai/Trigg-Aho-Repos/main/READMEs%20Resources/UwU-Gaols-PlayerMark/keybinds.PNG)
 
 
 ## Step 5
