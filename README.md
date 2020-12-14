@@ -1,2 +1,2 @@
-# Trigg-Aho-Repos (name subject to change for a better one >.>)
+# Aho-Triggers
 Repository for my [Triggernometry](https://github.com/paissaheavyindustries/Triggernometry) triggers repositories and READMEs
