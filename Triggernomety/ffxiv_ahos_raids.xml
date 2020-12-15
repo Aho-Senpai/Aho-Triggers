@@ -5979,7 +5979,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README" Id="c1922c46-bf98-421e-87c1-8e26c0f8cfca" RegularExpression="" Description="README&#xD;&#xA;&#xD;&#xA;- Setup Steps for UCOB Triggers&#xD;&#xA;&#xD;&#xA;1 - Copy the trigger &quot;# UCOB Settings&quot; in your startup folder&#xD;&#xA;&#xD;&#xA;2 - Edit the Settings Trigger&#xD;&#xA;&#xD;&#xA;3 - Edit the Image action and click on &quot;use visual guide for placement&quot;&#xD;&#xA;&#xD;&#xA;4 - Right click on the image and &quot;Save Changes&quot; once it is where you want it&#xD;&#xA;&#xD;&#xA;5 - Well Done !&#xD;&#xA;&#xD;&#xA;FAQ :&#xD;&#xA;&quot;What is the startup folder ???&quot;&#xD;&#xA;- Read this install guide : https://github.com/Aho-Senpai/TEMP-SETUP-GUIDE/blob/master/README.md">
+                      <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UCOB IMAGE AURAS" Id="c1922c46-bf98-421e-87c1-8e26c0f8cfca" RegularExpression="" Description="README&#xD;&#xA;&#xD;&#xA;- Setup Steps for UCOB Triggers&#xD;&#xA;&#xD;&#xA;1 - Copy the trigger &quot;# UCOB Settings&quot; in your startup folder&#xD;&#xA;&#xD;&#xA;2 - Edit the Settings Trigger&#xD;&#xA;&#xD;&#xA;3 - Edit the Image action and click on &quot;use visual guide for placement&quot;&#xD;&#xA;&#xD;&#xA;4 - Right click on the image and &quot;Save Changes&quot; once it is where you want it&#xD;&#xA;&#xD;&#xA;5 - Well Done !&#xD;&#xA;&#xD;&#xA;FAQ :&#xD;&#xA;&quot;What is the startup folder ???&quot;&#xD;&#xA;- Read this install guide : https://github.com/Aho-Senpai/TEMP-SETUP-GUIDE/blob/master/README.md">
                         <Actions />
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -6540,7 +6540,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Trigg-Aho-Repos/blob/main/Raids/UwU-Gaols-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Trigg-Aho-Repos/blob/main/Raids/UwU-Gaols-README.md">
+                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md">
                             <Actions />
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
