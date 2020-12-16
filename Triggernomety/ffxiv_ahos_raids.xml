@@ -4963,7 +4963,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Name="14:5(B46|5F8):The Art Of Darkness (Pair/partners)" Id="a80302b7-0d3b-46ab-89a8-0e62635352ab" RegularExpression="\[.{14}14:5(?&gt;B46|5FB):">
+                  <Trigger Enabled="true" Name="14:5(B46|5F8):The Art Of Darkness (Pair/partners)" Id="a80302b7-0d3b-46ab-89a8-0e62635352ab" RegularExpression="\[.{14}14:5(?&gt;B46|5F8):">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="partners" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
