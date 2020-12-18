@@ -4973,7 +4973,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Name="14:5625:Ground-Razing Particle Beam (AoE)" Id="6646bcb0-8350-48ef-8e1c-05a5757fc041" RegularExpression="\[{14}14:5625:">
+                  <Trigger Enabled="true" Name="14:5625:Ground-Razing Particle Beam (AoE)" Id="6646bcb0-8350-48ef-8e1c-05a5757fc041" RegularExpression="\[.{14}14:5625:">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
