@@ -1,4 +1,4 @@
-Regex Basics  
+<h1 style="text-align:center">Regex Basics</h1>  
 
 ok, let's go over the basics of regex, and the groups that are usually used for FFXIV log lines regex  
 
@@ -10,13 +10,13 @@ so, le's go over a few basics regex elements to begin with
 `.` will match any single character  
 `\d` will match and digit  
 `\w` match world characters (is equal to `[a-zA-Z0-9 ]`  
-`+` is a quantifier, and will match  or more (is used after a character or a group. for example : `F+XIV` would match the string "FFXIV")  
+`+` is a quantifier, and will match  or more (is used after a character or a group. for example : `F+XIV` would match the string "FFXIV" but also "FFFXIV" so be careful)  
 `?` is another quantifier, will match 0 or 1 of (`FFXI?V` would match "FFXIV" but also "FFXV")  
 `*` is yet another quantifier, will match any amount of IMPORTANT : i do not recommend using thi s asa general rule of thumb, unless you know what you do OR there's a couple exeptions where i would use it, will get to that later  
 And now, what if we combine some ? yes you can  
 `??` will match 0 or 1 as few times as possible (not used a lot, but really handy when you need it for example : `FFX??IV` would match "FFXIV" as well as "FFIV")  
 and well, you also have the others (`+?` `*?`) but i have yet to have a situation where i would need them (i do use `.*?` a lot actually, but it is generally for testing purpose)  
-`|` is a "or", it'll match either side of it (mostly used in capture groups) of course you can "stack" them to have a multiple option regex  
+`|` is a "or", it'll match either side of it (mostly used in capture groups) of course you can "stack" them to have a multiple option regex like so `(one|two|three|four)` (this is will match "one" or "two" or "three" or "four")  
 `\` will "escape" a character you place after and match it literally `\ ` for example will match " " (space) literally. this is mainly used for the "special" characters like `[{(.` and so on  
 
 moving on to groups constructs  
@@ -25,7 +25,7 @@ moving on to groups constructs
 `0-9` will match any numbers between 0 and 9 (it's the equivalent of `\d` really)  
 `[ ]` will match a set of characters you set it to. for example `[a-zA-Z]` will match any non-digit charater (letters)  
 `( )` will make a capture group, the main use is the following  
-`(?< > )` will make a named capture group, which you can reference by it's name (for example, `(?<player> ME)` would match "ME" in a string, and you can reference it by the `<player>`)  
+`(?< > )` will make a named capture group, which you can reference by it's name (for example, `(?<player>ME)` would match "ME" in a string, and you can reference it by the `<player>`)  
 `(?> )` will make an atomic group, will is not named and not referencable (pretty handy when needed)  
 `{ }` will quantify depending on the values you enter  
 `{ , }` will match between the 2 values you enter  
