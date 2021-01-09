@@ -14,7 +14,10 @@ Import the file ![Import Picture](README%20Resources/ACT%20Import.PNG)
 
 Tab back to `Custom Triggers` tab and enjoy your newly imported triggers  
   
-  
+## "Limitations"
+Those triggers WILL callout all the raidbuffs casted by anyone you happen to "parse" by ACT. This includes players outside of your party/Alliance as well. The only "fix" for this, as far as i'm aware, is to switch your FFXIV Parse Filter to `Party` or `Alliance`.  
+Or, you can use plugins that have conditionals, like Triggernometry, Cactbot, SPESPE, ...  
+
   
 ## HOW DOES THIS WORKS ?
 
@@ -32,7 +35,7 @@ Now, Time to break it down into parts:
 
 `\A` : is ensuring us that it's only gonna match the start of the line, it's mainly to make the REGEX faster and more efficient  
 
-Honnestly, i wanted to break it down further, but you should go read my other REGEX documentation
+Honnestly, i wanted to break it down further, but you should go read my other REGEX documentation (plan to break the regex down more here, later)  
 [If you don't know what REGEX is](../Documentation/Basic%20REGEX%20talk.md)  
 [If you want to learn about FFXIV REGEX](../Documentation/Let's%20Talk%20REGEX.md)  
 [Structure of FFXIV LogLines by quisqeous](https://github.com/quisquous/cactbot/blob/master/docs/LogGuide.md)  
