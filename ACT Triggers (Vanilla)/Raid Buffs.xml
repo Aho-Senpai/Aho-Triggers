@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <CustomTriggers>
+        <!-- Battle Litany -->
+        <Trigger Active="True" Regex="(?#-- Battle Litany --)\A1[56]:[A-F0-9]{8}:[^:]*:DE5:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Battle Voice -->
+        <Trigger Active="True" Regex="(?#-- Battle Voice --)\A1[56]:[A-F0-9]{8}:[^:]*:76:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Brotherhood -->
+        <Trigger Active="True" Regex="(?#-- Brotherhood --)\A1[56]:[A-F0-9]{8}:[^:]*:1CE4:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Chain Stragagem -->
+        <Trigger Active="True" Regex="(?#-- Chain Stratagem --)\A1[56]:[A-F0-9]{8}:[^:]*:1D0C:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Devotion -->
+        <Trigger Active="True" Regex="(?#-- Devotion --)\A1[56]:[A-F0-9]{8}:[^:]*:1CFF:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Divination -->
+        <Trigger Active="True" Regex="(?#-- Divination --)\A1[56]:[A-F0-9]{8}:[^:]*:40A8:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Embolden -->
+        <Trigger Active="True" Regex="(?#-- Embolden --)\A1[56]:[A-F0-9]{8}:[^:]*:1D60:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Technical Step -->
+        <Trigger Active="True" Regex="(?#-- Technical Step --)\A1[56]:[A-F0-9]{8}:[^:]*:3F4[1234]:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Trick Attack -->
+        <Trigger Active="True" Regex="(?#-- Trick Attack --)\A1[56]:[A-F0-9]{8}:[^:]*:8D2:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+    </CustomTriggers>
+    <SettingsSerializer />
+</Config>
