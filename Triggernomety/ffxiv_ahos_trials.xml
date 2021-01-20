@@ -1285,7 +1285,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="05ec24a0-5f11-42c8-aeb5-3f7cb7f9d8ad" ZoneFilterRegularExpression="The\ Seat\ of\ Sacrifice\ \(Extreme\)" Name="5.3 - Seat of Sacrifice" Enabled="true">
+          <Folder ZoneFilterEnabled="True" Id="05ec24a0-5f11-42c8-aeb5-3f7cb7f9d8ad" ZoneFilterRegularExpression="The\ Seat\ Of\ Sacrifice" Name="5.3 - Seat of Sacrifice" Enabled="true">
             <Folders>
               <Folder Id="f3bcb856-caf8-4d28-90b2-137be16cee43" Name="WoL EX" Enabled="true">
                 <Folders>
