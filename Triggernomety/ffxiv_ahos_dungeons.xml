@@ -55,15 +55,23 @@
           <Folder ZoneFilterEnabled="True" Id="906e3c33-90f5-431f-9dc2-a41463a64f8d" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Swinge." Id="83206291-97bc-4b0e-ac96-d86b302ecb98" RegularExpression="Chudo-Yudo readies Swinge.">
+              <Trigger Enabled="true" Name="14:387:Chudo-Yudo starts using Swinge on Chudo-Yudo" Id="83206291-97bc-4b0e-ac96-d86b302ecb98" RegularExpression="\[.{14}14:387:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Isgebind Sky" Id="296d8589-fd3c-476e-a325-5bb8f2c0976a" RegularExpression="Isgebind descends from the skies.">
+              <Trigger Enabled="true" Name="14:404:Isgebind starts using Snowfall" Id="fe0fe68d-27be-45c0-8c46-9a881e66a5a6" RegularExpression="\[.{14}14:404:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Use Bertha" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -104,28 +112,35 @@
           <Folder ZoneFilterEnabled="True" Id="fa9d008c-bd92-47bb-92b6-40ae726bd66a" ZoneFilterRegularExpression="Cutter's\ Cry" Name="38 - Cutter's Cry" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Dragon's Voice" Id="6f8dac78-7945-46a8-86f0-ad1e1772425a" RegularExpression="2b:The chimera begins casting The Dragon's Voice">
+              <Trigger Enabled="true" Name="14:5A2:Chimera starts using The Dragon's Voice" Id="6f8dac78-7945-46a8-86f0-ad1e1772425a" RegularExpression="\[.{14}14:5A2:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Melee Range" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Melee Range" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Ram's Voice" Id="4284ff20-f8c1-4791-9ef2-b1b4b24079e2" RegularExpression="2b:The chimera begins casting The Ram's Voice">
+              <Trigger Enabled="true" Name="14:450:Chimera starts using The Ram's Voice" Id="4284ff20-f8c1-4791-9ef2-b1b4b24079e2" RegularExpression="\[.{14}14:450:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Go OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Go OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
           <Folder Id="6d02b1e6-086e-44a5-a718-58f204e7cb85" Name="35 - The Sunken Temple of Quarn" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Doom" Id="ccfcb14c-30f9-4e99-a2b4-6a9c79fdf910" RegularExpression="(1A|1E):[\w]{8}:(?&lt;player&gt;[\w-' ]+) (?&lt;effect&gt;(gains|loses)) the effect of Doom from Teratotaur">
+              <Trigger Enabled="true" Name="Doom" Id="ccfcb14c-30f9-4e99-a2b4-6a9c79fdf910" RegularExpression="\[.{14}1[AE]:[\w]{8}:(?&lt;player&gt;[\w-' ]+) (?&lt;effect&gt;(gains|loses)) the effect of Doom">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Step on glowing plate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                       <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="gains" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -135,7 +150,7 @@
           <Folder Id="187e42b5-fb0c-4539-866e-800510744c40" Name="47 - Aurum Vale" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="100-Tonze Swing - GTE OUT" Id="63d9ffe9-3329-4e36-a26d-f05f12dbd96d" RegularExpression="14:274:Coincounter starts using 100-Tonze Swing on Coincounter">
+              <Trigger Enabled="true" Name="100-Tonze Swing - GET OUT" Id="63d9ffe9-3329-4e36-a26d-f05f12dbd96d" RegularExpression="14:274:Coincounter starts using 100-Tonze Swing on Coincounter">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="GET OUT GET OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -361,9 +376,7 @@
             <Triggers>
               <Trigger Enabled="true" Name="Eye of the Fierce" Id="70885390-3950-4bba-8928-8c9996348455" RegularExpression="\[.{14}14:1F0D:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -813,7 +826,7 @@
               <Action OrderNumber="1" UseTTSTextExpression="Hoard Available" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
             </Actions>
           </Trigger>
-          <Trigger Enabled="true" Name="Portal Open" Id="f1d3c552-6b8f-49f7-b805-030724478057" RegularExpression="39:The Beacon of Passage is activated!">
+          <Trigger Enabled="true" Name="Portal Open" Id="f1d3c552-6b8f-49f7-b805-030724478057" RegularExpression="39:The (?&gt;Beacon|Cairn) of Passage is activated!">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="Portal Open" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
