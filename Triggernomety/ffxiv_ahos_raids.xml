@@ -5316,21 +5316,19 @@
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:58A[DE]:Rapturous Reach - half room" Id="a5210157-375e-47e4-918a-1fc2da9c56bf" RegularExpression="\[.{14}14:58A(?&lt;move&gt;[DE]):">
                     <Actions>
-                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Right ? to check" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="left ? to check" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
@@ -5338,27 +5336,22 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:5896:Diamond Dust" Id="3f10b945-d873-478d-b2a5-eccdfec3d2e5" RegularExpression="\[.{14}14:5896:">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:589D:Plunging Ice - KB" Id="a3b915e7-4c29-4fc2-8ac3-769e9506a1f0" RegularExpression="\[.{14}14:589D:">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="4000">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:589[45]:Junction Shiva/Titan" Id="4048c7db-d117-4c9e-84de-a50f23e776ae" RegularExpression="\[.{14}14:589(?&lt;move&gt;[45]):">
                     <Actions>
@@ -5366,37 +5359,30 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Juction Titan" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:589F:Earthen Fury" Id="8d98ecb9-52d9-4e7d-97b1-a35c8304cdaa" RegularExpression="\[.{14}14:589F:">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="14:58B8:Laser Eye - KB" Id="b0057d52-05a6-4783-8f7a-d4e7ddb15a8a" RegularExpression="\[.{14}14:58B8:">
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="11000">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
