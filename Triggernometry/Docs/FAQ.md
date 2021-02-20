@@ -24,6 +24,7 @@
       - [Example 1 : RDM](#example-1--rdm)
       - [Example 2 : SCH](#example-2--sch)
       - [Example 3 : DNC](#example-3--dnc)
+      - [Example 4 : BLM](#example-4--blm)
 
 # Repos FAQ
 
@@ -299,11 +300,12 @@ Ok, let's see what SCH gauge lines look like
 ```
 
 So from `1F:00000000:Player Name:300001C:700001E:00:00`, we get something like  
-`300001C` => `0300001C` => `03 00 00 1C` But wait ... that doesn't seem right, we are looking for more than just 3 `byte` ...  
+`300001C` => `0300001C` => `03 00 00 1C`  
+But wait ... that doesn't seem right, we are looking for more than just 3 `byte` ...  
 Yes, we need to take the next bit of data as well. However, we need to put it _before_.  
 `:0300001C:0700001E:` => `:0700001E:0300001C:` => `0700001E0300001C`  
 Ok, now we can just split it right ? Well, no we need to flip them separately, then put them together  
-`0700001E 0300001C` => `07 00 00 1E 03 00 00 1C` => `1C 00 00 03 1E 00 00 07`  
+`0700001E  0300001C` => `07 00 00 1E  03 00 00 1C` => `1C 00 00 03 1E 00 00 07`  
 Now, here's the fun part: remember the `Offset` ? it now comes into play.  
 |  Job  | (nothing) | (nothhing) | AF stacks | Fairy gauge | Seraph timer | Dismissed fairy |
 | :---: | :-------: | :--------: | :-------: | :---------: | :----------: | :-------------: |
@@ -380,11 +382,11 @@ Wow, that's a lot isn't it. It's ok, it will all make sense with time. Let's loo
 [00:00:00.000] 1F:00000000:Player Name:320226:00:00:00
 [00:00:00.000] 1F:00000000:Player Name:226:00:00:00
 ```
-Lots of test data is good, it allows to increase the chances of getting all the cases. For our purpose, let's take a like with the most amount of gauge data ... This one seems good.
+Lots of test data is good, it allows to increase the chances of getting all the cases. For our purpose, let's take a line with the most amount of gauge data ... This one seems good.
 `1F:00000000:Player Name:4000226:1000002:00:00`  
 `:4000226:1000002:` Ok, let's break it down, flip it and do magic.
-`:04000226:01000002:` => `04000226 01000002` => `04 00 02 26   01 00 00 02`  
-`26 02 00 04   02 00 00 01`  
+`:04000226:01000002:` => `04000226  01000002` => `04 00 02 26  01 00 00 02`  
+`26 02 00 04  02 00 00 01`  
 Ok, now let's map everything.
 |  Job  | Feathers | Esprit | Step1 | Step2 | Step3 | Step4 | StepsCombo |
 | :---: | :------: | :----: | :---: | :---: | :---: | :---: | :--------: |
@@ -402,3 +404,105 @@ Entrechat = 2,
 Jete = 3,
 Pirouette = 4,
 ```
+
+#### Example 4 : BLM
+```
+ public struct BLMGauge {
+    [FieldOffset(0)] public ushort TimeUntilNextPolyglot;  //eno timer (ms)
+    [FieldOffset(2)] public ushort ElementTimeRemaining;  //ui/af timer
+    [FieldOffset(4)] private sbyte ElementStance; //ui/af
+    [FieldOffset(5)] public byte NumUmbralHearts; //number of umbral hearts
+    [FieldOffset(6)] public byte NumPolyglotStacks; //number of polyglot stacks
+    [FieldOffset(7)] private byte EnoState; // Bit 0 = Enochian active. Bit 1 = Polygot active.
+}
+```
+More Formatting
+```
+Offset (0)  ushort  TimeUntilNextPolyglot
+Offset (2)  ushort  ElementTimeRemaining
+Offset (4)  sbyte   ElementStance
+Offset (5)  byte    NumUmbralHearts
+Offset (6)  byte    NumPolyglotStacks
+Offset (7)  byte    EnoState
+```
+And more data
+```
+[00:00:00.000] 1F:00000000:Player Name:98000019:FD3A:00:00
+[00:00:00.000] 1F:00000000:Player Name:D1753019:FD37:01:00
+[00:00:00.000] 1F:00000000:Player Name:9864D919:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:982BBD19:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:98099D19:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:9800E919:FD3A:01:00
+[00:00:00.000] 1F:00000000:Player Name:8E753019:100FD39:01:00
+[00:00:00.000] 1F:00000000:Player Name:CA6B6C19:103FD2F:01:00
+[00:00:00.000] 1F:00000000:Player Name:C9676B19:3FD2B:01:00
+[00:00:00.000] 1F:00000000:Player Name:985CA419:3033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:CD51D919:2032F:01:00
+[00:00:00.000] 1F:00000000:Player Name:C148CD19:10326:01:00
+[00:00:00.000] 1F:00000000:Player Name:503E5C19:31C:01:00
+[00:00:00.000] 1F:00000000:Player Name:982A5E19:33A:401:419C72AE
+[00:00:00.000] 1F:00000000:Player Name:98079B19:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:9800A719:FD3A:01:00
+[00:00:00.000] 1F:00000000:Player Name:E5753019:100FD39:01:00
+[00:00:00.000] 1F:00000000:Player Name:DA682519:103FD2C:01:00
+[00:00:00.000] 1F:00000000:Player Name:6C65B719:3FD2A:401:4091E336
+[00:00:00.000] 1F:00000000:Player Name:984E6619:3033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:BB418919:2032D:01:00
+[00:00:00.000] 1F:00000000:Player Name:2A33F819:10320:01:00
+[00:00:00.000] 1F:00000000:Player Name:BC298A19:315:01:00
+[00:00:00.000] 1F:00000000:Player Name:98153019:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:53753019:1000325:01:00
+[00:00:00.000] 1F:00000000:Player Name:98684C19:100033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:98615619:100FD3A:01:00
+[00:00:00.000] 1F:00000000:Player Name:BF547D19:103FD2D:01:00
+[00:00:00.000] 1F:00000000:Player Name:4E520C19:3FD2B:01:00
+[00:00:00.000] 1F:00000000:Player Name:983B7819:3033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:BB2E9B19:2032D:01:00
+[00:00:00.000] 1F:00000000:Player Name:4E242E19:10323:202C3101:3A6E696D
+[00:00:00.000] 1F:00000000:Player Name:84196419:318:01:00
+[00:00:00.000] 1F:00000000:Player Name:980F1619:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:76753019:100032B:01:00
+[00:00:00.000] 1F:00000000:Player Name:9857D319:100033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:9850B319:100FD3A:01:00
+[00:00:00.000] 1F:00000000:Player Name:D842F319:FD2C:01:00
+[00:00:00.000] 1F:00000000:Player Name:9835BE19:33A:01:00
+[00:00:00.000] 1F:00000000:Player Name:C7753019:1000304:01:00
+[00:00:00.000] 1F:00000000:Player Name:98747E19:100033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:98605419:100FD3A:01:00
+[00:00:00.000] 1F:00000000:Player Name:D0528C19:FD2C:01:00
+[00:00:00.000] 1F:00000000:Player Name:B9417519:3FD1B:01:00
+[00:00:00.000] 1F:00000000:Player Name:983A4E19:3033A:01:00
+[00:00:00.000] 1F:00000000:Player Name:C42B7A19:2032B:01:00
+[00:00:00.000] 1F:00000000:Player Name:CE208419:10320:202C3401:3A6E696D
+```
+
+Usual `PadLeft` and flip  
+
+`BF547D19:103FD2D:` => `BF 54 7D 19  01 03 FD 2D` => `19 7D 54 BF   2D FD 03 01`  
+
+|  Job  | TimeUntilNextPolyglot | ElementTimeRemaining | ElementStance | NumUmbralHearts | umPolyglotStacks | EnoState |
+| :---: | :-------------------: | :------------------: | :-----------: | :-------------: | :--------------: | :------: |
+|  19   |         7D54          |         BF2D         |      FD       |       03        |        01        |
+
+And here we are. missing on data. thus, we need to grab more than just the 2 groups. we need to grab the 3rd group as well
+
+`:4E242E19:10323:202C3101:` => `4E242E19 00010323 202C3101` => `19 2E 24 4E   23 03 01 00   01 31 2C 20`
+But, here we don't care about all of it. we'll fix that in the regex.
+|  Job  | TimeUntilNextPolyglot | ElementTimeRemaining | ElementStance | NumUmbralHearts | umPolyglotStacks | EnoState | (unneeded) |
+| :---: | :-------------------: | :------------------: | :-----------: | :-------------: | :--------------: | :------: | :--------: |
+|  19   |         2E24          |         4E23         |      03       |       01        |        00        |    01    |  31 2C 20  |
+
+However, we need to flip the 2  values for `ElementTimeRemaining` => `4E 23` => `234E`  
+`0x234E` = `9038` Which is 9 Seconds.  
+Another note : `ElementStance` only has 6 values possible, realistically :  
+`0x01`, `0x02`, `0x03` and  
+`0xFF`, `0xFE`, `0xFD`. Those values are negative. `0xFD` = `253` = `-3`  
+Positive values are for fire stacks, negative values are for ice stacks.  
+This happens because `ElementStance` is a `sbyte`: a Signed byte (has a sign, aka `-`)  
+
+and so, we get the regex.  
+`\[.{14}1F:.*?:.*?:(?<elemTimer2>[A-F0-9]{0,2}?)(?<PolyTimer>[A-F0-9]{0,4}?)19:(?<polyglotStacks>[A-F0-9]{0,2}?)(?<umbralHearts>[A-F0-9]{0,2}?)(?<ElemStacks>[A-F0-9]{0,2}?)(?<elemTimer1>[A-F0-9]{0,2}?):.{0,6}?(?<enoState>01)?:`  
+Quite a handful isn't it.
+
+Now, do keep in mind that our `ElementTimeRemaining` is split in 2, so we'll have to combine both inside the trigger. Quite simple, as you can just reference it like so:
+`${elemTimer1}${elemTimer2}`  
