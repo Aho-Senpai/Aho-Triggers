@@ -302,10 +302,10 @@ Ok, let's see what SCH gauge lines look like
 So from `1F:00000000:Player Name:300001C:700001E:00:00`, we get something like  
 `300001C` => `0300001C` => `03 00 00 1C`  
 But wait ... that doesn't seem right, we are looking for more than just 3 `byte` ...  
-Yes, we need to take the next bit of data as well. However, we need to put it _before_.  
-`:0300001C:0700001E:` => `:0700001E:0300001C:` => `0700001E0300001C`  
+Yes, we need to take the next bit of data as well.  
+`:0300001C:0700001E:` => `:0300001C:0700001E` => `0300001C0700001E`  
 Ok, now we can just split it right ? Well, no we need to flip them separately, then put them together  
-`0700001E  0300001C` => `07 00 00 1E  03 00 00 1C` => `1C 00 00 03 1E 00 00 07`  
+`0300001C 0700001E` => `03 00 00 1C   07 00 00 1E ` => `1C 00 00 03 1E 00 00 07`  
 Now, here's the fun part: remember the `Offset` ? it now comes into play.  
 |  Job  | (nothing) | (nothhing) | AF stacks | Fairy gauge | Seraph timer | Dismissed fairy |
 | :---: | :-------: | :--------: | :-------: | :---------: | :----------: | :-------------: |
