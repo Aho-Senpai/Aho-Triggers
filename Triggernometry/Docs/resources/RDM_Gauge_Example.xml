@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedTrigger Enabled="true" Name="RDM Gauge Example" Id="bad06cee-fb7f-4038-913b-9db33ff8bbd0" RegularExpression="\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?&lt;BMana&gt;[A-F0-9]{0,2}?)?(?&lt;WMana&gt;[A-F0-9]{0,2}?)?23:">
+  <ExportedTrigger Enabled="true" Name="RDM Gauge Example" Id="bad06cee-fb7f-4038-913b-9db33ff8bbd0" RegularExpression="\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?&lt;BlackMana&gt;[A-F0-9]{0,2}?)?(?&lt;WhiteMana&gt;[A-F0-9]{0,2}?)?23:">
     <Actions>
-      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraAlignment="TopLeft" TextAuraFontSize="48" TextAuraName="ManaExample" TextAuraExpression="White Mana: ${numeric:hex2dec(${WMana})}&#xD;&#xA;Black Mana: ${numeric:hex2dec(${BMana})}" TextAuraXIniExpression="${_screenwidth}/2" TextAuraYIniExpression="${_screenheight}/2" TextAuraWIniExpression="762" TextAuraHIniExpression="181" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraAlignment="TopLeft" TextAuraFontSize="48" TextAuraName="ManaExample" TextAuraExpression="White Mana: ${numeric:hex2dec(${WhiteMana})}&#xD;&#xA;Black Mana: ${numeric:hex2dec(${BlackMana})}" TextAuraXIniExpression="${_screenwidth}/2" TextAuraYIniExpression="${_screenheight}/2" TextAuraWIniExpression="762" TextAuraHIniExpression="181" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
