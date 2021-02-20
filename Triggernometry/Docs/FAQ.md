@@ -10,10 +10,16 @@
 - [Triggernometry FAQ](#triggernometry-faq)
   - [How to install Triggernometry ?](#how-to-install-triggernometry-)
   - [How do i update Triggernometry ?](#how-do-i-update-triggernometry-)
+  - [How do i add/import triggers (not repos) ?](#how-do-i-addimport-triggers-not-repos-)
   - [How do i enable Dev mode ?](#how-do-i-enable-dev-mode-)
   - [How can i tell if my trigger/folder is active ?](#how-can-i-tell-if-my-triggerfolder-is-active-)
   - [What do the colors/icons mean ?](#what-do-the-colorsicons-mean-)
   - [About "Fire" (Force/Test Fire)](#about-fire-forcetest-fire)
+- [Making Triggers: Basics](#making-triggers-basics)
+- [Making Triggers: Advanced](#making-triggers-advanced)
+  - [Gauge Line](#gauge-line)
+    - [Network (`1F:`)](#network-1f)
+      - [Example 1 : RDM](#example-1--rdm)
 
 # Repos FAQ
 
@@ -82,6 +88,14 @@ NOTE: While you can put the `.dll` file whereever you want, it is NOT encouraged
 
 NOTE: If your `.dll` file is not in the ACT Plugin folder, it is greatly encouraged that you do move it there.
 
+## How do i add/import triggers (not repos) ?
+
+1. Select the folder where you want to import your trigger.
+1. Top Right => `Import`
+1. (Personal recommendation: copy the link of the file, assuming you have it as a file of course, and paste the URL in the second text field (after selecting it) Note that discord links also work (assuming said link points to a file, obviously))  
+1. `Next` will allow you to view what you are importing. You can also look into the triggers themselves at this point (and even remove if you want, tho not recommended).
+1. Lastly, `Import` will finish this process.
+
 ## How do i enable Dev mode ?
 
 1. Top Right => `Options`
@@ -106,3 +120,80 @@ If it's not checked ![CB_Off](./resources/CB_Off.PNG) it's NOT enabled/active, a
 
 This FORCES fire a trigger. To do that, it WILL have to ignore some things (conditions) and set other things (variables) using placeholder values.  
 This is a good way to test if your actions do what you expect, but it is NOT a good way to test if your conditions work.
+
+# Making Triggers: Basics
+
+# Making Triggers: Advanced
+
+## Gauge Line
+
+### Network (`1F:`)
+
+[Cactbot JobGauge LogGuide Section](https://github.com/quisquous/cactbot/blob/main/docs/LogGuide.md#1f-networkgauge)
+
+[Dalamud JobGauge Structure Doc](https://github.com/goatcorp/Dalamud/tree/master/Dalamud/Game/ClientState/Structs/JobGauge)  
+
+#### Example 1 : RDM
+What interests us in this is this part (taking RDM as example)  
+```
+public struct RDMGauge {
+    [FieldOffset(0)] public byte WhiteGauge;
+    [FieldOffset(1)] public byte BlackGauge;
+}
+```
+let's make it clearer if you aren't familar with C# or coding languages.
+```
+Offset (0) byte WhiteGauge;
+Offset (1) byte BlackGauge;
+```  
+With this we now know what part of the logline is what. (Simple example to start)  
+Now, here's what ACT log lines for it will look like
+```
+[00:00:00.000] 1F:00000000:Player Name:723:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:30A23:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:60D23:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:110D23:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:141023:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:141B23:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:142423:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:1F2423:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:282423:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:282F23:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:283823:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:333823:2000000:00:00
+[00:00:00.000] 1F:00000000:Player Name:646423:2000000:00:00
+```
+Now, the part that do interest us is after `Player Name`  
+Let's take the last line as example and eliminate noise :  
+`:646423:`  
+Keep in mind that now we have to `PadLeft` to get 8 characters total.  
+`:00646423:`  
+And then reverse it by group of 2 characters. let's space it as well for readabiulity  
+`23 64 64 00`
+With this and previous linked doc, we know what is what  
+
+Job | White Mana | Black Mana | (nothing)
+:-: |     :-:    |     :-:    |    :-:
+23  |     64     |     64     |    00
+
+Now, we convert said values from Hex to Dec: `0x64 = 100`  
+(The job stays as Hex, unless you *need* to convert it)  
+
+Great, now we can make a regex for it and slap that in a trigger  
+(This will assume you have some non-0 amount of understanding of RegEx)  
+
+`\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?<BMana>[A-F0-9]{0,2}?)?(?<WMana>[A-F0-9]{0,2}?)?23:`  
+Here, we need to do sone "trickery" to make sure we always get 2 characters from right to left, hence the `(?<group>[x]{0,2}?)?`  
+
+Now, how to reference it in a trigger action ? Well, we will need to do what we did earlier: convert Hex2Dec. We won't need to do much more in this case (RDM) as the data we are looking for is all nice and simple, and can be "isoalted" nicely with regex.
+So, using Triggernometry syntax, we will get something like this
+`hex2dec(${WMana})`  
+If you are using a text field (you can tell by hovering over the trigger icon on the left of the field), you will want to wrap it in a `${numeric: }`  
+`${numeric:hex2dec(${WMana})}`
+
+Great! Now all that's left to do if for you to "finalise" the trigger.  
+Note that Gauge triggers don't *need* to have player-check, as you will only see your own gauge lines; other players gauge data isn't sent to your FFXIV client.  
+[Here is an example trigger for RDM Gauge](./resources/RDM_Gauge_Example.xml)  
+[How to import](#how-do-i-addimport-triggers-not-repos-)  
+(Note: You will need at least Triggernometry version BETA: `Triggernometry_1_1_4_0_b2` for this trigger to work properly)  
+(TO DO: Change note when version is out of beta)
