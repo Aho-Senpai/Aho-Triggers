@@ -22,6 +22,8 @@
   - [Gauge Line](#gauge-line)
     - [Network (`1F:`)](#network-1f)
       - [Example 1 : RDM](#example-1--rdm)
+      - [Example 2 : SCH](#example-2--sch)
+      - [Example 3 : DNC](#example-3--dnc)
 
 # Repos FAQ
 
@@ -195,10 +197,11 @@ public struct RDMGauge {
 let's make it clearer if you aren't familar with C# or coding languages.
 
 ```
-Offset (0) byte WhiteGauge;
-Offset (1) byte BlackGauge;
+Offset (0) byte WhiteGauge
+Offset (1) byte BlackGauge
 ```
-Ok, but how do i read that ? WTF does that mean ?
+
+Ok, but how do i read that ? WTF does that mean ?  
 It means that the first `byte` will represent `WhiteGauge` and the second `byte` will represent `BlackGauge`  
 A `byte` is a number between `0` and `255`. `255` in Hex = `0xFF`. Meaning it will be 2 characters at most. This will be important later when tackling "more complex" job gauges. For now, keep in mind that `byte` = we are looking at a 2 character.
 
@@ -211,12 +214,6 @@ Now, here's what ACT log lines for it will look like
 [00:00:00.000] 1F:00000000:Player Name:60D23:2000000:00:00
 [00:00:00.000] 1F:00000000:Player Name:110D23:2000000:00:00
 [00:00:00.000] 1F:00000000:Player Name:141023:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:141B23:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:142423:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:1F2423:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:282423:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:282F23:2000000:00:00
-[00:00:00.000] 1F:00000000:Player Name:283823:2000000:00:00
 [00:00:00.000] 1F:00000000:Player Name:333823:2000000:00:00
 [00:00:00.000] 1F:00000000:Player Name:646423:2000000:00:00
 ```
@@ -229,9 +226,9 @@ Keep in mind that now we have to `PadLeft` to get 8 characters total.
 And then reverse it by group of 2 characters. Let's space it as well for readabiulity  
 `23 64 64 00` With this and previous linked doc, we know what is what
 
-| Job | White Mana | Black Mana | (nothing) |
-| :-: | :--------: | :--------: | :-------: |
-| 23  |     64     |     64     |    00     |
+|  Job  | White Mana | Black Mana | (nothing) |
+| :---: | :--------: | :--------: | :-------: |
+|  23   |     64     |     64     |    00     |
 
 Now, we convert said values from Hex to Dec: `0x64 = 100`  
 (The job stays as Hex, unless you _need_ to convert it)
@@ -252,3 +249,156 @@ Note that Gauge triggers don't _need_ to have player-check, as you will only see
 [How to import](#how-do-i-addimport-triggers-not-repos-)  
 (Note: You will need at least Triggernometry version BETA: `Triggernometry_1_1_4_0_b2` for this trigger to work properly)  
 (TO DO: Change note when version is out of beta)
+
+#### Example 2 : SCH
+
+```
+public struct SCHGauge {
+    [FieldOffset(2)] public byte NumAetherflowStacks;
+    [FieldOffset(3)] public byte FairyGaugeAmount;
+    [FieldOffset(4)] public short SeraphTimer;
+    [FieldOffset(6)] public byte DismissedFairy;
+}
+```
+
+Once again, let's make it easier to read
+
+```
+Offset (2) byte     NumAetherflowStacks
+Offset (3) byte     FairyGaugeAmount
+Offset (4) ushort   SeraphTimer
+Offset (6) byte     DismissedFairy
+```
+
+Here things get a bit more interesting : he have a `ushort`.  
+But ... what's a `ushort` ? It's a value between `0` and `65535`.  
+And you might have guessed it, but `65535` = `0xFFFF`. So we are looking at a 4 character.
+
+Ok, let's see what SCH gauge lines look like
+
+```
+[00:00:00.000] 1F:00000000:Player Name:300001C:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:200001C:0A:00:00
+[00:00:00.000] 1F:00000000:Player Name:100001C:14:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:1E:00:00
+[00:00:00.000] 1F:00000000:Player Name:300001C:700001E:00:00
+[00:00:00.000] 1F:00000000:Player Name:200001C:700001E:00:00
+[00:00:00.000] 1F:00000000:Player Name:100001C:700001E:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:700001E:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:1E:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:14:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:0A:00:00
+[00:00:00.000] 1F:00000000:Player Name:300001C:0A:00:00
+[00:00:00.000] 1F:00000000:Player Name:200001C:14:00:00
+[00:00:00.000] 1F:00000000:Player Name:100001C:1E:00:00
+[00:00:00.000] 1F:00000000:Player Name:100001C:14:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:1E:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:14:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:0A:00:00
+[00:00:00.000] 1F:00000000:Player Name:1C:755F00A:00:00
+```
+
+So from `1F:00000000:Player Name:300001C:700001E:00:00`, we get something like  
+`300001C` => `0300001C` => `03 00 00 1C` But wait ... that doesn't seem right, we are looking for more than just 3 `byte` ...  
+Yes, we need to take the next bit of data as well. However, we need to put it _before_.  
+`:0300001C:0700001E:` => `:0700001E:0300001C:` => `0700001E0300001C`  
+Ok, now we can just split it right ? Well, no we need to flip them separately, then put them together  
+`0700001E 0300001C` => `07 00 00 1E 03 00 00 1C` => `1C 00 00 03 1E 00 00 07`  
+Now, here's the fun part: remember the `Offset` ? it now comes into play.  
+|  Job  | (nothing) | (nothhing) | AF stacks | Fairy gauge | Seraph timer | Dismissed fairy |
+| :---: | :-------: | :--------: | :-------: | :---------: | :----------: | :-------------: |
+|  1C   |    00     |     00     |    03     |     1E      |     0000     |       07        |
+
+Now it should become quite clear right ?  
+Well, time to make a regex for it.  
+`\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?<AetherFlow>\d)?(?>0{0,4})1C:(?<DismissedFairy>\d??)?(?<SeraphTimer>[A-F0-9]{0,4}?)?(?<fairyGauge>[A-F0-9]{1,2})?:`  
+Yes. If you are confused by it, put the regex and the test lines in a regex-website (such as [Regex101](https://regex101.com/) and play around with it)  
+Taking the last line as an example, we can see we get `55F0` for SeraphTimer. `0x55F0` = `22000`. Which means 22 Seconds. That's also Seraph duration. Looks good.
+
+
+#### Example 3 : DNC
+
+```
+public struct DNCGauge {
+    [FieldOffset(0)] byte NumFeathers;
+    [FieldOffset(1)] byte Esprit;
+    [FieldOffset(2)] byte StepOrder1;
+    [FieldOffset(3)] byte StepOrder2;
+    [FieldOffset(4)] byte StepOrder3;
+    [FieldOffset(5)] byte StepOrder4;
+    [FieldOffset(6)] byte StepsCombo;
+}
+```
+Once again, readability for everyone :
+```
+Offset (0) byte NumFeathers
+Offset (1) byte Esprit
+
+Offset (2) byte StepOrder1
+Offset (3) byte StepOrder2
+Offset (4) byte StepOrder3
+Offset (5) byte StepOrder4
+
+Offset (6) byte StepsCombo
+```
+Wow, that's a lot isn't it. It's ok, it will all make sense with time. Let's look at what gauge lines look like for DNC:
+```
+[00:00:00.000] 1F:00000000:Player Name:A0026:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:140026:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:140126:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:1E0126:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:280126:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:280226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:320226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:4000226:02:00:00
+[00:00:00.000] 1F:00000000:Player Name:4000226:1000002:00:00
+[00:00:00.000] 1F:00000000:Player Name:4000226:2000002:00:00
+[00:00:00.000] 1F:00000000:Player Name:226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:326:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:A0326:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:A0226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:A0126:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:A0226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:140226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:3140226:01:00:00
+[00:00:00.000] 1F:00000000:Player Name:3140226:1000001:00:00
+[00:00:00.000] 1F:00000000:Player Name:3140226:2000001:00:00
+[00:00:00.000] 1F:00000000:Player Name:140226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:1E0226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:1E0326:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:280326:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:280226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:2280226:30401:00:00
+[00:00:00.000] 1F:00000000:Player Name:2280226:1030401:00:00
+[00:00:00.000] 1F:00000000:Player Name:2280226:2030401:00:00
+[00:00:00.000] 1F:00000000:Player Name:2280226:3030401:00:00
+[00:00:00.000] 1F:00000000:Player Name:2280226:4030401:00:00
+[00:00:00.000] 1F:00000000:Player Name:280226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:320226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:320326:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:320226:00:00:00
+[00:00:00.000] 1F:00000000:Player Name:226:00:00:00
+```
+Lots of test data is good, it allows to increase the chances of getting all the cases. For our purpose, let's take a like with the most amount of gauge data ... This one seems good.
+`1F:00000000:Player Name:4000226:1000002:00:00`  
+`:4000226:1000002:` Ok, let's break it down, flip it and do magic.
+`:04000226:01000002:` => `04000226 01000002` => `04 00 02 26   01 00 00 02`  
+`26 02 00 04   02 00 00 01`  
+Ok, now let's map everything.
+|  Job  | Feathers | Esprit | Step1 | Step2 | Step3 | Step4 | StepsCombo |
+| :---: | :------: | :----: | :---: | :---: | :---: | :---: | :--------: |
+|  26   |    02    |   00   |  04   |  02   |  00   |  00   |     01     |
+
+Ok, looking good. Let's make the regex for it.  
+`\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?<Step1>[1-4]{0,1}?)?(?<Esprit>[A-F0-9]{0,2}?)?(?<Feathers>[0-4]{1,2})?26:(?<StepsCombo>[0-4]?)??(?<Step4>[0-4]{0,2}?)?(?<Step3>[0-4]{0,2}?)?(?<Step2>[0-4]{2}?):`  
+Yep, once again, if you are confused put the regex and the test lines in a regex-website (such as [Regex101](https://regex101.com/) and play around with it)  
+
+By the way, the corresponding steps can be found in cactbot Doc :
+```
+None = 0,
+Emboite = 1,
+Entrechat = 2,
+Jete = 3,
+Pirouette = 4,
+```
