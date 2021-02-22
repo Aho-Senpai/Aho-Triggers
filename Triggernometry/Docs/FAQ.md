@@ -508,7 +508,7 @@ Quite a handful isn't it.
 Now, do keep in mind that our `ElementTimeRemaining` is split in 2, so we'll have to combine both inside the trigger. Quite simple, as you can just reference it like so:
 `${elemTimer1}${elemTimer2}`  
 
-[Here is an example trigger for BLMM Gauge](https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Docs/resources/BLM_Gauge_Example.xml)  
+[Here is an example trigger for BLM Gauge](https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Docs/resources/BLM_Gauge_Example.xml)  
 [How to import](#how-do-i-addimport-triggers-not-repos-)  
 (Note: You will need at least Triggernometry version BETA: `Triggernometry_1_1_4_0_b2` for this trigger to work properly)  
 (TO DO: Change note when version is out of beta)
