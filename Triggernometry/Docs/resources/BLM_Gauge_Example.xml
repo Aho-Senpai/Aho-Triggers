@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedTrigger Enabled="true" Name="BLM Gauge Example" Id="3d3e8569-f7de-4809-93dd-30ec28f64529" RegularExpression="\[.{14}1F:.*?:.*?:(?&lt;elemTimer2&gt;[A-F0-9]{0,2}?)(?&lt;PolyTimer&gt;[A-F0-9]{0,4}?)19:(?&lt;polyglotStacks&gt;[A-F0-9]{0,2}?)(?&lt;umbralHearts&gt;[A-F0-9]{0,2}?)(?&lt;ElemStacks&gt;[A-F0-9]{0,2}?)(?&lt;elemTimer1&gt;[A-F0-9]{0,2}?):.{0,6}?(?&lt;enoState&gt;01)?:">
+    <Actions>
+      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="26.25" TextAuraName="ElementTimerText" TextAuraExpression="${numeric:${numeric:hex2dec(${elemTimer1}${elemTimer2})}-${_sincems}}" TextAuraXIniExpression="105" TextAuraYIniExpression="337" TextAuraWIniExpression="266" TextAuraHIniExpression="201" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${numeric:${numeric:hex2dec(${elemTimer1}${elemTimer2})}-${_sincems}}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Action>
+      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraAlignment="TopLeft" TextAuraFontSize="24" TextAuraName="DumpDataText" TextAuraExpression="Polyglot Stacks : ${polyglotStacks}&#xD;&#xA;Polyglot Timer (Hex) : 0x${PolyTimer}&#xD;&#xA;Polyglot Timer (Dec) : ${numeric:hex2dec(${PolyTimer})}&#xD;&#xA;Element Timer (Hex) : 0x${elemTimer1}${elemTimer2}&#xD;&#xA;Element Timer (Dec) : ${numeric:hex2dec(${elemTimer1}${elemTimer2})}&#xD;&#xA;Element Stacks : ${ElemStacks}&#xD;&#xA;Enochian State : ${enoState}" TextAuraXIniExpression="51" TextAuraYIniExpression="668" TextAuraWIniExpression="466" TextAuraHIniExpression="297" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Action>
+    </Actions>
+    <Condition Enabled="false" Grouping="Or" />
+    <Conditions />
+  </ExportedTrigger>
+</TriggernometryExport>

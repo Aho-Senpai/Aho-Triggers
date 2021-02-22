@@ -25,6 +25,7 @@
       - [Example 2 : SCH](#example-2--sch)
       - [Example 3 : DNC](#example-3--dnc)
       - [Example 4 : BLM](#example-4--blm)
+- [Thanks](#thanks)
 
 # Repos FAQ
 
@@ -486,7 +487,7 @@ Usual `PadLeft` and flip
 
 And here we are. missing on data. thus, we need to grab more than just the 2 groups. we need to grab the 3rd group as well
 
-`:4E242E19:10323:202C3101:` => `4E242E19 00010323 202C3101` => `19 2E 24 4E   23 03 01 00   01 31 2C 20`
+`:4E242E19:10323:202C3101:` => `4E242E19 00010323 202C3101` => `19 2E 24 4E   23 03 01 00   01 31 2C 20`  
 But, here we don't care about all of it. we'll fix that in the regex.
 |  Job  | TimeUntilNextPolyglot | ElementTimeRemaining | ElementStance | NumUmbralHearts | umPolyglotStacks | EnoState | (unneeded) |
 | :---: | :-------------------: | :------------------: | :-----------: | :-------------: | :--------------: | :------: | :--------: |
@@ -501,8 +502,30 @@ Positive values are for fire stacks, negative values are for ice stacks.
 This happens because `ElementStance` is a `sbyte`: a Signed byte (has a sign, aka `-`)  
 
 and so, we get the regex.  
-`\[.{14}1F:.*?:.*?:(?<elemTimer2>[A-F0-9]{0,2}?)(?<PolyTimer>[A-F0-9]{0,4}?)19:(?<polyglotStacks>[A-F0-9]{0,2}?)(?<umbralHearts>[A-F0-9]{0,2}?)(?<ElemStacks>[A-F0-9]{0,2}?)(?<elemTimer1>[A-F0-9]{0,2}?):.{0,6}?(?<enoState>01)?:`  
+`\[.{14}1F:[A-F0-9]{8}:[a-zA-Z-' ]{3,21}:(?<elemTimer2>[A-F0-9]{0,2}?)(?<PolyTimer>[A-F0-9]{0,4}?)19:(?<polyglotStacks>[A-F0-9]{0,2}?)(?<umbralHearts>[A-F0-9]{0,2}?)(?<ElemStacks>[A-F0-9]{0,2}?)(?<elemTimer1>[A-F0-9]{0,2}?):.{0,6}?(?<enoState>01)?:`  
 Quite a handful isn't it.
 
 Now, do keep in mind that our `ElementTimeRemaining` is split in 2, so we'll have to combine both inside the trigger. Quite simple, as you can just reference it like so:
 `${elemTimer1}${elemTimer2}`  
+
+[Here is an example trigger for BLMM Gauge](https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Docs/resources/BLM_Gauge_Example.xml)  
+[How to import](#how-do-i-addimport-triggers-not-repos-)  
+(Note: You will need at least Triggernometry version BETA: `Triggernometry_1_1_4_0_b2` for this trigger to work properly)  
+(TO DO: Change note when version is out of beta)
+
+# Thanks
+
+Thanks to anyone that helped in one way or another in making this Doc  
+
+For already existing documentation:  
+quisquous (Paprika#0793) [Cactbot](https://github.com/quisquous/cactbot) Docs  
+goat (goat#0909) [Dalamud](https://github.com/goatcorp/Dalamud) Docs  
+Thanks to anyone else involved in said documentations of course ^^
+
+For providing Logs:  
+Zeffuro (Zeffuro#3033)  
+Katt (Katt#2773)  
+Rykhas Gnokas (Ry#2618)  
+
+For providing good feedback:  
+TechnoHunter (TechnoHunter#2706)  
