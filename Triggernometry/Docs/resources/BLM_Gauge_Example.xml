@@ -6,7 +6,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
-      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraAlignment="TopLeft" TextAuraFontSize="24" TextAuraName="DumpDataText" TextAuraExpression="Polyglot Stacks : ${polyglotStacks}&#xD;&#xA;Polyglot Timer (Hex) : 0x${PolyTimer}&#xD;&#xA;Polyglot Timer (Dec) : ${numeric:hex2dec(${PolyTimer})}&#xD;&#xA;Element Timer (Hex) : 0x${elemTimer1}${elemTimer2}&#xD;&#xA;Element Timer (Dec) : ${numeric:hex2dec(${elemTimer1}${elemTimer2})}&#xD;&#xA;Element Stacks : ${ElemStacks}&#xD;&#xA;Enochian State : ${enoState}" TextAuraXIniExpression="51" TextAuraYIniExpression="668" TextAuraWIniExpression="466" TextAuraHIniExpression="297" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraAlignment="TopLeft" TextAuraFontSize="24" TextAuraName="DumpDataText" TextAuraExpression="Polyglot Timer (Hex) : 0x${PolyTimer}&#xD;&#xA;Polyglot Timer (Dec) : ${numeric:hex2dec(${PolyTimer})}&#xD;&#xA;Element Timer (Hex) : 0x${elemTimer1}${elemTimer2}&#xD;&#xA;Element Timer (Dec) : ${numeric:hex2dec(${elemTimer1}${elemTimer2})}&#xD;&#xA;Element Stacks : ${ElemStacks}&#xD;&#xA;Polyglot Stacks : ${polyglotStacks}&#xD;&#xA;Enochian State : ${enoState}" TextAuraXIniExpression="51" TextAuraYIniExpression="668" TextAuraWIniExpression="466" TextAuraHIniExpression="297" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
