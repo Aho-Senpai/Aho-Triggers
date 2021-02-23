@@ -20,7 +20,7 @@
   - [Adding Conditions to a Trigger](#adding-conditions-to-a-trigger)
 - [Making Triggers: Advanced](#making-triggers-advanced)
   - [Gauge Line](#gauge-line)
-    - [Network (`1F:`)](#network-1f)
+    - [Encounter Logs (`1F:`)](#encounter-logs-1f)
       - [Example 1 : RDM](#example-1--rdm)
       - [Example 2 : SCH](#example-2--sch)
       - [Example 3 : DNC](#example-3--dnc)
@@ -179,7 +179,7 @@ Great, now you may notice the trigger is only going off when YOU use an Auto-Att
 
 ## Gauge Line
 
-### Network (`1F:`)
+### Encounter Logs (`1F:`)
 
 [Cactbot JobGauge LogGuide Section](https://github.com/quisquous/cactbot/blob/main/docs/LogGuide.md#1f-networkgauge)
 
