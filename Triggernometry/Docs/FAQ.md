@@ -15,6 +15,7 @@
   - [How can i tell if my trigger/folder is active ?](#how-can-i-tell-if-my-triggerfolder-is-active-)
   - [What do the colors/icons mean ?](#what-do-the-colorsicons-mean-)
   - [About "Fire" (Force/Test Fire)](#about-fire-forcetest-fire)
+  - [How do I change the TTS voice ?](#how-do-i-change-the-tts-voice-)
 - [Making Triggers: Basics](#making-triggers-basics)
   - [Accessing Regex Groups](#accessing-regex-groups)
   - [Adding Conditions to a Trigger](#adding-conditions-to-a-trigger)
@@ -127,6 +128,13 @@ If it's not checked ![CB_Off](./resources/CB_Off.PNG) it's NOT enabled/active, a
 This FORCES fire a trigger. To do that, it WILL have to ignore some things (conditions) and set other things (variables) using placeholder values.  
 This is a good way to test if your actions do what you expect, but it is NOT a good way to test if your conditions work.
 
+## How do I change the TTS voice ?
+
+Here, you have a few options : 
+
+- Change windows TTS voice (ACT -> Options -> Sound Settings -> "Text to Speech Control Pannel Applet")
+- Install a TTS plugin (such as yukkuri (part of [Hojoring](https://github.com/anoyetta/ACT.Hojoring)))
+
 # Making Triggers: Basics
 
 First, if you are unfamilar with what RegEx is, i highly encourage you to document yourself on it.  
@@ -174,6 +182,7 @@ Lastly, you will want to check the parent condition groups so that the condition
 Great, now you may notice the trigger is only going off when YOU use an Auto-Attack.  
 [Result Trigger](https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Docs/resources/Auto-Attack_Example.xml)  
 [How to import](#how-do-i-addimport-triggers-not-repos-)
+
 
 # Making Triggers: Advanced
 

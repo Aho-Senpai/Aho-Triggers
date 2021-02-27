@@ -19,7 +19,7 @@
 Here's a few things that are gonna be the same on all lines : 
 | Line ID |             Timestamp             |                                Data                                |           FFLogs Hash            |
 | :-----: | :-------------------------------: | :----------------------------------------------------------------: | :------------------------------: |
-|   20    | 0000-00-00T00:00:00.0000000+00:00 | 00000000\|Player Name\|05\|Teleport\|00000000\|Player Name\|5.00\| | 60e3acaf4f1e8af4a9cd32ae876521ea |
+|   20    | 0000-00-00T00:00:00.0000000+00:00 | \|00000000\|Player Name\|05\|Teleport\|00000000\|Player Name\|5.00\| | 60e3acaf4f1e8af4a9cd32ae876521ea |
 
 
 ## StartCasting : 20
