@@ -2839,59 +2839,62 @@
                   <Folder Id="d86d193a-ad23-4caf-8022-45f66d8b8cf1" Name="Exdeath Door" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Dualcast" Id="2ac26c95-a6f8-4b46-8205-dab2eed02e9d" RegularExpression="2b:Exdeath readies Dualcast">
+                      <Trigger Enabled="true" Name="Blizzard III" Id="3b8c72f1-a064-4e20-a98e-ec87bb7534a0" RegularExpression="\[.{14}14:(?&lt;move&gt;24C0|23F[C7]):">
                         <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="Dualcast" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" />
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread - Blizzard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="23F7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Keep moving - Blizzard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="23FC|24C0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Blizzard III" Id="3b8c72f1-a064-4e20-a98e-ec87bb7534a0" RegularExpression="2b:Exdeath begins casting Blizzard III">
+                      <Trigger Enabled="true" Name="Fire III" Id="96685d10-05a9-4b07-8d11-defeeb72f5d6" RegularExpression="\[.{14}14:(?&lt;move&gt;24B[AF]|23F[B5]):">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread - fire" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="23F5|24BA" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Keep Moving" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Stop Moving" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="24BF|23FB" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="3" VariableName="Dualcast" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="200" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Fire III" Id="96685d10-05a9-4b07-8d11-defeeb72f5d6" RegularExpression="2b:Exdeath begins casting Fire III">
+                      <Trigger Enabled="true" Name="Thunder III" Id="e26d264f-e96e-4332-b6b6-23392e655941" RegularExpression="\[.{14}14:(?&lt;move&gt;23F[9D]|24(?&gt;BD|C1)):">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Tank Buster Cleave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="23F9|24BD" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Stop" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="go out go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="23FD|24C1" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="Dualcast" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="200" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Thunder III" Id="e26d264f-e96e-4332-b6b6-23392e655941" RegularExpression="2b:Exdeath begins casting Thunder III">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Double Tank-Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Go OUT Go OUT" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:Dualcast}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="Dualcast" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="200" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Vacuum Wave" Id="5c50d32a-91cb-4183-ad8a-24dfe4873cbb" RegularExpression="2b:Exdeath readies Vacuum Wave">
+                      <Trigger Enabled="true" Name="Vacuum Wave" Id="5c50d32a-91cb-4183-ad8a-24dfe4873cbb" RegularExpression="\[.{14}14:(?&gt;241D|24B8):">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Doom" Id="669d7621-1542-4d98-90ca-5d199392eb2d" RegularExpression="\[.{14}14:2487:">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Doom, Cleanse" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -2900,7 +2903,7 @@
                   <Folder Id="b5a255b9-48f2-4b37-8c50-27a60f059a0e" Name="5.x fight fixed? testing" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Outer Antilight" Id="ab182746-e2b7-4046-bb10-fb0b182d9130" RegularExpression="14:2410:Neo Exdeath starts using Outer Antilight on Neo Exdeath" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                      <Trigger Enabled="true" Name="Outer Antilight" Id="ab182746-e2b7-4046-bb10-fb0b182d9130" RegularExpression="\[.{14}14:2410:" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go In" TextAuraFontSize="0" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2913,7 +2916,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Inner Antilight" Id="f1de1055-2e50-4949-8fa8-edd247692f4a" RegularExpression="14:244C:Neo Exdeath starts using Inner Antilight on Neo Exdeath" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                      <Trigger Enabled="true" Name="Inner Antilight" Id="f1de1055-2e50-4949-8fa8-edd247692f4a" RegularExpression="\[.{14}14:244C:" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go Out" TextAuraFontSize="0" ActionType="UseTTS" />
                           <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="go in - death" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -2924,7 +2927,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Colors Lasers (Purple/Ball Left, Blue/Triangle Right)" Id="041c1b2c-a5c3-41b6-8f69-b9f687bc9d1d" RegularExpression="14:2411:Neo Exdeath starts using Flood Of Naught on Neo Exdeath" PeriodRefire="Deny" RefirePeriodExpression="5000">
+                      <Trigger Enabled="true" Name="Colors Lasers (Purple/Ball Left, Blue/Triangle Right)" Id="041c1b2c-a5c3-41b6-8f69-b9f687bc9d1d" RegularExpression="\[.{14}14:2411:" PeriodRefire="Deny" RefirePeriodExpression="5000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Color Lasers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2954,7 +2957,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="And" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Colors Lasers (Blue/Triangle Left, Purple/Ball Right)" Id="2691855e-1c81-4e50-aed8-f2d41b745f49" RegularExpression="14:2412:Neo Exdeath starts using Flood Of Naught on Neo Exdeath" PeriodRefire="Deny" RefirePeriodExpression="5000">
+                      <Trigger Enabled="true" Name="Colors Lasers (Blue/Triangle Left, Purple/Ball Right)" Id="2691855e-1c81-4e50-aed8-f2d41b745f49" RegularExpression="\[.{14}14:2412:" PeriodRefire="Deny" RefirePeriodExpression="5000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Color Lasers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3027,25 +3030,25 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Delta Attack" Id="29390b4c-5df7-4b98-9dd5-ce188d0f06c5" RegularExpression="2b:Neo Exdeath begins casting Delta Attack">
+                  <Trigger Enabled="true" Name="Delta Attack" Id="29390b4c-5df7-4b98-9dd5-ce188d0f06c5" RegularExpression="\[.{14}14:241E:">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Delta Attack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Vacuum Wave" Id="f4c106d0-02fc-4442-b67f-cf787a1d37d0" RegularExpression="2b:Neo Exdeath readies Vacuum Wave">
+                  <Trigger Enabled="true" Name="Vacuum Wave" Id="f4c106d0-02fc-4442-b67f-cf787a1d37d0" RegularExpression="\[.{14}14:24(?&gt;1D|B8):">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Vacuum Wave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Emptiness" Id="c0f3b687-d45a-4545-801b-e84bd5dff05a" RegularExpression="2b:Neo Exdeath readies Emptiness">
+                  <Trigger Enabled="true" Name="Emptiness" Id="c0f3b687-d45a-4545-801b-e84bd5dff05a" RegularExpression="\[.{14}14:2420:">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Emptiness" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Grand Cross Alpha/Omega" Id="125d66a4-cd26-4b6d-afa6-8b6bc3aeb83f" RegularExpression="2b:Neo Exdeath readies Grand Cross (Alpha|Omega)">
+                  <Trigger Enabled="true" Name="Grand Cross Alpha/Omega" Id="125d66a4-cd26-4b6d-afa6-8b6bc3aeb83f" RegularExpression="\[.{14}:14:242[BD]:">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="GO MIDDLE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
@@ -5326,13 +5329,11 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -6527,7 +6528,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/UwU-Gaols-PlayerMark-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/UwU-Gaols-PlayerMark-README.md">
+                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md">
                             <Actions />
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
