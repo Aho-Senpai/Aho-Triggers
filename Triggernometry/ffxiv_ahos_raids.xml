@@ -6528,7 +6528,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernomety/README/UwU-Gaols-PlayerMark-README.md">
+                          <Trigger Enabled="true" Source="None" IsReadme="True" Name="## README - UWU TITAN GAOLS" Id="1c72be5e-093b-4cb9-b6b1-13e3d463977e" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/UwU-Gaols-PlayerMark-README.md" Description="PLEASE READ THIS BEFORE YOU DO ANYTHING&#xD;&#xA;&#xD;&#xA;https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/UwU-Gaols-PlayerMark-README.md">
                             <Actions />
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
