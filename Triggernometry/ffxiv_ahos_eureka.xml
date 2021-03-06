@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder Id="1c7904cf-3f2d-4f97-b3c9-928ff3227e7a" Name="Eureka-Like" Enabled="true">
     <Folders>
-      <Folder ZoneFilterEnabled="True" Id="ab39a924-fa39-4a07-99a8-249af19bf4fe" ZoneFilterRegularExpression="The\ Bozjan\ Southern\ Front" Name="Eureka 2.0 (Bozja)" Enabled="true">
+      <Folder Id="ab39a924-fa39-4a07-99a8-249af19bf4fe" ZoneFilterRegularExpression="The\ Bozjan\ Southern\ Front" Name="Eureka 2.0 (Bozja)" Enabled="true">
         <Folders>
           <Folder Id="f77a98a9-e6bb-47ab-b4d9-0887f63f8b11" Name="Castrum Lacus Litore" Enabled="true">
             <Folders>
@@ -103,126 +103,92 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="The queen's gunner readies Higher Power." Id="be8d532e-e8ad-49c8-a866-c37813b57af3" RegularExpression="The queen's gunner readies Higher Power.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="dispel turrets" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="dispel turrets" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's knight readies Rapid Sever." Id="ce83cbd2-3b84-4782-8f96-b21263053b4d" RegularExpression="The queen's knight readies Rapid Sever.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="physical tank buster" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="physical tank buster" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's knight readies Shield Omen." Id="c2fdd921-9e52-48ec-b13d-c5cdf8ed4257" RegularExpression="The queen's knight readies Shield Omen.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="shield, inside mechanics" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="shield, inside mechanics" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's knight readies Sword Omen." Id="25676757-bbd5-4357-9ee5-695f4a97f539" RegularExpression="The queen's knight readies Sword Omen.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="sword, outside mechanics" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="sword, outside mechanics" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's soldier readies Blood and Bone." Id="79fca63c-2174-4d06-b86f-7705c5b40f5d" RegularExpression="The queen's soldier readies Blood and Bone.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's soldier readies Fiery Portent." Id="f2fc1c54-c011-428f-a165-c725584d2ee9" RegularExpression="The queen's soldier readies Fiery Portent.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Stillness, Don't Move" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's soldier readies Icy Portent." Id="373a3720-50c2-4494-8727-422a2d316e41" RegularExpression="The queen's soldier readies Icy Portent.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Motion, Keep Moving" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's soldier readies Shot in the Dark." Id="e8edb92a-93ee-482c-902c-c7a2682bc203" RegularExpression="The queen's soldier readies Shot in the Dark.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="physical tank buster" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="physical tank buster" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's warrior readies Blood and Bone." Id="c1841562-2325-46ff-a697-d4f64dd8c2fb" RegularExpression="The queen's warrior readies Blood and Bone.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="false" Name="The queen's warrior readies Reversal of Forces." Id="2602e4d2-c5e3-4f0b-9815-6e6ae6b5cca1" RegularExpression="The queen's warrior readies Reversal of Forces.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Reversed Mechanics" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="Tornado/Lightning" Id="9767fae6-6e77-456f-b130-9c0590bf0714" RegularExpression="The queen's warrior readies Winds of Weight.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Tether to tornado, no tether to lightning" Enabled="False" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Go to tornado" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:ReverseTetherOnYou}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="Go to lightning" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:ReverseTetherOnYou}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The queen's warrior uses Boost." Id="1c38abcf-6155-4077-9919-1e8e4ea646db" RegularExpression="The queen's warrior uses Boost.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="dispel warrior" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="dispel warrior" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Reverse Tether" Id="61785014-0ea2-48e1-adc8-4ac13bdcf339" RegularExpression="^35\|[^|]+\|[^|]{8}\|(?&lt;player1&gt;[^|]+)\|[^|]{8}\|(?&lt;player2&gt;[^|]+)\|[^|]+\|[^|]+\|0087\|">
                         <Actions>
@@ -231,47 +197,39 @@
                               <ConditionSingle Enabled="true" ExpressionL="${player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Tether on you" VariableOp="SetNumeric" VariableName="ReverseTetherOnYou" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="Tether on you" VariableOp="SetNumeric" VariableName="ReverseTetherOnYou" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="30000">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                               <ConditionSingle Enabled="true" ExpressionL="${player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Damage Type Tether" Id="1be65b4f-fbf4-4dcb-9306-2ef2922cd322" RegularExpression="^35\|[^|]+\|[^|]{8}\|[^|]+\|[^|]{8}\|[^|]+\|[^|]+\|[^|]+\|(?&lt;id&gt;008[89])\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Tether type ${id}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Do physical" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="0089" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="Do magical" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="0088" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -280,70 +238,51 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="The Queen readies Cleansing Slash." Id="cccbc392-6722-4ac2-a747-9e50f6d3bcac" RegularExpression="The Queen readies Cleansing Slash.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="double buster, esuna" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="double buster, esuna" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The Queen readies Empyrean Iniquity." Id="82ca39f0-8a43-4e08-9474-8fd04770e030" RegularExpression="The Queen readies Empyrean Iniquity.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="big aoe with bleed" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="big aoe with bleed" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The Queen readies God Save the Queen." Id="bbae5634-f3a1-4718-9a7a-2ce0cb47e3f9" RegularExpression="The Queen readies God Save the Queen.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The Queen readies Judgment Blade." Id="c44e4359-c92c-4041-9dd7-a9dadd886a49" RegularExpression="The Queen readies Judgment Blade.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="haircut cleave" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="haircut cleave" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The Queen readies Queen's Will." Id="4453f6d0-a702-4a55-b967-67f21b134a27" RegularExpression="The Queen readies Queen's Will.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="chess and lines" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="chess and lines" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Sequential="True" Name="Movement Edict Total" Id="03452e27-d626-46de-a741-527cfac8d474" RegularExpression="^.{15}00:[^:]*:You suffer.{15}Movement Edict: (?&lt;count&gt;\d) Squares" MutexToCapture="MovementEdictLock">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="MovementEdictSum" VariableExpression="${var:MovementEdictSum} + ${count}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Move ${var:MovementEdictSum} squares total" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:MovementEdictSum}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericGreaterEqual" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="Move ${var:MovementEdictSum} squares total" VariableName="MovementEdictSum" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:MovementEdictSum}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="String" ConditionType="NumericGreaterEqual" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -354,95 +293,71 @@
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Out" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Crashing Hoof." Id="29a9c353-0fb7-4d98-9f47-e3ee67969d52" RegularExpression="The stygimoloch lord readies Crashing Hoof.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="jumping, get away" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="jumping, get away" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Fateful Words." Id="7300d6d8-29d2-4577-8405-c0809ff6fdef" RegularExpression="The stygimoloch lord readies Fateful Words.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Resolving ${var:StygPushPull}" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Foe Splitter." Id="bb42a75d-56f2-4601-8a8e-c74fdda97fcd" RegularExpression="The stygimoloch lord readies Foe Splitter.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="physical buster cleave" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="physical buster cleave" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Rapid Bolts." Id="600f3ee1-47f0-4d12-a63f-e12cc6a078ff" RegularExpression="The stygimoloch lord readies Rapid Bolts.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="thunder circles, take to sides" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="thunder circles, take to sides" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Thunderous Discharge." Id="c60a6ab7-783c-4fba-b5ba-cd00107df105" RegularExpression="The stygimoloch lord readies Thunderous Discharge.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The stygimoloch lord readies Vicious Swipe." Id="2cd3435e-763d-4347-b5bb-f2cb50a7385a" RegularExpression="The stygimoloch lord readies Vicious Swipe.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="You suffer the effect of Sacrifice's Fate." Id="3eb5e80f-ba9d-4653-a705-981c0339dcd3" RegularExpression="You suffer the effect of Sacrifice's Fate.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Prepare for Pull, Be outside" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="StygPushPull" VariableExpression="Pull" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="You suffer the effect of Wanderer's Fate." Id="cec365f6-f393-41a0-80ed-ce0fbd958557" RegularExpression="You suffer the effect of Wanderer's Fate.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Preparing Push, Be inside" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="StygPushPull" VariableExpression="Push" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -451,27 +366,18 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="The dahu readies Hot Charge." Id="b00c4d54-ae63-4471-ba3a-22d400328dfb" RegularExpression="The dahu readies Hot Charge.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="avoid charge" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="avoid charge" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The dahu readies Hysteric Assault." Id="b67e0e4b-020e-4e0b-97a9-a50b989044d0" RegularExpression="The dahu readies Hysteric Assault.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="prepare for knockback" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="prepare for knockback" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The dahu readies Spit Flame." Id="c401eed9-7933-451c-a938-4b13e192d18c" RegularExpression="The dahu readies Spit Flame.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="numbers" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="numbers" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -480,80 +386,59 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="The trinity avatar readies Seasons of Mercy." Id="ea58e87a-9cbe-41c9-9107-c2739df7d436" RegularExpression="The trinity avatar readies Seasons of Mercy.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="flower, look away from orb" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="flower, look away from orb" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The trinity seeker readies Iron Splitter." Id="0cfea903-adc6-4b1e-afdd-c091493ffd14" RegularExpression="The trinity seeker readies Iron Splitter.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="stand on opposite color" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="stand on opposite color" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The trinity seeker readies Merciful Arc." Id="483ab523-9a1d-4397-ae44-cbcd51183574" RegularExpression="The trinity seeker readies Merciful Arc.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="physical buster cleave" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="physical buster cleave" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="false" Name="The trinity seeker readies Phantom Edge." Id="b01f60cf-7606-4e36-91b4-f2793d535c86" RegularExpression="The trinity seeker readies Phantom Edge.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="if blade, back to wall" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="if blade, back to wall" ActionType="UseTTS" />
                         </Actions>
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="The trinity seeker readies Verdant Tempest." Id="fd3552f1-03d0-4c10-82cf-db0bc8e58f43" RegularExpression="^20\|[^|]+\|[^|]{8}\|[^|]+\|5AD3\|">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="big aoe" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="big aoe" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Chains" Id="9074b96e-e8f7-423a-a130-63a78fc4155e" RegularExpression="^35\|[^|]+\|[^|]{8}\|(?&lt;player1&gt;[^|]+)\|[^|]{8}\|(?&lt;player2&gt;[^|]+)\|[^|]+\|[^|]+\|0080\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Chains" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Chained to ${player2}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="Chained to ${player1}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthshaker on You" Id="7ade4af8-457a-450f-ba39-fa60b7143bb2" RegularExpression="^35\|[^|]+\|[^|]{8}\|(?&lt;player1&gt;[^|]+)\|[^|]{8}\|(?&lt;player2&gt;[^|]+)\|[^|]+\|[^|]+\|008A\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Earthshaker on you" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -568,31 +453,25 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Running" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Brand" ExpressionTypeR="String" ConditionType="RegexMatch" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="End of Fight" Id="fb7ff29e-32c7-48af-95d8-658f33ab25c4" RegularExpression="The Vault of Singing Crystal is no longer sealed">
                             <Actions>
                               <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="802c2e8c-97f6-47b4-8a3e-46a36014b9b3" TriggerForce="true" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="TTS" Id="8babdeef-3ab9-4236-bffa-9d22b313d01d" RegularExpression="^.{15}00:[^:]*:The [tT]rinity [aA]vowed readies (Hot [aA]nd Cold|Elemental Brand)">
                             <Actions>
@@ -601,54 +480,43 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:hotandcold}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="String" ExpressionR="Hot and Cold" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Get ${numeric:${var:currentTemp}*(-1)-${var:elementalBrand}}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:hotandcold}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                                   <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="String" ExpressionR="Elemental Brand" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="Reset" Id="802c2e8c-97f6-47b4-8a3e-46a36014b9b3" RegularExpression="^.{15}01">
                             <Actions>
                               <Action OrderNumber="1" LogLevel="-1" VariableName="hotandcold" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="HotColdText" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="None" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="Hot and Cold cast" Id="6d370681-7a19-46c7-8a47-1f818d55000c" RegularExpression="^.{15}00:[^:]*:The trinity avowed readies Hot [aA]nd Cold">
                             <Actions>
                               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="hotandcold" VariableExpression="${var:hotandcold}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetNumeric" VariableName="currentTemp" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="Temperature Check" Id="bc236287-0ca8-415b-af80-b3f04ed5cdb8" RegularExpression="^.{15}00:[^:]*:You suffer.{15}(?&lt;status&gt;Running Cold: (-1|-2)|Running Hot: (\+1|\+2)|Hot Brand: (\+1|\+2)|Cold Brand: (-1|-2))">
                             <Actions>
@@ -656,93 +524,76 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Running Hot: +1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetNumeric" VariableName="currentTemp" VariableExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Running Hot: +2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" VariableOp="SetNumeric" VariableName="currentTemp" VariableExpression="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Running Cold: -1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="4" LogLevel="-1" VariableOp="SetNumeric" VariableName="currentTemp" VariableExpression="-2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Running Cold: -2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="5" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Hot Brand: +1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="6" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Hot Brand: +2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="7" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Cold Brand: -1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="8" LogLevel="-1" VariableOp="SetNumeric" VariableName="elementalBrand" VariableExpression="-2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${status}" ExpressionTypeL="String" ExpressionR="Cold Brand: -2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="9" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Sequential="True" Name="Refresh State of Overlay" Id="48e80ab3-fcc1-4574-a060-f913555d7383" RegularExpression="HotColdFormatterTest">
                             <Actions>
                               <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" Description="This trigger is responsible for showing/hiding the overlay as needed as well as re-computing the text values." DescriptionOverride="True">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="HotColdTotal" VariableExpression="${numeric:${var:currentTemp}*(-1)-${var:elementalBrand}}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" VariableOp="SetString" VariableName="HotColdDirection" VariableExpression="Neutral" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:HotColdTotal}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="4" LogLevel="-1" VariableOp="SetString" VariableName="HotColdDirection" VariableExpression="Hot 🔥" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:HotColdTotal}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="5" LogLevel="-1" VariableOp="SetString" VariableName="HotColdDirection" VariableExpression="Cold ❄" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:HotColdTotal}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="6" LogLevel="-1" VariableOp="SetString" VariableName="HotColdCombinedText" VariableExpression="Get hit by ${var:HotColdDirection} ${numeric:abs(${numeric:${var:HotColdTotal}})}. Forced March: ${var:HotColdForcedMarch}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="7" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" Description="Edit the below action to move the overlay" DescriptionOverride="True">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="8" LogLevel="-1" UseTTSTextExpression="Get ${numeric:${var:currentTemp}*(-1)-${var:elementalBrand}}" TextAuraFontSize="12" TextAuraForeground="White" TextAuraBackground="Black" TextAuraOutline="#004000" TextAuraName="HotColdText" TextAuraExpression="${var:HotColdCombinedText}" TextAuraXIniExpression="1119" TextAuraYIniExpression="242" TextAuraWIniExpression="241" TextAuraHIniExpression="53" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Segoe UI" ActionType="TextAura">
                                 <Condition Enabled="true" Grouping="Or">
@@ -750,7 +601,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:elementalBrand}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:HotColdForcedMarch}" ExpressionTypeL="String" ExpressionR="None" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="9" LogLevel="-1" UseTTSTextExpression="Get ${numeric:${var:currentTemp}*(-1)-${var:elementalBrand}}" TextAuraOp="DeactivateAura" TextAuraFontSize="12" TextAuraForeground="White" TextAuraBackground="Black" TextAuraOutline="#004000" TextAuraName="HotColdText" TextAuraExpression="${var:HotColdCombinedText}" TextAuraXIniExpression="1119" TextAuraYIniExpression="242" TextAuraWIniExpression="241" TextAuraHIniExpression="53" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Segoe UI" ActionType="TextAura">
                                 <Condition Enabled="true" Grouping="Not">
@@ -758,11 +608,9 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${var:elementalBrand}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:HotColdForcedMarch}" ExpressionTypeL="String" ExpressionR="None" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -773,83 +621,60 @@
                             <Actions>
                               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="None" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="You suffer the effect of About Face." Id="37ba989d-6f1c-4fcf-bf1a-f90f3801f28d" RegularExpression="You suffer the effect of About Face.">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="forced march backwards, backwards" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="forced march backwards, backwards" ActionType="UseTTS" />
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="Backwards" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="You suffer the effect of Forward March." Id="fe1fff2c-bbeb-426f-83d9-d085665260dd" RegularExpression="You suffer the effect of Forward March.">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="forced march forward, easy clap" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="forced march forward, easy clap" ActionType="UseTTS" />
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="Forwards" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="You suffer the effect of Left Face" Id="9618ba51-bd7f-4fb7-a5dc-0a31fb4dba83" RegularExpression="You suffer the effect of Left Face">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="forced march left, left" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="forced march left, left" ActionType="UseTTS" />
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Name="You suffer the effect of Right Face." Id="857195fe-f6c9-4071-98b2-b3f57d39a380" RegularExpression="You suffer the effect of Right Face.">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="forced march right, right" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="forced march right, right" ActionType="UseTTS" />
                               <Action OrderNumber="2" LogLevel="-1" VariableOp="SetString" VariableName="HotColdForcedMarch" VariableExpression="Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="48e80ab3-fcc1-4574-a060-f913555d7383" TriggerForce="regexp,refire,parent,active" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -857,58 +682,41 @@
                     <Triggers>
                       <Trigger Enabled="true" Name="The trinity avowed readies Glory of Bozja." Id="4c86332b-9c46-498f-9cf2-9854f6189f09" RegularExpression="The trinity avowed readies Glory of Bozja.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="aoe with bleed" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe with bleed" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The trinity avowed readies Unseen Eye." Id="160d4cbe-42cf-49b9-a435-0139193c8699" RegularExpression="The trinity avowed readies Unseen Eye.">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Find Safe Spot" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="The trinity avowed readies Wrath of Bozja." Id="a1b690e6-c3a7-4cdb-8aee-f6edd2cc47f9" RegularExpression="The trinity avowed readies Wrath of Bozja.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="buster, tanks stack" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="buster, tanks stack" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="Like animals to slaughter, we shall cut you down." Id="3996b12b-731c-490b-ad4e-e53ff36ad51d" RegularExpression="Like animals to slaughter, we shall cut you down.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="get in front" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="get in front" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="No matter the cost, you must be dealt with." Id="5320429d-2d03-4783-80a3-c808257c23d8" RegularExpression="No matter the cost, you must be dealt with.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="get out, chariot" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="get out, chariot" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="Surrender now and perhaps we will show mercy." Id="7be78a50-ecd0-4a5c-9e2b-75b9d5806a16" RegularExpression="Surrender now and perhaps we will show mercy.">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="get behind" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="get behind" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -922,11 +730,9 @@
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" Description="Compiled by Wynn Dohz.&#xD;&#xA;Hot/Cold originally by Aya, text overlay + forced march additions by Wynn.&#xD;&#xA;Most basic callouts from the Reginae Regiment discord.&#xD;&#xA;Triggers with logic by Wynn." DescriptionOverride="True">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
