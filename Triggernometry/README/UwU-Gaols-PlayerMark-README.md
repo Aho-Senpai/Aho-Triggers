@@ -1,5 +1,11 @@
 # HOW TO SETUP UwU TITAN GAOLS  
 
+# PLEASE READ : 
+This has been moved out of the main repo temporarily, until fixed.  
+If you want to use it regardless, keep in mind that NO SUPPORT will be offered  
+If you wish to troubleshoot it, please go ahead and make a pull request or send me a DM with it fixed, as well as what you changed.
+#
+
 ## Step 1
 Make sure both your game's party list sorting and Triggernometry's party sorting matches.  
 Where do you find those ?  
