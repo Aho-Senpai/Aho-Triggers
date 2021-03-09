@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Network Logs](#network-logs)
+  - [Add/Remove Combatant : 03/04](#addremove-combatant--0304)
   - [StartCasting : 20](#startcasting--20)
   - [NetworkDeath : 25](#networkdeath--25)
   - [NetworkBuffGain : 26](#networkbuffgain--26)
@@ -17,10 +18,22 @@
 ```
 
 Here's a few things that are gonna be the same on all lines : 
-| Line ID |             Timestamp             |                                Data                                |           FFLogs Hash            |
-| :-----: | :-------------------------------: | :----------------------------------------------------------------: | :------------------------------: |
+| Line ID |             Timestamp             |                                 Data                                 |           FFLogs Hash            |
+| :-----: | :-------------------------------: | :------------------------------------------------------------------: | :------------------------------: |
 |   20    | 0000-00-00T00:00:00.0000000+00:00 | \|00000000\|Player Name\|05\|Teleport\|00000000\|Player Name\|5.00\| | 60e3acaf4f1e8af4a9cd32ae876521ea |
 
+
+## Add/Remove Combatant : 03/04
+
+```
+^03\|[^|]+\|(?<id>[^|]+)\|(?<name>[^|]+)?\|(?<jobID>[^|]+)\|(?<level>[^|]+)\|(?<petOwnerID>[^|]+)\|(?<worldID>[^|]+)\|(?<worldName>[^|]+)?\|(?<bnpcName>[^|]+)\|(?<bnpcBase>[^|]+)\|(?<currentHP>[^|]+)\|(?<maxHP>[^|]+)\|(?<currentMP>[^|]+)\|(?<maxMP>[^|]+)\|(?<currentTP>[^|]+)\|(?<maxTP>[^|]+)\|(?<xPos>[^|]+)\|(?<zPos>[^|]+)\|(?<yPos>[^|]+)\|(?<heading>[^|]+)\|
+```
+`level` is in HEX so : `0x50` = `80` for example.  
+`worldName` will be empty is `worldID` is `0`  
+`name` can be empty for some entities.  
+`bnpcName` and `bnpcBase` are entity model nameID and ID. For example, a training dummy can have different models.  
+
+(you will need to change the `03` to `04` in the regex if you need to use that line, other than that it's the same format)
 
 ## StartCasting : 20
 
