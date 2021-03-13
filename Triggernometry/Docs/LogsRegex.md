@@ -2,6 +2,7 @@
 
 <h2>Table of Contents</h2>
 
+- [IMPORTANT NOTE](#important-note)
 - [Network Logs](#network-logs)
   - [Add/Remove Combatant : 03/04](#addremove-combatant--0304)
   - [StartCasting : 20](#startcasting--20)
@@ -11,6 +12,18 @@
   - [NetworkBuffLoss : 30](#networkbuffloss--30)
 - [Encounter Logs](#encounter-logs)
 
+
+# IMPORTANT NOTE
+FFXIV parsing plugin doesn't send the `Timestamp` part of the line  
+Here's what it sends for those interested :
+```
+uint    sequence
+int     messagetype
+string  message
+```
+So, Triggernometry replaces the timestamp part of the line with the `sequence`.  
+This is mainly important as you don't want to skip a fixed 33 characters, else your regex doesn't match.  
+
 # Network Logs
 
 ```
@@ -18,9 +31,9 @@
 ```
 
 Here's a few things that are gonna be the same on all lines : 
-| Line ID |             Timestamp             |                                 Data                                 |           FFLogs Hash            |
-| :-----: | :-------------------------------: | :------------------------------------------------------------------: | :------------------------------: |
-|   20    | 0000-00-00T00:00:00.0000000+00:00 | \|00000000\|Player Name\|05\|Teleport\|00000000\|Player Name\|5.00\| | 60e3acaf4f1e8af4a9cd32ae876521ea |
+| Line ID |             Timestamp             |                               Data                               |           FFLogs Hash            |
+| :-----: | :-------------------------------: | :--------------------------------------------------------------: | :------------------------------: |
+|   20    | 0000-00-00T00:00:00.0000000+00:00 | 00000000\|Player Name\|05\|Teleport\|00000000\|Player Name\|5.00 | 60e3acaf4f1e8af4a9cd32ae876521ea |
 
 
 ## Add/Remove Combatant : 03/04
@@ -53,7 +66,7 @@ Here's a few things that are gonna be the same on all lines :
 | :-------: | :---------: | :-----: | :-------: | :-------: | :---------: | :-----------: |
 | 00000000  | Player Name |   05    | Teleport  | 00000000  | Player Name |     5.00      |
 ```
-^20\|.{33}\|(?<casterID>[A-F0-9]{8})\|(?<casterName>[^\|]{3,21})\|(?<castID>[A-F0-9]+)\|(?<castName>[^\|]+)\|(?<targetID>[A-F0-9]{8})\|(?<targetName>[^\|]+)\|(?<castDuration>[\d]+\.[\d]+)\|
+^20\|.*?\|(?<casterID>[A-F0-9]{8})\|(?<casterName>[^\|]{3,21})\|(?<castID>[A-F0-9]+)\|(?<castName>[^\|]+)\|(?<targetID>[A-F0-9]{8})\|(?<targetName>[^\|]+)\|(?<castDuration>[\d]+\.[\d]+)\|
 ```
 
 ## NetworkDeath : 25
@@ -67,7 +80,7 @@ Here's a few things that are gonna be the same on all lines :
 | 00000000 | Player Name | 00000000  | Player Name |
 
 ```
-^25\|.{33}\|(?<deadID>[^\|]{8})\|(?<deadName>[^\|]+)\|(?<killerID>[^\|]+)\|(?<killerName>[^\|]+)?\|
+^25\|.*?\|(?<deadID>[^\|]{8})\|(?<deadName>[^\|]+)\|(?<killerID>[^\|]+)\|(?<killerName>[^\|]+)?\|
 ```
 
 Note: `killerName` can be absent, in case `killerID` is `E0000000` (guessing this is the ID for "environemental")  
@@ -96,7 +109,7 @@ Note: `killerName` can be absent, in case `killerID` is `E0000000` (guessing thi
 | :-----: | :------------: | :-----------: | :-------: | :---------: | :-------: | :---------: | :-------------------------: | :-----------: | :-----------: |
 |   7d    | Raging Strikes |     20.00     | 00000000  | Player Name | 00000000  | Player Name |             00              |    106766     |    106766     |
 ```
-^26\|.{33}\|(?<buffID>[^\|]+)\|(?<buffName>[^\|]+)\|(?<buffDuration>[^\|]+)\|(?<casterID>[^\|]+)\|(?<casterName>[^\|]+)\|(?<targetID>[^\|]+)\|(?<targetName>[^\|]+)\|(?<buffStack>[^\|]+)\|(?<targetMaxHP>[^\|]+)\|(?<casterMaxHP>[^\|]+)\|
+^26\|.*?\|(?<buffID>[^\|]+)\|(?<buffName>[^\|]+)\|(?<buffDuration>[^\|]+)\|(?<casterID>[^\|]+)\|(?<casterName>[^\|]+)\|(?<targetID>[^\|]+)\|(?<targetName>[^\|]+)\|(?<buffStack>[^\|]+)\|(?<targetMaxHP>[^\|]+)\|(?<casterMaxHP>[^\|]+)\|
 ```
 ### 26: BuffStacks
 
