@@ -55,7 +55,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Divination" Id="ebac72cc-5683-46ae-97ba-92ab2e05803d" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):40A8:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -184,7 +184,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Assize" Id="aaf47499-4b58-445e-a567-5df597505db8" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):DF3:(?&lt;spell&gt;[^:]+):" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -300,7 +300,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Chain Stratagem" Id="d0bea137-7779-4e61-963f-5135dceb987e" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):1D0C:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -553,12 +553,13 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Miasma" Id="b918ff7b-01f6-4b52-9260-765b16498be9" RegularExpression="^26\|.*?\|(?&gt;b4|4bf)\|(?&lt;buffName&gt;[^\|]+)\|(?&lt;buffDuration&gt;[\d]+)\.[\d]+\|(?&lt;casterID&gt;[^\|]+)\|(?&lt;casterName&gt;[^\|]+)\|[^\|]+\|[^\|]+\|(?&lt;buffStack&gt;[^\|]+)\|" DebugLevel="Verbose" PeriodRefire="Deny" RefirePeriodExpression="500">
                     <Actions>
-                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot1" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${duration}-4.5,0)*1000)-500">
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot1" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${buffDuration}-4.5,0)*1000)-500">
+                        <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
                       <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="500" RefireInterrupt="True">
@@ -578,7 +579,7 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
                 </Triggers>
@@ -744,7 +745,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Triplecast" Id="6594de15-6211-4e26-b037-da24643bdecb" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):1CFD:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -893,7 +894,6 @@
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="(${duration}-10)*1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
@@ -991,7 +991,6 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -1002,7 +1001,6 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -1275,10 +1273,11 @@
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Caustic Bite/Venomous Bite tracker" Id="34a06397-2356-4e2e-b9a7-cb82fc093c7d" RegularExpression="^26\|.*?\|(?&gt;4b0|7c)\|(?&lt;buffName&gt;[^\|]+)\|(?&lt;buffDuration&gt;[\d]+)\.[\d]+\|(?&lt;casterID&gt;[^\|]+)\|(?&lt;casterName&gt;[^\|]+)\|[^\|]+\|[^\|]+\|(?&lt;buffStack&gt;[^\|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="500">
                     <Actions>
-                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot1" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${duration}-5,0)*1000)-500" RefireInterrupt="True">
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot1" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${buffDuration}-5,0)*1000)-500" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="500" RefireInterrupt="True">
+                      <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="500" RefireInterrupt="True">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${var:dot2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
                         </Condition>
@@ -1295,15 +1294,16 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stormbite/Windbite tracker" Id="7f9674c6-f93c-4c9b-9a4a-bc3e483d5237" RegularExpression="^26\|.*?\|(?&gt;4b1|81)\|(?&lt;buffName&gt;[^\|]+)\|(?&lt;buffDuration&gt;[\d]+)\.[\d]+\|(?&lt;casterID&gt;[^\|]+)\|(?&lt;casterName&gt;[^\|]+)\|[^\|]+\|[^\|]+\|(?&lt;buffStack&gt;[^\|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="500">
                     <Actions>
-                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot2" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${duration}-5,0)*1000)-500" RefireInterrupt="True">
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="dot2" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" ExecutionDelayExpression="(max(${buffDuration}-5,0)*1000)-500" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="500" RefireInterrupt="True">
+                      <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="500" RefireInterrupt="True">
                         <Condition Enabled="true" Grouping="And">
                           <ConditionSingle Enabled="true" ExpressionL="${var:dot1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
                         </Condition>
@@ -1314,7 +1314,7 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
                 </Triggers>
@@ -1432,7 +1432,6 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -1559,7 +1558,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Hallowed Ground" Id="15cf2fd8-8f1c-4210-8f05-d306b5e67f8a" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):1E:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -1711,7 +1710,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Thrill of Battle" Id="243280d8-65d5-4c22-9318-3079b48af78a" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):28:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
