@@ -8,7 +8,8 @@ Download the [file](Raid%20Buffs.xml).
 
 ### Step 2
 
-Import the file ![Import Picture](README%20Resources/ACT%20Import.PNG)
+Import the file  
+![Import Picture](README%20Resources/ACT%20Import.PNG)
 
 ### Step 3
 
@@ -30,8 +31,8 @@ First, let's ignore the first part `(?#-- Trick Attack --)` as it's a [comment](
 So, we are left with the "actual" REGEX :  
 `\A1[56]:[A-F0-9]{8}:[^:]*:8D2:(?<name>[^:]*):`  
 Now, Time to break it down into parts:  
-`\A`|`1[56]`|`[A-F0-9]{8}`|`[^:]*`|`8D2`|`(?<name>[^:]*)`
----|---|---|---|---|---
+| `\A` | `1[56]` | `[A-F0-9]{8}` | `[^:]*` | `8D2` | `(?<name>[^:]*)` |
+| ---- | ------- | ------------- | ------- | ----- | ---------------- |
 
 `\A` : is ensuring us that it's only gonna match the start of the line, it's mainly to make the REGEX faster and more efficient  
 

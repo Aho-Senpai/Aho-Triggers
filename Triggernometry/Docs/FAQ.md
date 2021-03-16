@@ -16,6 +16,8 @@
   - [What do the colors/icons mean ?](#what-do-the-colorsicons-mean-)
   - [About "Fire" (Force/Test Fire)](#about-fire-forcetest-fire)
   - [How do I change the TTS voice ?](#how-do-i-change-the-tts-voice-)
+  - [How do i make a trigger ?](#how-do-i-make-a-trigger-)
+  - [How do i add an action to a trigger ?](#how-do-i-add-an-action-to-a-trigger-)
 - [Making Triggers: Basics](#making-triggers-basics)
   - [Accessing Regex Groups](#accessing-regex-groups)
   - [Adding Conditions to a Trigger](#adding-conditions-to-a-trigger)
@@ -134,6 +136,22 @@ Here, you have a few options :
 
 - Change windows TTS voice (ACT -> Options -> Sound Settings -> "Text to Speech Control Pannel Applet")
 - Install a TTS plugin (such as yukkuri (part of [Hojoring](https://github.com/anoyetta/ACT.Hojoring)))
+
+## How do i make a trigger ?
+
+- Select the folder where you want to add a trigger  
+- Top Right > `Add`  
+- `Trigger`
+- Now, at least give it a name and `Save`
+- Congratulations, you created a trigger.
+
+## How do i add an action to a trigger ?
+
+- Select the desired trigger
+- In the `Trigger action` tab (the one open by default) select `Add action`
+- At the top of the new window, select the action type in the list
+- Now make the action do what you want.
+- Congratulations, you created a trigger action.
 
 # Making Triggers: Basics
 
