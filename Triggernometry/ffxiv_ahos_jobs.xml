@@ -880,7 +880,6 @@
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="(${buffDuration}-10)*1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
@@ -975,22 +974,24 @@
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Chaos Thrust" Id="71dc5cdb-a2a1-4b78-afa4-5502b107d4b6" RegularExpression="^26\|.*?\|(?&gt;76)\|(?&lt;buffName&gt;[^\|]+)\|(?&lt;buffDuration&gt;[\d]+)\.[\d]+\|(?&lt;casterID&gt;[^\|]+)\|(?&lt;casterName&gt;[^\|]+)\|[^\|]+\|[^\|]+\|(?&lt;buffStack&gt;[^\|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="19000" RefireInterrupt="True">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                    </Condition>
+                    <Condition Enabled="false" Grouping="And" />
+                    <Conditions />
                   </Action>
                 </Actions>
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Disembowel" Id="4229a57e-c42b-4b47-b840-c66cf518b05b" RegularExpression="^26\|.*?\|(?&gt;77a)\|(?&lt;buffName&gt;[^\|]+)\|(?&lt;buffDuration&gt;[\d]+)\.[\d]+\|(?&lt;casterID&gt;[^\|]+)\|(?&lt;casterName&gt;[^\|]+)\|[^\|]+\|[^\|]+\|(?&lt;buffStack&gt;[^\|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${buffName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="19000" RefireInterrupt="True">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                    </Condition>
+                    <Condition Enabled="false" Grouping="And" />
+                    <Conditions />
                   </Action>
                 </Actions>
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
               </Trigger>
               <Trigger Enabled="true" Name="Dragon Sight" Id="c2e9c499-9061-4df0-a8eb-dce52e15df34" RegularExpression="\[.{14}1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):1CE6:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
