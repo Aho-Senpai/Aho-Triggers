@@ -7,6 +7,7 @@
   - [Where do i get those "repos" ?](#where-do-i-get-those-repos-)
   - [I have an issue with <x> trigger/repo !](#i-have-an-issue-with-x-triggerrepo-)
   - [How can I help ?](#how-can-i-help-)
+  - [Discord Callouts Ready](#discord-callouts-ready)
 - [Triggernometry FAQ](#triggernometry-faq)
   - [How to install Triggernometry ?](#how-to-install-triggernometry-)
   - [How do i update Triggernometry ?](#how-do-i-update-triggernometry-)
@@ -65,9 +66,23 @@ You can:
 
 You can :
 
--   Provide logs (ideally using a [gist](https://gist.github.com/))
+-   Provide logs (ideally using a [gist](https://gist.github.com/) or any pastebin-like [Pastebin](https://pastebin.com/), [Paste.gg](https://paste.gg/), or any of your choice)
 -   Provide information on what ability does what (at least for the more "common" mechanics, like raid-wide damage or tank-busters)
 -   [CONTRIBUTE](./CONTRIBUTE.md)
+
+## Discord Callouts Ready
+
+__<ins>IMPORTANT:</ins>__ This assumes you alreaady have a discord bot as well as [Makar8000 Plugin setup](https://github.com/Makar8000/ACT-Discord-Triggers/wiki/First-Time-Setup-Guide) (ACT Discord Triggers)
+
+You will also need to have set the options in `Options > Edit configuration > audio > ACT hooks` to be checked.
+
+So, now that you do, what's this about ? well, mainly the `Raid` repo has callouts meant with this in mind : having them go through a discord bot.  
+
+Well, all the relevant callouts at least. All the more personal callouts will stay "local" (aka, not go through the discord bot).  
+
+"I don't use a discord bot, how does this affect me?" -> it doesn't.  
+"I don't want this behavious to happen, how do i do that ?" -> you can set the 'Audio output setting override' to 'on'.
+
 
 # Triggernometry FAQ
 
