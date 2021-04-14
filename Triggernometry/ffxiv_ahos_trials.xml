@@ -1600,81 +1600,64 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="P1 SPREAD (to change regex to not use chat later)" Id="4a939e72-d016-4276-bba5-a4e6aa7e520c" RegularExpression="^00\|[^\|]*?\|0044\|Familiar Male Voice\|Accessing Emerald Weapon data, deploying beam units! This is for you, Rex!\|">
-                        <Actions>
-                          <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="P1 STACK (to change to not use chat line later)" Id="31654842-2adb-4702-99ae-163c57bd4cac" RegularExpression="^00\|[^\|]*?\|0044\|Familiar Male Voice\|Accessing Sapphire Weapon data, opening chest armor! I won't let you down, Ricon!\|">
-                        <Actions>
-                          <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="STACK" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P1 Swap Sides (to change to not use chat lines later)" Id="da70c7c7-3d06-4d07-95e5-e83e9bf104c7" RegularExpression="^00\|[^\|]*?\|0044\|Familiar Male Voice\|Accessing Ruby Weapon data, deploying claws! Milisandia, grant me your strength!\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Swap Sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P1 Tank AoE" Id="defdc4d9-348f-4842-a4cd-cd7277aec2e8" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5FCA\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="5000">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get away from tanks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Adamant Purge" Id="d0513bd1-ef35-4b08-9c1b-6e2e43357358" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5FA5\|">
+                      <Trigger Enabled="true" Name="Adamant Purge" Id="d0513bd1-ef35-4b08-9c1b-6e2e43357358" RegularExpression="^\[.{14}14:5F(?&lt;move&gt;9B|A[2-5]):">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Avoid slice" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="And" />
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9B" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A[23]" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A[45]" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                            </Condition>
                             <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P1 Diamond Shrapnel" Id="bdf54fd8-6668-46c2-b0eb-c884fb462f59" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5F(?&gt;AC|CB)\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Run out with mark" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P1 Adamant Sphere" Id="58fd0ef8-b7a8-4598-870b-3a2e69686e34" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|6144\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Soak towers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1685,51 +1668,41 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P2 Knockback" Id="422aaa68-b83e-4c34-9f00-825bed653f5d" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5FB7\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Go to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P2 Laser Charge" Id="37de84f2-f358-4aea-9f21-00d318ecc921" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5F(?&gt;C1|A9)\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Check lasers go to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P2 Raidwide" Id="90558ad9-5ad1-45a6-8b42-1d9de9758172" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5FBC\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="P2 Tankswap" Id="a0aca9f1-6bd3-4a44-a39a-9e816599decb" RegularExpression="^20\|[^\|]*?\|[^\|]{8}\|[^\|]*?\|5FBD\|">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Tank swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1739,11 +1712,9 @@
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Check Tethers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
