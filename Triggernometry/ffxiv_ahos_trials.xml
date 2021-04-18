@@ -1600,7 +1600,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1615,7 +1614,11 @@
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="P1 Tank AoE" Id="defdc4d9-348f-4842-a4cd-cd7277aec2e8" RegularExpression="^20\|[^\|]*?\|[^\|]*?\|[^\|]*?\|5FCA\|[^\|]*?\|[^\|]*?\|(?&lt;target&gt;[a-zA-Z-' ]{3,21})\|">
                         <Actions>
-                          <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get away from ${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="buster - away from tanks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Get away from ${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
                             <Conditions />
                           </Action>
@@ -1628,42 +1631,36 @@
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9A" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="Avoid slice - red safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9B" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread - blue safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A2" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread - red safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A3" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="5" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Stack - blue safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A4" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="6" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Stack - red safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="A5" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="P1 Diamond Shrapnel" Id="bdf54fd8-6668-46c2-b0eb-c884fb462f59" RegularExpression="\[.{14}14:5F(?&gt;AC|CB):">
+                      <Trigger Enabled="true" Name="P1 Diamond Shrapnel" Id="bdf54fd8-6668-46c2-b0eb-c884fb462f59" RegularExpression="\[.{14}14:5F(?&gt;AC|CB):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Run out with mark" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1676,12 +1673,11 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Soak towers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Flood Ray (cleave?)" Id="645daef5-c160-44db-b323-44630ebc3687" RegularExpression="\[.{14}14:5FA6:">
+                      <Trigger Enabled="false" Name="Flood Ray (cleave?)" Id="645daef5-c160-44db-b323-44630ebc3687" RegularExpression="\[.{14}14:5FA6:">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="clock positions" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1689,7 +1685,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1700,7 +1695,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1709,7 +1703,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Go to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1718,7 +1711,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Check lasers go to safe spot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1727,7 +1719,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1736,7 +1727,6 @@
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Tank swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -1749,7 +1739,6 @@
                     <Actions>
                       <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Check Tethers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -1765,59 +1754,49 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="004F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0050" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0051" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0052" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="5" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0053" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="6" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0054" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="7" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0055" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="8" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${markerId}" ExpressionTypeL="String" ExpressionR="0056" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="9" LogMessageText="${name} ${markerId}" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="LogMessage">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
