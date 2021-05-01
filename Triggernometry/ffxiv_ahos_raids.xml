@@ -5810,85 +5810,111 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# UCOB Settings" Id="c2861d0c-63cb-4519-8b52-8971dc22be5d" RegularExpression="01\|.*?\|2dd\|the Unending Coil of Bahamut \(Ultimate\)\|" EditAutofire="True">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# UCOB Settings" Id="c2861d0c-63cb-4519-8b52-8971dc22be5d" RegularExpression="01\|.*?\|2dd\|the Unending Coil of Bahamut \(Ultimate\)" EditAutofire="True">
                         <Actions>
                           <Action OrderNumber="1" AuraName="UCOB-ImagePlacer" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/AST.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="500" Description="^^ ONLY EDIT THE ACTIONS ABOVE ^^" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" VariableOp="SetNumeric" VariableName="UCOB-Tenstrike" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image X" TableVariableX="3" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="5" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image Y" TableVariableX="4" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="6" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].x}" TableVariableX="3" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="7" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].y}" TableVariableX="4" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="8" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="NAME" TableVariableX="1" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="9" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="JOB" TableVariableX="2" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="10" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].name}" TableVariableX="1" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="11" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].name}" TableVariableX="1" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="12" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].name}" TableVariableX="1" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="13" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].name}" TableVariableX="1" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="14" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].name}" TableVariableX="1" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="15" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].name}" TableVariableX="1" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="16" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].name}" TableVariableX="1" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="17" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].name}" TableVariableX="1" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="18" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].job}" TableVariableX="2" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="19" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].job}" TableVariableX="2" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="20" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].job}" TableVariableX="2" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="21" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].job}" TableVariableX="2" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="22" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].job}" TableVariableX="2" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="23" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].job}" TableVariableX="2" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="24" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].job}" TableVariableX="2" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="25" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].job}" TableVariableX="2" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="26" AuraOp="DeactivateAura" AuraName="UCOB-ImagePlacer" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="500">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
