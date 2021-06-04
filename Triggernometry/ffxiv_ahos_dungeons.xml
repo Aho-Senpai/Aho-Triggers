@@ -7,20 +7,23 @@
           <Folder ZoneFilterEnabled="True" Id="988546fb-f7a0-462f-95e3-25e779c40ae2" ZoneFilterRegularExpression="Amdapor\ Keep\ \(Hard\)" Name="50 - Amdapor Keep (Hard)" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Invisible" Id="fee0cc7c-8993-4c27-bdf0-a5275bcae8f4" RegularExpression="The boogyman uses Invisible." RefirePeriodExpression="5000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Invisible" Id="fee0cc7c-8993-4c27-bdf0-a5275bcae8f4" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|C63\|" RefirePeriodExpression="5000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Kill luminescence and stay close to boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Entrance" Id="241faadf-3d1d-4890-88c7-bd77a1ef4a95" RegularExpression="The boogyman readies Entrance.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Entrance" Id="241faadf-3d1d-4890-88c7-bd77a1ef4a95" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|C65\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Mob Imobilize" Id="c50879f7-2048-44c2-8fbe-2d41e21cb72d" RegularExpression="suffer the effect of *.(Death Throes|Fetters).">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mob Imobilize" Id="c50879f7-2048-44c2-8fbe-2d41e21cb72d" RegularExpression="^26\|[^|]*\|(29b|260)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Kill Add" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
@@ -57,9 +60,7 @@
             <Triggers>
               <Trigger Enabled="true" Name="14:387:Chudo-Yudo starts using Swinge on Chudo-Yudo" Id="83206291-97bc-4b0e-ac96-d86b302ecb98" RegularExpression="\[.{14}14:387:">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -67,11 +68,9 @@
                 <Actions>
                   <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -112,33 +111,28 @@
           <Folder ZoneFilterEnabled="True" Id="fa9d008c-bd92-47bb-92b6-40ae726bd66a" ZoneFilterRegularExpression="Cutter's\ Cry" Name="38 - Cutter's Cry" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="14:5A2:Chimera starts using The Dragon's Voice" Id="6f8dac78-7945-46a8-86f0-ad1e1772425a" RegularExpression="\[.{14}14:5A2:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dragon's Voice" Id="6f8dac78-7945-46a8-86f0-ad1e1772425a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|5A2\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Melee Range" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Melee Range" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="14:450:Chimera starts using The Ram's Voice" Id="4284ff20-f8c1-4791-9ef2-b1b4b24079e2" RegularExpression="\[.{14}14:450:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ram's Voice" Id="4284ff20-f8c1-4791-9ef2-b1b4b24079e2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|450\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Go OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Go OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="6d02b1e6-086e-44a5-a718-58f204e7cb85" Name="35 - The Sunken Temple of Quarn" Enabled="true">
+          <Folder ZoneFilterEnabled="True" Id="6d02b1e6-086e-44a5-a718-58f204e7cb85" ZoneFilterRegularExpression="^The\ Sunken\ Temple\ Of\ Qarn$" Name="35 - The Sunken Temple of Quarn" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Doom" Id="ccfcb14c-30f9-4e99-a2b4-6a9c79fdf910" RegularExpression="\[.{14}1[AE]:[\w]{8}:(?&lt;player&gt;[\w-' ]+) (?&lt;effect&gt;(gains|loses)) the effect of Doom">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom" Id="ccfcb14c-30f9-4e99-a2b4-6a9c79fdf910" RegularExpression="^(21|22)\|[^|]*\|[^|]*\|[^|]*\|3A6\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]+)">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Step on glowing plate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                      <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="gains" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                     <Conditions />
                   </Action>
@@ -147,10 +141,10 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="187e42b5-fb0c-4539-866e-800510744c40" Name="47 - Aurum Vale" Enabled="true">
+          <Folder ZoneFilterEnabled="True" Id="187e42b5-fb0c-4539-866e-800510744c40" ZoneFilterRegularExpression="^The\ Aurum\ Vale$" Name="47 - Aurum Vale" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="100-Tonze Swing - GET OUT" Id="63d9ffe9-3329-4e36-a26d-f05f12dbd96d" RegularExpression="14:274:Coincounter starts using 100-Tonze Swing on Coincounter">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="100-Tonze Swing - GET OUT" Id="63d9ffe9-3329-4e36-a26d-f05f12dbd96d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|274\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="GET OUT GET OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -158,7 +152,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="100-Tonze Swip - TB" Id="bc8601bd-3b4c-4c9b-981b-bbf1faf7e3cd" RegularExpression="14:40B:Coincounter starts using 100-Tonze Swipe on Coincounter">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="100-Tonze Swipe - TB" Id="bc8601bd-3b4c-4c9b-981b-bbf1faf7e3cd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|40B\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -166,7 +160,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Eye Of The Beholder - Go Behind" Id="9b4769d0-5894-4e11-a0ab-108b2a2dbaf2" RegularExpression="14:277:Coincounter starts using Eye Of The Beholder on Coincounter">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eye Of The Beholder - Go Behind" Id="9b4769d0-5894-4e11-a0ab-108b2a2dbaf2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|277\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -174,7 +168,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Glower - Out of Front" Id="c524b431-a9a3-4666-be2d-dfe94a6e7db9" RegularExpression="14:275:Coincounter starts using Glower on Coincounter">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Glower - Out of Front" Id="c524b431-a9a3-4666-be2d-dfe94a6e7db9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|275\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -184,7 +178,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="06ea6379-3d54-493d-ab41-82531f2dba23" Name="28 - Haukke Manor" Enabled="true">
+          <Folder ZoneFilterEnabled="True" Id="06ea6379-3d54-493d-ab41-82531f2dba23" ZoneFilterRegularExpression="^Haukke\ Manor$" Name="28 - Haukke Manor" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Kill Second Boss - Use Return" Id="0ea9c68d-3d6b-4e9c-bfc4-2c90e705122b" RegularExpression="0839:The Yellow Hall is no longer sealed!">
@@ -836,12 +830,12 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="34359738368" Id="fdf8bbe5-ba22-4b4e-b6e6-a170de1a7f80" Name="# - BLU - Masked Carnival" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="34359738368" ZoneFilterEnabled="True" Id="fdf8bbe5-ba22-4b4e-b6e6-a170de1a7f80" ZoneFilterRegularExpression="^All's\ Well\ That\ Starts\ Well$" Name="# - BLU - Masked Carnival" Enabled="true">
         <Folders>
           <Folder Id="49cc0f6d-c86c-4afe-8073-0448cb46f78a" Name="25" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Ram's Voice" Id="7c864475-8c5b-434f-9e33-68a273c67cbb" RegularExpression="14:39AB:Azulmagia starts using The Ram's Voice on Azulmagia">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ram's Voice" Id="7c864475-8c5b-434f-9e33-68a273c67cbb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|39AB\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -854,7 +848,7 @@
           <Folder Id="2bdc4103-930e-4852-86c4-7c3ab682aec4" Name="15" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="high voltage" Id="af9b01d0-7d6f-467f-a8e9-1200f9c8d0a5" RegularExpression="14:3A2A:Bestial Node starts using High Voltage on Bestial Node">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="high voltage" Id="1a432315-3c08-42e3-8e9b-73c82b1be61d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3A2A\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="interupt" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -867,7 +861,7 @@
           <Folder Id="4924cd71-a90d-485d-a04b-a3e0aa9b6b50" Name="16" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="111-Tonze swing" Id="a05bdee2-f420-4486-acbc-3b01c1f1949e" RegularExpression="14:3A18:Tikbalang starts using 111-Tonze Swing on Tikbalang">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="111-Tonze swing" Id="a05bdee2-f420-4486-acbc-3b01c1f1949e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3A18\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -880,7 +874,7 @@
           <Folder Id="6bb39f09-b253-495b-9f1e-a847d5ac37c7" Name="17" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Magitek Field" Id="10aef824-5da9-47c7-8b13-6792e17763bf" RegularExpression="14:3AC9:Kreios starts using Magitek Field on Kreios">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Magitek Field" Id="10aef824-5da9-47c7-8b13-6792e17763bf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3AC9\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="interupt" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -893,7 +887,7 @@
           <Folder Id="20fa92ad-afe4-4d34-9a8c-d0c47d30ea91" Name="20" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="snort" Id="9153adea-7fb9-4d07-90c3-081a776dce89" RegularExpression="14:3970:Typhon starts using Snort on Typhon">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="snort" Id="9153adea-7fb9-4d07-90c3-081a776dce89" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3970\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="diamondback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -901,7 +895,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="imp song" Id="0da6fb61-fbbc-498a-ad0d-d1d274ae0487" RegularExpression="14:(?&gt;3978|3998):Ultros starts using Imp Song">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="imp song" Id="0da6fb61-fbbc-498a-ad0d-d1d274ae0487" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3978\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="silence" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
