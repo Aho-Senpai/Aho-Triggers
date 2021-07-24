@@ -4,7 +4,8 @@
 
 ### Step 1  
 
-Download the [file](Raid%20Buffs.xml).
+Download the file you want : [Raid Buffs]() or [Nael RP Quotes]().
+<!-- TODO: description on how to download the file -->
 
 ### Step 2
 
