@@ -1600,10 +1600,11 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Critical Engagement" Id="9d368fd6-dd61-4aec-a135-0b9bf561b12b" RegularExpression="\[.{14}00:0039:Resistance forces have initiated a critical engagement nearby. You have been granted permission to engage the enemy.&#xA;">
+                      <Trigger Enabled="false" Name="Critical Engagement" Id="9d368fd6-dd61-4aec-a135-0b9bf561b12b" RegularExpression="\[.{14}00:0039:Resistance forces have initiated a critical engagement nearby. You have been granted permission to engage the enemy.">
                         <Actions>
                           <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Critical Engagement" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
