@@ -816,13 +816,14 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="4d5272f3-33b9-42b1-8247-47e816d3f44b" ZoneFilterRegularExpression="Alexander\ -\ The\ Eyes\ Of\ The\ Creator" Name="09 - Alexander - The Eyes Of The Creator" Enabled="true">
+              <Folder ZoneFilterEnabled="True" Id="4d5272f3-33b9-42b1-8247-47e816d3f44b" ZoneFilterRegularExpression="^Alexander\ -\ The\ Eyes\ Of\ The\ Creator" Name="09 - Alexander - The Eyes Of The Creator" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Scrap Burst" Id="eb4c0aff-dec7-48e3-96fd-5a6dfcd41ea0" RegularExpression="Refurbisher 0 readies Scrap Burst" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Scrap Burst" Id="eb4c0aff-dec7-48e3-96fd-5a6dfcd41ea0" RegularExpression="20\|[^|]*\|[^|]*\|[^|]*\|1A3A\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="hide hide hide" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="Scrapline" Id="1b7a0c7c-0259-4291-9afd-7433da264a2b" RegularExpression="Refurbisher 0 readies Scrapline" DebugLevel="Info">
                     <Actions>
@@ -946,7 +947,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="67d9008b-99bd-40dc-b218-698c864c0c7f" ZoneFilterRegularExpression="Alexander\ -\ The\ Fist\ Of\ The\ Father" Name="01 - Gordias - The Fist Of The Father" Enabled="false">
+              <Folder ZoneFilterEnabled="True" Id="67d9008b-99bd-40dc-b218-698c864c0c7f" ZoneFilterRegularExpression="Alexander\ -\ The\ Fist\ Of\ The\ Father" Name="01 - Gordias - The Fist Of The Father" Enabled="true">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Name="Hydrothermal Missile" Id="acd8b0d7-fdb8-4086-99ee-5d2003031ed2" RegularExpression="14:1119:Oppressor starts using Hydrothermal Missile on Oppressor">
@@ -975,15 +976,15 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="2faadf0e-d8e9-49d6-b4d7-d2ffe73448c4" ZoneFilterRegularExpression="Alexander\ -\ The\ Cuff\ Of\ The\ Father" Name="02 - Gordias - The Cuff Of The Father" Enabled="false">
+              <Folder ZoneFilterEnabled="True" Id="2faadf0e-d8e9-49d6-b4d7-d2ffe73448c4" ZoneFilterRegularExpression="Alexander\ -\ The\ Cuff\ Of\ The\ Father" Name="02 - Gordias - The Cuff Of The Father" Enabled="true">
                 <Folders />
                 <Triggers />
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="ae221266-a116-4d2b-a5a4-eabd5c42adb7" ZoneFilterRegularExpression="Alexander\ -\ The\ Arm\ Of\ The\ Father" Name="03 - Gordias - The Arm Of The Father" Enabled="false">
+              <Folder ZoneFilterEnabled="True" Id="ae221266-a116-4d2b-a5a4-eabd5c42adb7" ZoneFilterRegularExpression="Alexander\ -\ The\ Arm\ Of\ The\ Father" Name="03 - Gordias - The Arm Of The Father" Enabled="true">
                 <Folders />
                 <Triggers />
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="e648c79a-c7f5-4b9e-a9ca-094a21302c8b" ZoneFilterRegularExpression="Alexander\ -\ The\ Burden\ Of\ The\ Father" Name="04 - Gordias - The Burden Of The Father" Enabled="false">
+              <Folder ZoneFilterEnabled="True" Id="e648c79a-c7f5-4b9e-a9ca-094a21302c8b" ZoneFilterRegularExpression="Alexander\ -\ The\ Burden\ Of\ The\ Father" Name="04 - Gordias - The Burden Of The Father" Enabled="true">
                 <Folders />
                 <Triggers />
               </Folder>
@@ -1258,190 +1259,307 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder ZoneFilterEnabled="True" Id="449974cf-d015-4b20-9f70-43b4b6f3e3d3" ZoneFilterRegularExpression="Sigmascape\ \(?V4\.0\)?" Name="08 - Sigmascape V4.0" Enabled="true">
+              <Folder ZoneFilterEnabled="True" Id="449974cf-d015-4b20-9f70-43b4b6f3e3d3" ZoneFilterRegularExpression="^Sigmascape\ \(?V4\.0\)?" Name="08 - Sigmascape V4.0" Enabled="true">
                 <Folders>
                   <Folder ZoneFilterEnabled="True" Id="0813f09e-a39b-4c8f-8d9e-4a77ab913587" ZoneFilterRegularExpression="Sigmascape\ V4\.0\ \(Savage\)" Name="Sigmascape V4.0 Savage" Enabled="true">
-                    <Folders>
-                      <Folder Id="3d5ea448-d65e-4685-a125-8e2d454051a9" Name="Jester's Antics" Enabled="true">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Name="Kefka readies Mana Release" Id="00f92430-6da1-479b-a73f-597c468ce41f" RegularExpression="Kefka readies Mana Release">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="${var:voice}, ${var:voice2}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Fire (Spread)" Id="39f7ea01-3998-492d-bb48-5cd0b4cc43b6" RegularExpression=":Kefka:28CF:Flagrant Fire:" PeriodRefire="Deny" RefirePeriodExpression="1000">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="voice" VariableExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Fire (Stack)" Id="be89f422-9a0e-4543-a912-1be8b384359d" RegularExpression=":Kefka:28D0:Flagrant Fire:" PeriodRefire="Deny" RefirePeriodExpression="1000">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="voice" VariableExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Blizzard (AOE Donut)" Id="76c93713-2fb2-4beb-ae6a-bd44769992ea" RegularExpression=":Kefka:28C[59]:Blizzard Blitz:">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="blizzard" VariableExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Blizzard (AOE Inside)" Id="f7c120c8-d0e3-4a48-8f7b-b82bd06b214a" RegularExpression=":Kefka:28C[48]:Blizzard Blitz:">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="blizzard" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Kefka readies Mana Charge" Id="bb7d0ac4-8792-4fe2-a333-a2b8c9f64a5d" RegularExpression="Kefka readies Mana Charge">
-                            <Actions>
-                              <Action OrderNumber="1" VariableName="voice" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                              <Action OrderNumber="2" VariableName="voice2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                              <Action OrderNumber="3" VariableName="real" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                              <Action OrderNumber="4" VariableName="blizzard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Thunder (Dodge)" Id="b67e627e-5325-4157-9dd3-b2c42a5d4ad2" RegularExpression="15:[0-9A-F]{8}:Kefka:[0-9A-F]{4}:Thrumming Thunder:.*(:11:5CF0000:1C:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="voice" VariableExpression="Dodge Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Thunder (Intersect)" Id="60e26078-c127-472a-a003-4e779c5774d9" RegularExpression="15:[0-9A-F]{8}:Kefka:[0-9A-F]{4}:Thrumming Thunder:.*(:11:5CE0000:1C:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="voice" VariableExpression="Intersect Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Blizzard (Real)" Id="4f92bb80-e6e7-4fa9-9f71-0b4b759436d5" RegularExpression="15:[0-9A-F]{8}:Kefka:[0-9A-F]{4}:Blizzard Blitz:.*(:11:5CF0000:1C:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="real" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Blizzard (Fake)" Id="d86d5640-6eaa-442c-b8db-a8f56d875a8e" RegularExpression="15:[0-9A-F]{8}:Kefka:[0-9A-F]{4}:Blizzard Blitz:.*(:11:5CE0000:1C:)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="real" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Kefka readies Graven Image" Id="93781996-9424-4b56-9782-2dd18d54ec47" RegularExpression="Kefka readies Graven Image">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="voice2" VariableExpression="Inside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
-                                <Condition Enabled="true" Grouping="And">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:real}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:blizzard}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" VariableOp="SetString" VariableName="voice2" VariableExpression="Outside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
-                                <Condition Enabled="true" Grouping="And">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:real}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:blizzard}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="3" VariableOp="SetString" VariableName="voice2" VariableExpression="Outside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
-                                <Condition Enabled="true" Grouping="And">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:real}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:blizzard}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="4" VariableOp="SetString" VariableName="voice2" VariableExpression="Inside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
-                                <Condition Enabled="true" Grouping="And">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:real}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:blizzard}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                                </Condition>
-                              </Action>
-                            </Actions>
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                    </Folders>
+                    <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Wings Of Destruction Dual" Id="51143c92-05cb-4289-8d2b-ce3be02b4cfc" RegularExpression="14:2900:Kefka starts using Wings Of Destruction on Kefka">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wings Of Destruction Dual" Id="51143c92-05cb-4289-8d2b-ce3be02b4cfc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2900\|">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="max melee" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Indulgent Will" Id="edf07ddb-551a-4893-8f0c-a7f9665180ec" RegularExpression="Graven Image starts using Indulgent Will on Natyusha">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Outside" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Idyllic Will" Id="076100e0-86af-4b27-8931-d189edab539f" RegularExpression="Graven Image starts using Idyllic Will on Natyusha">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="inside" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Trine" Id="de13ba8f-e1e1-47a3-944c-be628df765fd" RegularExpression="14:290D:Kefka starts using Trine on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="trine" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Pasts Forgotten" Id="bb3b11b9-61b5-4ccc-a6e4-926fa1e60c9d" RegularExpression="Kefka readies Pasts Forgotten">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="stack . stay" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Past's End" Id="a819a1ea-9c3f-496b-b178-99958108b3c1" RegularExpression="14:28F7:Kefka starts using Past's End on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="charge . middle" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Mana Charge" Id="c42df98a-9eeb-422d-981e-914a1479a280" RegularExpression="Kefka readies Mana Charge">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="truth check" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Futures Numbered" Id="8cbac01b-f4a2-4883-8d4a-721c1de767ca" RegularExpression="14:28EE:Kefka starts using Futures Numbered on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="stack . behind" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Future's End" Id="7b9ffc14-cab7-4f96-8368-33e3b1010ec3" RegularExpression="Kefka readies Future's End">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="charge . stay" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Forsaken" Id="a3851f48-7954-4c5e-819c-8b597eb5c209" RegularExpression="14:28E9:Kefka starts using Forsaken on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="top off" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Wings Of Destruction Right" Id="45b1a8c3-fb7e-432c-b6d9-9ae3113f96fa" RegularExpression="14:28FF:Kefka starts using Wings Of Destruction on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="right cut" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Wings Of Destruction Left" Id="dcd66abd-3e32-475a-8297-e71dd25648f0" RegularExpression="14:28FE:Kefka starts using Wings Of Destruction on Kefka">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="left cut" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Hyper Drive" Id="a6c18245-1de7-4258-9e95-a86d5d4129dc" RegularExpression="Kefka readies Hyper Drive">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Intemperate Will" Id="6c5d57d2-6685-4fbb-a644-5731d54cbccd" RegularExpression="Graven Image starts using Intemperate Will on Graven Image">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="GO WEST GO WEST" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Gravitational Wave" Id="b3c32f79-a7fe-49ff-930a-a41a99a269fd" RegularExpression="Graven Image starts using Gravitational Wave on Graven Image">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="GO EAST GO EAST" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
-                        </Actions>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Ultimate Embrace" Id="829b1110-33bd-4809-9185-f4787c775dcb" RegularExpression="14:2910:Kefka starts using Ultimate Embrace on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Shared Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          <Action OrderNumber="1" UseTTSTextExpression="max melee" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Ultima" Id="9d8ae045-bbc8-413b-ad27-b86c3bc0a6cb" RegularExpression="14:2911:Kefka starts using Ultima on Kefka">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Indulgent Will" Id="edf07ddb-551a-4893-8f0c-a7f9665180ec" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28E5\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go outside - confusion on you" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Idyllic Will" Id="076100e0-86af-4b27-8931-d189edab539f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28E6\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="go inside - sleep" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Trine" Id="de13ba8f-e1e1-47a3-944c-be628df765fd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|290D\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="trine" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pasts Forgotten" Id="bb3b11b9-61b5-4ccc-a6e4-926fa1e60c9d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28F1\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="stack . stay" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Past's End" Id="a819a1ea-9c3f-496b-b178-99958108b3c1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28F[78]\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="charge . middle" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Futures Numbered" Id="8cbac01b-f4a2-4883-8d4a-721c1de767ca" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28EE\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="stack . behind" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Future's End" Id="7b9ffc14-cab7-4f96-8368-33e3b1010ec3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28F[45]\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="charge . stay" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Forsaken" Id="a3851f48-7954-4c5e-819c-8b597eb5c209" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28E9\|(?&lt;cast&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="O8SForsakenCount" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:O8SForsakenCount}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="${cast} ${var:O8SForsakenCount}" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="O8SForsakenCount" VariableExpression="${var:O8SForsakenCount}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wings Of Destruction Right" Id="45b1a8c3-fb7e-432c-b6d9-9ae3113f96fa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28FF\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="GO Left" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wings Of Destruction Left" Id="dcd66abd-3e32-475a-8297-e71dd25648f0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28FE\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Go right" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="false" Name="Hyper Drive (disabled? can't find an example of that line in logs ?)" Id="a6c18245-1de7-4258-9e95-a86d5d4129dc" RegularExpression="Kefka readies Hyper Drive">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ultimate Embrace" Id="829b1110-33bd-4809-9185-f4787c775dcb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2910\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Shared Buster on ${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ultima" Id="9d8ae045-bbc8-413b-ad27-b86c3bc0a6cb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2911\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pulse Wave" Id="4b4b945d-f418-43b2-a3f2-98101b4c7a46" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28DD\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" PlaySpeechMyself="True" UseTTSTextExpression="Knockback on you" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe Reset" Id="1d17d0c5-e4cc-46c2-9a27-7f0fcde6447b" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableName="O8SForsakenCount" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="3d5ea448-d65e-4685-a125-8e2d454051a9" Name="Jester's Antics Remake" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blizzard Fake Aoe" Id="64154c77-f1b3-4e89-9ce8-b269a79e28a9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28C4|2B2A|2914)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Fake Ice - go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester2" VariableExpression="Inside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blizzard Fake Donut" Id="7a051fc6-be5e-4340-9f38-840fd3530cef" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28C5|2B2B|2916)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Fake Ice - go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester2" VariableExpression="Outside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blizzard True Aoe" Id="bc8c29ba-b962-485d-bc82-1a6083d4f4e0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28C8|2B2D|2918)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="True Ice - go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester2" VariableExpression="Outside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blizzard True Donut" Id="41fc75ff-eed9-474e-9fc2-0d0027f869d8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28C9|2B2E|2919)\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="True Ice - go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester2" VariableExpression="Inside Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire Headmarkers" Id="3f766448-3f8c-498e-bca9-60951512c664" RegularExpression="^27\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;marker&gt;0080|007F)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester1" VariableExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="0080" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Truth" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Fake" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="007F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="0080" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Truth" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Fake" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="007F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester1" VariableExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="007F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Truth" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Fake" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="0080" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="007F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Truth" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${var:O8SJesterTruthCheck}" ExpressionTypeL="String" ExpressionR="Fake" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${marker}" ExpressionTypeL="String" ExpressionR="0080" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Truth Check Reset" Id="607898b8-27e7-4168-bd7f-091ad192632b" RegularExpression="^30\|[^|]*\|5[cC](?&gt;[eE]|[Ff])\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableName="O8SJesterTruthCheck" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mana Charge" Id="bb7d0ac4-8792-4fe2-a333-a2b8c9f64a5d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28D1\|">
+                        <Actions>
+                          <Action OrderNumber="1" VariableName="O8SJester1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" VariableName="O8SJester2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mana Release" Id="00f92430-6da1-479b-a73f-597c468ce41f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|28D2\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="${var:O8SJester1}, ${var:O8SJester2}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to fake" Id="99a50eaa-5205-4255-b75b-d17e55c9e2c9" RegularExpression="^26\|[^|]*\|5[cC][eE]\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJesterTruthCheck" VariableExpression="Fake" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to truth" Id="d3550b2a-e70a-4031-9436-3f7a289dccb0" RegularExpression="^26\|[^|]*\|5[cC][fF]\|">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJesterTruthCheck" VariableExpression="Truth" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Thunder Truth" Id="b9fd442f-9dd3-4541-9763-3bbc747bd5c8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;2B31|28CD|291D)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="True Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester1" VariableExpression="Dodge Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Thunder Fake" Id="7f160c17-91b8-45c9-8dd3-86b4c1e8bc88" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;2B30|28CC|291B)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Fake Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="O8SJester1" VariableExpression="Intersect Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -1451,19 +1569,21 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Timely Teleport" Id="bbfa1216-04e4-41f4-bb42-6722b1524587" RegularExpression="14:(2922|....):Kefka starts using Timely Teleport on Kefka" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Timely Teleport" Id="bbfa1216-04e4-41f4-bb42-6722b1524587" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;2922|28D4)\|" PeriodRefire="Deny" RefirePeriodExpression="10000">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="behind" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ultima Upsurge" Id="7c771c1a-6c02-430d-b014-4e5c7e85fb37" RegularExpression="14:(28E7|292D):Kefka starts using Ultima Upsurge on Kefka">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ultima Upsurge" Id="7c771c1a-6c02-430d-b014-4e5c7e85fb37" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28E7|292D)\|">
                     <Actions>
                       <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="aoe" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Flagrant Fire" Id="da6dfdc9-d24a-4ce7-b161-48bf589ac992" RegularExpression="14:(291F|....):Kefka starts using Flagrant Fire on (?&lt;player&gt;[A-Za-z-' ]{3,21})">
+                  <Trigger Enabled="false" Name="Flagrant Fire (disabled, to see if needed)" Id="da6dfdc9-d24a-4ce7-b161-48bf589ac992" RegularExpression="14:(291F|....):Kefka starts using Flagrant Fire on (?&lt;player&gt;[A-Za-z-' ]{3,21})">
                     <Actions>
                       <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
@@ -1471,29 +1591,55 @@
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Name="Hyperdrive" Id="17be7ebe-2f5c-414e-8360-d00eeb92b987" RegularExpression="14:(2912|28E8|292E):Kefka starts using Hyperdrive on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hyperdrive" Id="17be7ebe-2f5c-414e-8360-d00eeb92b987" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;2912|28E8|292E)\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                      <Action OrderNumber="1" UseTTSTextExpression="Buster on ${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Indolent Will" Id="5d1cc023-d19d-4ebf-a16a-4c42d8d5cc63" RegularExpression="14:(292C|....):Graven Image starts using Indolent Will on Graven Image.&#xA;">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Indolent Will" Id="5d1cc023-d19d-4ebf-a16a-4c42d8d5cc63" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28E4|292C)\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                      <Action OrderNumber="1" UseTTSTextExpression="look away from statue" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ave Maria" Id="f61b72a4-2b83-4aca-ac52-c3ac1a25a8df" RegularExpression="14:(292B|....):Graven Image starts using Ave Maria on Graven Image">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ave Maria" Id="f61b72a4-2b83-4aca-ac52-c3ac1a25a8df" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28E3|292B)\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="face" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                      <Action OrderNumber="1" UseTTSTextExpression="look at tower" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Aero Assault" Id="76fce145-1d27-4566-8005-f5e992ea07de" RegularExpression="14:(2924|....):Kefka starts using Aero Assault on Kefka">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Aero Assault" Id="76fce145-1d27-4566-8005-f5e992ea07de" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;2924|28D6)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="knockback" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shockwave (to check in normal maybe ? was calling out KB wrong on light of judgement)" Id="9286ad23-95a7-4c6c-8cfe-942e4fd64eed" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2927\|">
+                    <Actions>
+                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Intemperate Will" Id="6c5d57d2-6685-4fbb-a644-5731d54cbccd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28DF|292A)\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="GO WEST GO WEST" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gravitational Wave" Id="b3c32f79-a7fe-49ff-930a-a41a99a269fd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;28DE|2929)\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="GO EAST GO EAST" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
@@ -5480,7 +5626,7 @@
                   <Folder Id="5e87246b-cbc7-4c80-8bd9-e81648d05a89" Name="Nael RP" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Thermionic Beam -&gt; Iron Chariot" Id="d3bb93d7-9ed5-423e-b3c7-dd217096f138" RegularExpression="Blazing path, lead me to iron rule!">
+                      <Trigger Enabled="false" Name="Thermionic Beam -&gt; Iron Chariot" Id="d3bb93d7-9ed5-423e-b3c7-dd217096f138" RegularExpression="Blazing path, lead me to iron rule!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5508,7 +5654,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Meteor Stream -&gt; Dalamud Dive" Id="0fb074b5-1e09-4a31-9e7d-2d2d7b99e868" RegularExpression="Fleeting light! Amid a rain of stars, exalt you the red moon!">
+                      <Trigger Enabled="false" Name="Meteor Stream -&gt; Dalamud Dive" Id="0fb074b5-1e09-4a31-9e7d-2d2d7b99e868" RegularExpression="Fleeting light! Amid a rain of stars, exalt you the red moon!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5522,7 +5668,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Dalamud Dive -&gt; Thermionic Beam" Id="968f3dc7-fbc1-420f-b865-f7cd805f4be8" RegularExpression="Fleeting light! 'Neath the red moon, scorch you the earth!">
+                      <Trigger Enabled="false" Name="Dalamud Dive -&gt; Thermionic Beam" Id="968f3dc7-fbc1-420f-b865-f7cd805f4be8" RegularExpression="Fleeting light! 'Neath the red moon, scorch you the earth!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5536,7 +5682,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="f0e2d88e-72bc-4e15-9007-02fa5b74d4d9" RegularExpression="O hallowed moon, take fire and scorch my foes!">
+                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="f0e2d88e-72bc-4e15-9007-02fa5b74d4d9" RegularExpression="O hallowed moon, take fire and scorch my foes!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5550,7 +5696,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Iron Chariot" Id="db85f34f-9549-486a-93d6-9e8644526cf5" RegularExpression="O hallowed moon, shine you the iron path!">
+                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Iron Chariot" Id="db85f34f-9549-486a-93d6-9e8644526cf5" RegularExpression="O hallowed moon, shine you the iron path!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5564,7 +5710,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Lunar Dynamo" Id="862eee28-50f3-45b9-9f03-e20d19f68c4d" RegularExpression="From on high I descend, the hallowed moon to call!">
+                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Lunar Dynamo" Id="862eee28-50f3-45b9-9f03-e20d19f68c4d" RegularExpression="From on high I descend, the hallowed moon to call!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5578,7 +5724,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Iron Chariot" Id="fa63ed09-9e74-47a9-b398-430bb00734b9" RegularExpression="From on high I descend, the iron path to (call|walk)!">
+                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Iron Chariot" Id="fa63ed09-9e74-47a9-b398-430bb00734b9" RegularExpression="From on high I descend, the iron path to (call|walk)!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5592,7 +5738,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="536d3622-3d16-4178-9b30-6ed294e2cbfa" RegularExpression="From hallowed moon I descend, a rain of stars to bring!">
+                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="536d3622-3d16-4178-9b30-6ed294e2cbfa" RegularExpression="From hallowed moon I descend, a rain of stars to bring!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5606,7 +5752,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="576fddc7-72d9-4c81-8cc9-fd338c6f1b01" RegularExpression="From on high I descend, the moon and stars to bring!">
+                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="576fddc7-72d9-4c81-8cc9-fd338c6f1b01" RegularExpression="From on high I descend, the moon and stars to bring!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5620,7 +5766,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="2cced483-843d-41cf-9173-5f499e09abfd" RegularExpression="From hallowed moon I bare iron, in my descent to wield!">
+                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="2cced483-843d-41cf-9173-5f499e09abfd" RegularExpression="From hallowed moon I bare iron, in my descent to wield!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5634,7 +5780,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ffed1ea7-85a2-4423-bbd9-2f1cacae1d76" RegularExpression="Unbending iron, descend with fiery edge!">
+                      <Trigger Enabled="false" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ffed1ea7-85a2-4423-bbd9-2f1cacae1d76" RegularExpression="Unbending iron, descend with fiery edge!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5648,7 +5794,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ee0722c7-8896-42a5-9b62-3e2271939db3" RegularExpression="From hallowed moon I descend, upon burning earth to tread!">
+                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ee0722c7-8896-42a5-9b62-3e2271939db3" RegularExpression="From hallowed moon I descend, upon burning earth to tread!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5662,7 +5808,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="6446c206-8650-4947-ad8d-1bf28cd73886" RegularExpression="Unbending iron, take fire and descend!">
+                      <Trigger Enabled="false" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="6446c206-8650-4947-ad8d-1bf28cd73886" RegularExpression="Unbending iron, take fire and descend!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5814,107 +5960,81 @@
                         <Actions>
                           <Action OrderNumber="1" AuraName="UCOB-ImagePlacer" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/AST.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="500" Description="^^ ONLY EDIT THE ACTIONS ABOVE ^^" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" VariableOp="SetNumeric" VariableName="UCOB-Tenstrike" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image X" TableVariableX="3" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="5" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image Y" TableVariableX="4" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="6" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].x}" TableVariableX="3" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="7" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].y}" TableVariableX="4" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="8" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="NAME" TableVariableX="1" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="9" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="JOB" TableVariableX="2" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="10" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].name}" TableVariableX="1" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="11" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].name}" TableVariableX="1" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="12" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].name}" TableVariableX="1" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="13" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].name}" TableVariableX="1" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="14" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].name}" TableVariableX="1" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="15" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].name}" TableVariableX="1" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="16" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].name}" TableVariableX="1" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="17" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].name}" TableVariableX="1" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="18" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].job}" TableVariableX="2" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="19" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].job}" TableVariableX="2" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="20" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].job}" TableVariableX="2" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="21" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].job}" TableVariableX="2" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="22" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].job}" TableVariableX="2" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="23" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].job}" TableVariableX="2" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="24" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].job}" TableVariableX="2" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="25" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].job}" TableVariableX="2" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                           <Action OrderNumber="26" AuraOp="DeactivateAura" AuraName="UCOB-ImagePlacer" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="500">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
