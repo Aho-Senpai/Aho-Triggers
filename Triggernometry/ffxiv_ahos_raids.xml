@@ -5543,7 +5543,7 @@
         <Folders>
           <Folder Id="77816913-40ae-4725-9626-e8b88dbc1e95" ZoneFilterRegularExpression="The\ Unending\ Coil\ Of\ Bahamut\ \(Ultimate\)" Name="70 - 1 - The Unending Coil of Bahamut (Ultimate)" Enabled="true">
             <Folders>
-              <Folder Id="9b0328ff-d2ed-46b9-9b4f-6f5906be4bab" Name="AA - Network Triggers (not tested, made from logs) (originally made by aya)" Enabled="true">
+              <Folder Id="9b0328ff-d2ed-46b9-9b4f-6f5906be4bab" Name="AA - Network Triggers (originally made by aya)" Enabled="true">
                 <Folders>
                   <Folder Id="76d2aadd-1b39-4677-86e8-ef08fb323ecb" Name="P1 - Twintania" Enabled="true">
                     <Folders />
@@ -5579,25 +5579,29 @@
                     <Triggers>
                       <Trigger Enabled="true" Sequential="True" Name="Doom/Thunderstruck" Id="08ce197a-706d-46dd-9bda-8735d233430b" RegularExpression="1A:[A-F0-9]{8}:(?&lt;player&gt;[a-zA-Z-' ]{1,31}) gains the effect of (?&lt;hit&gt;Thunderstruck|Doom) from  for (?&lt;duration&gt;\d{1,3})\.\d{1,2} Seconds">
                         <Actions>
-                          <Action OrderNumber="1" AuraName="UCOB-DoomAura" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/Doom.png" AuraXIniExpression="${tvar:UCOB[3][2]}" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="48" AuraHIniExpression="64" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          <Action OrderNumber="1" AuraName="UCOB-DoomAura" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/UCOB/Doom.png" AuraXIniExpression="${tvar:UCOB[3][2]}" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="48" AuraHIniExpression="64" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="Doom" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
-                          <Action OrderNumber="2" AuraName="UCOB-ThunderAura" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/thunderstruck.png" AuraXIniExpression="${tvar:UCOB[3][2]}+(${_imageaura[UCOB-DoomAura].w})" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="48" AuraHIniExpression="64" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          <Action OrderNumber="2" AuraName="UCOB-ThunderAura" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/UCOB/thunderstruck.png" AuraXIniExpression="${tvar:UCOB[3][2]}+(${_imageaura[UCOB-DoomAura].w})" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="48" AuraHIniExpression="64" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="Thunderstruck" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" PlaySpeechMyself="True" UseTTSTextExpression="${duration} DOOM" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="Doom" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" PlaySpeechMyself="True" UseTTSTextExpression="Thunder" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="Thunderstruck" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="true" Grouping="And">
@@ -5626,7 +5630,7 @@
                   <Folder Id="5e87246b-cbc7-4c80-8bd9-e81648d05a89" Name="Nael RP" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="false" Name="Thermionic Beam -&gt; Iron Chariot" Id="d3bb93d7-9ed5-423e-b3c7-dd217096f138" RegularExpression="Blazing path, lead me to iron rule!">
+                      <Trigger Enabled="true" Name="Thermionic Beam -&gt; Iron Chariot" Id="d3bb93d7-9ed5-423e-b3c7-dd217096f138" RegularExpression="Blazing path, lead me to iron rule!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5654,7 +5658,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Meteor Stream -&gt; Dalamud Dive" Id="0fb074b5-1e09-4a31-9e7d-2d2d7b99e868" RegularExpression="Fleeting light! Amid a rain of stars, exalt you the red moon!">
+                      <Trigger Enabled="true" Name="Meteor Stream -&gt; Dalamud Dive" Id="0fb074b5-1e09-4a31-9e7d-2d2d7b99e868" RegularExpression="Fleeting light! Amid a rain of stars, exalt you the red moon!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5668,7 +5672,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Dalamud Dive -&gt; Thermionic Beam" Id="968f3dc7-fbc1-420f-b865-f7cd805f4be8" RegularExpression="Fleeting light! 'Neath the red moon, scorch you the earth!">
+                      <Trigger Enabled="true" Name="Dalamud Dive -&gt; Thermionic Beam" Id="968f3dc7-fbc1-420f-b865-f7cd805f4be8" RegularExpression="Fleeting light! 'Neath the red moon, scorch you the earth!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5682,7 +5686,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="f0e2d88e-72bc-4e15-9007-02fa5b74d4d9" RegularExpression="O hallowed moon, take fire and scorch my foes!">
+                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="f0e2d88e-72bc-4e15-9007-02fa5b74d4d9" RegularExpression="O hallowed moon, take fire and scorch my foes!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5696,7 +5700,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Iron Chariot" Id="db85f34f-9549-486a-93d6-9e8644526cf5" RegularExpression="O hallowed moon, shine you the iron path!">
+                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Iron Chariot" Id="db85f34f-9549-486a-93d6-9e8644526cf5" RegularExpression="O hallowed moon, shine you the iron path!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5710,7 +5714,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Lunar Dynamo" Id="862eee28-50f3-45b9-9f03-e20d19f68c4d" RegularExpression="From on high I descend, the hallowed moon to call!">
+                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Lunar Dynamo" Id="862eee28-50f3-45b9-9f03-e20d19f68c4d" RegularExpression="From on high I descend, the hallowed moon to call!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5724,7 +5728,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Iron Chariot" Id="fa63ed09-9e74-47a9-b398-430bb00734b9" RegularExpression="From on high I descend, the iron path to (call|walk)!">
+                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Iron Chariot" Id="fa63ed09-9e74-47a9-b398-430bb00734b9" RegularExpression="From on high I descend, the iron path to (call|walk)!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5738,7 +5742,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="536d3622-3d16-4178-9b30-6ed294e2cbfa" RegularExpression="From hallowed moon I descend, a rain of stars to bring!">
+                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="536d3622-3d16-4178-9b30-6ed294e2cbfa" RegularExpression="From hallowed moon I descend, a rain of stars to bring!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5752,7 +5756,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="576fddc7-72d9-4c81-8cc9-fd338c6f1b01" RegularExpression="From on high I descend, the moon and stars to bring!">
+                      <Trigger Enabled="true" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="576fddc7-72d9-4c81-8cc9-fd338c6f1b01" RegularExpression="From on high I descend, the moon and stars to bring!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5766,7 +5770,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="2cced483-843d-41cf-9173-5f499e09abfd" RegularExpression="From hallowed moon I bare iron, in my descent to wield!">
+                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="2cced483-843d-41cf-9173-5f499e09abfd" RegularExpression="From hallowed moon I bare iron, in my descent to wield!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5780,7 +5784,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ffed1ea7-85a2-4423-bbd9-2f1cacae1d76" RegularExpression="Unbending iron, descend with fiery edge!">
+                      <Trigger Enabled="true" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ffed1ea7-85a2-4423-bbd9-2f1cacae1d76" RegularExpression="Unbending iron, descend with fiery edge!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5794,7 +5798,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ee0722c7-8896-42a5-9b62-3e2271939db3" RegularExpression="From hallowed moon I descend, upon burning earth to tread!">
+                      <Trigger Enabled="true" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="ee0722c7-8896-42a5-9b62-3e2271939db3" RegularExpression="From hallowed moon I descend, upon burning earth to tread!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5808,7 +5812,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="6446c206-8650-4947-ad8d-1bf28cd73886" RegularExpression="Unbending iron, take fire and descend!">
+                      <Trigger Enabled="true" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="6446c206-8650-4947-ad8d-1bf28cd73886" RegularExpression="Unbending iron, take fire and descend!">
                         <Actions>
                           <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
@@ -5958,83 +5962,109 @@
                     <Triggers>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# UCOB Settings" Id="c2861d0c-63cb-4519-8b52-8971dc22be5d" RegularExpression="01\|.*?\|2dd\|the Unending Coil of Bahamut \(Ultimate\)" EditAutofire="True">
                         <Actions>
-                          <Action OrderNumber="1" AuraName="UCOB-ImagePlacer" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/AST.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          <Action OrderNumber="1" AuraName="UCOB-ImagePlacer" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/Jobs/AST.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="500" Description="^^ ONLY EDIT THE ACTIONS ABOVE ^^" DescriptionOverride="True">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" LogLevel="-1" VariableOp="SetNumeric" VariableName="UCOB-Tenstrike" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image X" TableVariableX="3" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="5" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="Image Y" TableVariableX="4" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="6" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].x}" TableVariableX="3" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="7" LogLevel="-1" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="UCOB" TableVariableExpression="${_imageaura[UCOB-ImagePlacer].y}" TableVariableX="4" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="8" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="NAME" TableVariableX="1" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="9" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="JOB" TableVariableX="2" TableVariableY="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="10" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].name}" TableVariableX="1" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="11" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].name}" TableVariableX="1" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="12" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].name}" TableVariableX="1" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="13" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].name}" TableVariableX="1" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="14" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].name}" TableVariableX="1" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="15" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].name}" TableVariableX="1" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="16" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].name}" TableVariableX="1" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="17" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].name}" TableVariableX="1" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="18" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[1].job}" TableVariableX="2" TableVariableY="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="19" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[2].job}" TableVariableX="2" TableVariableY="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="20" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[3].job}" TableVariableX="2" TableVariableY="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="21" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[4].job}" TableVariableX="2" TableVariableY="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="22" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[5].job}" TableVariableX="2" TableVariableY="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="23" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[6].job}" TableVariableX="2" TableVariableY="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="24" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[7].job}" TableVariableX="2" TableVariableY="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="25" LogLevel="-1" TableVariableOp="Set" TableVariableName="UCOB" TableVariableExpression="${_ffxivparty[8].job}" TableVariableX="2" TableVariableY="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="26" AuraOp="DeactivateAura" AuraName="UCOB-ImagePlacer" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="500">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -6099,16 +6129,19 @@
                       </Trigger>
                       <Trigger Enabled="true" Source="None" Sequential="True" Name="Visual Nael Quotes" Id="7d43a5e1-b2d3-44c0-b9fd-bc6396397ac9" RegularExpression="^:(?&lt;Step1&gt;[abcdehilmnorstuvvy]{1,14}):(?&lt;Step2&gt;[abcdehilmnorstuvvy]{1,14}):(?&lt;Step3&gt;[abcdehimmnorstv]{0,14}):">
                         <Actions>
-                          <Action OrderNumber="1" AuraName="UCOB-Nael1${Step1}" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/${Step1}.png" AuraXIniExpression="${tvar:UCOB[3][2]}" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          <Action OrderNumber="1" AuraName="UCOB-Nael1${Step1}" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/UCOB/${Step1}.png" AuraXIniExpression="${tvar:UCOB[3][2]}" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
-                          <Action OrderNumber="2" AuraName="UCOB-Nael2${Step2}" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/${Step2}.png" AuraXIniExpression="${tvar:UCOB[3][2]}+64" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          <Action OrderNumber="2" AuraName="UCOB-Nael2${Step2}" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/UCOB/${Step2}.png" AuraXIniExpression="${tvar:UCOB[3][2]}+64" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
-                          <Action OrderNumber="3" AuraName="UCOB-Nael3${Step3}" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/${Step3}.png" AuraXIniExpression="${tvar:UCOB[3][2]}+128" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" DebugLevel="None">
+                          <Action OrderNumber="3" AuraName="UCOB-Nael3${Step3}" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/UCOB/${Step3}.png" AuraXIniExpression="${tvar:UCOB[3][2]}+128" AuraYIniExpression="${tvar:UCOB[4][2]}" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" DebugLevel="None">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${func:length:${Step3}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                             </Condition>
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -6131,72 +6164,9 @@
                 <Folders>
                   <Folder Id="0a16bf5f-e699-4104-81d3-86804784faf4" ZoneFilterRegularExpression="The\ Weapon's\ Refrain\ \(Ultimate\)" Name="U2 :: The Weapon's Refrain (Ultimate)" Enabled="true">
                     <Folders>
-                      <Folder Id="5dd38d07-4d72-493e-a7ea-c76217da4b61" Name="P1 - Garuda" Enabled="false">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Name="Slipstream" Id="7ec68bf6-28d1-4e3b-91fb-29e29415b496" RegularExpression="readies Slipstream">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Cleave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Friction" Id="9829d53d-011a-4119-a33e-1c59df960c28" RegularExpression="Garuda readies Friction">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Woken (Garuda)" Id="31c8f923-e925-4da7-9936-77e52d44767a" RegularExpression="1A:Garuda gains the effect of Woken">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Woken" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Spiny Plume" Id="9c18d4cc-eb37-4e3e-8951-4c17c7cb781b" RegularExpression="03:Added new combatant Spiny Plume">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="add" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                      <Folder Id="05ce63c8-8cb1-403d-adc5-aa23110a9268" Name="P3 - Titan" Enabled="false">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="false" Name="Woken (Titan)" Id="fd2c2951-e7da-41a0-8701-1abb4e1eb207" RegularExpression="1A:Titan gains the effect of Woken">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Woken" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                      <Folder Id="938a1e34-4e4a-4664-9f18-be6bebb97a7f" Name="P2 - Ifrit" Enabled="false">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Name="Inferno Howl" Id="b6d62430-3e50-400c-9e6f-15fa89e5ab37" RegularExpression="Ifrit starts using Inferno Howl on (?&lt;char&gt;[a-zA-Z*]*)">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Searing on ${char}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                          <Trigger Enabled="true" Name="Woken (Ifrit)" Id="cc8497af-4b43-4ac5-afdf-e66c6cd95df1" RegularExpression="1A:Ifrit gains the effect of Woken">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Woken" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
                       <Folder Id="78baea74-1d17-4ded-abe9-f68bb0f0f96f" Name="P4 - Ultima" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="false" Name="Homing Lasers" Id="731bf8ad-32bb-49fb-a6d6-d33dc78250e5" RegularExpression="The Ultima Weapon readies Homing Lasers">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Trigger>
                           <Trigger Enabled="true" Name="Diffractive Laser" Id="496e3430-523e-41b0-b644-013ff92c19f1" RegularExpression="The Ultima Weapon uses Diffractive Laser">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
