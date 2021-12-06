@@ -3689,7 +3689,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="4fbbc978-4ba8-44b4-9a01-a5cc71e5f9c9" Name="RPR" Enabled="true">
+      <Folder Id="4fbbc978-4ba8-44b4-9a01-a5cc71e5f9c9" Name="RPR" Enabled="false">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hell's Ingress/Egress" Id="b11de808-e300-47df-9383-014e9fb1d505" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|5F5[12]\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -3810,65 +3810,89 @@
     <Triggers>
       <Trigger Enabled="true" Source="None" Name="Cancel Recast Triggers" Id="55f05e2a-3951-4677-80c1-fcc9fc4a357d" RegularExpression="" PeriodRefire="Deny" RefirePeriodExpression="1000">
         <Actions>
-          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d8f82712-924b-45e2-bb0a-37ccc6393b25" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="1" VariableOp="UnsetRegex" VariableName="AhoJobCharges.*" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="162e3940-94d5-4e62-8199-3d2f497cb9fb" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d8f82712-924b-45e2-bb0a-37ccc6393b25" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6d6acd85-3fdf-476d-bd6a-a7cbf0392912" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="162e3940-94d5-4e62-8199-3d2f497cb9fb" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d8fe5be2-37f3-4a36-a612-0bacad739605" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6d6acd85-3fdf-476d-bd6a-a7cbf0392912" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="886c4756-99e4-4859-bce7-2225640e2b13" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d8fe5be2-37f3-4a36-a612-0bacad739605" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="85e25533-ffec-4ed3-b3b0-129cef53a1bd" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="886c4756-99e4-4859-bce7-2225640e2b13" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="53ffbfc4-9ecc-4d57-a987-a300ecbd4f9c" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="85e25533-ffec-4ed3-b3b0-129cef53a1bd" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7deccbaf-c740-49c1-9bb5-026116b73e83" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="53ffbfc4-9ecc-4d57-a987-a300ecbd4f9c" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="98f6f938-48b7-40a5-b7e8-bb0aa0c87073" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7deccbaf-c740-49c1-9bb5-026116b73e83" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="10" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7059bcf3-29c7-4ccb-b32e-5ce8d9955b06" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="10" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="98f6f938-48b7-40a5-b7e8-bb0aa0c87073" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="11" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6ab1d30f-4e9b-4737-982e-fc77b6d6de1d" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="11" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7059bcf3-29c7-4ccb-b32e-5ce8d9955b06" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="12" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="dd09c297-2454-49ad-9544-0555ca918cef" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="12" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6ab1d30f-4e9b-4737-982e-fc77b6d6de1d" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="13" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="0b2da619-2ddb-418c-b93b-a0132813d219" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="13" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="dd09c297-2454-49ad-9544-0555ca918cef" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="14" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="273664db-138b-49ce-abdd-9a615ef85fe6" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="14" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="0b2da619-2ddb-418c-b93b-a0132813d219" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="15" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7a56478d-463c-43c4-b6f4-2cb9e6e8104e" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="15" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="273664db-138b-49ce-abdd-9a615ef85fe6" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="16" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6df757a0-025a-417a-a30b-ece29e11cc79" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="16" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7a56478d-463c-43c4-b6f4-2cb9e6e8104e" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="17" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="04249281-b2d9-4906-915f-1f40f9da8f13" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="17" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6df757a0-025a-417a-a30b-ece29e11cc79" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2b26b1fe-ca36-4b19-8acb-2c71373a646f" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="04249281-b2d9-4906-915f-1f40f9da8f13" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="19" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="627e5a67-55f8-40e2-8324-2e8ceec6fe7a" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="19" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2b26b1fe-ca36-4b19-8acb-2c71373a646f" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
-          <Action OrderNumber="20" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9f4498e5-826a-4aa2-80bc-950ac3a83860" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="20" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="627e5a67-55f8-40e2-8324-2e8ceec6fe7a" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="21" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9f4498e5-826a-4aa2-80bc-950ac3a83860" TriggerForce="regexp,parent" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="And" />
