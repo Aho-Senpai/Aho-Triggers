@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder Id="953b93c6-29d5-41cf-a209-04b4237868e8" Name="FFXIV Battle Jobs" Enabled="true">
     <Folders>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="4471128096" Id="bea01080-6a48-4740-9e11-16e628afd280" Name="Healer" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="554226941984" Id="bea01080-6a48-4740-9e11-16e628afd280" Name="Healer" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="4294967296" Id="36deb24d-44a8-4dbf-8eb7-24decefc80f0" Name="AST" Enabled="true">
             <Folders />
@@ -1245,7 +1245,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="9397862410" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="Melee DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="284275769354" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="Melee DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="805306368" Id="86dd4f6d-60b4-48fc-b86b-df4ceb7872d0" Name="NIN" Enabled="true">
             <Folders />
