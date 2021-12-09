@@ -342,7 +342,6 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -397,7 +396,6 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of back" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -406,7 +404,6 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="get away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -415,7 +412,6 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -424,7 +420,6 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="charge" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -563,225 +558,242 @@
           <Folder ZoneFilterEnabled="True" Id="f1e0cc55-e1db-4d55-b7b3-39847af46757" ZoneFilterRegularExpression="Holminster\ Switch" Name="71 - Holminster Switch" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Pilory" Id="019fb615-49a6-4f37-a90f-12be9f553a54" RegularExpression="2b:The forgiven dissonance readies Pillory">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pilory" Id="019fb615-49a6-4f37-a90f-12be9f553a54" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DC4\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="The Tickler" Id="99e596b3-febb-4be3-8eba-7031e4a0de5a" RegularExpression="2b:Tesleen, the Forgiven readies The Tickler">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Tickler" Id="99e596b3-febb-4be3-8eba-7031e4a0de5a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DCF\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Head Crusher" Id="dafab800-a8d1-4649-a7c8-a9a5d969a9c7" RegularExpression="2b:Philia readies Head Crusher">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Head Crusher" Id="dafab800-a8d1-4649-a7c8-a9a5d969a9c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DD7\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Kill Chain" Id="d5d11e34-d029-421e-9220-7c662f93445e" RegularExpression="2b:Philia uses Chain Down">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Kill Chain" Id="d5d11e34-d029-421e-9220-7c662f93445e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|429C\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Kill Chain" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Right or Left Knout" Id="bcfe80ac-07c9-49c9-81ea-b55b2c506a46" RegularExpression="2b:Philia readies (?&lt;cast&gt;Right|Left) Knout">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Right or Left Knout" Id="bcfe80ac-07c9-49c9-81ea-b55b2c506a46" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;cast&gt;3DE[67])\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="go Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${cast}" ExpressionTypeL="String" ExpressionR="Right" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${cast}" ExpressionTypeL="String" ExpressionR="3DE6" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${cast}" ExpressionTypeL="String" ExpressionR="Left" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${cast}" ExpressionTypeL="String" ExpressionR="3DE7" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="b5dcbd23-2256-4b62-b666-7025e0e93804" Name="73 - Dohn Mheg" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^821$" Id="b5dcbd23-2256-4b62-b666-7025e0e93804" Name="73 - Dohn Mheg" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Imp Choir" Id="768d6dc1-e6ef-45f4-9f42-5293a7032c3b" RegularExpression="2b:Aenc Thon, Lord of the Lengthsome Gait readies Imp Choir">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Imp Choir" Id="768d6dc1-e6ef-45f4-9f42-5293a7032c3b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|34F0\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Toad Choir" Id="27e2699d-b21b-4a44-8166-5c0f5f5ede88" RegularExpression="2b:Aenc Thon, Lord of the Lengthsome Gait readies Toad Choir">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Toad Choir" Id="27e2699d-b21b-4a44-8166-5c0f5f5ede88" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|34EF\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Last boss buster Buster" Id="68f2bc63-c66f-4aa7-b04f-62801d491542" RegularExpression="2b:Aenc Thon, Lord of the Lengthsome Gait readies Crippling Blow">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Last boss buster Buster" Id="68f2bc63-c66f-4aa7-b04f-62801d491542" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|35A4\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="AoE" Id="5eab10a2-f6af-4835-a8dc-c9b4929abf4a" RegularExpression="2b:Aenc Thon, Lord of the Lengthsome Gait readies Virtuosic Capriccio">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE" Id="5eab10a2-f6af-4835-a8dc-c9b4929abf4a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|358C\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Tether" Id="69c75ef3-8791-4e50-8897-76df5ab336e8" RegularExpression="2b:Griaule readies Fodder">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tether" Id="69c75ef3-8791-4e50-8897-76df5ab336e8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|22C1\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Grab Tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Bind" Id="78ed21f6-0ff7-4633-8ae5-2951736f6cd7" RegularExpression="2b:Griaule readies Coiling Ivy">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bind" Id="78ed21f6-0ff7-4633-8ae5-2951736f6cd7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|22C5\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Stack up" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="First boss Buster" Id="5718b137-4902-4fdf-b7a4-f5550955184c" RegularExpression="2b:Aenc Thon, Lord of the Lingering Gaze readies Candy Cane">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="First boss Buster" Id="5718b137-4902-4fdf-b7a4-f5550955184c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2299\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="8a275700-b19c-4419-b70f-b060f688f049" Name="75 - The Qitana Ravel" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^823$" Id="8a275700-b19c-4419-b70f-b060f688f049" Name="75 - The Qitana Ravel" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Hound Out Of Heaven" Id="0be18c6e-1eb5-4cec-81f9-c4d60dc4a024" RegularExpression="23:[\w]+:Eros:[\w]+:(?&lt;player&gt;[\w-' ]+):\d{4}:0000:\d{4}:[\w]{8}:000F:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hound Out Of Heaven" Id="0be18c6e-1eb5-4cec-81f9-c4d60dc4a024" RegularExpression="35\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|[^|]*\|0000\|[^|]*\|[^|]*\|000F\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Spam AoE" Id="f58c64a4-cf85-47ed-b8d0-7143ef7d345d" RegularExpression="2b:Batsquatch readies Subsonics">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spam AoE" Id="f58c64a4-cf85-47ed-b8d0-7143ef7d345d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3C93\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Spam AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="TB" Id="2a55ffad-caed-4915-b902-c578e7f2274b" RegularExpression="2b:Batsquatch readies Ripper Fang">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Name="heat side" Id="3607dddc-089b-49b0-af02-6dd46404d949" RegularExpression="14:(?&lt;heatside&gt;3C8E|3C8D):Lozatl starts using Heat Up on Lozatl">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="heat side" Id="3607dddc-089b-49b0-af02-6dd46404d949" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;heatside&gt;3C8[DE])\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${heatside}" ExpressionTypeL="String" ExpressionR="3C8E" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" UseTTSTextExpression="Go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${heatside}" ExpressionTypeL="String" ExpressionR="3C8D" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                     </Condition>
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Stonefist" Id="13ab449c-2d58-4c38-b0ea-f5ffc8751e31" RegularExpression="2b:Lozatl readies Stonefist">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stonefist" Id="13ab449c-2d58-4c38-b0ea-f5ffc8751e31" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3C89\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Ripper Fang" Id="0e56536d-ab2c-4679-acc9-4ae6a3bb9a6f" RegularExpression="2b:Batsquatch readies Ripper Fang" PrevActionsRefire="Deny">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ripper Fang" Id="0e56536d-ab2c-4679-acc9-4ae6a3bb9a6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3C91\|" PrevActionsRefire="Deny">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Rend" Id="d76e732f-749b-4e29-9335-643fa05575f2" RegularExpression="2b:Eros readies Rend">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rend" Id="d76e732f-749b-4e29-9335-643fa05575f2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3C99\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="aec939e9-f73f-4e30-91bd-37ad21cb6941" Name="77 - Malikah's Well" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^836$" Id="aec939e9-f73f-4e30-91bd-37ad21cb6941" Name="77 - Malikah's Well" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Heretic's Fork" Id="a7ed2d51-0079-4696-930e-2721bd04a5a4" RegularExpression="2b:Storge begins casting Heretic's Fork">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heretic's Fork" Id="a7ed2d51-0079-4696-930e-2721bd04a5a4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CF2\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go Diagonal" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Breaking Wheel" Id="63566f9f-00e4-43d3-90f1-e0392ec1670c" RegularExpression="2b:Storge begins casting Breaking Wheel">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Breaking Wheel" Id="63566f9f-00e4-43d3-90f1-e0392ec1670c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3E0F\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Right Round" Id="6e08fa9b-d03e-4b6d-b781-857933501a56" RegularExpression="2b:The greater armadillo readies Right Round">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Right Round" Id="6e08fa9b-d03e-4b6d-b781-857933501a56" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CE7\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Get away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="High Pressure" Id="d6535f8b-01d9-46ae-9063-aa532a14c8f9" RegularExpression="2b:The amphibious Talos readies High Pressure">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="High Pressure" Id="d6535f8b-01d9-46ae-9063-aa532a14c8f9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CEC\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Efface" Id="fe865c8d-d7eb-4eee-af85-312363f4a914" RegularExpression="2b:The amphibious Talos readies Efface">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Efface" Id="fe865c8d-d7eb-4eee-af85-312363f4a914" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CEB\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -791,26 +803,29 @@
           <Folder ZoneFilterEnabled="True" Id="484ddbdf-0ae3-4017-a76b-8edebc8dd0b0" ZoneFilterRegularExpression="Mt\.\ Gulg" Name="79 - Mt. Gulg" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Lumen Infinitum" Id="5c5ebd25-882e-4a12-bd65-ac6f5b632e9e" RegularExpression="2b:The forgiven cruelty readies Lumen Infinitum">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lumen Infinitum" Id="5c5ebd25-882e-4a12-bd65-ac6f5b632e9e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|41B2\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="First Boss Buster - Rake" Id="4128f13d-0171-4242-992e-b7e755279308" RegularExpression="14:3CFB:Forgiven Cruelty starts using Rake on (?&lt;player&gt;[a-zA-Z-' ]{3,21})">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="First Boss Buster - Rake" Id="4128f13d-0171-4242-992e-b7e755279308" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CFB\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Second Boss Buster - Catechism" Id="dfca57e2-8374-4a96-87ff-3228a76b07d7" RegularExpression="14:3D09:Forgiven Whimsy starts using Catechism on Forgiven Whimsy">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Second Boss Buster - Catechism" Id="dfca57e2-8374-4a96-87ff-3228a76b07d7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3D09\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
