@@ -35,15 +35,12 @@
         <Actions>
           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="[HN]QPotTimerText" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="MiscRepoPullDuration" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
@@ -85,17 +82,19 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="AURA - Pot/Infu/Tincture" Id="16330d3c-d557-4d56-a69e-30c17d6c4988" RegularExpression="00:[\w]{4}:You use a [\w- ]+ of (strength|dexterity|vitality|intelligence|mind) ?(?&lt;hq&gt;[]?)\.">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Pot/Infu/Tincture" Id="16330d3c-d557-4d56-a69e-30c17d6c4988" RegularExpression="^00\|[^|]+\|082C\|\|You use a [\w\- ]+ of (strength|dexterity|vitality|intelligence|mind) ?(?&lt;hq&gt;[]?)\.">
         <Actions>
           <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraName="HQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+270-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="270-${_since}" TextAuraUseOutline="True" TextAuraFontName="Arial Black" ActionType="TextAura">
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${hq}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualCase" />
             </Condition>
+            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraName="NQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+300-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="300-${_since}" TextAuraUseOutline="True" TextAuraFontName="Arial Black" ActionType="TextAura">
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${hq}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
             </Condition>
+            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
@@ -112,7 +111,6 @@
         <Actions>
           <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Food Buff Loss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="true" Grouping="And">
