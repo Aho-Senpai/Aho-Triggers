@@ -2011,7 +2011,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Soul Slice/Scythe" Id="d73886b9-3aa5-4dfe-a7b1-0b475e2995b1" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|5F3[CD]\|(?&lt;spell&gt;[^|]+)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Soul Slice/Scythe" Id="d73886b9-3aa5-4dfe-a7b1-0b475e2995b1" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|5F3[CD]\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="200">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
