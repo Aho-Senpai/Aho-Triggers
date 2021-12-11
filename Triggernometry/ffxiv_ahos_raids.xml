@@ -2448,13 +2448,11 @@
                                     <Condition Enabled="true" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                     </Condition>
-                                    <Conditions />
                                   </Action>
                                   <Action OrderNumber="2" UseTTSTextExpression="Right Add from Back" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="true" Grouping="And">
                                       <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                     </Condition>
-                                    <Conditions />
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
@@ -2465,17 +2463,13 @@
                         <Triggers>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Diffuse Wave Cannon (Front/back safe)" Id="2582978e-9768-49ef-9e8b-552da9c4aa94" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3368\|">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Stay, Back Safe" TextAuraFontSize="0" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="Stay, Back Safe" TextAuraFontSize="0" ActionType="UseTTS" />
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Diffuse Wave Cannon (Sides safe)" Id="460a3ec3-b8b3-4dee-914f-891c149ca865" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3367\|">
                             <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Rotate, Sides Safe" TextAuraFontSize="0" ActionType="UseTTS">
-                                <Conditions />
-                              </Action>
+                              <Action OrderNumber="1" UseTTSTextExpression="Rotate, Sides Safe" TextAuraFontSize="0" ActionType="UseTTS" />
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
@@ -2485,7 +2479,6 @@
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${Duration}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2494,7 +2487,6 @@
                             <Actions>
                               <Action OrderNumber="1" ListVariableOp="Push" ListVariableName="_laser" ListVariableExpression="${color}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" UseTTSTextExpression="northwest" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2503,7 +2495,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" UseTTSTextExpression="northeast" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2512,7 +2503,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="4" UseTTSTextExpression="east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2521,7 +2511,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="5" UseTTSTextExpression="southeast" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2530,7 +2519,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="6" UseTTSTextExpression="southwest" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2539,7 +2527,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="7" UseTTSTextExpression="west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -2548,13 +2535,11 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[2]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser[3]}" ExpressionTypeL="String" ExpressionR="009D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="8" ListVariableName="_laser" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" ExecutionDelayExpression="15000">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:_laser.size}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2568,7 +2553,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2577,7 +2561,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2588,13 +2571,11 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="67E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" UseTTSTextExpression="Stack BOSS" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="67F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2603,7 +2584,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Numbers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2612,7 +2592,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2623,13 +2602,11 @@
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="67C" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="Attack M" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="67D" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="true" Grouping="And">
@@ -2640,7 +2617,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2649,7 +2625,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2658,7 +2633,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="${cast}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2667,7 +2641,6 @@
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -2678,17 +2651,13 @@
                     <Triggers>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Diffuse Wave Cannon (Front/back safe)" Id="cae34aed-49c0-4c6c-b5bd-ce43b6c2a1a6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3368\|">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="front back safe" TextAuraFontSize="0" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="front back safe" TextAuraFontSize="0" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Diffuse Wave Cannon (Sides safe)" Id="e27c6abe-be43-464d-81cd-9b2a184ffbe1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3367\|">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="sides safe" TextAuraFontSize="0" ActionType="UseTTS">
-                            <Conditions />
-                          </Action>
+                          <Action OrderNumber="1" UseTTSTextExpression="sides safe" TextAuraFontSize="0" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
@@ -3947,18 +3916,20 @@
                   <Folder Id="e5c3013b-3eab-452e-9cf0-53e5fb3a5590" Name="by @Locrian Mode" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Bomb Boulders" Id="76782a90-f052-4a35-adf8-382a6d36fa1d" RegularExpression="2b:Titan readies Bomb Boulders">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bomb Boulders" Id="76782a90-f052-4a35-adf8-382a6d36fa1d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4109\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="bombs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Fault Zone" Id="2a4589ef-70e1-4688-acc4-d4865041c5b0" RegularExpression="2b:Titan readies Fault Zone">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fault Zone" Id="2a4589ef-70e1-4688-acc4-d4865041c5b0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4102\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -3970,42 +3941,46 @@
                       <Folder Id="c2596114-afd0-4189-b94a-1d0dd1636a7e" Name="Markers" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Name="Blue (Corner)" Id="e6736172-15ed-41b2-8d97-110090b1171a" RegularExpression="1B:.{8}:(?&lt;name&gt;[\w-' ]+):.{4}:.{4}:00BB:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blue (Corner)" Id="e6736172-15ed-41b2-8d97-110090b1171a" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[\w\-' ]+)\|[^|]*\|[^|]*\|00BB\|">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Blue Marker" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Orange Cube (Stack)" Id="fe06e7db-b155-4a63-b50e-3fabf0aacfda" RegularExpression="1B:.{8}:(?&lt;name&gt;[\w-' ]+):.{4}:.{4}:00BA:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Orange Cube (Stack)" Id="fe06e7db-b155-4a63-b50e-3fabf0aacfda" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[\w\-' ]+)\|[^|]*\|[^|]*\|00BA\|">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Yellow Prism (Spread)" Id="3c0054f5-3ab4-4ca1-8580-06028994ae77" RegularExpression="1B:.{8}:(?&lt;name&gt;[\w-' ]+):.{4}:.{4}:00B9:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Yellow Prism (Spread)" Id="3c0054f5-3ab4-4ca1-8580-06028994ae77" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[\w\-' ]+)\|[^|]*\|[^|]*\|00B9\|">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Red Marker (Meteor)" Id="63ba669a-e951-4472-8f39-1b255c2ae375" RegularExpression="1B:.{8}:(?&lt;name&gt;[\w-' ]+):.{4}:.{4}:0017:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Red Marker (Meteor)" Id="63ba669a-e951-4472-8f39-1b255c2ae375" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[\w\-' ]+)\|[^|]*\|[^|]*\|0017\|">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Meteor" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -4015,10 +3990,11 @@
                       <Folder Id="4d2695ad-e6a4-444a-a72e-97ff0cb1c838" Name="Bomb Tracker" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Name="BombListX" Id="4b46cfa9-7445-4c31-bd2e-12d8ad8ceab5" RegularExpression="03:.{8}:Added new combatant Bomb Boulder\.  Job: N\/A Level: 80 Max HP: 14800000 Max MP: 10000 Pos: \((?&lt;bombx&gt;[\d]+),[\d]+,[\w-.]+\)">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="BombListX" Id="4b46cfa9-7445-4c31-bd2e-12d8ad8ceab5" RegularExpression="^03\|[^|]*\|[^|]*\|(?&gt;Bomb Boulder|Bomber-Brocken|bombo rocher|ボムボルダー)\|[^|]*\|50\|(?&gt;[^|]*\|){11}(?&lt;bombx&gt;[^|]*)\|">
                             <Actions>
                               <Action OrderNumber="1" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="BombListX" ListVariableExpression="${bombx}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                                 <Condition Enabled="false" Grouping="Or" />
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -4034,7 +4010,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Bomb Callout - 2-1 / 3-1" Id="38b6edab-8186-44c2-93dc-be91e76b06aa" RegularExpression="14:4110:Titan starts using Seismic Wave" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bomb Callout - 2-1 / 3-1" Id="38b6edab-8186-44c2-93dc-be91e76b06aa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4110\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="2-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="750">
                                 <Condition Enabled="true" Grouping="And">
@@ -4058,6 +4034,7 @@
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[3]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                   </ConditionGroup>
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" UseTTSTextExpression="3-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="750">
                                 <Condition Enabled="true" Grouping="And">
@@ -4081,46 +4058,54 @@
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[3]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                   </ConditionGroup>
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Bomb Callout - Cardinal/Intercardinal" Id="45daebf4-2022-4e99-a14f-984e6e09d52c" RegularExpression="15:.{8}:Titan:411B:Landslide:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bomb Callout - Cardinal/Intercardinal" Id="45daebf4-2022-4e99-a14f-984e6e09d52c" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|411B\|">
                             <Actions>
                               <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[1]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[2]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[3]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[4]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:BombListX[5]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="6" UseTTSTextExpression="Cardinals" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="750" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:BombDirection}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                               <Action OrderNumber="7" UseTTSTextExpression="Corners" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="750" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${var:BombDirection}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
+                                <Conditions />
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
@@ -4129,140 +4114,159 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Name="Earthen Fist" Id="52b0c85b-da91-4ff4-94eb-68182653145f" RegularExpression="14:(?&lt;id&gt;412F|4130|4131|4132):Titan Maximum starts using Earthen Fist">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fist" Id="52b0c85b-da91-4ff4-94eb-68182653145f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;412F|4130|4131|4132)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Left ... then Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="412F" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" UseTTSTextExpression="Right ... then Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4130" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" UseTTSTextExpression="Left ... stay Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4131" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" UseTTSTextExpression="Right ... stay Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4132" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Panel Punches" Id="1cdb889d-389e-45b0-a19e-f4e3d34f259a" RegularExpression="14:(?&lt;id&gt;4125|4126|4127|4128):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Panel Punches" Id="1cdb889d-389e-45b0-a19e-f4e3d34f259a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;4125|4126|4127|4128)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Front Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4125" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="2" UseTTSTextExpression="Back Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4126" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="3" UseTTSTextExpression="Back Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4127" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                           <Action OrderNumber="4" UseTTSTextExpression="Front Left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="4128" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                             </Condition>
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Stonecrusher" Id="103120cd-4f36-4367-a3bc-96b0bdb6b906" RegularExpression="14:4116:Titan starts using Stonecrusher on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stonecrusher" Id="103120cd-4f36-4367-a3bc-96b0bdb6b906" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4116\|[^|]*\|[^|]*\|(?&lt;player&gt;[a-zA-Z-' ]{1,31})">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Voice of the Land" Id="b7f1c4bb-12ad-4ab9-a4af-8c0575be45c3" RegularExpression="14:4114:Titan starts using Voice Of The Land">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Voice of the Land" Id="b7f1c4bb-12ad-4ab9-a4af-8c0575be45c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4114\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Geocrush" Id="f67d738d-2a19-45fd-80ac-ca579926e355" RegularExpression="14:4113:Titan starts using Geocrush">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Geocrush" Id="f67d738d-2a19-45fd-80ac-ca579926e355" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4113\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Seismic Wave" Id="1a52fdfc-fa32-4a6f-b75d-a1112701bcc0" RegularExpression="14:4110:Titan starts using Seismic Wave">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Seismic Wave" Id="1a52fdfc-fa32-4a6f-b75d-a1112701bcc0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4110\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Hide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Fault Line" Id="c33ce400-3b91-440b-9153-4c49763b7e0b" RegularExpression="14:411E:Titan starts using Fault Line">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fault Line" Id="c33ce400-3b91-440b-9153-4c49763b7e0b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|411E\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Dash" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Magnitude 5.0" Id="948373ee-5ba7-411a-aa02-186bb350aa8f" RegularExpression="14:4121:Titan starts using Magnitude 5.0">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Magnitude 5.0" Id="948373ee-5ba7-411a-aa02-186bb350aa8f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4121\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Massive Landslide" Id="0c17e777-d1a9-4331-81f0-8bb0c52398c5" RegularExpression="14:411B:Titan starts using Landslide">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Massive Landslide" Id="0c17e777-d1a9-4331-81f0-8bb0c52398c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|411B\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Landslide - t shape" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Earthen Fury" Id="c5e82ba6-c5ba-4889-9d12-2de596504709" RegularExpression="14:4124:Titan Maximum starts using Earthen Fury">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fury" Id="c5e82ba6-c5ba-4889-9d12-2de596504709" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4124\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Tumult" Id="c6012c63-8f6c-477b-9f3b-bd02318e5802" RegularExpression="14:412A:Titan Maximum starts using Tumult">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tumult" Id="c6012c63-8f6c-477b-9f3b-bd02318e5802" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|412A\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Earthen Fury (DoT)" Id="3a500468-0d73-42b7-a1a0-d725be3ed68d" RegularExpression="14:4139:Titan starts using Earthen Fury">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fury (DoT)" Id="3a500468-0d73-42b7-a1a0-d725be3ed68d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4139\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Dual Earthen Fists" Id="778645c1-eaa8-4431-9239-e90c5c76a4d7" RegularExpression="14:4135:Titan Maximum starts using Dual Earthen Fists">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dual Earthen Fists" Id="778645c1-eaa8-4431-9239-e90c5c76a4d7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4135\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -4271,26 +4275,29 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Earthen Gauntlets : go in line" Id="cc6aa3b6-17d8-49e9-9984-4c911ad88281" RegularExpression="15:.{8}:Titan:40E6:Earthen Gauntlets:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Gauntlets : go in line" Id="cc6aa3b6-17d8-49e9-9984-4c911ad88281" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|40E6\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="GO IN LINE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Earthen Wheels : Kart" Id="fc40eccd-cc77-4786-80fb-fdf61b94cb5a" RegularExpression="15:.{8}:Titan:40E8:Earthen Wheels:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Wheels : Kart" Id="fc40eccd-cc77-4786-80fb-fdf61b94cb5a" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|40E8\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="SIDES - CART" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Bomb Boulder Explosion" Id="f7358f9b-c398-494c-9256-9b748e83c1ee" RegularExpression="15:[A-Z0-9]{8}:Bomb Boulder:410A:Explosion:" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bomb Boulder Explosion" Id="f7358f9b-c398-494c-9256-9b748e83c1ee" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|410A\|" PeriodRefire="Deny" RefirePeriodExpression="10000">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="MOVE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
