@@ -192,55 +192,85 @@
           <Folder ZoneFilterEnabled="True" Id="6b837ff3-17e7-42b1-ac04-10e0e86d7315" ZoneFilterRegularExpression="The\ Wreath\ Of\ Snakes\ \(Extreme\)" Name="4.5 - The Wrath of Snakes" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Handprint Left" Id="23ca436b-a1e0-48cc-9ede-253c14fd8490" RegularExpression=":Yama-no-shiki:37E5:Handprint:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Handprint Left" Id="23ca436b-a1e0-48cc-9ede-253c14fd8490" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37E5\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Handprint Right" Id="cf91e0ae-1a63-4eb9-9343-6d1f8c2c2562" RegularExpression=":Yama-no-shiki:37E6:Handprint:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Handprint Right" Id="cf91e0ae-1a63-4eb9-9343-6d1f8c2c2562" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37E6\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Fifth Element" Id="097f94cc-28e6-48a8-b9f7-07116a91d040" RegularExpression="2b:Seiryu readies Fifth Element">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fifth Element" Id="097f94cc-28e6-48a8-b9f7-07116a91d040" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37(?&gt;C3|FE)\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Cursekeeper" Id="f37a9ec8-2191-4265-b7d7-6e3fac8ca549" RegularExpression="2b:Seiryu readies Cursekeeper">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Cursekeeper" Id="f37a9ec8-2191-4265-b7d7-6e3fac8ca549" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37D2\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Tank Swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Tank Swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Kuji-kiri" Id="25e4e9f9-371c-494a-bf47-2cba026b2954" RegularExpression="2b:Seiryu readies Kuji-kiri">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Kuji-kiri" Id="25e4e9f9-371c-494a-bf47-2cba026b2954" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37E1\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Checkerboard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Checkerboard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Stoneskin" Id="26ef5f78-0f71-404c-acc6-a89e8e979fec" RegularExpression="Numa-No-Shiki starts using Stoneskin on Numa-No-Shiki">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stoneskin" Id="26ef5f78-0f71-404c-acc6-a89e8e979fec" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37F4\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Silence" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Silence" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Serpent Ascending" Id="2582e174-b13b-4fa3-9cdc-db211bc01bab" RegularExpression="Seiryu starts using Serpent Ascending on Seiryu">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Serpent Ascending" Id="2582e174-b13b-4fa3-9cdc-db211bc01bab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3C25\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Tower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Tower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Force Of Nature" Id="63c90343-31e6-40e1-8127-4c2897657c74" RegularExpression="Seiryu starts using Force Of Nature on Seiryu">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Force Of Nature" Id="63c90343-31e6-40e1-8127-4c2897657c74" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;37E[AB]|380[9A])\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10" RefireRequeue="False" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10" RefireRequeue="False">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="in/out ?" Id="86987d4d-59bc-4152-8275-490080de82c9" RegularExpression="Seiryu:37D5:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="in/out ?" Id="86987d4d-59bc-4152-8275-490080de82c9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37D5\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="IN OR OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="IN OR OUT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Summon Orochi" Id="3ff0ff8e-4361-48e4-b694-b74086433a61" RegularExpression="14:37D0:Seiryu starts using Summon Shiki">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Summon Orochi" Id="3ff0ff8e-4361-48e4-b694-b74086433a61" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37D0\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Snakes" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Snakes" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
@@ -1805,44 +1835,166 @@
       <Folder Id="1bb3d26e-cd90-4f49-a266-209c56f43b44" Name="6.0 : Endwalker" Enabled="true">
         <Folders>
           <Folder Id="c969ebec-9a70-44ca-8f83-3b10397b574d" Name="6.0 - 83 - The Dark Inside" Enabled="true">
-            <Folders />
+            <Folders>
+              <Folder Id="09bc6080-f345-46fa-9818-b076d84be559" Name="Attempt at complex mechanics" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Sigil Tether" Id="669201df-b48c-4876-b520-20d9733e75c5" RegularExpression="^35\|[^|]*\|[^|]*\|(?&lt;casterName&gt;[^|]*)\|(?&lt;sigilID&gt;[^|]*)\|(?&gt;[^|]*\|){3}(?&lt;id&gt;00A[4B])\|">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Push" ListVariableName="ZodiarkEXSigilList" ListVariableExpression="${sigilID}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="west" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].x}" ExpressionTypeL="String" ExpressionR="79" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].y}" ExpressionTypeL="String" ExpressionR="100" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="east" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].x}" ExpressionTypeL="String" ExpressionR="121" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].y}" ExpressionTypeL="String" ExpressionR="100" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="South" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].x}" ExpressionTypeL="String" ExpressionR="100" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${sigilID}].y}" ExpressionTypeL="String" ExpressionR="121" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="5" UseTTSTextExpression="${var:ZodiarkEXSigilPosition} triangle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="00A4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="6" UseTTSTextExpression="${var:ZodiarkEXSigilPosition} Square" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="00AB" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="7" VariableName="ZodiarkEXSigilPosition" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Astral Flow" Id="273263cf-bf72-4ecb-b47b-9b8ec1bf85ec" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;666[23])\|">
+                    <Actions>
+                      <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="astral rotate clockwise" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6662" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="astral rotate counter clockwise" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6663" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="corner mechanic" Id="64a38f29-5017-47d4-97ec-acfed29906af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|67E(?&lt;move&gt;[CD])\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="boss northeast" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="boss northwest" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Sigil Cast" Id="4c5d88b8-0334-4762-88b7-31aff7ebd1c0" RegularExpression="^20\|[^|]*\|(?&lt;sigilID&gt;[^|]*)\|[^|]*\|(?&lt;castID&gt;67E[456])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Push" ListVariableName="ZodiarkEXSigilInstaList" ListVariableExpression="${castID}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="west" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="North" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="79.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="west" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="79.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="east" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="121.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="5" UseTTSTextExpression="south" VariableOp="SetString" VariableName="ZodiarkEXSigilPosition" VariableExpression="South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="121.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="6" UseTTSTextExpression="${var:ZodiarkEXSigilPosition} Triangle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                          <ConditionSingle Enabled="true" ExpressionL="${castID}" ExpressionTypeL="String" ExpressionR="67E6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:ZodiarkEXSigilInstaList.size}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="7" UseTTSTextExpression="Middle South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:ZodiarkEXSigilInstaList.size}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilInstaList" ExpressionTypeL="String" ExpressionR="67E5" ExpressionTypeR="String" ConditionType="ListContains" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="8" UseTTSTextExpression="North Middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                          <ConditionSingle Enabled="true" ExpressionL="${castID}" ExpressionTypeL="String" ExpressionR="67E6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:ZodiarkEXSigilInstaList.size}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="9" UseTTSTextExpression="North Sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="ZodiarkEXSigilList" ExpressionTypeL="String" ExpressionR="${sigilID}" ExpressionTypeR="String" ConditionType="ListDoesNotContain" />
+                          <ConditionSingle Enabled="true" ExpressionL="${castID}" ExpressionTypeL="String" ExpressionR="67E4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:ZodiarkEXSigilInstaList.size}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="100.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="10" VariableName="ZodiarkEXSigilPosition" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sigil Finished Cast" Id="182a7c23-1c3a-41d3-9a08-50cab755d9eb" RegularExpression="^21\|[^|]*\|(?&lt;sigilID&gt;[^|]*)\|[^|]*\|(?&lt;castID&gt;67E[456])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableName="ZodiarkEXSigilList" ListVariableExpression="${sigilID}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" ListVariableName="ZodiarkEXSigilInstaList" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Phobos" Id="daeca8cf-12b2-4ab1-9291-a9467c745c34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|67F0\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="heavy DOT" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Astral Flow" Id="273263cf-bf72-4ecb-b47b-9b8ec1bf85ec" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;666[23])\|">
-                <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="astral rotate clockwise" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="astral rotate counter clockwise" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="corner mechanic" Id="64a38f29-5017-47d4-97ec-acfed29906af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|67E(?&lt;move&gt;[CD])\|">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="go northwest" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                    <Conditions />
-                  </Action>
-                  <Action OrderNumber="2" UseTTSTextExpression="go northeast" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="true" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -1873,7 +2025,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="d7e6eb8e-b539-4e9b-80b3-aec4bece498b" Name="6.0 - 87 - The Mothercrystal" Enabled="true">
+          <Folder Id="d7e6eb8e-b539-4e9b-80b3-aec4bece498b" Name="6.0 - 89 - The Mothercrystal" Enabled="true">
             <Folders>
               <Folder Id="6bfd45b5-8034-4110-95d0-6cd940c0e011" Name="WeaponCounter" Enabled="true">
                 <Folders />
