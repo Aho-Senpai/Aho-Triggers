@@ -400,7 +400,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Searing Light - Duration:30 - Recast:120 - SkillID:64F2" Id="42375ce4-c02f-4d10-a57a-a0c7d8dc218f" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|64F2\|(?&lt;spellName&gt;[^|]*)\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Searing Light - Duration:30 - Recast:120 - SkillID:64C9" Id="42375ce4-c02f-4d10-a57a-a0c7d8dc218f" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|64C9\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="And">
