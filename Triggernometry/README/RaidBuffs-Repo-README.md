@@ -44,6 +44,9 @@ IF you do not have `Developer mode` enabled : Triggernometry > TOP RIGHT > `Edit
 > Here, you can enter the values you want for your X/Y, as well as the size (square is recommended, but you can have different values for height/width if you desire. Quality is not guaranteed if you do so).  
 Enter your desired values on the row below. (Aka : do not replace `XPosRaidBuffAura` for example.)  
 
+> You will also NEED to fire the `# - Setup Table Permanant Variable : Image Links` trigger once.  
+`Right Click` > `Fire`. That's all. Really
+
 Congratulations, the hard part is done. Now, all that's left for you to do is enable the 4 optional settings if you want them.  
 THOSE SETTINGS ARE TOGGLES ! 
 
