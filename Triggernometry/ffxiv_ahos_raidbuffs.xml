@@ -480,6 +480,12 @@
         </Triggers>
       </Folder>
     </Folders>
-    <Triggers />
+    <Triggers>
+      <Trigger Enabled="true" Source="None" IsReadme="True" Name="README !!" Id="1d958284-4f4a-4926-b5d5-b36acf2e6a57" RegularExpression="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/RaidBuffs-Repo-README.md" Description="https://github.com/Aho-Senpai/Aho-Triggers/blob/main/Triggernometry/README/RaidBuffs-Repo-README.md">
+        <Actions />
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
   </ExportedFolder>
 </TriggernometryExport>
