@@ -37,6 +37,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="TTS Raid Buffs" Id="ca60eb64-4d1c-4b54-9b57-225a7fc0b3f2" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsTTS">
             <Actions>
@@ -54,6 +55,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Keep After CD" Id="1118db9f-dd64-466f-8e92-506f3551b6d6" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsKeep">
             <Actions>
@@ -71,6 +73,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Aura Size (Width/Height) (Default:40)" Id="b883b506-c215-462c-b3e2-6ce3bc5b7d8b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSize">
             <Actions>
@@ -96,6 +99,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="None" Sequential="True" Name="# - Setup Table Permanant Variable : Image Links" Id="80b088ff-97d2-4b28-b9bb-6ddc588ea24e" RegularExpression="" EditAutofire="True">
             <Actions>
@@ -181,6 +185,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Disable RaidBuff Aura" Id="d80b6395-44b3-4420-9e30-680c8148736b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsDisable">
             <Actions>
@@ -198,6 +203,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Vertical Buffs" Id="cad9583e-88ff-401a-a757-805a570515f8" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsVertical">
             <Actions>
@@ -236,12 +242,15 @@
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="RaidBuff-" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="RaidBuff-" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -266,6 +275,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="0 - Trick Attack - Duration:15 - Recast:60 - SkillID:8D2" Id="d14922e5-c8b6-4681-a6cc-9b7ba5294787" RegularExpression="^21\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|8D2\|(?&lt;spellName&gt;[^|]*)\|" DebugLevel="Verbose">
             <Actions>
@@ -285,6 +295,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Divination - Duration:15 - Recast:120 - SkillID:40A8" Id="8a2c8d89-b31b-45e0-b7b5-731b5bf4cf9b" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|40A8\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -304,6 +315,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Chain Stratagem - Duration:15 - Recast:120 - SkillID:1D0C" Id="8a8270fe-f37a-4250-b5e3-8a1d3f6888bf" RegularExpression="^21\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|1D0C\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -323,6 +335,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Technical Step - Duration:20 - Recast:120 - SkillID:3F4." Id="3b7804f9-cf2f-4d49-91ed-b71b047ad5f2" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|3F4[1-4]\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -342,6 +355,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Embolden - Duration:20 - Recast:120 - SkillID:1D60" Id="79b049b7-ed80-446d-8611-2689c349075f" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|1D60\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -361,6 +375,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Battle Litany - Duration:15 - Recast:120 - SkillID:DE5" Id="3bc9868f-e4dd-4ecc-8d90-3f994235c8a0" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|DE5\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -380,6 +395,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Battle Voice - Duration:15 - Recast:120 - SkillID:76" Id="e1bb622d-bee5-4f8c-a971-c744771d0cf6" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|76\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -399,6 +415,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Searing Light - Duration:30 - Recast:120 - SkillID:64C9" Id="42375ce4-c02f-4d10-a57a-a0c7d8dc218f" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|64C9\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -418,6 +435,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Arcane Circle - Duration:20 - Recast:120 - SkillID:5F55" Id="749c9809-147c-456a-8461-7b7c71bf7c02" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|5F55\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
@@ -437,6 +455,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="None" Sequential="True" Name="# - Draw Auras" Id="9281f8f3-e354-479d-89bb-cb8d2f0371d3" RegularExpression="(?&lt;Priority&gt;\d*) - (?&lt;buff&gt;.*?) - Duration:(?&lt;duration&gt;\d*) - Recast:(?&lt;recast&gt;\d*) - SkillID:(?&lt;skillID&gt;[A-F0-9.]*) - (?&lt;playerID&gt;[A-F0-9]*)" DebugLevel="Verbose">
             <Actions>
@@ -476,6 +495,27 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Radiant Finale - Duration:15 - Recast:110 - SkillID:64B9" Id="c004c64c-25e1-4cdf-a729-84cdbf0205ab" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|64B9\|(?&lt;spellName&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
