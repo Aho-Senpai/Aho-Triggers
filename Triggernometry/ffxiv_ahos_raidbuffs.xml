@@ -182,11 +182,9 @@
             <Actions>
               <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="RaidBuffSettingsDisplay" TextAuraExpression="Vertical Raid Buff : ${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;TTS Raid Buffs : ${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;Keep Raid Buff : ${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;Disable Raid Buff : ${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;X, Y Positions of Auras : ${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}&#xD;&#xA;Width, Height of  Auras : ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" TextAuraXIniExpression="5" TextAuraYIniExpression="5" TextAuraWIniExpression="${_screenwidth}" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraTTLTickExpression="5-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraName="RaidBuffAuraPlacement" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/NeoRaidBuffsPlacer.png" AuraXIniExpression="${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}" AuraYIniExpression="${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}*10" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" AuraTTLTickExpression="5-${_since}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -196,20 +194,32 @@
       <Folder Id="a84a55e6-9009-4142-be18-300f0c118ca1" Name="Clear Auras" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe/Clear" Id="6cd4089f-3c20-4298-a76d-a23d0a7f6344" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;0[13]|1[02])">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Wipe/Clear" Id="6cd4089f-3c20-4298-a76d-a23d0a7f6344" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;0[13]|1[02])">
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="RaidBuff-" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="RaidBuff-" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Enter Sanctuary Clear" Id="3002f0d1-7b20-4db5-ab6d-0a741ffe228f" RegularExpression="^00\|[^|]*\|0039\|\|You have entered a sanctuary\.">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6cd4089f-3c20-4298-a76d-a23d0a7f6344" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="8e1192d5-c609-4b76-8c58-d86075de7b17" Name="# - Raid Buffs (fix for radiant finale : BRD 2nd raid buff)" Enabled="true">
+      <Folder Id="8e1192d5-c609-4b76-8c58-d86075de7b17" Name="# - Raid Buffs" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Brotherhood - Duration:15 - Recast:120 - SkillID:1CE4" Id="30bd0566-834f-48ab-9f4d-6d137a1d7dd9" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|1CE4\|(?&lt;spellName&gt;[^|]*)\|">
@@ -218,11 +228,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -235,11 +247,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -252,11 +266,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -269,11 +285,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -286,11 +304,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -303,11 +323,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -316,15 +338,17 @@
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Battle Litany - Duration:15 - Recast:120 - SkillID:DE5" Id="3bc9868f-e4dd-4ecc-8d90-3f994235c8a0" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|DE5\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
-              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
+              <Action OrderNumber="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -337,11 +361,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -354,11 +380,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -371,11 +399,13 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -386,37 +416,29 @@
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAura" AuraName="RaidBuff-${playerID}-${skillID}-Image" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAura" AuraName="RaidBuff-${playerID}-${skillID}-Active" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="5" AuraImageMode="Zoom" AuraName="RaidBuff-${playerID}-${skillID}-Image" AuraImage="${ptvarrl:PermaRaidBuffTable[${buff}][1]}" AuraXIniExpression="${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=0,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraYIniExpression="${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=1,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" AuraTTLTickExpression="if(${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}&gt;0,0,${recast}-${_since})" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="6" TextAuraAlignment="BottomCenter" TextAuraFontSize="18" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraExpression="${numeric:(${recast}-${_since})%(${recast}-${duration})}" TextAuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" TextAuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" TextAuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" TextAuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${recast}-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="7" AuraImageMode="Zoom" AuraName="RaidBuff-${playerID}-${skillID}-Active" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/ComboGIF.gif" AuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" AuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" AuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" AuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="8" TextAuraAlignment="TopCenter" TextAuraFontSize="12" TextAuraForeground="#FF8040" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraExpression="${numeric:(-${recast})+${_since}}" TextAuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" TextAuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" TextAuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" TextAuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" ExecutionDelayExpression="${recast}*1000">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -427,16 +449,28 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireRequeue="False">
+              <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Sequential="True" Name="## - RaidBuff TTS" Id="8d9d4d80-91c5-4671-95b5-c36970677e9b" RegularExpression="(?&lt;spellName&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="200">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
