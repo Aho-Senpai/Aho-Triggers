@@ -658,20 +658,22 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ravenous Assault" Id="6581c863-fe9b-4cab-ad63-c4825faea1d8" RegularExpression="14:47A6:Hades starts using Ravenous Assault on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ravenous Assault" Id="6581c863-fe9b-4cab-ad63-c4825faea1d8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|47A6\|[^|]*\|[^|]*\|(?&lt;player&gt;[a-zA-Z-' ]{1,31})\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Fire/Ice Brand" Id="0e85896b-979b-4673-b555-de77ec540bbc" RegularExpression="1A:[A-F0-9]{8}:(?&lt;player&gt;[a-zA-Z-' ]{1,31}) gains the effect of (?&lt;debuff&gt;Freezing|Burning) Brand from">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire/Ice Brand" Id="0e85896b-979b-4673-b555-de77ec540bbc" RegularExpression="^26\|[^|]*\|(?&lt;debuf&gt;85[01])\|(?&lt;debuff&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
                     <Actions>
                       <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${debuff}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                         </Condition>
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -709,15 +711,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Polydegmon's Purgation" Id="41420554-c1fa-4b34-ac36-48e133e3cb29" RegularExpression="2b:Hades begins casting Polydegmon's Purgation">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="GO IN" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Cursed Shriek (to fix)" Id="af6563a0-72c6-4cfc-8432-2201a4e1956f" RegularExpression="1A:[A-F0-9]{8}:(?&lt;player&gt;[a-zA-Z-' ]{1,31}) gains the effect of Cursed Shriek from  for (?&lt;duration&gt;\d{1,3}\.\d{1,2}) Seconds" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Cursed Shriek (to fix)" Id="af6563a0-72c6-4cfc-8432-2201a4e1956f" RegularExpression="^26\|[^|]*\|1C4\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="6000">
                         <Condition Enabled="false" Grouping="Or" />
@@ -726,10 +720,11 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Height Of Chaos" Id="84950284-c88f-4b77-89f4-7f6529f9b370" RegularExpression="14:47D1:Ascian Prime's Shade starts using Height Of Chaos on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Height Of Chaos" Id="84950284-c88f-4b77-89f4-7f6529f9b370" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|47D1\|[^|]*\|[^|]*\|(?&lt;player&gt;[a-zA-Z-' ]{1,31})\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -778,42 +773,47 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Polydegmon's Purgation" Id="102c48e3-a2e0-4bef-a643-1e301854fa7e" RegularExpression="2b:Hades readies Polydegmon's Purgation">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Polydegmon's Purgation" Id="102c48e3-a2e0-4bef-a643-1e301854fa7e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;4170|47ED)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Shadow Stream" Id="cee1ad46-62b6-4a6e-92a7-907303a55109" RegularExpression="2b:Hades readies Shadow Stream">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shadow Stream" Id="cee1ad46-62b6-4a6e-92a7-907303a55109" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;47EA|415C)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Titanomachy" Id="a4391193-e114-4700-bfe7-70a6c8af5db7" RegularExpression="2b:Hades readies Titanomachy">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Titanomachy" Id="a4391193-e114-4700-bfe7-70a6c8af5db7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|?&gt;47EF|4180\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Earthshakers" Id="9c5e0105-2537-4ac3-8f31-5f811965b605" RegularExpression="2b:Hades readies Hellborn Yawp">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthshakers" Id="9c5e0105-2537-4ac3-8f31-5f811965b605" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|416E\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="earthshakers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Life in Captivity" Id="907a930b-f44e-48e1-9dc4-7a30d0e2ce3c" RegularExpression="2b:Hades readies Life in Captivity">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Life in Captivity" Id="907a930b-f44e-48e1-9dc4-7a30d0e2ce3c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;4948|4175)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="get ready to click you fool" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
