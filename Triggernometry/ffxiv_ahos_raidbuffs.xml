@@ -198,11 +198,9 @@
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="RaidBuff-" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="RaidBuff-" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -211,11 +209,9 @@
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="6cd4089f-3c20-4298-a76d-a23d0a7f6344" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -228,13 +224,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -247,13 +241,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -266,13 +258,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -285,13 +275,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -304,13 +292,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -323,13 +309,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -342,13 +326,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -361,13 +343,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -380,13 +360,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -399,13 +377,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -449,13 +425,11 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -466,11 +440,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>

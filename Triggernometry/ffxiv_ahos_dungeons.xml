@@ -58,13 +58,13 @@
           <Folder ZoneFilterEnabled="True" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="14:387:Chudo-Yudo starts using Swinge on Chudo-Yudo" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="\[.{14}14:387:">
+              <Trigger Enabled="true" Name="14:387:Chudo-Yudo starts using Swinge on Chudo-Yudo" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="14:387:">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="14:404:Isgebind starts using Snowfall" Id="ea71fadc-7212-4e41-bef3-75749f58a3c6" RegularExpression="\[.{14}14:404:">
+              <Trigger Enabled="true" Name="14:404:Isgebind starts using Snowfall" Id="ea71fadc-7212-4e41-bef3-75749f58a3c6" RegularExpression="14:404:">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -90,7 +90,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:KeeperOfTheLakeLockLastBoss}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Name="Lock Last Boss" Id="d03e30cf-5b7b-4472-a37e-6c57cea78bfb" RegularExpression="\[.{14}00:0839:The Forsworn Promise will be sealed off in 15 seconds!&#xA;">
+              <Trigger Enabled="true" Name="Lock Last Boss" Id="d03e30cf-5b7b-4472-a37e-6c57cea78bfb" RegularExpression="00:0839:The Forsworn Promise will be sealed off in 15 seconds!&#xA;">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="KeeperOfTheLakeLockLastBoss" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
@@ -98,7 +98,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Unlock Last Boss" Id="ee9979ba-17a5-48a1-9dcf-00a190a82659" RegularExpression="\[.{14}00:0839:The Forsworn Promise is no longer sealed!&#xA;">
+              <Trigger Enabled="true" Name="Unlock Last Boss" Id="ee9979ba-17a5-48a1-9dcf-00a190a82659" RegularExpression="00:0839:The Forsworn Promise is no longer sealed!&#xA;">
                 <Actions>
                   <Action OrderNumber="1" VariableName="KeeperOfTheLakeLockLastBoss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
@@ -272,7 +272,7 @@
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^188$" Id="2f756df2-dedd-4901-bb15-61ea6e0fcba9" Name="50 - The Wanderer's Palace (Hard)" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Soul Douse" Id="51cbdea3-73fb-4f0e-8a0f-5e9722b8b713" RegularExpression="\[.{14}14:C9E:">
+              <Trigger Enabled="true" Name="Soul Douse" Id="51cbdea3-73fb-4f0e-8a0f-5e9722b8b713" RegularExpression="14:C9E:">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -527,7 +527,7 @@
           <Folder ZoneFilterEnabled="True" Id="a04d03d9-7bb6-4922-8255-6c2b5684b7d2" ZoneFilterRegularExpression="Bardam's\ Mettle" Name="65 - Bardam's Mettle" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Eye of the Fierce" Id="8e0f17b6-3659-4eed-b228-086fd4d758ad" RegularExpression="\[.{14}14:1F0D:">
+              <Trigger Enabled="true" Name="Eye of the Fierce" Id="8e0f17b6-3659-4eed-b228-086fd4d758ad" RegularExpression="14:1F0D:">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
@@ -851,7 +851,7 @@
           <Folder ZoneFilterEnabled="True" Id="ece92c35-c543-45cc-8bfa-6a6efd5910e3" ZoneFilterRegularExpression="Anamnesis\ Anyder" Name="80 - Anamnesis Anyder" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Luminour Ray" Id="0bbd8eb6-561a-49ee-be88-cf560b094f4b" RegularExpression="\[.{14}14:4E26:Unknown starts using Luminous Ray on Unknown">
+              <Trigger Enabled="true" Name="Luminour Ray" Id="0bbd8eb6-561a-49ee-be88-cf560b094f4b" RegularExpression="14:4E26:Unknown starts using Luminous Ray on Unknown">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -859,7 +859,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Raging Glower" Id="ce589347-0c18-4290-8b1a-fd0ea10d4afd" RegularExpression="\[.{14}14:4B56:Kyklops starts using Raging Glower on Kyklops">
+              <Trigger Enabled="true" Name="Raging Glower" Id="ce589347-0c18-4290-8b1a-fd0ea10d4afd" RegularExpression="14:4B56:Kyklops starts using Raging Glower on Kyklops">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -867,7 +867,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Eye of the Cyclone" Id="8004c632-6b92-4ace-bb27-cd7326054271" RegularExpression="\[.{14}14:4B57:Kyklops starts using Eye Of The Cyclone on Kyklops">
+              <Trigger Enabled="true" Name="Eye of the Cyclone" Id="8004c632-6b92-4ace-bb27-cd7326054271" RegularExpression="14:4B57:Kyklops starts using Eye Of The Cyclone on Kyklops">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -875,7 +875,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="2,000-Mina Swing" Id="94bae0f1-24a0-405a-be80-ab89c4569f9f" RegularExpression="\[.{14}14:4B55:Kyklops starts using 2,000-Mina Swing on Kyklops">
+              <Trigger Enabled="true" Name="2,000-Mina Swing" Id="94bae0f1-24a0-405a-be80-ab89c4569f9f" RegularExpression="14:4B55:Kyklops starts using 2,000-Mina Swing on Kyklops">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -883,7 +883,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Swipe" Id="08a9ffe6-35fd-48fd-948a-dd8dc3dbb609" RegularExpression="\[.{14}14:4B54:Kyklops starts using 2,000-Mina Swipe on Kyklops">
+              <Trigger Enabled="true" Name="Swipe" Id="08a9ffe6-35fd-48fd-948a-dd8dc3dbb609" RegularExpression="14:4B54:Kyklops starts using 2,000-Mina Swipe on Kyklops">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="out of front - swipe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1162,17 +1162,14 @@
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6324" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" UseTTSTextExpression="go begind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6322" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
