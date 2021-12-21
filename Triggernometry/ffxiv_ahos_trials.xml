@@ -644,7 +644,7 @@
       </Folder>
       <Folder Id="8ccdec31-948c-4905-813b-2eae2682b542" Name="5.0 : Shadowbringers" Enabled="true">
         <Folders>
-          <Folder Id="f518a3b0-7ea3-4eff-9a97-4c9d7f0485d7" Name="5.1 - The Dying Gasp" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^8(?&gt;47|85)$" ZoneFilterEnabled="True" Id="f518a3b0-7ea3-4eff-9a97-4c9d7f0485d7" Name="5.1 - The Dying Gasp" Enabled="true">
             <Folders>
               <Folder Id="e4904ea3-01f0-47d0-b153-d06642cc092f" Name="EX" Enabled="true">
                 <Folders />
