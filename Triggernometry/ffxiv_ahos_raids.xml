@@ -5635,6 +5635,137 @@
             </Folders>
             <Triggers />
           </Folder>
+          <Folder Id="f6d5d5cb-b0bf-48d2-9aa2-f06d6a849e73" Name="6.0 - Endwalker" Enabled="true">
+            <Folders>
+              <Folder Id="da4cfa20-22be-46e2-bc82-04a65e621145" Name="01 - Asphodelos: The First Circle" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Warder's Wrath" Id="3370c5b5-8b99-459b-800d-7b5ceb5b7892" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65F4\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pitiless Flail" Id="e1da198b-d0c2-4ec0-b492-d12f47911c5e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65E5\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="prey marker line" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heavy Hand" Id="1d7f8e8c-7f9c-49d0-89cc-3dd1b98be9df" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65F3\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="buster on ${_ffxivparty[${playerID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hot/Cold Spell" Id="40ff2f6a-4f97-4a43-b8de-44f69278b476" RegularExpression="^26\|[^|]*\|(?&lt;debuff&gt;AB[34])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Cold" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="AB3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="Hot" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="AB4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shining Cells" Id="3d79fab5-3f3a-4c64-a7e2-c0eaa385106c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65E9\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="pizza mechanic" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Aetherflail" Id="df72a871-9f9d-444d-bd94-461d58e0ac18" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65(?&lt;move&gt;DF|E0)\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="DF" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="E0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gaoler's Flail" Id="7e3a75f1-debf-45f7-8760-120f2542216e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;6DA[23])\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6DA2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6DA3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="9080c0fe-d898-4fc6-bf08-9a74488ae76e" Name="02 - Asphodeols: The Second Circle" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Murky Depths" Id="622d3d21-3dd8-4b6e-95c9-fc4b047abc59" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|680F\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doubled Impact" Id="5bf7dde7-91b5-4fde-bb9f-351cb4c34f6a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|680E\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="shared buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
