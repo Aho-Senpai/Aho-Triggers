@@ -5917,11 +5917,181 @@
               </Folder>
               <Folder Id="79a6566e-31ce-4cf0-8a74-dd5407fc00db" Name="03 - Asphodeols: The Third Circle" Enabled="true">
                 <Folders />
-                <Triggers />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Experimental Fireplume rotate" Id="e871ac3b-d9e7-43f0-96a8-d94226791d07" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6698\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="middle, then out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Experimental Fireplume out" Id="2426d7fe-0e72-43b2-8346-b9b4b6d798a7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6697\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="get out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Experimental Fireplume out warning" Id="e23f004d-ecb6-4531-ae6e-344bbd94df5e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6696\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="get out soon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="scorched exaltation" Id="322dc8d2-1b21-4914-a97e-d1d8813537ff" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66B8\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heat of Condemnation" Id="43ae4f9f-914f-402a-9b36-f86fb324d80e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66B2\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Name="Right/Left Cinderwing" Id="38cc5e7d-ed6f-4bf3-a3b4-ba110e60ef25" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66B(?&lt;move&gt;[45])\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dead Rebirth" Id="3e0a9e92-f18a-4a9c-b696-901d08a48f24" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66A9\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
               </Folder>
               <Folder Id="ed990644-386b-4b2f-a231-e93d4cd1c504" Name="04 - Asphodeols: The Fourth Circle" Enabled="true">
                 <Folders />
-                <Triggers />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Elegant Evisceration" Id="f1ff31ee-52a6-4337-b3d7-8c71906d09c2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A50\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Levinstrike Pinax" Id="7003bf9a-2214-4e12-8030-6e57ff670459" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A3F\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Well Pinax" Id="7f64aa5f-c103-4538-bdf0-3ec0af5ff695" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A3E\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="acid pinax" Id="7eee348a-02be-4e93-9b45-e1fbe6460df6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A3C\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="lava pinax" Id="0d070fa5-2c2b-40bc-a49b-aab6fc3fa4eb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A3D\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="bloodrake" Id="18957790-bb74-441c-9e45-2b8b8350068d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A40\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="hell skewer" Id="38a3c8f9-8a6f-49cf-9ecd-e052dd975dae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A4F\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="shift slash" Id="5b441eec-6e54-4277-bdb3-ae227311817e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A4[ABCD]\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind, slash" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="shift KB" Id="b6fcd0bb-32a8-434f-8b6a-6ca06dc78d94" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6D(?&gt;A[EF]|B[01])\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
               </Folder>
             </Folders>
             <Triggers />
