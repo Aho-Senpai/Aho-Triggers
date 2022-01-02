@@ -901,11 +901,9 @@
                 <Actions>
                   <Action OrderNumber="1" TextAuraFontSize="72" TextAuraForeground="Red" TextAuraOutline="Black" TextAuraName="KardiaReminderFlash" TextAuraExpression="Kardia !" TextAuraXIniExpression="(${_screenwidth}-400)/2" TextAuraYIniExpression="(${_screenheight}-200)/2" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraOTickExpression="50+(cos(${_sincems}/100)*30)" TextAuraTTLTickExpression="5-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -3102,10 +3100,11 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Camouflage" Id="a4b07bd6-8d98-408b-8297-bd6bd753b15a" RegularExpression="1[56]:[A-Z0-9]{8}:(?&lt;player&gt;[^:]{2,31}):3F0C:(?&lt;spell&gt;[^:]{1,31}):" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Camouflage" Id="a4b07bd6-8d98-408b-8297-bd6bd753b15a" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F0C\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="89000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
@@ -3152,10 +3151,11 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Name="Nebula" Id="362c7802-bb0b-4945-8194-b034195efe31" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F14\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Nebula" Id="362c7802-bb0b-4945-8194-b034195efe31" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F14\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
