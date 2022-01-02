@@ -209,6 +209,16 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Positional miss (regex by @aya, adjusted for network lines)" Id="105a27a8-4c16-439a-9765-00d10bf73417" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|((1D3[9A]|5F3[EF]|[35]8|42|8CF|DE[24]|8D2)\|[^|]*\|[^|]*\|[^|]*\|(7|3[6AE]|4[04])|(64AC|DEB)\|[^|]*\|[^|]*\|[^|]*\|(3A|42|3E))">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="miss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
     </Triggers>
   </ExportedFolder>
 </TriggernometryExport>
