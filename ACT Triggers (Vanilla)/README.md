@@ -4,8 +4,13 @@
 
 ### Step 1  
 
-Download the file you want : [Raid Buffs]() or [Nael RP Quotes]().
-<!-- TODO: description on how to download the file -->
+Download the file you want : [Raid Buffs] or [Nael RP Quotes].
+
+Here, you have multiple ways to do this.  
+The easiest awy would to use this amazing tool [DownGit](https://minhaskamal.github.io/DownGit/#/home)  
+You can either select the file and download it yourself, or use those links :  
+[Raid Buffs](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Aho-Senpai/Aho-Triggers/blob/main/ACT%20Triggers%20(Vanilla)/Raid%20Buffs.xml)  
+[Nael RP Quotes](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Aho-Senpai/Aho-Triggers/blob/main/ACT%20Triggers%20(Vanilla)/NaelRPQuotes.xml)  
 
 ### Step 2
 
@@ -48,7 +53,9 @@ Contact me!
 
 Ping me on the [ACT Discord](https://discord.gg/ahFKcmx)  
 DM me on Discord : `Aho Senpai#0818`
+Join my Github projects Discord [Aho-Senpai's Github Projects](https://discord.gg/dPFSM53)
 
 ## Thanks
 
-Thanks to EQAditu for making ACT maintaining it all this time, as well as for his amazing support when asked help <3
+Thanks to `EQAditu` for making ACT maintaining it all this time, as well as for his amazing support when asked help <3
+Thanks to `ngld` for pointing to [DownGit](https://minhaskamal.github.io/DownGit/#/home)
