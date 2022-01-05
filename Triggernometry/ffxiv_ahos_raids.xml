@@ -4666,7 +4666,7 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="2052a02e-5255-4599-bdaf-817efb928655" ZoneFilterRegularExpression="Eden's\ Verse:\ Refulgence" Name="08 - Eden's Verse: Refulgence" Enabled="true">
+              <Folder ZoneFilterEnabled="True" Id="2052a02e-5255-4599-bdaf-817efb928655" ZoneFilterRegularExpression="Eden's\ Verse:\ Refulgence" Name="08 - Eden's Verse: Refulgence" Enabled="true">
                 <Folders>
                   <Folder Id="efb5bf3a-8cf3-4dae-bd32-4f9d62834bdd" ZoneFilterRegularExpression="Eden's\ Verse:\ Refulgence\ \(Savage\)" Name="E8S (From @Forgotten Freedom)" Enabled="true">
                     <Folders>
