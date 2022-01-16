@@ -3,191 +3,384 @@
   <ExportedFolder Id="bf2b8135-3388-4efa-b944-a55a1fc1551c" Name="Raid Buffs" Enabled="true">
     <Folders>
       <Folder Id="22936a31-9a08-4e7f-8939-66b2d40cc447" Name="Settings" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="6e98d7c0-6fa2-41c0-a64e-9443880d207b" Name="First Time Setup" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="FIRST STEP SETUP TRIGGER !!" Id="98baca03-4bc5-409a-8703-a447bb836c00" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSettingsFirstTimeSetup">
+                <Actions>
+                  <Action OrderNumber="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="80b088ff-97d2-4b28-b9bb-6ddc588ea24e" TriggerForce="regexp,conditions" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="XPosRaidBuffAura" TableVariableX="3" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${_screenwidth}/2-200" TableVariableX="3" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="YPosRaidBuffAura" TableVariableX="4" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${_screenheight}/2-20" TableVariableX="4" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="6" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="WidthRaidBuffAura" TableVariableX="5" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="7" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="5" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="8" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="HeightRaidBuffAura" TableVariableX="6" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="9" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="6" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="10" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="KeepRaidBuffAura" TableVariableX="7" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="11" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="0" TableVariableX="7" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="12" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="TTSRaidBuffAura" TableVariableX="8" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="13" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="0" TableVariableX="8" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="14" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="DisableRaidBuffAura" TableVariableX="9" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="15" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="0" TableVariableX="9" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="16" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="VerticalRaidBuffAura" TableVariableX="10" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="17" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="0" TableVariableX="10" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="100">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# - Raid Buffs Placement" Id="9297ef2b-e02b-4d23-a273-5c802053d8e0" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsPlacement">
+          <Trigger Enabled="true" Source="None" Sequential="True" Name="1 - Raid Buffs Placement" Id="9297ef2b-e02b-4d23-a273-5c802053d8e0" RegularExpression="">
             <Actions>
               <Action OrderNumber="1" AuraName="RaidBuffAuraPlacement" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/NeoRaidBuffsPlacer.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}*10" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="5000" Description="Wait 2000ms" DescriptionOverride="True">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="XPosRaidBuffAura" TableVariableX="3" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="4" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${_imageaura[RaidBuffAuraPlacement].x}" TableVariableX="3" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="5" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="YPosRaidBuffAura" TableVariableX="4" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="6" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${_imageaura[RaidBuffAuraPlacement].y}" TableVariableX="4" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="7" AuraOp="DeactivateAura" AuraName="RaidBuffAuraPlacement" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="TTS Raid Buffs" Id="ca60eb64-4d1c-4b54-9b57-225a7fc0b3f2" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsTTS">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="4 - TTS Raid Buffs" Id="ca60eb64-4d1c-4b54-9b57-225a7fc0b3f2" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsTTS">
             <Actions>
               <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="TTSRaidBuffAura" TableVariableX="8" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="if((and(${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}=0)),1,if(and(${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}=1),0,1))" TableVariableX="8" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Keep After CD" Id="1118db9f-dd64-466f-8e92-506f3551b6d6" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsKeep">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="3 - Keep After CD" Id="1118db9f-dd64-466f-8e92-506f3551b6d6" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsKeep">
             <Actions>
               <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="KeepRaidBuffAura" TableVariableX="7" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="if((and(${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}=0)),1,if(and(${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}=1),0,1))" TableVariableX="7" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Aura Size (Width/Height) (Default:40)" Id="b883b506-c215-462c-b3e2-6ce3bc5b7d8b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSize">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="2.5 - Aura Size (Width/Height)" Id="b883b506-c215-462c-b3e2-6ce3bc5b7d8b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSize:?(?&lt;w&gt;\d*)?-?(?&lt;h&gt;\d*)?">
             <Actions>
               <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="WidthRaidBuffAura" TableVariableX="5" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
-              <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="5" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
+              <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${w}" TableVariableX="5" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${w}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="HeightRaidBuffAura" TableVariableX="6" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
-              <Action OrderNumber="4" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="6" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
+              <Action OrderNumber="4" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${h}" TableVariableX="6" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${h}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+                <Conditions />
               </Action>
               <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="None" Sequential="True" Name="# - Setup Table Permanant Variable : Image Links" Id="80b088ff-97d2-4b28-b9bb-6ddc588ea24e" RegularExpression="" EditAutofire="True">
-            <Actions>
-              <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Arcane Circle" TableVariableX="1" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="2" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Battle Litany" TableVariableX="1" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Battle Voice" TableVariableX="1" TableVariableY="3" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="4" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Brotherhood" TableVariableX="1" TableVariableY="4" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="5" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Chain Stratagem" TableVariableX="1" TableVariableY="5" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="6" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Divination" TableVariableX="1" TableVariableY="6" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="7" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Embolden" TableVariableX="1" TableVariableY="7" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="8" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Searing Light" TableVariableX="1" TableVariableY="8" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="9" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Technical Step" TableVariableX="1" TableVariableY="9" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="10" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Trick Attack" TableVariableX="1" TableVariableY="10" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="11" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="Radiant Finale" TableVariableX="1" TableVariableY="11" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="12" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003633_hr1.png" TableVariableX="2" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="13" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002585_hr1.png" TableVariableX="2" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="14" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002601_hr1.png" TableVariableX="2" TableVariableY="3" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="15" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002542_hr1.png" TableVariableX="2" TableVariableY="4" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="16" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002815_hr1.png" TableVariableX="2" TableVariableY="5" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="17" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003553_hr1.png" TableVariableX="2" TableVariableY="6" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="18" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003218_hr1.png" TableVariableX="2" TableVariableY="7" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="19" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002752_hr1.png" TableVariableX="2" TableVariableY="8" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="20" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003474_hr1.png" TableVariableX="2" TableVariableY="9" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="21" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/000000/000618_hr1.png" TableVariableX="2" TableVariableY="10" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="22" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002622_hr1.png" TableVariableX="2" TableVariableY="11" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Disable RaidBuff Aura" Id="d80b6395-44b3-4420-9e30-680c8148736b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsDisable">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="5 - Disable RaidBuff Aura" Id="d80b6395-44b3-4420-9e30-680c8148736b" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsDisable">
             <Actions>
               <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="DisableRaidBuffAura" TableVariableX="9" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="if((and(${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}=0)),1,if(and(${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}=1),0,1))" TableVariableX="9" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Vertical Buffs" Id="cad9583e-88ff-401a-a757-805a570515f8" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsVertical">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="6 - Vertical Buffs" Id="cad9583e-88ff-401a-a757-805a570515f8" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsVertical">
             <Actions>
               <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="VerticalRaidBuffAura" TableVariableX="10" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="if((and(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=0)),1,if(and(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=1),0,1))" TableVariableX="10" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="! - Display Settings OnChange" Id="eee832ad-deb4-4980-9194-d9e41c926836" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSettingsDisplay">
             <Actions>
-              <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="RaidBuffSettingsDisplay" TextAuraExpression="Vertical Raid Buff : ${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;TTS Raid Buffs : ${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;Keep Raid Buff : ${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;Disable Raid Buff : ${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]} (0 = False, 1 = True)&#xD;&#xA;X, Y Positions of Auras : ${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}&#xD;&#xA;Width, Height of  Auras : ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" TextAuraXIniExpression="5" TextAuraYIniExpression="5" TextAuraWIniExpression="${_screenwidth}" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraTTLTickExpression="5-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="RaidBuffSettingsDisplay" TextAuraExpression="(0 = False, 1 = True)&#xD;&#xA;&#xD;&#xA;Vertical Raid Buff : ${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}&#xD;&#xA;TTS Raid Buffs : ${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}&#xD;&#xA;Keep Raid Buff : ${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}&#xD;&#xA;Disable Raid Buff : ${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}&#xD;&#xA;&#xD;&#xA;X, Y Positions of Auras : ${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}&#xD;&#xA;Width, Height of  Auras : ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}, ${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" TextAuraXIniExpression="5" TextAuraYIniExpression="5" TextAuraWIniExpression="${_screenwidth}/2" TextAuraHIniExpression="${_screenheight}/2" TextAuraOIniExpression="100" TextAuraTTLTickExpression="5-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraName="RaidBuffAuraPlacement" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/NeoRaidBuffsPlacer.png" AuraXIniExpression="${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}" AuraYIniExpression="${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}*10" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" AuraTTLTickExpression="5-${_since}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# - Setup Table Permanant Variable : Image Links" Id="80b088ff-97d2-4b28-b9bb-6ddc588ea24e" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsSettingsUpdateLinks" EditAutofire="True">
+            <Actions>
+              <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="5F55" TableVariableX="1" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="DE5" TableVariableX="1" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="76" TableVariableX="1" TableVariableY="3" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="4" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="1CE4" TableVariableX="1" TableVariableY="4" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="5" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="1D0C" TableVariableX="1" TableVariableY="5" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="6" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40A8" TableVariableX="1" TableVariableY="6" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="7" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="1D60" TableVariableX="1" TableVariableY="7" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="8" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="64C9" TableVariableX="1" TableVariableY="8" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="9" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="3F44" TableVariableX="1" TableVariableY="9" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="10" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="8D2" TableVariableX="1" TableVariableY="10" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="11" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="64B9" TableVariableX="1" TableVariableY="11" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="12" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003633_hr1.png" TableVariableX="2" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="13" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002585_hr1.png" TableVariableX="2" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="14" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002601_hr1.png" TableVariableX="2" TableVariableY="3" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="15" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002542_hr1.png" TableVariableX="2" TableVariableY="4" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="16" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002815_hr1.png" TableVariableX="2" TableVariableY="5" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="17" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003553_hr1.png" TableVariableX="2" TableVariableY="6" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="18" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003218_hr1.png" TableVariableX="2" TableVariableY="7" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="19" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002752_hr1.png" TableVariableX="2" TableVariableY="8" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="20" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/003000/003474_hr1.png" TableVariableX="2" TableVariableY="9" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="21" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/000000/000618_hr1.png" TableVariableX="2" TableVariableY="10" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="22" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="https://xivapi.com/i/002000/002622_hr1.png" TableVariableX="2" TableVariableY="11" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1.5 - RaidBuff Placement" Id="254bc1fb-1007-4bb7-a5ab-e79058cb30e5" RegularExpression="^00\|[^|]*\|0038\|\|RaidBuffsPlacement:?(?&lt;x&gt;\d*)?-?(?&lt;y&gt;\d*)?">
+            <Actions>
+              <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="XPosRaidBuffAura" TableVariableX="3" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${x}" TableVariableX="3" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="YPosRaidBuffAura" TableVariableX="4" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="4" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="${y}" TableVariableX="4" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+                <Conditions />
+              </Action>
+              <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Sequential="True" Name="2 - Aura Size (Width/Height) (Default:40)" Id="6800c82e-a98f-4b45-8aa3-15f19afff653" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="WidthRaidBuffAura" TableVariableX="5" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="5" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TableVariableOp="Set" TableVariableName="PermaRaidBuffTable" TableVariableExpression="HeightRaidBuffAura" TableVariableX="6" TableVariableY="1" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="4" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="PermaRaidBuffTable" TableVariableExpression="40" TableVariableX="6" TableVariableY="2" TableSourcePersist="True" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="TableVariable">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="eee832ad-deb4-4980-9194-d9e41c926836" TriggerForce="regexp,conditions" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -286,17 +479,19 @@
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Technical Step - Duration:20 - Recast:120 - SkillID:3F4." Id="3b7804f9-cf2f-4d49-91ed-b71b047ad5f2" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|3F4[1-4]\|(?&lt;spellName&gt;[^|]*)\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="1 - Technical Step - Duration:20 - Recast:120 - SkillID:3F44" Id="3b7804f9-cf2f-4d49-91ed-b71b047ad5f2" RegularExpression="^2[12]\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|3F4[1-4]\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[DisableRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8d9d4d80-91c5-4671-95b5-c36970677e9b" TriggerText="${spellName}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[TTSRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -392,29 +587,37 @@
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAura" AuraName="RaidBuff-${playerID}-${skillID}-Image" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAura" AuraName="RaidBuff-${playerID}-${skillID}-Active" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="4" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
-              <Action OrderNumber="5" AuraImageMode="Zoom" AuraName="RaidBuff-${playerID}-${skillID}-Image" AuraImage="${ptvarrl:PermaRaidBuffTable[${buff}][1]}" AuraXIniExpression="${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=0,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraYIniExpression="${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=1,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" AuraTTLTickExpression="if(${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}&gt;0,0,${recast}-${_since})" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+              <Action OrderNumber="5" AuraImageMode="Zoom" AuraName="RaidBuff-${playerID}-${skillID}-Image" AuraImage="${ptvarrl:PermaRaidBuffTable[${skillID}][1]}" AuraXIniExpression="${ptvarcl:PermaRaidBuffTable[XPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=0,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraYIniExpression="${ptvarcl:PermaRaidBuffTable[YPosRaidBuffAura][1]}+if(${ptvarcl:PermaRaidBuffTable[VerticalRaidBuffAura][1]}=1,(${_ffxivparty[${playerID}].order}-1)*${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]},if(${Priority}=2,(-${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}),0))" AuraWIniExpression="${ptvarcl:PermaRaidBuffTable[WidthRaidBuffAura][1]}" AuraHIniExpression="${ptvarcl:PermaRaidBuffTable[HeightRaidBuffAura][1]}" AuraOIniExpression="100" AuraTTLTickExpression="if(${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}&gt;0,0,${recast}-${_since})" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="6" TextAuraAlignment="BottomCenter" TextAuraFontSize="18" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraExpression="${numeric:(${recast}-${_since})%(${recast}-${duration})}" TextAuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" TextAuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" TextAuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" TextAuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${recast}-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="7" AuraImageMode="Zoom" AuraName="RaidBuff-${playerID}-${skillID}-Active" AuraImage="https://raw.githubusercontent.com/Aho-Senpai/Aho-Triggers/main/Triggernometry/Resources/ComboGIF.gif" AuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" AuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" AuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" AuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" AuraOIniExpression="100" AuraTTLTickExpression="${duration}-${_since}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="8" TextAuraAlignment="TopCenter" TextAuraFontSize="12" TextAuraForeground="#FF8040" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraExpression="${numeric:(-${recast})+${_since}}" TextAuraXIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].x}" TextAuraYIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].y}" TextAuraWIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].w}" TextAuraHIniExpression="${_imageaura[RaidBuff-${playerID}-${skillID}-Image].h}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" ExecutionDelayExpression="${recast}*1000">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${ptvarcl:PermaRaidBuffTable[KeepRaidBuffAura][1]}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 </Condition>
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
