@@ -80,8 +80,16 @@ So, now that you do, what's this about ? well, mainly the `Raid` repo has callou
 
 Well, all the relevant callouts at least. All the more personal callouts will stay "local" (aka, not go through the discord bot).  
 
-"I don't use a discord bot, how does this affect me?" -> it doesn't.  
-"I don't want this behavious to happen, how do i do that ?" -> you can set the 'Audio output setting override' to 'on'.
+Q."I don't use a discord bot, how does this affect me?"  
+A. It doesn't.  
+
+Q."I don't want this behavious to happen, how do i do that ?"  
+A. you can set the 'Audio output setting override' to 'on'.
+
+Q. "I want to use it with a discord bot but everything goes through the bot"  
+A. : 
+1. Make sure the Repo Settings are correct : Audio output setting override -> "As defined in repository"
+1. Make sure your Triggernometry Soud settings are correct : Use ACT for Text-To-Speech -> Checked
 
 
 # Triggernometry FAQ
