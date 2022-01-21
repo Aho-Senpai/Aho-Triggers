@@ -49,4 +49,9 @@ Do you want the raidbuffs to be displayed vertically instead of horizontally?
 This is only required to do if there is an update to the image links, or some raidbuffs got added. 
 
 ## FAQ & Troubleshoting
-//TODO : will fill this as common questions come.
+
+Q. "Doing the `/e RaidBuffs...` commands in-game doesn't do anything."
+A. Check you do NOT have "Hide Chat Log (for privacy)" enabled. (ACT > Plugins > FFXIV Parsing Plugin)  
+
+Q. "Images don't show up"  
+A. If there was a recent update of the repo, try doing the [Update](#update). If not, ping me or DM me on discord.
