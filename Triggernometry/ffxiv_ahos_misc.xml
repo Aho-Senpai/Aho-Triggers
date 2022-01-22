@@ -219,7 +219,7 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Player Start using LB" Id="9389441d-a1be-47f7-adb9-2ca99de9fe8d" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;C[5-F]|109[0-8]|42D[12]|1EB[56]|611[AB]|108[EF]|D0)\|(?&lt;spell&gt;[^|]+)\|">
+      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Player Start using LB" Id="9389441d-a1be-47f7-adb9-2ca99de9fe8d" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;C[5-F]|109[0-8]|42D[12]|1EB[56]|611[AB]|108[EF]|D0)\|(?&lt;spell&gt;[^|]+)\|">
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="${spell} from ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
