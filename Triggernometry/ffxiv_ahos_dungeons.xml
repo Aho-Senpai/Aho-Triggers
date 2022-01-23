@@ -500,6 +500,19 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder ZoneFilterEnabled="True" Id="acd6e195-922e-43d3-9033-93de41024958" ZoneFilterRegularExpression="the\ Aetherochemical\ Research\ Facility" Name="60 - The Aetherochemical Research Facility" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Universal Manipulation" Id="09b9d893-dd29-46a4-9b43-07f0721e0fdc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1105\|">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="go in black hole" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
@@ -918,66 +931,132 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="c65b84ea-8eed-47b3-b0ec-53587379bd5c" ZoneFilterRegularExpression="Unknown\ Zone\ " Name="Heaven on High" Enabled="false">
+          <Folder ZoneFilterEnabled="True" Id="c65b84ea-8eed-47b3-b0ec-53587379bd5c" ZoneFilterRegularExpression="^Heaven-on-High" Name="Heaven on High" Enabled="true">
             <Folders>
               <Folder Id="13d49633-b7e3-426b-990a-a8e7b2d19f36" Name="Boss" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Eye of the Fire (WIP)" Id="7be90247-8968-4a7d-9579-cf3d52c52474" RegularExpression="Gozu uses Eye of the Fire.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="F50 - Eye of the Fire" Id="7be90247-8968-4a7d-9579-cf3d52c52474" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E92\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                      <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Conditions />
+                      </Action>
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Words of Woe (WIP)" Id="d173d1a4-d76a-4680-8592-caa90452ddb4" RegularExpression="Gozu readies Words of Woe.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="F60 - Words of Woe" Id="d173d1a4-d76a-4680-8592-caa90452ddb4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E90\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Beam" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                      <Action OrderNumber="1" UseTTSTextExpression="Beam" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Conditions />
+                      </Action>
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Hound out of Hell (WIP)" Id="4f547aa0-1b84-467c-bb7c-194f9321f194" RegularExpression="Kenko readies Hound out of Hell.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="F70 - Hound out of Hell" Id="4f547aa0-1b84-467c-bb7c-194f9321f194" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FAE\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Go in Puddle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                      <Action OrderNumber="1" UseTTSTextExpression="go in puddle, ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                 </Triggers>
               </Folder>
             </Folders>
             <Triggers>
-              <Trigger Enabled="true" Name="Calcifying Mist" Id="2b83ebc4-ce9d-482d-a45f-17e561766e35" RegularExpression="The heavenly naga readies Calcifying Mist.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Calcifying Mist" Id="2b83ebc4-ce9d-482d-a45f-17e561766e35" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|306D\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Eyeshine" Id="28eaba7c-aebb-4acc-a060-976240681ce4" RegularExpression="The heavenly hyoga readies Eyeshine.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eyeshine" Id="28eaba7c-aebb-4acc-a060-976240681ce4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FE5\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Blinding Burst (to confirm)" Id="7f5e2b5c-2bee-4c12-b25b-e8852e118518" RegularExpression="The heavenly onibi readies Blinding Burst.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blinding Burst" Id="7f5e2b5c-2bee-4c12-b25b-e8852e118518" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2F8E\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Wile of the Tengu" Id="9b68248a-eece-4379-bfbf-ec5638ddc320" RegularExpression="The heavenly tengu casts Wile of the Tengu.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wile of the Tengu" Id="9b68248a-eece-4379-bfbf-ec5638ddc320" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2B97\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Conditions />
+                  </Action>
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ram's Voice" Id="51f6179e-872c-4960-8b88-985f527d0736" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|308F\|">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="get out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Draong's Voice" Id="2370fd71-036b-48b6-8b71-fa544a6c1f09" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3090\|">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hex" Id="a49ba2b8-0534-4c24-8c83-f63bbfa15a0f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|309A\|">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
         </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="Accursed Hoard" Id="b390ebcf-c43d-4e38-bd4c-684231ac97d0" RegularExpression="You sense the Accursed Hoard calling you...">
+          <Trigger Enabled="true" Name="Accursed Hoard" Id="b390ebcf-c43d-4e38-bd4c-684231ac97d0" RegularExpression="You sense the Accursed Hoard calling you\.\.\.">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="Hoard Available" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
-            </Actions>
-          </Trigger>
-          <Trigger Enabled="true" Name="Portal Open" Id="e8ee1fc6-4298-4cb0-b1fd-f67a5425c35c" RegularExpression="39:The (?&gt;Beacon|Cairn) of Passage is activated!">
-            <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="Portal Open" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
+              <Action OrderNumber="1" UseTTSTextExpression="Hoard Available" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Portal Open" Id="e8ee1fc6-4298-4cb0-b1fd-f67a5425c35c" RegularExpression="00\|[^|]*\|0839\|\|The (?&gt;Beacon|Cairn) of Passage is activated!">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="Portal Open" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duplicate Pommander" Id="85c080e4-a828-466d-b8a4-c210b7861a2c" RegularExpression="00\|[^|]*\|0839\|\|You return the pomander of (?&lt;item&gt;[^|]*) to the coffer\. You cannot carry any more of that item\.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="${item} duplicate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -1163,7 +1242,7 @@
                       <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6324" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" UseTTSTextExpression="go begind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="2" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6322" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
