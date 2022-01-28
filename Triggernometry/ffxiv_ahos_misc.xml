@@ -209,10 +209,11 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Positional miss (regex by @aya, adjusted for network lines)" Id="105a27a8-4c16-439a-9765-00d10bf73417" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|((1D3[9A]|5F3[EF]|[35]8|42|8CF|DE[24]|8D2)\|[^|]*\|[^|]*\|[^|]*\|(7|3[6AE]|4[04])|(64AC|DEB)\|[^|]*\|[^|]*\|[^|]*\|(3A|42|3E))">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Positional miss (regex by @aya, adjusted for network lines)" Id="105a27a8-4c16-439a-9765-00d10bf73417" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|((38|42|8CF|8D2|1D3[9A]|5F3[EF]|DE[24]|64AC)\|[^|]+\|[^|]+\|[^|]+\|(7|3[AD]|4[04])|(58|DEB)\|[^|]+\|[^|]+\|[^|]+\|3[6AE])">
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="miss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="true" Grouping="Or">
@@ -223,7 +224,6 @@
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="${spell} from ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or">
