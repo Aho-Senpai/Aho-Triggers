@@ -801,7 +801,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="0a97b5b7-6a39-46d4-be15-5e35309b6981" Name="5.0 - 79 - The Crown of the Immaculate" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^84[68]$" Id="0a97b5b7-6a39-46d4-be15-5e35309b6981" ZoneFilterRegularExpression="^the\ Crown\ of\ the\ Immaculate" Name="5.0 - 79 - The Crown of the Immaculate" Enabled="true">
             <Folders>
               <Folder Id="5a20e035-92e4-4369-8c83-a0779883d7de" Name="Network Triggers" Enabled="true">
                 <Folders />
@@ -2081,7 +2081,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Weapon changes (maybe add counter for issue)" Id="4db0c4b6-4d02-42c8-bb16-f9ee21cc954e" RegularExpression="^26\|[^|]*\|(?&lt;move&gt;B3[CDE])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&gt;Hydaelyn|ハイデリン)\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Weapon changes" Id="4db0c4b6-4d02-42c8-bb16-f9ee21cc954e" RegularExpression="^26\|[^|]*\|(?&lt;move&gt;B3[CDE])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&gt;Hydaelyn|ハイデリン)\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="HydaelynEXWeaponCounter" VariableExpression="${var:HydaelynEXWeaponCounter}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
