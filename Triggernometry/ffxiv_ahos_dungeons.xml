@@ -754,7 +754,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Breaking Wheel" Id="63566f9f-00e4-43d3-90f1-e0392ec1670c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3E0F\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Breaking Wheel" Id="63566f9f-00e4-43d3-90f1-e0392ec1670c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CF5\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
