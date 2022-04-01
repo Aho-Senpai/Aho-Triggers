@@ -938,17 +938,13 @@
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="F50 - Eye of the Fire" Id="7be90247-8968-4a7d-9579-cf3d52c52474" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E92\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Conditions />
-                      </Action>
+                      <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="F60 - Words of Woe" Id="d173d1a4-d76a-4680-8592-caa90452ddb4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E90\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Beam" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Conditions />
-                      </Action>
+                      <Action OrderNumber="1" UseTTSTextExpression="Beam" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
@@ -956,7 +952,6 @@
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="go in puddle, ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -967,33 +962,25 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Calcifying Mist" Id="2b83ebc4-ce9d-482d-a45f-17e561766e35" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|306D\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eyeshine" Id="28eaba7c-aebb-4acc-a060-976240681ce4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FE5\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blinding Burst" Id="7f5e2b5c-2bee-4c12-b25b-e8852e118518" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2F8E\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wile of the Tengu" Id="9b68248a-eece-4379-bfbf-ec5638ddc320" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2B97\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Conditions />
-                  </Action>
+                  <Action OrderNumber="1" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -1001,31 +988,25 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="get out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Draong's Voice" Id="2370fd71-036b-48b6-8b71-fa544a6c1f09" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3090\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hex" Id="a49ba2b8-0534-4c24-8c83-f63bbfa15a0f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|309A\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -1033,9 +1014,7 @@
         <Triggers>
           <Trigger Enabled="true" Name="Accursed Hoard" Id="b390ebcf-c43d-4e38-bd4c-684231ac97d0" RegularExpression="You sense the Accursed Hoard calling you\.\.\.">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="Hoard Available" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
-                <Conditions />
-              </Action>
+              <Action OrderNumber="1" UseTTSTextExpression="Hoard Available" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -1043,7 +1022,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="Portal Open" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -1052,11 +1030,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="${item} duplicate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -1210,7 +1186,7 @@
           <Folder Id="c4b84f97-982b-44c2-91ad-db0e7fa55546" Name="90 - Smileton" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Piercing Missile - TB" Id="f1fc2bf0-3f02-49bd-a96a-7668680e2cdd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6751\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Piercing Missile - TB" Id="f1fc2bf0-3f02-49bd-a96a-7668680e2cdd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6751\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster on ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
