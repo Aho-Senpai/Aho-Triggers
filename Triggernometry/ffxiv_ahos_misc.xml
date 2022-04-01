@@ -3,7 +3,7 @@
   <ExportedFolder Id="06600e27-5f73-48b4-97ad-7e235129453e" Name="A - Misc" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="AURA - Countdown" Id="728eacfa-8b25-4731-9191-9c3a3fc5ee25" RegularExpression="Battle commencing in (?&lt;countdown&gt;[0-9]{1,2}) seconds!" PrevActions="Interrupt">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Countdown" Id="728eacfa-8b25-4731-9191-9c3a3fc5ee25" RegularExpression="^00\|[^|]*\|0(?&gt;0b9|[012]39)\|\|Battle commencing in (?&lt;CD&gt;\d+) seconds!" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="${countdown} seconds" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownText" TextAuraExpression="${numeric:round((-${countdown}*1000+${_sincems})/1000, 1)}" TextAuraXIniExpression="${tvar:MiscRepoSettings[3][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[3][3]}" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${countdown}-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
@@ -11,7 +11,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="Party recruitment will end in 5 minutes." Id="d0262145-c591-4f5e-8d83-549a3f66aee1" RegularExpression="Party recruitment will end in 5 minutes">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Party recruitment will end in 5 minutes." Id="d0262145-c591-4f5e-8d83-549a3f66aee1" RegularExpression="00\|[^|]*\|0839\|\|Party recruitment will end in 5 minutes\.">
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="Party recruitment will end in 5 minutes." TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
@@ -19,13 +19,13 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="Player Commendation" Id="c1d4bf69-d0d2-4f14-a57d-4d7d2bf45059" RegularExpression="You received a player commendation!" PeriodRefire="Deny" RefirePeriodExpression="2000">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Player Commendation" Id="c1d4bf69-d0d2-4f14-a57d-4d7d2bf45059" RegularExpression="00\|[^|]*\|0839\|\|You received a player commendation!" PeriodRefire="Deny" RefirePeriodExpression="2000">
         <Actions>
           <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Player Commendation !" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="Venture Complete !" Id="33cea4b2-82dc-4694-a77e-30d18833330a" RegularExpression="has completed a venture!" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="60000">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Venture Complete !" Id="33cea4b2-82dc-4694-a77e-30d18833330a" RegularExpression="^00\|[^|]*\|0039\|\|[^ ]* has completed a venture!" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="60000">
         <Actions>
           <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Venture Complete" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
         </Actions>
@@ -66,7 +66,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="Sightseeing Log Vista" Id="c8a9b127-dd80-4c0e-959f-789cd1384f9a" RegularExpression="You have arrived at a vista!">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sightseeing Log Vista" Id="c8a9b127-dd80-4c0e-959f-789cd1384f9a" RegularExpression="00\|[^|]*\|0839\|\|You have arrived at a vista!">
         <Actions>
           <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Sightseeing Vista" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
@@ -100,7 +100,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="AURA - Pull Duration" Id="d4cdafea-da04-47e9-b44f-2e00e97efc3b" RegularExpression="Engage!">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Pull Duration" Id="d4cdafea-da04-47e9-b44f-2e00e97efc3b" RegularExpression="00\|[^|]*\|0039\|\|Engage!">
         <Actions>
           <Action OrderNumber="1" TextAuraAlignment="BottomCenter" TextAuraEffect="Bold" TextAuraFontSize="27.75" TextAuraForeground="Red" TextAuraName="MiscRepoPullDuration" TextAuraExpression="${numeric:floor(${_since}/60)}:${numeric:${_since}-${numeric:${numeric:floor(${_since}/60)}*60}}" TextAuraXIniExpression="${tvar:MiscRepoSettings[4][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[4][3]}" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
@@ -189,7 +189,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="false" Sequential="True" Name="Countdown TTS" Id="57bc8eba-e410-48e1-80a3-ffa0402dc3f5" RegularExpression="Battle commencing in (?&lt;CD&gt;[0-9]{1,2}) seconds!">
+      <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Countdown TTS" Id="57bc8eba-e410-48e1-80a3-ffa0402dc3f5" RegularExpression="^00\|[^|]*\|0(?&gt;0b9|[012]39)\|\|Battle commencing in (?&lt;CD&gt;\d+) seconds!">
         <Actions>
           <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${CD}" UseTTSRateExpression="+3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="true" Grouping="Or">
@@ -213,14 +213,13 @@
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="miss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="true" Grouping="Or">
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Player Start using LB" Id="9389441d-a1be-47f7-adb9-2ca99de9fe8d" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;C[5-F]|109[0-8]|42D[12]|1EB[56]|611[AB]|108[EF]|D0)\|(?&lt;spell&gt;[^|]+)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Player Start using LB" Id="9389441d-a1be-47f7-adb9-2ca99de9fe8d" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;C[5-F]|109[0-8]|42D[12]|1EB[56]|611[AB]|108[EF]|D0)\|(?&lt;spell&gt;[^|]+)\|">
         <Actions>
           <Action OrderNumber="1" UseTTSTextExpression="${spell} from ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
