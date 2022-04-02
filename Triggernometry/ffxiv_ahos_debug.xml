@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="3576ab07-e65c-48cd-a8fe-af8515f148f5" Name="# - Debugg" Enabled="true">
+    <Folders>
+      <Folder Id="f8887dcc-89f2-474e-9674-26d20b79ee6b" Name="Job Gauge Debug" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="false" Source="FFXIVNetwork" Name="BRD Gauge Debug" Id="def3c2f0-4c58-4cf7-91b6-c44017872d21" RegularExpression="^31\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|(?&lt;p1&gt;[^|]*)17\|(?&lt;p2&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="21.75" TextAuraName="BRDGaugeDebug" TextAuraExpression="Part 1&#xD;&#xA;${func:padleft(48,6):${p1}}&#xD;&#xA;${numeric:${func:padleft(48,8):${func:hex2dec:${func:substring(2,4):${p1}}}-${_sincems}}} : Gauge Timer&#xD;&#xA;0x${func:substring(0,2):${p1}} - ${func:hex2dec:${func:substring(0,2):${p1}}} - WTF is this?&#xD;&#xA;&#xD;&#xA;Part 2&#xD;&#xA;${func:padleft(48,8):${p2}}&#xD;&#xA;${func:hex2dec:${func:substring(0,2):${func:padleft(48,8):${p2}}}} : Song Type&#xD;&#xA;${func:hex2dec:${func:substring(2,2):${func:padleft(48,8):${p2}}}} : Soul Gauge&#xD;&#xA;${func:hex2dec:${func:substring(4,2):${func:padleft(48,8):${p2}}}} : Song Stacks&#xD;&#xA;0x${func:substring(6,2):${func:padleft(48,8):${p2}}} - ${func:hex2dec:${func:substring(6,2):${func:padleft(48,8):${p2}}}} : wtf is this?" TextAuraXIniExpression="141" TextAuraYIniExpression="162" TextAuraWIniExpression="293" TextAuraHIniExpression="564" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Source="FFXIVNetwork" Name="DNC Gauge Debug" Id="6a521eaa-7c45-4d5c-995f-b5cfa7d1a20f" RegularExpression="^31\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|(?&lt;p1&gt;[^|]*)26\|(?&lt;p2&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="21.75" TextAuraName="DNCGaugeDebug" TextAuraExpression="Part 1&#xD;&#xA;${func:padleft(48,6):${p1}}&#xD;&#xA;${func:hex2dec:${func:substring(0,2):${func:padleft(48,6):${p1}}}} : Step1&#xD;&#xA;${func:hex2dec:${func:substring(2,2):${func:padleft(48,6):${p1}}}} : Esprit&#xD;&#xA;${func:hex2dec:${func:substring(4,2):${func:padleft(48,6):${p1}}}} : Feathers&#xD;&#xA;&#xD;&#xA;Part 2&#xD;&#xA;${func:padleft(48,8):${p2}}&#xD;&#xA;${func:hex2dec:${func:substring(0,2):${func:padleft(48,8):${p2}}}} : StepTotalValid&#xD;&#xA;${func:hex2dec:${func:substring(2,2):${func:padleft(48,8):${p2}}}} : Step4&#xD;&#xA;${func:hex2dec:${func:substring(4,2):${func:padleft(48,8):${p2}}}} : Step3&#xD;&#xA;${func:hex2dec:${func:substring(6,2):${func:padleft(48,8):${p2}}}} : Step2" TextAuraXIniExpression="141" TextAuraYIniExpression="162" TextAuraWIniExpression="293" TextAuraHIniExpression="564" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="false" Source="None" Name="Player Info Text Aura" Id="ab412d29-12bd-4a5e-a9ab-c1af768b0c65" RegularExpression="" EditAutofire="True">
+        <Actions>
+          <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="AhoDebugTextPlayerInfo" TextAuraExpression="${_ffxivplayer} - Player&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].id} - PlayerID&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].job} - PlayerJob&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].jobid} - PlayerJobID&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].level} - PlayerLevel&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].inparty} - PlayerInParty&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].order} - PlayerPartyOrder&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].worldname} - PlayerHomeWorld&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].worldid} - PlayerHomeWorldID&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].currentworldid} - PlayerCurrentWorldID&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].heading} - PlayerHeading&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].targetid} - PlayerTargetID&#xD;&#xA;${_ffxiventity[${_ffxivparty[${_ffxivplayer}].targetid}].name} - PlayerTargetName&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].casttargetid} - PlayerTargetCastID&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].role} - PlayerRole&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].x} - Player X Coordinate&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].y} - Player Y Coordinate&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].z} - Player Z Coordinate&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].currenthp} / ${_ffxivparty[${_ffxivplayer}].maxhp} - PlayerCurrentHP/PlayerMaxHP&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].currentmp} / ${_ffxivparty[${_ffxivplayer}].maxmp} - PlayerCurrentMP/PlayerMaxMP&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].currentcp} / ${_ffxivparty[${_ffxivplayer}].maxcp} - PlayerCurrentCP/PlayerMaxCP&#xD;&#xA;${_ffxivparty[${_ffxivplayer}].currentgp} / ${_ffxivparty[${_ffxivplayer}].currentgp} - PlayerCurrentGP/PlayerMaxGP&#xD;&#xA;&#xD;&#xA;${_ffxiventity[${_ffxivparty[1].targetid}].distance} - DistanceFromPlayerToTarget" TextAuraXIniExpression="0" TextAuraYIniExpression="0" TextAuraWIniExpression="${_screenwidth}/4" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="false" Source="None" Name="Disable All Debugg Auras" Id="b362cb30-730b-4925-9bca-d44dc456028a" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="AhoDebugTextPlayerInfo" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="AhoDebugTextPartyList" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="false" Source="None" Name="Party List Debug Text Aura" Id="185b3e1c-03f6-40f9-99ca-f17309e81aef" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="AhoDebugTextPartyList" TextAuraExpression="${_ffxivparty[1].order} - ${_ffxivparty[1].job} - ${_ffxivparty[1].name} - ${_ffxivparty[1].id}&#xD;&#xA;${_ffxivparty[2].order} - ${_ffxivparty[2].job} - ${_ffxivparty[2].name} - ${_ffxivparty[2].id}&#xD;&#xA;${_ffxivparty[3].order} - ${_ffxivparty[3].job} - ${_ffxivparty[3].name} - ${_ffxivparty[3].id}&#xD;&#xA;${_ffxivparty[4].order} - ${_ffxivparty[4].job} - ${_ffxivparty[4].name} - ${_ffxivparty[4].id}&#xD;&#xA;${_ffxivparty[5].order} - ${_ffxivparty[5].job} - ${_ffxivparty[5].name} - ${_ffxivparty[5].id}&#xD;&#xA;${_ffxivparty[6].order} - ${_ffxivparty[6].job} - ${_ffxivparty[6].name} - ${_ffxivparty[6].id}&#xD;&#xA;${_ffxivparty[7].order} - ${_ffxivparty[7].job} - ${_ffxivparty[7].name} - ${_ffxivparty[7].id}&#xD;&#xA;${_ffxivparty[8].order} - ${_ffxivparty[8].job} - ${_ffxivparty[8].name} - ${_ffxivparty[8].id}" TextAuraXIniExpression="0" TextAuraYIniExpression="0" TextAuraWIniExpression="${_screenwidth}/3" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Debug Boss Spell Casting" Id="017440c6-e0ed-4810-9c99-fd7a0d61a037" RegularExpression="^20\|[^|]*\|4[^|]*\|[^|]*\|(?&lt;spellID&gt;[^|]*)\|(?&lt;spellName&gt;[^|]*)\|" MutexToCapture="DebugBossSpellsList">
+        <Actions>
+          <Action OrderNumber="1" ListVariableOp="Remove" ListVariableName="DebugBossCastsList" ListVariableExpression="${spellID}-${spellName}" ListVariableIndex="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:DebugBossCastsList.size}" ExpressionTypeL="Numeric" ExpressionR="10" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="DebugBossCastsList" ListVariableExpression="${spellID}-${spellName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" TextAuraAlignment="TopLeft" TextAuraFontSize="20.25" TextAuraName="DebugBossSpellCasting" TextAuraExpression="${lvar:DebugBossCastsList[1]}&#xD;&#xA;${lvar:DebugBossCastsList[2]}&#xD;&#xA;${lvar:DebugBossCastsList[3]}&#xD;&#xA;${lvar:DebugBossCastsList[4]}&#xD;&#xA;${lvar:DebugBossCastsList[5]}&#xD;&#xA;${lvar:DebugBossCastsList[6]}&#xD;&#xA;${lvar:DebugBossCastsList[7]}&#xD;&#xA;${lvar:DebugBossCastsList[8]}&#xD;&#xA;${lvar:DebugBossCastsList[9]}&#xD;&#xA;${lvar:DebugBossCastsList[10]}" TextAuraXIniExpression="3" TextAuraYIniExpression="82" TextAuraWIniExpression="423" TextAuraHIniExpression="719" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" MutexName="DebugBossSpellsList" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Mutex">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Reset" Id="d16b1e64-b7b7-4ce2-9362-d3b0daecae3d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+        <Actions>
+          <Action OrderNumber="1" ListVariableName="DebugBossCastsList" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Source="None" Sequential="True" Name="TargetIDDebug" Id="20125e07-2be0-4dd0-a84f-b8ee386382a1" RegularExpression="" DebugLevel="Verbose" EditAutofire="True">
+        <Actions>
+          <Action OrderNumber="1" MessageBoxIconType="Information" NamedCallbackName="command" NamedCallbackParam="/e ${_ffxivparty[${_ffxivplayer}].targetid}" TextAuraFontSize="15.75" TextAuraName="targetIDTest" TextAuraExpression="${_ffxivparty[${_ffxivplayer}].targetid}" TextAuraXIniExpression="${_screenwidth}/2-150" TextAuraYIniExpression="${_screenheight}/2-50" TextAuraWIniExpression="300" TextAuraHIniExpression="100" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft YaHei UI" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
