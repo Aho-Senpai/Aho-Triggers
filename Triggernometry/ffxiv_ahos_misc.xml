@@ -3,9 +3,9 @@
   <ExportedFolder Id="06600e27-5f73-48b4-97ad-7e235129453e" Name="A - Misc" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Countdown" Id="728eacfa-8b25-4731-9191-9c3a3fc5ee25" RegularExpression="^00\|[^|]*\|0(?&gt;0b9|[012]39)\|\|Battle commencing in (?&lt;CD&gt;\d+) seconds!" PrevActions="Interrupt">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Countdown" Id="728eacfa-8b25-4731-9191-9c3a3fc5ee25" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in (?&lt;countdown&gt;\d+) seconds!" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" UseTTSTextExpression="${countdown} seconds" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownText" TextAuraExpression="${numeric:round((-${countdown}*1000+${_sincems})/1000, 1)}" TextAuraXIniExpression="${tvar:MiscRepoSettings[3][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[3][3]}" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${countdown}-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
+          <Action OrderNumber="1" UseTTSTextExpression="${countdown} seconds" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownText" TextAuraExpression="${numeric:round((-${countdown}*1000+${_sincems})/1000, 1)}" TextAuraXIniExpression="${tvar:MiscRepoSettings[3][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[3][3]}" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${countdown}-${_since}-1" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
