@@ -19,7 +19,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mob Imobilize" Id="f54b15fc-5989-426a-9385-efb910dc5226" RegularExpression="^26\|[^|]*\|(29b|260)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mob Imobilize" Id="f54b15fc-5989-426a-9385-efb910dc5226" RegularExpression="^26\|[^|]*\|(29B|260)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Kill Add" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
@@ -30,10 +30,11 @@
           <Folder ZoneFilterEnabled="True" Id="d8180007-88b0-48f0-876c-8f18ef006c3d" ZoneFilterRegularExpression="Snowcloak" Name="50 - Snowcloak" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Lunar Cry" Id="b2d5cd3e-a89b-475f-8e8e-a10aaa3bdad6" RegularExpression="Fenrir readies Lunar Cry.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lunar Cry" Id="b2d5cd3e-a89b-475f-8e8e-a10aaa3bdad6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|C1F\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Hide Behind Ice" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
@@ -58,13 +59,13 @@
           <Folder ZoneFilterEnabled="True" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="14:387:Chudo-Yudo starts using Swinge on Chudo-Yudo" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="14:387:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Swinge : go behind" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|387\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="14:404:Isgebind starts using Snowfall" Id="ea71fadc-7212-4e41-bef3-75749f58a3c6" RegularExpression="14:404:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Snowfall" Id="ea71fadc-7212-4e41-bef3-75749f58a3c6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|404\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -77,10 +78,11 @@
           <Folder ZoneFilterEnabled="True" Id="5c3d0ff3-3a03-4d94-96aa-f12a20a264c2" ZoneFilterRegularExpression="The\ Keeper\ Of\ The\ Lake" Name="50 - The Keeper Of The Lake" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Animadversion" Id="6c56f87b-75b1-40ab-8dd7-41de2871cfc9" RegularExpression="Midgardsormr readies Animadversion.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Animadversion" Id="6c56f87b-75b1-40ab-8dd7-41de2871cfc9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|D49\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Activate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                 </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
               <Trigger Enabled="true" Name="Astraea" Id="85877882-51f4-47b0-9a68-fe22256fa522" RegularExpression="03:[A-F0-9]{8}:Added new combatant Astraea">
                 <Actions>
@@ -128,7 +130,7 @@
           <Folder ZoneFilterEnabled="True" Id="4d72bede-e5bf-4fb0-aea0-08ab54dba1a7" ZoneFilterRegularExpression="^The\ Sunken\ Temple\ Of\ Qarn$" Name="35 - The Sunken Temple of Quarn" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom" Id="b95b7604-3363-4156-b5e2-f46ea7ba3e4d" RegularExpression="^26\|[^|]*\|d2\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom" Id="b95b7604-3363-4156-b5e2-f46ea7ba3e4d" RegularExpression="^26\|[^|]*\|D2\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Step on glowing plate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
@@ -143,7 +145,7 @@
           <Folder ZoneFilterEnabled="True" Id="3deea780-c1c8-4b7e-a924-5a08b1a1249b" ZoneFilterRegularExpression="^The\ Aurum\ Vale$" Name="47 - Aurum Vale" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gold Lungs &amp; Burrs (eat fruit at 2 or more stacks)" Id="fc40a106-2526-4763-8f8b-b21ed1180e18" RegularExpression="26\|[^|]*\|12[ef]\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;stacks&gt;\d{2})\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gold Lungs &amp; Burrs (eat fruit at 2 or more stacks)" Id="fc40a106-2526-4763-8f8b-b21ed1180e18" RegularExpression="26\|[^|]*\|12[EF]\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;stacks&gt;\d{2})\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="eat fruit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
@@ -280,7 +282,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom Gain" Id="375cb175-c102-47c9-a61f-ac30fa5862b3" RegularExpression="^26\|[^|]*\|d2\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Player&gt;[^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom Gain" Id="375cb175-c102-47c9-a61f-ac30fa5862b3" RegularExpression="^26\|[^|]*\|D2\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Player&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Heal ${Player} to full HP" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
