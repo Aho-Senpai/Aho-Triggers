@@ -5520,7 +5520,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Diamond Dust" Id="3f10b945-d873-478d-b2a5-eccdfec3d2e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|5896\|">
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Diamond Dust" Id="3f10b945-d873-478d-b2a5-eccdfec3d2e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|5896\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -6634,7 +6634,7 @@
       </Folder>
       <Folder Id="0346fe14-1317-4b33-b281-024b5e8647ee" Name="Ultimates" Enabled="true">
         <Folders>
-          <Folder Id="77816913-40ae-4725-9626-e8b88dbc1e95" ZoneFilterRegularExpression="The\ Unending\ Coil\ Of\ Bahamut\ \(Ultimate\)" Name="70 - 1 - The Unending Coil of Bahamut (Ultimate)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^733$" Id="77816913-40ae-4725-9626-e8b88dbc1e95" ZoneFilterRegularExpression="The\ Unending\ Coil\ Of\ Bahamut\ \(Ultimate\)" Name="70 - 1 - The Unending Coil of Bahamut (Ultimate)" Enabled="true">
             <Folders>
               <Folder Id="9b0328ff-d2ed-46b9-9b4f-6f5906be4bab" Name="AA - Network Triggers (not tested, made from logs) (originally made by aya)" Enabled="true">
                 <Folders>
@@ -7229,7 +7229,7 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder Id="e31c0589-3dd0-46d6-86f8-dd980df9e97f" Name="70 - 2 - The Weapon's Refrain (Ultimate)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^777$" Id="e31c0589-3dd0-46d6-86f8-dd980df9e97f" Name="70 - 2 - The Weapon's Refrain (Ultimate)" Enabled="true">
             <Folders>
               <Folder Id="41cfc72a-3ee3-4f1f-bbe8-280b1ac3b563" Name="TO TEST FOR @Lucid " Enabled="true">
                 <Folders>
@@ -8279,7 +8279,7 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder Id="d26b4024-6e8a-4bea-817e-a9e80a6f6faa" ZoneFilterRegularExpression="The\ Epic\ Of\ Alexander\ \(Ultimate\)" Name="80 - 1 - The Epic of Alexander (Ultimate)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^887$" Id="d26b4024-6e8a-4bea-817e-a9e80a6f6faa" ZoneFilterRegularExpression="The\ Epic\ Of\ Alexander\ \(Ultimate\)" Name="80 - 1 - The Epic of Alexander (Ultimate)" Enabled="true">
             <Folders>
               <Folder ZoneFilterEnabled="True" Id="ea43b24c-8e43-447a-9f07-8965b011df40" ZoneFilterRegularExpression="The\ Epic\ Of\ Alexander\ \(Ultimate\)" Name="zMade From Log - NEEDS TESTING" Enabled="false">
                 <Folders />
