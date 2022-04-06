@@ -9,22 +9,24 @@
               <Folder ZoneFilterEnabled="True" Id="c7b0681e-cdb0-41dc-934f-6723fa70481f" ZoneFilterRegularExpression="Syrcus\ Tower" Name="2.3 - Syrcus Tower" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Curtain Call" Id="2680b23f-f4ca-4be1-b4b7-91bd085522c3" RegularExpression="Amon readies Curtain Call.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Curtain Call" Id="2680b23f-f4ca-4be1-b4b7-91bd085522c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|989\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Hide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ancient Quaga" Id="ba8f0976-5825-4e6b-ada7-5e63c973a2cc" RegularExpression="Xande readies Ancient Quaga.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ancient Quaga" Id="ba8f0976-5825-4e6b-ada7-5e63c973a2cc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|939\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Stand on Circle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                 </Triggers>
               </Folder>
               <Folder ZoneFilterEnabled="True" Id="a5e981e0-f003-4aaa-84c5-54113b8f12b1" ZoneFilterRegularExpression="The\ Labyrinth\ Of\ The\ Ancients" Name="2.1 - The Labyrinth of the Ancients" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Ancient Flare" Id="90e68276-52e4-4f80-9afe-839735edb991" RegularExpression="2b:Phlegethon readies Ancient Flare">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ancient Flare" Id="90e68276-52e4-4f80-9afe-839735edb991" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6C2\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go on pads" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -32,7 +34,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ecliptic Meteor" Id="e2bda470-ae56-4c6c-b1f1-c19c4c0b9e63" RegularExpression="2b:The king behemoth readies Ecliptic Meteor">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ecliptic Meteor" Id="e2bda470-ae56-4c6c-b1f1-c19c4c0b9e63" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6DC\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Hide behind rock" UseTTSRateExpression="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -79,7 +81,7 @@
               <Folder ZoneFilterEnabled="True" Id="fcd3ae3a-3823-40ff-82f0-23799c76e0d6" ZoneFilterRegularExpression="The\ Void\ Ark" Name="3.1 - The Void Ark" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Shockwave Stomp" Id="7c80a20f-1587-4682-ad11-c8efe4063499" RegularExpression="14:145D:Sawtooth starts using Shockwave Stomp on Sawtooth">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shockwave Stomp" Id="7c80a20f-1587-4682-ad11-c8efe4063499" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|145D\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Hide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -87,7 +89,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Corrosive Bile" Id="0cad6b89-00e6-4519-b918-1a8082e7a3a8" RegularExpression="14:1436:Cuchulainn starts using Corrosive Bile on Cuchulainn">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Corrosive Bile" Id="0cad6b89-00e6-4519-b918-1a8082e7a3a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1436\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -95,7 +97,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Flailing Tentacles" Id="261a8cc8-40a0-4a9d-89c6-de3d0ca21f5a" RegularExpression="14:143A:Cuchulainn starts using Flailing Tentacles on Cuchulainn">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Flailing Tentacles" Id="261a8cc8-40a0-4a9d-89c6-de3d0ca21f5a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|143A\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Away from tentacles" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -103,15 +105,15 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Sickle Strike - TB" Id="38931d1c-bb87-4679-9166-3e5776943ca1" RegularExpression="14:1421:Echidna starts using Sickle Strike on (?&lt;player&gt;[a-zA-Z-' ]{3,21})">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sickle Strike - TB" Id="38931d1c-bb87-4679-9166-3e5776943ca1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1421\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                     <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                      <Action OrderNumber="1" UseTTSTextExpression="Buster on ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Abyssal Reaper" Id="c21945a8-6565-4f06-b228-619ede30909f" RegularExpression="14:1418:Echidna starts using Abyssal Reaper on Echidna">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Abyssal Reaper" Id="c21945a8-6565-4f06-b228-619ede30909f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1418\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="get away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -119,7 +121,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Petrifaction" Id="1e0aeae8-8a30-4538-9c62-6c12c8649512" RegularExpression="14:1422:Echidna starts using Petrifaction on Echidna">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Petrifaction" Id="1e0aeae8-8a30-4538-9c62-6c12c8649512" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1422\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -132,7 +134,7 @@
               <Folder ZoneFilterEnabled="True" Id="3ffab478-dbb0-4897-a24a-db8273e0e159" ZoneFilterRegularExpression="The\ Weeping\ City\ Of\ Mhach" Name="3.3 - The Weeping City of Mhach" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Frond Affeared" Id="ea6b2db6-e419-4703-baf5-2f4b377a9c1b" RegularExpression="14:183A:Arachne Eve starts using Frond Affeared on Arachne Eve">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Frond Affeared" Id="ea6b2db6-e419-4703-baf5-2f4b377a9c1b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|183A\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -140,7 +142,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Mortal Ray" Id="9c5f20d7-c07f-4e66-9d61-86db3a921e86" RegularExpression="14:17D4:Summoned Haagenti starts using Mortal Ray on Summoned Haagenti">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mortal Ray" Id="9c5f20d7-c07f-4e66-9d61-86db3a921e86" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|17D4\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -148,7 +150,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Mega Death" Id="24b47e9b-bd14-4e88-ad0b-68b8576dad44" RegularExpression="14:17CA:Forgall starts using Mega Death on Forgall">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mega Death" Id="24b47e9b-bd14-4e88-ad0b-68b8576dad44" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|17CA\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="go in puddle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -156,7 +158,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Flaring Epigraph" Id="1bf0f8eb-9ac9-400c-a95c-a404229a7723" RegularExpression="14:1856:Headstone starts using Flaring Epigraph on Headstone">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Flaring Epigraph" Id="1bf0f8eb-9ac9-400c-a95c-a404229a7723" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1856\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go in bubble" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -201,7 +203,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Void Blizzard End Cast" Id="0d62a95c-2572-417a-b3c9-f544c75cfeaf" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|1C75\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Void Blizzard End Cast" Id="0d62a95c-2572-417a-b3c9-f544c75cfeaf" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|1C77\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="knockback into ice" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -233,50 +235,58 @@
               <Folder ZoneFilterEnabled="True" Id="e8272302-fa40-45c9-b687-585765a7c365" ZoneFilterRegularExpression="The\ Ridorana\ Lighthouse" Name="4.3 - The Ridorana Lighthouse" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Tsunami" Id="140880e2-2552-4812-98ec-b109b1eda3a6" RegularExpression="Famfrit, the Darkening Cloud readies Tsunami.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tsunami" Id="140880e2-2552-4812-98ec-b109b1eda3a6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2C50\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Tsunami" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="Water IV" Id="12cd53fa-9ef3-4814-9b08-fbaea46983ae" RegularExpression="Famfrit, the Darkening Cloud begins casting Water IV.">
                     <Actions>
                       <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="AOE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                   </Trigger>
-                  <Trigger Enabled="true" Name="Tide Pod" Id="ab187216-61c7-47a3-a43f-620ef13afabb" RegularExpression="Famfrit, the Darkening Cloud readies Tide Pod.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tide Pod" Id="ab187216-61c7-47a3-a43f-620ef13afabb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2C3E\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Fire" Id="fd585d91-fe15-4782-a28f-1d918024fb4a" RegularExpression="Belias, the Gigas readies Fire.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire" Id="fd585d91-fe15-4782-a28f-1d918024fb4a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2CDB\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Time Eruption" Id="78662823-31d2-4c58-87c9-47a5938f668e" RegularExpression="Belias, the Gigas readies Time Eruption.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Time Eruption" Id="78662823-31d2-4c58-87c9-47a5938f668e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2CDE\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go in Slow Clock" UseTTSRateExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Time Bomb" Id="c9fd780e-4ab2-4ba2-9132-4579a4a7bc73" RegularExpression="Belias, the Gigas readies Time Bomb.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Time Bomb" Id="c9fd780e-4ab2-4ba2-9132-4579a4a7bc73" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2CE6\|">
                     <Actions>
                       <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Step on Bombs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Dispose" Id="2ed1a5af-487a-4673-b2ea-04e9a462ab45" RegularExpression="Construct 7 readies Dispose.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dispose" Id="2ed1a5af-487a-4673-b2ea-04e9a462ab45" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2C(?&gt;5F|E9)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Pulverize" Id="31ac7bc9-d38a-4ccd-8080-143f03a16c1f" RegularExpression="Construct 7 readies Pulverize.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pulverize" Id="31ac7bc9-d38a-4ccd-8080-143f03a16c1f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2C61\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Rake" Id="9b5c6845-5d22-4e37-82d1-5ade06ecc6b9" RegularExpression="Yiazmat readies Rake.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rake Buster" Id="9b5c6845-5d22-4e37-82d1-5ade06ecc6b9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2D4E\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="Magnetic Lysis" Id="f4db779a-a9ed-4f1d-b704-b0a7b07d0519" RegularExpression="Yiazmat readies Magnetic Lysis.">
                     <Actions>
@@ -292,6 +302,15 @@
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Kil Adds" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rake out of front" Id="9218d19f-2024-4246-84ec-6a4d3207023c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E32\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
