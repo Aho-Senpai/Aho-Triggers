@@ -885,25 +885,29 @@
               <Folder ZoneFilterEnabled="True" Id="a1093bf7-d294-481f-a766-d5e3e1ffdeab" ZoneFilterRegularExpression="Alexander\ -\ The\ Breath\ Of\ The\ Creator" Name="10 - Alexander - The Breath Of The Creator" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Single Charge (in)" Id="d90f3416-2840-4911-be67-017656d499c2" RegularExpression=".*:Lamebrix Strikebocks:1AB8:.*" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Single Charge (in)" Id="d90f3416-2840-4911-be67-017656d499c2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1AB8\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="in" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Single Charge (out)" Id="bf01ce51-cad0-485e-aad6-860a9e08a9d0" RegularExpression=".*:Lamebrix Strikebocks:1AB9:.*" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Single Charge (out)" Id="bf01ce51-cad0-485e-aad6-860a9e08a9d0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1AB9\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="out" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Single Charge (spread)" Id="1a0967ef-7c7d-4550-9cdc-9316bbcf3cdc" RegularExpression=".*:Lamebrix Strikebocks:1ABA:.*" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Single Charge (spread)" Id="1a0967ef-7c7d-4550-9cdc-9316bbcf3cdc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1ABA\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="spread" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Single Charge (stack)" Id="c8b4a9a5-ecf1-45fd-837e-4e680b0fa642" RegularExpression=".*:Lamebrix Strikebocks:1ABB:.*" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Single Charge (stack)" Id="c8b4a9a5-ecf1-45fd-837e-4e680b0fa642" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1ABB\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="stack" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="Extreme Caution" Id="8ef7aada-ccb1-4022-a75d-3aaec7d9f1b3" RegularExpression="You suffer the effect of Extreme Caution" DebugLevel="Info">
                     <Actions>
@@ -940,20 +944,23 @@
                       <Action OrderNumber="1" UseTTSTextExpression="dodge right" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                     </Actions>
                   </Trigger>
-                  <Trigger Enabled="true" Name="Optical Sight (bait)" Id="7eea1533-69ad-4b1f-b6ad-d8d8a0c30369" RegularExpression="Cruise Chaser:1A6E" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Optical Sight (bait)" Id="7eea1533-69ad-4b1f-b6ad-d8d8a0c30369" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1A6E\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="bait" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Optical sight (rotating)" Id="66a85275-0349-4d0f-abae-b08915031a90" RegularExpression="Cruise Chaser:1A6C" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Optical sight (rotating)" Id="66a85275-0349-4d0f-abae-b08915031a90" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1A6C\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="rotating" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Optical Sight (wall)" Id="48ca68c1-c8f0-4ac1-97c0-a5670c349300" RegularExpression="Cruise Chaser:1A6D" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Optical Sight (wall)" Id="48ca68c1-c8f0-4ac1-97c0-a5670c349300" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1A6D\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="wall" TextAuraFontSize="0" ActionType="UseTTS" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -995,7 +1002,7 @@
               <Folder ZoneFilterEnabled="True" Id="67d9008b-99bd-40dc-b218-698c864c0c7f" ZoneFilterRegularExpression="Alexander\ -\ The\ Fist\ Of\ The\ Father" Name="01 - Gordias - The Fist Of The Father" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Hydrothermal Missile" Id="acd8b0d7-fdb8-4086-99ee-5d2003031ed2" RegularExpression="14:1119:Oppressor starts using Hydrothermal Missile on Oppressor">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hydrothermal Missile" Id="acd8b0d7-fdb8-4086-99ee-5d2003031ed2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1119\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Prey" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -1003,7 +1010,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Photon Spaser" Id="add9fc9f-65eb-4a0b-a9e1-e9cdde0358aa" RegularExpression="14:1118:Oppressor starts using Photon Spaser on Oppressor">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Photon Spaser" Id="add9fc9f-65eb-4a0b-a9e1-e9cdde0358aa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1118\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Beam" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -1011,7 +1018,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Resin Bomb" Id="ee666859-975a-4666-9ca5-40e52a671816" RegularExpression="14:111C:Oppressor starts using Resin Bomb on Oppressor">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Resin Bomb" Id="ee666859-975a-4666-9ca5-40e52a671816" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|111C\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Puddles" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -1316,7 +1323,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Track Simulations &amp; Virus" Id="bfc41c50-ab81-4608-9d3f-60d5e925abd4" RegularExpression="^26\|[^|]*\|(?&lt;Buff&gt;5d[12345])\|">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Track Simulations &amp; Virus" Id="bfc41c50-ab81-4608-9d3f-60d5e925abd4" RegularExpression="^26\|[^|]*\|(?&lt;Buff&gt;5D[12345])\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Ultros" VariableOp="SetString" VariableName="O7SCurrentProgram" VariableExpression="Ultros" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                     <Condition Enabled="true" Grouping="And">
@@ -1370,7 +1377,7 @@
                           </Folder>
                         </Folders>
                         <Triggers>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Abandonment" Id="ca0196a6-6c64-41b3-8109-e79232cb8d86" RegularExpression="^26\|[^|]*\|58a\|[^|]*\|[^|]*\|[^|]*\|\|?(?&lt;PlayerID&gt;[^|]*)\|">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Abandonment" Id="ca0196a6-6c64-41b3-8109-e79232cb8d86" RegularExpression="^26\|[^|]*\|58A\|[^|]*\|[^|]*\|[^|]*\|\|?(?&lt;PlayerID&gt;[^|]*)\|">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Stay close - abandonment" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -1422,7 +1429,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rot" Id="13107f87-2ce1-4438-b220-a0e2bfd1e189" RegularExpression="^26\|[^|]*\|5c3\|[^|]*\|[^|]*\|[^|]*\|\|?(?&lt;playerID&gt;[^|]*)\|(?&lt;PlayerName&gt;[^|]*)\|">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rot" Id="13107f87-2ce1-4438-b220-a0e2bfd1e189" RegularExpression="^26\|[^|]*\|5C3\|[^|]*\|[^|]*\|[^|]*\|\|?(?&lt;playerID&gt;[^|]*)\|(?&lt;PlayerName&gt;[^|]*)\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Rot on ${PlayerName}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -1703,7 +1710,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Truth Check Reset" Id="607898b8-27e7-4168-bd7f-091ad192632b" RegularExpression="^30\|[^|]*\|5[cC](?&gt;[eE]|[Ff])\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Truth Check Reset" Id="607898b8-27e7-4168-bd7f-091ad192632b" RegularExpression="^30\|[^|]*\|5C[EF]\|">
                         <Actions>
                           <Action OrderNumber="1" VariableName="O8SJesterTruthCheck" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1730,7 +1737,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to fake" Id="99a50eaa-5205-4255-b75b-d17e55c9e2c9" RegularExpression="^26\|[^|]*\|5[cC][eE]\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to fake" Id="99a50eaa-5205-4255-b75b-d17e55c9e2c9" RegularExpression="^26\|[^|]*\|5CE\|">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetString" VariableName="O8SJesterTruthCheck" VariableExpression="Fake" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1738,7 +1745,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to truth" Id="d3550b2a-e70a-4031-9436-3f7a289dccb0" RegularExpression="^26\|[^|]*\|5[cC][fF]\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Prior to truth" Id="d3550b2a-e70a-4031-9436-3f7a289dccb0" RegularExpression="^26\|[^|]*\|5CF\|">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetString" VariableName="O8SJesterTruthCheck" VariableExpression="Truth" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -2875,36 +2882,41 @@
                   <Folder Id="e7f6c628-7a8d-4fc6-a824-f3acfee72d73" Name="spellblades from reddit" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Polymorphs (Oink, Ribbit, Squelch)" Id="c4d9334a-159f-4e61-a2a2-dbd703e99532" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\] 00:(282b|2aab):Halicarnassus readies (?&lt;polymorph&gt;Ribbit|Oink|Squelch)">
+                      <Trigger Enabled="true" Name="Polymorphs (Oink, Ribbit, Squelch)" Id="c4d9334a-159f-4e61-a2a2-dbd703e99532" RegularExpression="00:(282B|2AAB):Halicarnassus readies (?&lt;polymorph&gt;Ribbit|Oink|Squelch)">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="${polymorph} ${polymorph} ${polymorph}" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Spellblade Thunder III" Id="a060122a-e378-4867-8b28-79b55cff4310" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\]  14:22EE:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spellblade Thunder III" Id="a060122a-e378-4867-8b28-79b55cff4310" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|22EE\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="stab stab stab" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="The Queen's Waltz: Blue Tiles" Id="ac2962f8-e3c1-43c5-8581-43deaf88ee9a" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\] 14:230A:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Queen's Waltz: Blue Tiles" Id="ac2962f8-e3c1-43c5-8581-43deaf88ee9a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|230A\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Blue Blue Blue" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="The Queen's Waltz: Books" Id="7c582447-2c34-4a56-ba36-2c4ec646a34c" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\] 14:230E:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Queen's Waltz: Books" Id="7c582447-2c34-4a56-ba36-2c4ec646a34c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|230E\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Books Books Books" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="The Queen's Waltz: Swords" Id="d3947917-854d-4b00-9077-ff920814bc55" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\] 14:2306:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Queen's Waltz: Swords" Id="d3947917-854d-4b00-9077-ff920814bc55" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2306\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Swords Swords Swords" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="The Queen's Waltz: Vines" Id="dd43a505-5246-4112-88fe-c39bda37243e" RegularExpression="(?i)^\[[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}\] 14:2308:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Queen's Waltz: Vines" Id="dd43a505-5246-4112-88fe-c39bda37243e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2308\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Vines Vines Vines" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
                         </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -3026,7 +3038,7 @@
                   <Folder Id="d86d193a-ad23-4caf-8022-45f66d8b8cf1" Name="Exdeath Door" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Blizzard III" Id="3b8c72f1-a064-4e20-a98e-ec87bb7534a0" RegularExpression="14:(?&lt;move&gt;24C0|23F[C7]):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blizzard III" Id="3b8c72f1-a064-4e20-a98e-ec87bb7534a0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;24C0|23F[C7])\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Spread - Blizzard" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
@@ -3041,7 +3053,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Fire III" Id="96685d10-05a9-4b07-8d11-defeeb72f5d6" RegularExpression="14:(?&lt;move&gt;24B[AF]|23F[B5]):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire III" Id="96685d10-05a9-4b07-8d11-defeeb72f5d6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;24B[AF]|23F[B5])\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Spread - fire" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
@@ -3056,7 +3068,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Thunder III" Id="e26d264f-e96e-4332-b6b6-23392e655941" RegularExpression="14:(?&lt;move&gt;23F[9D]|24(?&gt;BD|C1)):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Thunder III" Id="e26d264f-e96e-4332-b6b6-23392e655941" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;23F[9D]|24(?&gt;BD|C1))\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Tank Buster Cleave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="Or">
@@ -3071,13 +3083,13 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Vacuum Wave" Id="5c50d32a-91cb-4183-ad8a-24dfe4873cbb" RegularExpression="14:(?&gt;241D|24B8):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Vacuum Wave" Id="5c50d32a-91cb-4183-ad8a-24dfe4873cbb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;241D|24B8)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Doom" Id="669d7621-1542-4d98-90ca-5d199392eb2d" RegularExpression="14:2487:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom" Id="669d7621-1542-4d98-90ca-5d199392eb2d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2487\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Doom, Cleanse" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3090,7 +3102,7 @@
                   <Folder Id="b5a255b9-48f2-4b37-8c50-27a60f059a0e" Name="5.x fight fixed? testing" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Outer Antilight" Id="ab182746-e2b7-4046-bb10-fb0b182d9130" RegularExpression="14:2410:" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Outer Antilight" Id="ab182746-e2b7-4046-bb10-fb0b182d9130" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2410\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go In" TextAuraFontSize="0" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3103,7 +3115,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Inner Antilight" Id="f1de1055-2e50-4949-8fa8-edd247692f4a" RegularExpression="14:244C:" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Inner Antilight" Id="f1de1055-2e50-4949-8fa8-edd247692f4a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|244C\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go Out" TextAuraFontSize="0" ActionType="UseTTS" />
                           <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="go in - death" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -3114,7 +3126,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Colors Lasers (Purple/Ball Left, Blue/Triangle Right)" Id="041c1b2c-a5c3-41b6-8f69-b9f687bc9d1d" RegularExpression="14:2411:" PeriodRefire="Deny" RefirePeriodExpression="5000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Colors Lasers (Purple/Ball Left, Blue/Triangle Right)" Id="041c1b2c-a5c3-41b6-8f69-b9f687bc9d1d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2411\|" PeriodRefire="Deny" RefirePeriodExpression="5000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Color Lasers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3144,7 +3156,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="And" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Colors Lasers (Blue/Triangle Left, Purple/Ball Right)" Id="2691855e-1c81-4e50-aed8-f2d41b745f49" RegularExpression="14:2412:" PeriodRefire="Deny" RefirePeriodExpression="5000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Colors Lasers (Blue/Triangle Left, Purple/Ball Right)" Id="2691855e-1c81-4e50-aed8-f2d41b745f49" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2412\|" PeriodRefire="Deny" RefirePeriodExpression="5000">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Color Lasers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3217,25 +3229,25 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Delta Attack" Id="29390b4c-5df7-4b98-9dd5-ce188d0f06c5" RegularExpression="14:241E:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Delta Attack" Id="29390b4c-5df7-4b98-9dd5-ce188d0f06c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|241E\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Delta Attack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Vacuum Wave" Id="f4c106d0-02fc-4442-b67f-cf787a1d37d0" RegularExpression="14:24(?&gt;1D|B8):">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Vacuum Wave" Id="f4c106d0-02fc-4442-b67f-cf787a1d37d0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|24(?&gt;1D|B8)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Vacuum Wave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Emptiness" Id="c0f3b687-d45a-4545-801b-e84bd5dff05a" RegularExpression="14:2420:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Emptiness" Id="c0f3b687-d45a-4545-801b-e84bd5dff05a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2420\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Emptiness" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Grand Cross Alpha/Omega" Id="125d66a4-cd26-4b6d-afa6-8b6bc3aeb83f" RegularExpression=":14:242[BD]:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Grand Cross Alpha/Omega" Id="125d66a4-cd26-4b6d-afa6-8b6bc3aeb83f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|242[BD]\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="GO MIDDLE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
                     </Actions>
@@ -3288,7 +3300,7 @@
                   <Folder Id="296c1523-27f4-41a3-9564-8ed57b1a7b88" Name="Network Triggers" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Name="Eden's Flare" Id="280d8314-b823-4600-b91c-711ded0c0d6f" RegularExpression="14:3D(73|97):Eden Prime starts using Eden's Flare on Eden Prime">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eden's Flare" Id="280d8314-b823-4600-b91c-711ded0c0d6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3D(73|97)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3296,7 +3308,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Eden's Gravity" Id="067b84ae-de5d-4110-b2b0-03cdf1b6957a" RegularExpression="14:3D(70|94):Eden Prime starts using Eden's Gravity on Eden Prime">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eden's Gravity" Id="067b84ae-de5d-4110-b2b0-03cdf1b6957a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3D(70|94)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3304,7 +3316,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Pure Light" Id="716297ea-d193-4237-a8e8-d0bc7b934609" RegularExpression="14:3D(8A|A3):Eden Prime starts using Pure Light on Eden Prime">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pure Light" Id="716297ea-d193-4237-a8e8-d0bc7b934609" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3D(8A|A3)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3312,7 +3324,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Spear of Paradise" Id="03bdee67-9df3-4266-b592-f11b32316897" RegularExpression="14:3D(88|A1):Eden Prime starts using Spear Of Paradise on (?&lt;player&gt;[a-zA-Z-' ]{1,31})">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spear of Paradise" Id="03bdee67-9df3-4266-b592-f11b32316897" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3D(88|A1)\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Tank Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3320,7 +3332,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Delta Attack" Id="301b355f-e5e8-4a60-aeaf-42796221bbf0" RegularExpression="14:(?&lt;cast&gt;[A-F0-9]{4}):Eden Prime starts using Delta Attack on Eden Prime">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Delta Attack" Id="301b355f-e5e8-4a60-aeaf-42796221bbf0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;cast&gt;[A-F0-9]{4})\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Delta Spread Corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
@@ -3340,7 +3352,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Vice And Virtue" Id="a4ebb217-658d-42dd-ac97-8ed7dba81f20" RegularExpression="14:(?&lt;cast&gt;[A-F0-9]{4}):Eden Prime starts using Vice And Virtue">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Vice And Virtue" Id="a4ebb217-658d-42dd-ac97-8ed7dba81f20" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;cast&gt;[A-F0-9]{4})">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="DPS Puddle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
@@ -3719,7 +3731,7 @@
                           <Folder Id="1a5fcaf3-1fdb-4c08-8f08-54f39da4d7c3" Name="Temporary Current" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Name="Temporary Current" Id="4a2d5419-80f8-41f4-bfe2-b56033464a8a" RegularExpression="14:(?&lt;id&gt;3FEA|3FEB):Leviathan starts using Temporary Current">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Temporary Current" Id="4a2d5419-80f8-41f4-bfe2-b56033464a8a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;3FEA|3FEB)\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="true" Grouping="And">
@@ -3748,7 +3760,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Refreshing Shower" Id="c87d766b-88e7-41e1-aebc-5c8d36ca39d3" RegularExpression="14:400F:Leviathan starts using Refreshing Shower">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Refreshing Shower" Id="c87d766b-88e7-41e1-aebc-5c8d36ca39d3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|400F\|">
                                 <Actions>
                                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="DoubleTemporaryCurrent" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -3771,7 +3783,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Name="Drenching Pulse" Id="9a7a6180-3e15-450b-9984-4738fef7ac7d" RegularExpression="14:3FE2:Leviathan starts using Drenching Pulse">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Drenching Pulse" Id="9a7a6180-3e15-450b-9984-4738fef7ac7d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3FE2\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Stack then Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="And">
@@ -3781,7 +3793,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Roiling Pulse" Id="16d14e76-294e-450f-b946-704bf0755b68" RegularExpression="14:3FE4:Leviathan starts using Roiling Pulse">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Roiling Pulse" Id="16d14e76-294e-450f-b946-704bf0755b68" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3FE4\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Flares" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
@@ -3796,7 +3808,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Stormy Horizon" Id="1f7a0060-e446-4dea-866c-6f8e316b693e" RegularExpression="14:3FFE:Leviathan starts using Stormy Horizon">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stormy Horizon" Id="1f7a0060-e446-4dea-866c-6f8e316b693e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3FFE\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Panto" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3804,7 +3816,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Maelstrom" Id="3222df15-a266-4998-bc84-54bb6cdb7b88" RegularExpression="14:3FFA:Leviathan starts using Maelstrom">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Maelstrom" Id="3222df15-a266-4998-bc84-54bb6cdb7b88" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3FFA\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Maelstrom" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3812,7 +3824,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Tidal Rage" Id="255c5812-26d3-453c-b353-04fd165f8649" RegularExpression="14:3FDE:Leviathan starts using Tidal Rage">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tidal Rage" Id="255c5812-26d3-453c-b353-04fd165f8649" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3FDE\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -3832,7 +3844,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Tidal Roar" Id="236dab37-7d50-434b-a617-98ece15864cd" RegularExpression="14:(3FDC|3FC4):Leviathan starts using Tidal Roar">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tidal Roar" Id="236dab37-7d50-434b-a617-98ece15864cd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;3FDC|3FC4)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -3840,7 +3852,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Tidal Wave" Id="c295a2d0-8c43-44fb-84a1-d4314484b20e" RegularExpression="14:(3FF1|3FD2):Leviathan starts using Tidal Wave">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tidal Wave" Id="c295a2d0-8c43-44fb-84a1-d4314484b20e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;3FF1|3FD2)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="8000">
                         <Condition Enabled="false" Grouping="Or" />
@@ -3848,7 +3860,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Tsunami" Id="06bc4de1-2159-4023-969f-24196d4888ef" RegularExpression="14:(3FF3|3FD4):Leviathan starts using Tsunami">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tsunami" Id="06bc4de1-2159-4023-969f-24196d4888ef" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;3FF3|3FD4)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -3856,7 +3868,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Undersea Quake" Id="35161aa1-6a77-48ef-8caa-34900c24d9b3" RegularExpression="14:(?&lt;id&gt;3F[EDC][EF0]):">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Undersea Quake" Id="35161aa1-6a77-48ef-8caa-34900c24d9b3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;3F[EDC][EF0])\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Go Middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
@@ -3967,7 +3979,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Bomb Callout - 2-1 / 3-1" Id="38b6edab-8186-44c2-93dc-be91e76b06aa" RegularExpression="14:4110:Titan starts using Seismic Wave" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bomb Callout - 2-1 / 3-1" Id="38b6edab-8186-44c2-93dc-be91e76b06aa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4110\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="2-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="750">
                                 <Condition Enabled="true" Grouping="And">
@@ -4062,7 +4074,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Name="Earthen Fist" Id="52b0c85b-da91-4ff4-94eb-68182653145f" RegularExpression="14:(?&lt;id&gt;412F|4130|4131|4132):Titan Maximum starts using Earthen Fist">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fist" Id="52b0c85b-da91-4ff4-94eb-68182653145f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;412F|413[012])\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Left ... then Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
@@ -4087,7 +4099,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Panel Punches" Id="1cdb889d-389e-45b0-a19e-f4e3d34f259a" RegularExpression="14:(?&lt;id&gt;4125|4126|4127|4128):">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Panel Punches" Id="1cdb889d-389e-45b0-a19e-f4e3d34f259a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;412[5-8])\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Front Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="true" Grouping="And">
@@ -4120,7 +4132,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Voice of the Land" Id="b7f1c4bb-12ad-4ab9-a4af-8c0575be45c3" RegularExpression="14:4114:Titan starts using Voice Of The Land">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Voice of the Land" Id="b7f1c4bb-12ad-4ab9-a4af-8c0575be45c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4114\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4128,7 +4140,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Geocrush" Id="f67d738d-2a19-45fd-80ac-ca579926e355" RegularExpression="14:4113:Titan starts using Geocrush">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Geocrush" Id="f67d738d-2a19-45fd-80ac-ca579926e355" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4113\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4136,7 +4148,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Seismic Wave" Id="1a52fdfc-fa32-4a6f-b75d-a1112701bcc0" RegularExpression="14:4110:Titan starts using Seismic Wave">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Seismic Wave" Id="1a52fdfc-fa32-4a6f-b75d-a1112701bcc0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4110\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Hide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4144,7 +4156,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Fault Line" Id="c33ce400-3b91-440b-9153-4c49763b7e0b" RegularExpression="14:411E:Titan starts using Fault Line">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fault Line" Id="c33ce400-3b91-440b-9153-4c49763b7e0b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|411E\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Dash" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4152,7 +4164,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Magnitude 5.0" Id="948373ee-5ba7-411a-aa02-186bb350aa8f" RegularExpression="14:4121:Titan starts using Magnitude 5.0">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Magnitude 5.0" Id="948373ee-5ba7-411a-aa02-186bb350aa8f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4121\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4160,7 +4172,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Massive Landslide" Id="0c17e777-d1a9-4331-81f0-8bb0c52398c5" RegularExpression="14:411B:Titan starts using Landslide">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Massive Landslide" Id="0c17e777-d1a9-4331-81f0-8bb0c52398c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|411B\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Landslide - t shape" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4168,7 +4180,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Earthen Fury" Id="c5e82ba6-c5ba-4889-9d12-2de596504709" RegularExpression="14:4124:Titan Maximum starts using Earthen Fury">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fury" Id="c5e82ba6-c5ba-4889-9d12-2de596504709" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4124\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4176,7 +4188,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Tumult" Id="c6012c63-8f6c-477b-9f3b-bd02318e5802" RegularExpression="14:412A:Titan Maximum starts using Tumult">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tumult" Id="c6012c63-8f6c-477b-9f3b-bd02318e5802" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|412A\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4184,7 +4196,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Earthen Fury (DoT)" Id="3a500468-0d73-42b7-a1a0-d725be3ed68d" RegularExpression="14:4139:Titan starts using Earthen Fury">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Earthen Fury (DoT)" Id="3a500468-0d73-42b7-a1a0-d725be3ed68d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4139\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -4192,7 +4204,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Dual Earthen Fists" Id="778645c1-eaa8-4431-9239-e90c5c76a4d7" RegularExpression="14:4135:Titan Maximum starts using Dual Earthen Fists">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dual Earthen Fists" Id="778645c1-eaa8-4431-9239-e90c5c76a4d7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4135\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
