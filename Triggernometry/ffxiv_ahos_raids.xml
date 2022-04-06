@@ -6239,7 +6239,7 @@
                           <Folder Id="b433b2b2-5da5-4970-8d96-fcdf1a641777" Name="Experimental Fireplume" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Name="Shiva" Id="7090faf7-9c29-471c-9694-aa59f0dc0275" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C0">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shiva" Id="7090faf7-9c29-471c-9694-aa59f0dc0275" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66C0\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Shiva" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6247,7 +6247,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Out" Id="db1377d0-ee5a-49d5-88a8-4ee8929cd2e8" RegularExpression="14:[0-9A-F]{8}:[^:]*:66BE">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Out" Id="db1377d0-ee5a-49d5-88a8-4ee8929cd2e8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66BE\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6260,7 +6260,7 @@
                           <Folder Id="9e1f62bb-d99f-4140-a8f9-fed69b52f2b2" Name="Experimental Gloryplume" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Name="Shiva" Id="d81abd0b-f7e9-4a73-9410-0742b2edfacb" RegularExpression="14:[0-9A-F]{8}:[^:]*:66CA">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shiva" Id="d81abd0b-f7e9-4a73-9410-0742b2edfacb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66CA\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Shiva" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6268,7 +6268,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Out" Id="4d369483-fa38-4561-b9b6-036c0b357e59" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C6">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Out" Id="4d369483-fa38-4561-b9b6-036c0b357e59" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66C6\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6276,7 +6276,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Light parties" Id="aeafb75b-b9d4-4ab4-b6fb-ca193105cad3" RegularExpression="15:[0-9A-F]{8}:[^:]*:66CC">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Light parties" Id="aeafb75b-b9d4-4ab4-b6fb-ca193105cad3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66CC\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Light parties" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6284,7 +6284,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Spread" Id="16fcac12-a659-4df3-b668-fc0544c91f06" RegularExpression="15:[0-9A-F]{8}:[^:]*:66C8">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spread" Id="16fcac12-a659-4df3-b668-fc0544c91f06" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66C8\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6297,7 +6297,7 @@
                           <Folder Id="3438a968-2f5f-49c2-a590-91db8e23aa8a" Name="Experimental Ashplume" Enabled="true">
                             <Folders />
                             <Triggers>
-                              <Trigger Enabled="true" Name="Spread" Id="c938cd81-6cd1-428c-8274-895919ccec34" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C4">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spread" Id="c938cd81-6cd1-428c-8274-895919ccec34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66C4\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6305,7 +6305,7 @@
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
                               </Trigger>
-                              <Trigger Enabled="true" Name="Light parties" Id="285ef05e-26a1-4a4e-b031-6f8f5a8ff00a" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C2">
+                              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Light parties" Id="285ef05e-26a1-4a4e-b031-6f8f5a8ff00a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66C2\|">
                                 <Actions>
                                   <Action OrderNumber="1" UseTTSTextExpression="Light parties" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
@@ -6317,7 +6317,7 @@
                           </Folder>
                         </Folders>
                         <Triggers>
-                          <Trigger Enabled="true" Name="Tank Tethers" Id="dadedf3c-b35f-47cd-8de5-df9e310ab73f" RegularExpression="14:[0-9A-F]{8}:[^:]*:6700:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tank Tethers" Id="dadedf3c-b35f-47cd-8de5-df9e310ab73f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6700\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Tank tethers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -6325,7 +6325,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Middle and pairs" Id="b3ef1e29-7d0e-4eca-8d59-ed1cebe3bfb1" RegularExpression="14:[0-9A-F]{8}:[^:]*:66FC:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Middle and pairs" Id="b3ef1e29-7d0e-4eca-8d59-ed1cebe3bfb1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66FC\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Middle and pairs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -6333,7 +6333,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Sides and Spread" Id="c8e3c0f7-c79c-45be-9f2b-72bdb5d067e2" RegularExpression="14:[0-9A-F]{8}:[^:]*:66FB:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sides and Spread" Id="c8e3c0f7-c79c-45be-9f2b-72bdb5d067e2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66FB\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Sides and Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -6341,7 +6341,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Go left" Id="5329905f-2f40-4587-99d3-d2e5555a5c3a" RegularExpression="14:[0-9A-F]{8}:[^:]*:6702:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Go left" Id="5329905f-2f40-4587-99d3-d2e5555a5c3a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6702\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="GO left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -6349,7 +6349,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Right" Id="70fd74ca-b8f3-404c-b529-efd6648c66c9" RegularExpression="14:[0-9A-F]{8}:[^:]*:6703:">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Right" Id="70fd74ca-b8f3-404c-b529-efd6648c66c9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6703\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
