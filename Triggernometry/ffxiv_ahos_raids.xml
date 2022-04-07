@@ -310,7 +310,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -774,18 +773,23 @@
               <Folder ZoneFilterEnabled="True" Id="3dd55c98-b7b7-4a34-9cec-220d67f1cb1a" ZoneFilterRegularExpression="Alexander\ -\ The\ Cuff\ Of\ The\ Son" Name="06 - Midas - The Cuff Of The Son" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="High Arithmeticks" Id="c7630461-1424-439c-a437-dee3a44f0b49" RegularExpression="You suffer the effect of High Arithmeticks" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="High Arithmeticks" Id="c7630461-1424-439c-a437-dee3a44f0b49" RegularExpression="^26\|[^|]*\|3FE\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" PlaySoundExclusive="False" UseTTSTextExpression="low, low, low" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" RefireRequeue="False" />
                     </Actions>
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Name="Low Arithmeticks" Id="92329393-b49d-4eb0-9d52-170c6605197d" RegularExpression="You suffer the effect of Low Arithmeticks" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Low Arithmeticks" Id="92329393-b49d-4eb0-9d52-170c6605197d" RegularExpression="^26\|[^|]*\|3FD\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" PlaySoundExclusive="False" UseTTSTextExpression="high, high, high" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" RefireRequeue="False" />
                     </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
                   </Trigger>
-                  <Trigger Enabled="true" Name="Debuff timer" Id="a1b2a444-19e4-435f-ab97-d8078c7c1a7f" RegularExpression="(gain|gains) the effect of Compressed Lightning" DebugLevel="Info">
+                  <Trigger Enabled="false" Source="None" Name="Debuff timer" Id="a1b2a444-19e4-435f-ab97-d8078c7c1a7f" RegularExpression="(gain|gains) the effect of Compressed Lightning" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="10" UseTTSVolumeExpression="50" UseTTSRateExpression="5" TextAuraFontSize="0" ActionType="UseTTS" ExecutionDelayExpression="11000" RefireInterrupt="True" />
                       <Action OrderNumber="2" UseTTSTextExpression="5" UseTTSVolumeExpression="50" UseTTSRateExpression="5" TextAuraFontSize="0" ActionType="UseTTS" ExecutionDelayExpression="5000" RefireInterrupt="True" />
@@ -794,11 +798,13 @@
                       <Action OrderNumber="5" UseTTSTextExpression="2" UseTTSVolumeExpression="50" UseTTSRateExpression="5" TextAuraFontSize="0" ActionType="UseTTS" ExecutionDelayExpression="1000" RefireInterrupt="True" />
                       <Action OrderNumber="6" UseTTSTextExpression="1" UseTTSVolumeExpression="50" UseTTSRateExpression="5" TextAuraFontSize="0" ActionType="UseTTS" ExecutionDelayExpression="1000" RefireInterrupt="True" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Ballistic Missile" Id="1465ffa7-195b-4a66-8f93-f399694396a5" RegularExpression="Vortexer uses Ballistic Missile" DebugLevel="Info">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ballistic Missile" Id="1465ffa7-195b-4a66-8f93-f399694396a5" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|15F4\|" DebugLevel="Info">
                     <Actions>
                       <Action OrderNumber="1" PlaySoundExclusive="False" UseTTSTextExpression="pools" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" RefireRequeue="False" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                 </Triggers>
               </Folder>
