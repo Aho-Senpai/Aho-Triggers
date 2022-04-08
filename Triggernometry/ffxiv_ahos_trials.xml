@@ -4,7 +4,7 @@
     <Folders>
       <Folder Id="42dd468d-4918-482c-9794-64e0bb2295a4" Name="2.0 : A Realm Reborn" Enabled="true">
         <Folders>
-          <Folder ZoneFilterEnabled="True" Id="a7a0b96c-6bd8-426a-94f4-0cab2211badc" ZoneFilterRegularExpression="A\ Relic\ Reborn:\ The\ Hydra" Name="A Relic Reborn: the Hydra" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^369$" Id="a7a0b96c-6bd8-426a-94f4-0cab2211badc" ZoneFilterRegularExpression="A\ Relic\ Reborn:\ The\ Hydra" Name="A Relic Reborn: the Hydra" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Fear Itself" Id="dc92b71f-9973-4583-a103-509ea9e2f8d8" RegularExpression="14:500:Hydra starts using Fear Itself on Hydra">
@@ -17,7 +17,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="78dd8179-a99a-4c61-bbba-d11da7e3fd84" Name="Whorleater (Hard)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^(?&gt;281|359|972)$" Id="78dd8179-a99a-4c61-bbba-d11da7e3fd84" Name="Whorleater (Hard)" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Shield" Id="f67d4442-b3d9-4653-81a9-4223f6ffc3b9" RegularExpression="The elemental converter is now operable!">
@@ -27,7 +27,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="1be52761-1c31-435b-a2d3-1a57145788f8" ZoneFilterRegularExpression="Akh\ Afah\ Amphitheatre" Name="Akh Afah Amphitheatre (Hard/Extreme/Unreal)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^(?&gt;37[78]|930)$" Id="1be52761-1c31-435b-a2d3-1a57145788f8" ZoneFilterRegularExpression="Akh\ Afah\ Amphitheatre" Name="Akh Afah Amphitheatre (Hard/Extreme/Unreal)" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Hailstorm Headmarker - Spread" Id="0eb5798c-4825-4157-8433-e9536211e2c0" RegularExpression="1B:[0-9A-F]{8}:(?&lt;char&gt;[a-zA-Z' ]{3,21}):[0-9A-F]{4}:[0-9A-F]{4}:001D:">
@@ -117,7 +117,7 @@
       </Folder>
       <Folder Id="2dbbb791-e80d-4ec5-ab72-7fa8919df24a" Name="3.0 : Heavensward" Enabled="true">
         <Folders>
-          <Folder Id="6e34e4c0-3b16-4636-ad32-0209a39ed55c" Name="Containement Bay P1T6" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^57[67]$" Id="6e34e4c0-3b16-4636-ad32-0209a39ed55c" Name="Containement Bay P1T6" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Thunder III" Id="ca54f567-ced1-42e4-bae4-ad886438feb8" RegularExpression="Sophia starts using Thunder III on Sophia">
@@ -147,7 +147,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="4bd023a3-2daa-413b-8df4-77039a01a30f" ZoneFilterRegularExpression="The\ Limitless\ Blue\ \(Extreme\)" Name="The Limitless Blue" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^4(?&gt;36|47)$" Id="4bd023a3-2daa-413b-8df4-77039a01a30f" ZoneFilterRegularExpression="The\ Limitless\ Blue\ \(Extreme\)" Name="The Limitless Blue" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Cetacean Rage" Id="8cc1ce6a-e914-4422-adfb-78456a000935" RegularExpression="Bismarck readies Cetacean Rage.">
@@ -162,7 +162,7 @@
       </Folder>
       <Folder Id="6af07c84-7f97-447a-b546-9a2c638cbae4" Name="4.0 : Stormblood" Enabled="true">
         <Folders>
-          <Folder ZoneFilterEnabled="True" Id="ae5fe069-9578-468f-8678-8a7cdc56a8ad" ZoneFilterRegularExpression="The\ Jade\ Stoa" Name="4.2 - The Jade Stoa" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^7(?&gt;46|58)$" Id="ae5fe069-9578-468f-8678-8a7cdc56a8ad" ZoneFilterRegularExpression="The\ Jade\ Stoa" Name="4.2 - The Jade Stoa" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Sweep The Leg" Id="e682b2d9-ee2b-4d56-a020-748f4dc9ab60" RegularExpression="14:27DB:Byakko starts using Sweep The Leg on Byakko">
@@ -189,7 +189,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="6b837ff3-17e7-42b1-ac04-10e0e86d7315" Name="4.5 - The Wrath of Snakes" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^82[45]$" Id="6b837ff3-17e7-42b1-ac04-10e0e86d7315" Name="4.5 - The Wrath of Snakes" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Handprint Left" Id="23ca436b-a1e0-48cc-9ede-253c14fd8490" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|37E5\|">
@@ -254,7 +254,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="1bdf3b28-c195-4988-a953-d33da80843ed" ZoneFilterRegularExpression="Hells'\ Kier(\ \(Extreme\))?" Name="4.4 - Hell's Kier" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^81[01]$" Id="1bdf3b28-c195-4988-a953-d33da80843ed" ZoneFilterRegularExpression="Hells'\ Kier(\ \(Extreme\))?" Name="4.4 - Hell's Kier" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Mesmerizing Melody" Id="e8d2c6d2-775f-4efb-8b0b-2257232607ab" RegularExpression="14:32DA:Suzaku starts using Mesmerizing Melody on Suzaku">
@@ -311,7 +311,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="2d6efb22-f5cf-4fd6-8081-b4bd2069abe5" ZoneFilterRegularExpression="The\ Great\ Hunt" Name="4.36 - The Great Hunt" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^76[12]$" Id="2d6efb22-f5cf-4fd6-8081-b4bd2069abe5" ZoneFilterRegularExpression="The\ Great\ Hunt" Name="4.36 - The Great Hunt" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Rathalos Extreme" Id="bd83a9d2-6fa8-4985-a96f-ec59d1a538e1" RegularExpression="14:(?&lt;id&gt;[0-9A-F]{4}):Rathalos starts using (.*) on (?&lt;char&gt;[a-zA-Z']*)">
@@ -380,7 +380,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="820096cf-67bf-41f3-8f4e-de3897eac1f6" ZoneFilterRegularExpression="The\ Minstrel's\ Ballad:\ Shinryu's\ Domain" Name="4.1 - The Minstrel's Ballad: Shinryu's Domain" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^730$" Id="820096cf-67bf-41f3-8f4e-de3897eac1f6" ZoneFilterRegularExpression="The\ Minstrel's\ Ballad:\ Shinryu's\ Domain" Name="4.1 - The Minstrel's Ballad: Shinryu's Domain" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Tidal Wave" Id="13c057b5-07d0-4fb2-b77b-3dcbf0ae4b24" RegularExpression="2b:Shinryu readies Tidal Wave">
@@ -534,7 +534,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="8bcf4570-bfd7-4f60-81e4-1e6294b79c82" ZoneFilterRegularExpression="The\ Minstrel's\ Ballad:\ Tsukuyomi's\ Pain" Name="4.3 - Tsukuyomi's Pain" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^77[89]$" Id="8bcf4570-bfd7-4f60-81e4-1e6294b79c82" ZoneFilterRegularExpression="The\ Minstrel's\ Ballad:\ Tsukuyomi's\ Pain" Name="4.3 - Tsukuyomi's Pain" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Torment Unto Death" Id="942fc31f-6116-4110-aae6-67ed984ba542" RegularExpression="Tsukuyomi readies Torment Unto Death.">
@@ -618,7 +618,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="1c87cb99-9f9f-44c5-88e1-1fdec4b0b8f9" ZoneFilterRegularExpression="The\ Royal\ Menagerie" Name="4.0 - The Royal Menagerie" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^679$" Id="1c87cb99-9f9f-44c5-88e1-1fdec4b0b8f9" ZoneFilterRegularExpression="The\ Royal\ Menagerie" Name="4.0 - The Royal Menagerie" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Tidal Wave" Id="122f4751-751b-430c-aede-07df744f00ce" RegularExpression="14:1FAA:Shinryu starts using Tidal Wave on Shinryu">
@@ -867,7 +867,7 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^8(?&gt;58|45)$" ZoneFilterEnabled="True" Id="3f199bfa-59b2-4f85-953c-217a736d8489" ZoneFilterRegularExpression="^the\ Dancing\ Plague\ \(Extreme\)$" Name="5.0 - 73 - The Dancing Plague" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^8(?&gt;58|45)$" Id="3f199bfa-59b2-4f85-953c-217a736d8489" ZoneFilterRegularExpression="^the\ Dancing\ Plague\ \(Extreme\)$" Name="5.0 - 73 - The Dancing Plague" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bright Sabbath - AoE" Id="c91f299c-babf-4005-8464-09ab408b86c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;3D4B|3D5C)\|">
@@ -951,7 +951,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="96f6b073-381d-4986-8803-a95fa778da81" Name="5.2 - Cinder Drift (partially updated to 6.0)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^(?&gt;897|912)$" Id="96f6b073-381d-4986-8803-a95fa778da81" Name="5.2 - Cinder Drift (partially updated to 6.0)" Enabled="true">
             <Folders>
               <Folder Id="519b26d0-60cd-4b63-8853-ba2b2a268e2c" Name="Ruby Weapon (from @Ellie)" Enabled="true">
                 <Folders />
@@ -1089,7 +1089,7 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="549e4bdb-f776-41c2-bbeb-a1ff390c6c2c" ZoneFilterRegularExpression="Memoria\ Misera\ \(Extreme\)" Name="5.25 - Memoria Miseria" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^913$" Id="549e4bdb-f776-41c2-bbeb-a1ff390c6c2c" ZoneFilterRegularExpression="Memoria\ Misera\ \(Extreme\)" Name="5.25 - Memoria Miseria" Enabled="true">
             <Folders>
               <Folder Id="42186227-5453-43ce-8624-f0e1fa5abb24" Name="Gunshields" Enabled="true">
                 <Folders />
@@ -1287,7 +1287,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="05ec24a0-5f11-42c8-aeb5-3f7cb7f9d8ad" ZoneFilterRegularExpression="the\ Seat\ Of\ Sacrifice" Name="5.3 - Seat of Sacrifice" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^92[23]$" Id="05ec24a0-5f11-42c8-aeb5-3f7cb7f9d8ad" ZoneFilterRegularExpression="the\ Seat\ Of\ Sacrifice" Name="5.3 - Seat of Sacrifice" Enabled="true">
             <Folders>
               <Folder Id="f3bcb856-caf8-4d28-90b2-137be16cee43" Name="WoL EX" Enabled="true">
                 <Folders>
@@ -1591,7 +1591,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="9e336557-da6d-4a8f-926d-5c7e13128363" ZoneFilterRegularExpression="The Cloud Deck" Name="5.5 - Diamond Weapon" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^95[01]$" Id="9e336557-da6d-4a8f-926d-5c7e13128363" ZoneFilterRegularExpression="The Cloud Deck" Name="5.5 - Cloud Deck (Diamond Weapon)" Enabled="true">
             <Folders>
               <Folder Id="50c2fd2f-fae9-4d8a-8b65-cba66733b1d2" Name="The Diamond Weapon EX" Enabled="true">
                 <Folders>
@@ -1806,7 +1806,7 @@
       </Folder>
       <Folder Id="1bb3d26e-cd90-4f49-a266-209c56f43b44" Name="6.0 : Endwalker" Enabled="true">
         <Folders>
-          <Folder Id="c969ebec-9a70-44ca-8f83-3b10397b574d" Name="6.0 - 83 - The Dark Inside" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^99[23]$" Id="c969ebec-9a70-44ca-8f83-3b10397b574d" Name="6.0 - 83 - The Dark Inside" Enabled="true">
             <Folders>
               <Folder Id="09bc6080-f345-46fa-9818-b076d84be559" Name="Attempt at complex mechanics" Enabled="true">
                 <Folders />
@@ -1997,7 +1997,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="d7e6eb8e-b539-4e9b-80b3-aec4bece498b" Name="6.0 - 89 - The Mothercrystal" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^99[56]$" Id="d7e6eb8e-b539-4e9b-80b3-aec4bece498b" Name="6.0 - 89 - The Mothercrystal" Enabled="true">
             <Folders>
               <Folder Id="6bfd45b5-8034-4110-95d0-6cd940c0e011" Name="WeaponCounter" Enabled="true">
                 <Folders />
@@ -2147,7 +2147,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="f578f4d2-217b-4818-978e-9b9c386fc0ee" Name="6.0 - 90 - The Final Day" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^997$" Id="f578f4d2-217b-4818-978e-9b9c386fc0ee" Name="6.0 - 90 - The Final Day" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Elegeia" Id="7cabee0c-0ef3-419c-b4b6-3009deca55fa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|66(?&gt;2C|82)\|">
