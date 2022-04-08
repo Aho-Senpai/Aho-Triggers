@@ -27,7 +27,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="d8180007-88b0-48f0-876c-8f18ef006c3d" ZoneFilterRegularExpression="Snowcloak" Name="50 - Snowcloak" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^371$" Id="d8180007-88b0-48f0-876c-8f18ef006c3d" ZoneFilterRegularExpression="Snowcloak" Name="50 - Snowcloak" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lunar Cry" Id="b2d5cd3e-a89b-475f-8e8e-a10aaa3bdad6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|C1F\|">
@@ -38,7 +38,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="e830f988-273b-4421-a786-20f0b41ec490" ZoneFilterRegularExpression="Halatali\ \(Hard\)" Name="50 - Hataliti (Hard)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^360$" Id="e830f988-273b-4421-a786-20f0b41ec490" ZoneFilterRegularExpression="Halatali\ \(Hard\)" Name="50 - Hataliti (Hard)" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Demon Eye" Id="9f262056-c14b-4b60-a89e-eb5f2c6d049a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|833\|">
@@ -57,7 +57,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^168$" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Swinge : go behind" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|387\|">
@@ -76,7 +76,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="5c3d0ff3-3a03-4d94-96aa-f12a20a264c2" ZoneFilterRegularExpression="The\ Keeper\ Of\ The\ Lake" Name="50 - The Keeper Of The Lake" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^150$" Id="5c3d0ff3-3a03-4d94-96aa-f12a20a264c2" ZoneFilterRegularExpression="The\ Keeper\ Of\ The\ Lake" Name="50 - The Keeper Of The Lake" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Animadversion" Id="6c56f87b-75b1-40ab-8dd7-41de2871cfc9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|D49\|">
@@ -111,7 +111,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="350ce6a4-11ef-49bb-a09b-4527ae4548d3" ZoneFilterRegularExpression="Cutter's\ Cry" Name="38 - Cutter's Cry" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^170$" Id="350ce6a4-11ef-49bb-a09b-4527ae4548d3" ZoneFilterRegularExpression="Cutter's\ Cry" Name="38 - Cutter's Cry" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dragon's Voice" Id="76445e64-1b92-4a1d-a544-205fdb76962b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|5A2\|">
@@ -128,7 +128,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="4d72bede-e5bf-4fb0-aea0-08ab54dba1a7" ZoneFilterRegularExpression="^The\ Sunken\ Temple\ Of\ Qarn$" Name="35 - The Sunken Temple of Quarn" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^163$" Id="4d72bede-e5bf-4fb0-aea0-08ab54dba1a7" ZoneFilterRegularExpression="^The\ Sunken\ Temple\ Of\ Qarn$" Name="35 - The Sunken Temple of Qarn" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doom" Id="b95b7604-3363-4156-b5e2-f46ea7ba3e4d" RegularExpression="^26\|[^|]*\|D2\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
@@ -143,12 +143,15 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="3deea780-c1c8-4b7e-a924-5a08b1a1249b" ZoneFilterRegularExpression="^The\ Aurum\ Vale$" Name="47 - Aurum Vale" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^172$" Id="3deea780-c1c8-4b7e-a924-5a08b1a1249b" ZoneFilterRegularExpression="^The\ Aurum\ Vale$" Name="47 - Aurum Vale" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gold Lungs &amp; Burrs (eat fruit at 2 or more stacks)" Id="fc40a106-2526-4763-8f8b-b21ed1180e18" RegularExpression="26\|[^|]*\|12[EF]\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;stacks&gt;\d{2})\|">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="eat fruit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="SystemBeep">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="eat fruit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                       <ConditionSingle Enabled="true" ExpressionL="${stacks}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
@@ -159,7 +162,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="dcba49c2-6cc3-4536-a417-d784bf8d1de6" ZoneFilterRegularExpression="^Haukke\ Manor$" Name="28 - Haukke Manor" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^166$" Id="dcba49c2-6cc3-4536-a417-d784bf8d1de6" ZoneFilterRegularExpression="^Haukke\ Manor$" Name="28 - Haukke Manor" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Kill Second Boss - Use Return" Id="79c4b9f3-335b-42cd-8f92-1824bb21fe05" RegularExpression="0839:The Yellow Hall is no longer sealed!">
@@ -378,7 +381,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="e6c5adbb-d3c5-4a2a-ac56-caaf519722f1" ZoneFilterRegularExpression="The\ Great\ Gubal\ Library" Name="59 - The Great Gubal Library" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^416$" Id="e6c5adbb-d3c5-4a2a-ac56-caaf519722f1" ZoneFilterRegularExpression="The\ Great\ Gubal\ Library" Name="59 - The Great Gubal Library" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Book Glow" Id="78ba6df4-1d56-4904-bbf7-1eac47fe8b29" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|12D2\|">
@@ -395,7 +398,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="d8f619de-4c17-4887-ba48-7e3c3dfc7435" ZoneFilterRegularExpression="Sohm\ Al\ \(Hard\)" Name="60 - Somh Al (Hard)" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^617$" Id="d8f619de-4c17-4887-ba48-7e3c3dfc7435" ZoneFilterRegularExpression="Sohm\ Al\ \(Hard\)" Name="60 - Somh Al (Hard)" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lava Flow" Id="34877436-3abe-4ea5-a9cf-b018a3e8b4f8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1C3[CD]\|">
@@ -512,7 +515,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="acd6e195-922e-43d3-9033-93de41024958" ZoneFilterRegularExpression="the\ Aetherochemical\ Research\ Facility" Name="60 - The Aetherochemical Research Facility" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^438$" Id="acd6e195-922e-43d3-9033-93de41024958" ZoneFilterRegularExpression="the\ Aetherochemical\ Research\ Facility" Name="60 - The Aetherochemical Research Facility" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Universal Manipulation" Id="09b9d893-dd29-46a4-9b43-07f0721e0fdc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1105\|">
@@ -530,7 +533,7 @@
       </Folder>
       <Folder Id="0b4fc098-3909-43be-999b-51c12fa6e7dc" Name="4.0 - Stormblood" Enabled="true">
         <Folders>
-          <Folder ZoneFilterEnabled="True" Id="f71f571b-9bef-402d-a589-7bd872dbb6e7" ZoneFilterRegularExpression="Shisui\ Of\ The\ Violet\ Tides" Name="63 - Shisui of the Violet Tides" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^616$" Id="f71f571b-9bef-402d-a589-7bd872dbb6e7" ZoneFilterRegularExpression="Shisui\ Of\ The\ Violet\ Tides" Name="63 - Shisui of the Violet Tides" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Seduce" Id="ba5f4843-8f5c-4e8b-a3e6-4bddcb83b83f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1F7A\|">
@@ -549,7 +552,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="a04d03d9-7bb6-4922-8255-6c2b5684b7d2" ZoneFilterRegularExpression="Bardam's\ Mettle" Name="65 - Bardam's Mettle" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^623$" Id="a04d03d9-7bb6-4922-8255-6c2b5684b7d2" ZoneFilterRegularExpression="Bardam's\ Mettle" Name="65 - Bardam's Mettle" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eye of the Fierce" Id="8e0f17b6-3659-4eed-b228-086fd4d758ad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1F0D\|">
@@ -560,7 +563,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="5777791b-b76c-48be-94ac-089813ce773e" Name="70 - The Swallow's Comapss" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^768$" Id="5777791b-b76c-48be-94ac-089813ce773e" Name="70 - The Swallow's Comapss" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wile of the Tengu" Id="48a75659-32c7-4659-88a5-30526bd5a130" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2B97\|">
@@ -571,7 +574,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="1a6c4fae-9a4f-4fb5-89af-7f30b019e5a3" ZoneFilterRegularExpression="Castrum\ Abania" Name="69 - Castrum Albania" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^661$" Id="1a6c4fae-9a4f-4fb5-89af-7f30b019e5a3" ZoneFilterRegularExpression="Castrum\ Abania" Name="69 - Castrum Albania" Enabled="true">
             <Folders />
             <Triggers />
           </Folder>
@@ -580,7 +583,7 @@
       </Folder>
       <Folder Id="fb50137c-932f-423c-b962-8756ca974c94" Name="5.0 - Shadowbringers" Enabled="true">
         <Folders>
-          <Folder ZoneFilterEnabled="True" Id="f1e0cc55-e1db-4d55-b7b3-39847af46757" ZoneFilterRegularExpression="Holminster\ Switch" Name="71 - Holminster Switch" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^837$" Id="f1e0cc55-e1db-4d55-b7b3-39847af46757" ZoneFilterRegularExpression="Holminster\ Switch" Name="71 - Holminster Switch" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pilory" Id="019fb615-49a6-4f37-a90f-12be9f553a54" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DC4\|">
@@ -800,7 +803,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="484ddbdf-0ae3-4017-a76b-8edebc8dd0b0" ZoneFilterRegularExpression="Mt\.\ Gulg" Name="79 - Mt. Gulg" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^822$" Id="484ddbdf-0ae3-4017-a76b-8edebc8dd0b0" ZoneFilterRegularExpression="Mt\.\ Gulg" Name="79 - Mt. Gulg" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lumen Infinitum" Id="5c5ebd25-882e-4a12-bd65-ac6f5b632e9e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|41B2\|">
@@ -829,7 +832,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="92fa0826-8b0d-4a1a-b28f-c402c950b24a" Name="80 - The Grand Cosmos" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^884$" Id="92fa0826-8b0d-4a1a-b28f-c402c950b24a" Name="80 - The Grand Cosmos" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Scorching Right/Left" Id="01788392-faaf-4682-aa78-5a8b922a142e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|476(?&lt;move&gt;[23])\|">
@@ -873,7 +876,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="ece92c35-c543-45cc-8bfa-6a6efd5910e3" ZoneFilterRegularExpression="Anamnesis\ Anyder" Name="80 - Anamnesis Anyder" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^898$" Id="ece92c35-c543-45cc-8bfa-6a6efd5910e3" ZoneFilterRegularExpression="Anamnesis\ Anyder" Name="80 - Anamnesis Anyder" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Luminour Ray" Id="0bbd8eb6-561a-49ee-be88-cf560b094f4b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4E26\|">
@@ -923,7 +926,7 @@
       </Folder>
       <Folder Id="ab2a7461-7667-4b71-b97e-88d0c6f9ed1f" Name="Deep Dungeons" Enabled="true">
         <Folders>
-          <Folder Id="421cd3a3-a20e-4978-86bb-f6f4e0955540" Name="Palace of the Dead" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^(?&gt;56[0-5]|59[3-9]|60[0-7])$" Id="421cd3a3-a20e-4978-86bb-f6f4e0955540" Name="Palace of the Dead" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="Hypnotize" Id="e3ec1f3e-c7fe-4e67-b20e-462e9e93871e" RegularExpression="The palace deepeye readies Hypnotize.">
@@ -943,7 +946,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder ZoneFilterEnabled="True" Id="c65b84ea-8eed-47b3-b0ec-53587379bd5c" ZoneFilterRegularExpression="^Heaven-on-High" Name="Heaven on High" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^(?&gt;77[0-5]|78[2-5])$" Id="c65b84ea-8eed-47b3-b0ec-53587379bd5c" Name="Heaven on High" Enabled="true">
             <Folders>
               <Folder Id="13d49633-b7e3-426b-990a-a8e7b2d19f36" Name="Boss" Enabled="true">
                 <Folders />
@@ -1128,11 +1131,11 @@
       </Folder>
       <Folder Id="30bc2953-8003-4f83-8d51-0fc5936dec23" Name="6.0 - Endwalker" Enabled="true">
         <Folders>
-          <Folder Id="72e3c589-e8f9-42dd-a260-f1cf52095cc4" Name="81 - The Tower of Zot" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^952$" Id="72e3c589-e8f9-42dd-a260-f1cf52095cc4" Name="81 - The Tower of Zot" Enabled="true">
             <Folders />
             <Triggers />
           </Folder>
-          <Folder Id="e56e592f-6644-4664-aa3f-f572b91b6cc2" Name="83 - The Tower of Babil" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^969$" Id="e56e592f-6644-4664-aa3f-f572b91b6cc2" Name="83 - The Tower of Babil" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ground and Pound" Id="b8b4273f-4cc1-4cc9-b3a5-6eb0d828769c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62EA\|">
@@ -1145,11 +1148,11 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="ef6fff9e-4bb6-4bdf-9170-484f6fd26897" Name="85 - Vanaspati" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^970$" Id="ef6fff9e-4bb6-4bdf-9170-484f6fd26897" Name="85 - Vanaspati" Enabled="true">
             <Folders />
             <Triggers />
           </Folder>
-          <Folder Id="1529947c-2114-4139-8d8c-cc59fd29fcab" Name="90 - The Dead Ends" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^973$" Id="1529947c-2114-4139-8d8c-cc59fd29fcab" Name="90 - The Dead Ends" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Necrosis - Cleanse" Id="01a599b7-db91-4718-955b-98fb626b009f" RegularExpression="^26\|[^|]*\|B95\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
@@ -1170,7 +1173,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="047621c6-fb5d-483f-94f7-bb5b877d8503" Name="87 - Ktisis Hyperboreia" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="047621c6-fb5d-483f-94f7-bb5b877d8503" Name="87 - Ktisis Hyperboreia" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pyric Breath (not 100% accurate, weird cast IDs)" Id="32434e4a-5028-4b18-a2be-5f5e4e567eaa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;648[678])\|">
@@ -1195,7 +1198,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="c4b84f97-982b-44c2-91ad-db0e7fa55546" Name="90 - Smileton" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^976$" Id="c4b84f97-982b-44c2-91ad-db0e7fa55546" Name="90 - Smileton" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Piercing Missile - TB" Id="f1fc2bf0-3f02-49bd-a96a-7668680e2cdd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6751\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
@@ -1208,11 +1211,11 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="66d96b53-251b-4416-9106-e941e61b0403" Name="89 - The Aitiascope" Enabled="true">
+          <Folder ZoneFilterEnabled="True" Id="66d96b53-251b-4416-9106-e941e61b0403" ZoneFilterRegularExpression="^978$" Name="89 - The Aitiascope" Enabled="true">
             <Folders />
             <Triggers />
           </Folder>
-          <Folder Id="e7006c5d-82ce-4ea4-be80-4d1380b0c7da" Name="90 - The Stigma Dreamscape" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^986$" Id="e7006c5d-82ce-4ea4-be80-4d1380b0c7da" Name="90 - The Stigma Dreamscape" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire Breath" Id="cc1c7e50-ea0a-4486-b7c0-64cd1cb9dc73" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|642E\|">
