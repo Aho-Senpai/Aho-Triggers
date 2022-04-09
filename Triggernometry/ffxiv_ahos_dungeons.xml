@@ -228,7 +228,7 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Siren Song (heal target to max HP)" Id="436a6ac4-9e9e-41f0-bf1e-8d028c9a2e0d" RegularExpression="26\|[^|]*\|172\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="heal ${target} to max hp" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="heal ${player} to max hp" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -586,25 +586,25 @@
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^837$" Id="f1e0cc55-e1db-4d55-b7b3-39847af46757" ZoneFilterRegularExpression="Holminster\ Switch" Name="71 - Holminster Switch" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pilory" Id="019fb615-49a6-4f37-a90f-12be9f553a54" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DC4\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pilory" Id="019fb615-49a6-4f37-a90f-12be9f553a54" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DC4\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" UseTTSTextExpression="Buster on ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Tickler" Id="99e596b3-febb-4be3-8eba-7031e4a0de5a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DCF\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Tickler" Id="99e596b3-febb-4be3-8eba-7031e4a0de5a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DCF\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" UseTTSTextExpression="Buster on ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Head Crusher" Id="dafab800-a8d1-4649-a7c8-a9a5d969a9c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DD7\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Head Crusher" Id="dafab800-a8d1-4649-a7c8-a9a5d969a9c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3DD7\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" UseTTSTextExpression="Tank Buster on ${_ffxivparty[${targetID}].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
