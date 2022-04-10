@@ -428,7 +428,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="0 - Trick Attack - Duration:15 - Recast:60 - SkillID:8D2" Id="d14922e5-c8b6-4681-a6cc-9b7ba5294787" RegularExpression="^21\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|8D2\|(?&lt;spellName&gt;[^|]*)\|" DebugLevel="Verbose">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="0 - Trick Attack - Duration:15 - Recast:60 - SkillID:8D2" Id="d14922e5-c8b6-4681-a6cc-9b7ba5294787" RegularExpression="^21\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|[^|]*\|8D2\|(?&lt;spellName&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="9281f8f3-e354-479d-89bb-cb8d2f0371d3" TriggerText="${_triggername} - ${playerID}" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="And">
@@ -583,7 +583,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerID}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="None" Sequential="True" Name="# - Draw Auras" Id="9281f8f3-e354-479d-89bb-cb8d2f0371d3" RegularExpression="(?&lt;Priority&gt;\d*) - (?&lt;buff&gt;.*?) - Duration:(?&lt;duration&gt;\d*) - Recast:(?&lt;recast&gt;\d*) - SkillID:(?&lt;skillID&gt;[A-F0-9.]*) - (?&lt;playerID&gt;[A-F0-9]*)" DebugLevel="Verbose">
+          <Trigger Enabled="true" Source="None" Sequential="True" Name="# - Draw Auras" Id="9281f8f3-e354-479d-89bb-cb8d2f0371d3" RegularExpression="(?&lt;Priority&gt;\d*) - (?&lt;buff&gt;.*?) - Duration:(?&lt;duration&gt;\d*) - Recast:(?&lt;recast&gt;\d*) - SkillID:(?&lt;skillID&gt;[A-F0-9.]*) - (?&lt;playerID&gt;[A-F0-9]*)">
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAura" AuraName="RaidBuff-${playerID}-${skillID}-Image" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
@@ -593,11 +593,11 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
+              <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Text" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="4" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" DebugLevel="Verbose">
+              <Action OrderNumber="4" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="RaidBuff-${playerID}-${skillID}-Drift" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
