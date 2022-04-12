@@ -57,20 +57,12 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^168$" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1042$" Id="b784a383-dd05-48c3-ab7d-137fcadb9a2e" ZoneFilterRegularExpression="The\ Stone\ Vigil" Name="41 - The Stone Vigil" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Swinge : go behind" Id="4c54a091-e46c-49b1-84cb-b5523b20bccf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|387\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Out of Front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Snowfall" Id="ea71fadc-7212-4e41-bef3-75749f58a3c6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|404\|">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
@@ -148,27 +140,11 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Gold Lungs &amp; Burrs (eat fruit at 2 or more stacks)" Id="fc40a106-2526-4763-8f8b-b21ed1180e18" RegularExpression="26\|[^|]*\|12[EF]\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;stacks&gt;\d{2})\|">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="SystemBeep">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="eat fruit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="eat fruit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                       <ConditionSingle Enabled="true" ExpressionL="${stacks}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                     </Condition>
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-              </Trigger>
-            </Triggers>
-          </Folder>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^166$" Id="dcba49c2-6cc3-4536-a417-d784bf8d1de6" ZoneFilterRegularExpression="^Haukke\ Manor$" Name="28 - Haukke Manor" Enabled="true">
-            <Folders />
-            <Triggers>
-              <Trigger Enabled="true" Name="Kill Second Boss - Use Return" Id="79c4b9f3-335b-42cd-8f92-1824bb21fe05" RegularExpression="0839:The Yellow Hall is no longer sealed!">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="Use return" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
