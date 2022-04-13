@@ -76,49 +76,6 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Snowfall" Id="5fd20524-541b-4b1a-9210-ab5cefad38e6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|404\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="use cannon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^150$" Id="8e4bf3b4-f98a-46c1-98ad-92e3d29d70b3" ZoneFilterRegularExpression="The\ Keeper\ Of\ The\ Lake" Name="50 - The Keeper Of The Lake (Probably nothing really worth keeping TBH)" Enabled="false">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Animadversion" Id="5e419ce9-9882-4960-93a6-34e88b90c95d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|D49\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Activate" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Astraea" Id="3aa23ed4-ec7e-4c80-b71a-ca01afe955de" RegularExpression="03:[A-F0-9]{8}:Added new combatant Astraea">
-                        <Actions>
-                          <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Kill Mob" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" />
-                        </Actions>
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${var:KeeperOfTheLakeLockLastBoss}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                        </Condition>
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Lock Last Boss" Id="c70312b5-b091-4996-9718-a2bf5163701b" RegularExpression="00:0839:The Forsworn Promise will be sealed off in 15 seconds!&#xA;">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="KeeperOfTheLakeLockLastBoss" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Name="Unlock Last Boss" Id="4f5e61a8-cf87-4fc9-8655-dd8ed7d66ddf" RegularExpression="00:0839:The Forsworn Promise is no longer sealed!&#xA;">
-                        <Actions>
-                          <Action OrderNumber="1" VariableName="KeeperOfTheLakeLockLastBoss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
                     </Triggers>
                   </Folder>
                   <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^170$" Id="536d4a6c-1b45-4486-9ac0-ed5368708531" ZoneFilterRegularExpression="Cutter's\ Cry" Name="38 - Cutter's Cry" Enabled="true">
@@ -176,19 +133,6 @@
                           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${stacks}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                         </Condition>
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^166$" Id="bb52d7d1-19a4-47ba-8c1b-6c75b4ccf745" ZoneFilterRegularExpression="^Haukke\ Manor$" Name="28 - Haukke Manor" Enabled="false">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Name="Kill Second Boss - Use Return (gone with 6.1?)" Id="780d28ff-003d-40b6-8519-f6c653773725" RegularExpression="0839:The Yellow Hall is no longer sealed!">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Use return" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -879,22 +823,6 @@
                   <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^836$" Id="35e2f8e1-087f-46e5-8599-fbdbdf50ac5b" Name="77 - Malikah's Well" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Heretic's Fork" Id="5b27d880-7589-488b-9953-d19f718fd7f6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CF2\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Go Diagonal" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Breaking Wheel" Id="3e19342c-0daf-45ef-8227-a59189d5d55d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CF5\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go Out - Right Round" Id="906b445a-2ec2-416d-b11c-ff6ddc18817a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3CE7\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
@@ -1252,7 +1180,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Shiddhi" Id="c6683f9a-302a-49b1-a060-6adc3706daf0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62C0\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1261,7 +1188,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Samsara" Id="36ac000a-035e-4afb-a6c4-c6baf47ea4ac" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62B9\|">
                         <Actions>
@@ -1270,7 +1196,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Isitva Siddhi" Id="3e86fa1e-672b-442d-bf2a-ec4765db9c03" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62A9\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1279,7 +1204,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1301,7 +1225,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Thermal Suppression" Id="8d80ac1f-5f34-4b11-a965-f3d16228485d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62FA\|">
                         <Actions>
@@ -1310,7 +1233,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Mega Graviton" Id="43f2cd3c-219f-4056-ac94-dae21c1a0f16" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6300\|">
                         <Actions>
@@ -1319,7 +1241,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1333,7 +1254,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Last Gasp" Id="4a3a969e-27a2-4ceb-a417-6fc5555dcf89" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6235\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1342,7 +1262,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Left - What is Right" Id="bb1cfa15-8fc3-43ba-b626-1bbb54463eae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6233\|">
                         <Actions>
@@ -1351,7 +1270,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Right - What is Left" Id="e2f03e32-bdd8-4ee1-bbfa-25421fa5c3c0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6234\|">
                         <Actions>
@@ -1360,7 +1278,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Meaningless Destruction" Id="3520cd62-9d02-4f22-b01b-d8ab2773eaa9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6241\|">
                         <Actions>
@@ -1369,7 +1286,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Total Wreck" Id="809b262d-3d85-4749-a23a-51a565415003" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6242\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1378,7 +1294,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - KB - Spray" Id="f439321a-307f-4a6c-a606-8b9cb6aac7bd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|623C\|">
                         <Actions>
@@ -1387,7 +1302,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Look Away - Double Hex Eyes" Id="7ef23341-484d-4918-b12f-98db0e023750" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6C21\|">
                         <Actions>
@@ -1396,7 +1310,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Flames of Decay" Id="448ff8a2-f88a-4b4e-994e-ed44a9e3df43" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6252\|">
                         <Actions>
@@ -1405,7 +1318,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Gnashing of Teeth" Id="bcce9866-37bd-4961-8325-0614bb30ab5f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6253\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1414,7 +1326,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1506,26 +1417,6 @@
                   <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="c2f0dcbe-7c85-4b1e-9a13-4c61704d319e" Name="87 - Ktisis Hyperboreia" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Pyric Breath (not 100% accurate, weird cast IDs)" Id="98b9e286-aea3-41f8-b70a-4fa7d003fef8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;648[678])\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="out of front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6486" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="go in front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6488" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" UseTTSTextExpression="right safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6487" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                            </Condition>
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Skull Dasher" Id="27741a90-1be3-4820-b1c3-642b267814d2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|625E\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
@@ -1533,7 +1424,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Frigid Stomp" Id="3c3fd2ee-7a95-4641-b728-5b5408eeb487" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|625D\|">
                         <Actions>
@@ -1542,7 +1432,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Scratch" Id="7fb968ff-8937-4271-b218-8433305edd2b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|648F\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
@@ -1551,7 +1440,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Intimidation" Id="95412a21-43e0-4ceb-afde-8b0085055ba6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|648D\|">
                         <Actions>
@@ -1560,7 +1448,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Trimegistos" Id="3641dffa-98bd-425a-a958-8204d802b0fc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|651E\|">
                         <Actions>
@@ -1569,7 +1456,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Hide - Cosmic Kiss" Id="9afa7586-34f3-4105-929a-5718a15b3f5e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6523\|">
                         <Actions>
@@ -1578,7 +1464,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1648,83 +1533,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder ZoneFilterEnabled="True" Id="46aba38a-456f-4d0c-b814-d3ea27b0f973" ZoneFilterRegularExpression="^978$" Name="89 - The Aitiascope" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Frustration" Id="de4cfc48-c373-4b3f-bb70-1182a6672367" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6448\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Tartarean Impact" Id="55130f6d-f9ba-4669-8310-8c9af90c59b9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6455\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Anvil of Tartarus" Id="79132f98-2511-4136-a0b3-71a3ecc3af4c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6456\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Dark Forte" Id="a45de92b-c8d3-4c66-9909-42d4318e93e1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6464\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Hide - Dreams of Ice" Id="408f49d3-313f-475a-8967-182e6adf8b83" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6C6C\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="fda671db-1a85-4008-ab9e-dc17bb2ce429" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Entr'acte" Id="cf5ee2d2-aa69-49b2-9d24-527bb27fe03e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6465\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Go Right - Firaga Forte" Id="b1bd4533-8554-45ea-8f60-50a1e665c411" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6460\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Go Left- Firaga Forte" Id="874a12f4-1bcd-4b7a-86cc-f3dda1227c19" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6461\|">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -1829,6 +1637,110 @@
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Wheel" Id="5aefbe7a-db4e-40a9-b7a4-39d512da64ad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63B5\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1050$" Id="15438f9e-58bb-4e5c-8ccb-aab98bf923cf" Name="90 - Alzadaal's Legacy" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="Boss1 - AoE - Big Wave" Id="7a6c0673-32e3-4b5f-8c81-efacf8f72fa3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6F60\|">
+                        <Actions>
+                          <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Boss3 - AoE - Billowing Bolts" Id="2cd59b24-e59e-4d20-9fbd-7f9e3170ca50" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6F70\|">
+                        <Actions>
+                          <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Boss3 - CUSTOM - Wild Weave" Id="e924626f-9299-4d1f-95b2-aad6ea733e83" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6F69\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Under Opposite Color" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                              <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder ZoneFilterEnabled="True" Id="46aba38a-456f-4d0c-b814-d3ea27b0f973" ZoneFilterRegularExpression="^978$" Name="89 - The Aitiascope" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Frustration" Id="de4cfc48-c373-4b3f-bb70-1182a6672367" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6448\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Tartarean Impact" Id="55130f6d-f9ba-4669-8310-8c9af90c59b9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6455\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Anvil of Tartarus" Id="79132f98-2511-4136-a0b3-71a3ecc3af4c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6456\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - TB - Dark Forte" Id="a45de92b-c8d3-4c66-9909-42d4318e93e1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6464\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Hide - Dreams of Ice" Id="408f49d3-313f-475a-8967-182e6adf8b83" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6C6C\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="fda671db-1a85-4008-ab9e-dc17bb2ce429" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Entr'acte" Id="cf5ee2d2-aa69-49b2-9d24-527bb27fe03e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6465\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Go Right - Firaga Forte" Id="b1bd4533-8554-45ea-8f60-50a1e665c411" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6460\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - Go Left- Firaga Forte" Id="874a12f4-1bcd-4b7a-86cc-f3dda1227c19" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6461\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
