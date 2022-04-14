@@ -881,7 +881,7 @@
                   <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^884$" Id="990ec3cc-9aa1-4b61-aea0-b2fae3a3af8b" Name="80 - The Grand Cosmos" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - TB - Shadowbolt" Id="c8cd0b4b-ba37-44ba-8125-667e5a12ebf4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4769\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - TB - Shadowbolt" Id="c8cd0b4b-ba37-44ba-8125-667e5a12ebf4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4769\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -889,7 +889,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Storm Of Color" Id="5eeb0fb6-8b78-4f66-bc24-9575ab5c029b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|471B\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Storm Of Color" Id="5eeb0fb6-8b78-4f66-bc24-9575ab5c029b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|471B\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -897,7 +897,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Boss3 - Left - Scortching Flame" Id="79e5d6fc-de5c-4368-b4c8-813c88f3e085" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4763\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Left - Scortching Flame" Id="79e5d6fc-de5c-4368-b4c8-813c88f3e085" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4763\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -905,7 +905,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Name="Boss3 - Right - Scortching Flame" Id="f0f0d96b-7a00-4170-a124-52fb54921020" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4762\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Right - Scortching Flame" Id="f0f0d96b-7a00-4170-a124-52fb54921020" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4762\|">
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1654,7 +1654,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="Boss3 - AoE - Billowing Bolts" Id="2cd59b24-e59e-4d20-9fbd-7f9e3170ca50" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6F70\|">
                         <Actions>
@@ -1663,7 +1662,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Name="Boss3 - CUSTOM - Wild Weave" Id="e924626f-9299-4d1f-95b2-aad6ea733e83" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6F69\|">
                         <Actions>
@@ -1675,7 +1673,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -2127,6 +2124,75 @@
           </Folder>
         </Folders>
         <Triggers />
+      </Folder>
+      <Folder Id="ad574b21-055e-400e-a71c-dc540476826e" Name="Shift" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Easterly Shift" Id="ac7b6a80-a7ec-4d43-a06c-2436883a7550" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;69FF|6A04)\|[^|]*\|[^|]*\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="knockback at B" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="69FF" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="Cleave at B" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="6A04" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Northerly Shift" Id="a9f32f46-fe2a-42d2-a939-635ffeffa9ed" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;69FD|6A02)\|[^|]*\|[^|]*\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="Knockback at A" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="69FD" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="cleave at A" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="6A02" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Southerly Shift" Id="9d021358-1cc6-49da-905d-3dc63b3ec569" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;69FE|6A03)\|[^|]*\|[^|]*\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="knockback at C" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="69FE" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="cleave at C" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="6A03" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Westerly Shift" Id="9317574b-c82a-4ddd-bc27-67fb766045bb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;6A00|6A05)\|[^|]*\|[^|]*\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="knockback at D" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="6A00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="cleave at D" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="6A05" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
       </Folder>
     </Folders>
     <Triggers />
