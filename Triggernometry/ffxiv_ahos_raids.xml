@@ -699,330 +699,309 @@
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1054$" Id="2dc66e20-442e-440b-9ca1-5802465f6b30" Name="6.1 - Aglaia" Enabled="true">
 				<Folders>
-                  <Folder Id="fa71be67-3909-4c03-8063-1aa0b646bbf3" Name="Rhalgr" Enabled="true">
-                    <Folders>
-                      <Folder Id="836a54f9-9102-46b7-8008-0d9584678fc5" Name="Hand of the Destroyer" Enabled="true">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blue side safe" Id="13ca8efe-79f0-4546-ba68-b566d2b619af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A8\|">
-                            <Actions>
-                              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stay on blue side" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Red side safe" Id="4b0c4679-efc7-4322-9c58-e3fd49fb6a81" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A9\|">
-                            <Actions>
-                              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stay on red side" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Portal" Id="69ce84fa-66da-42ed-90f7-b66ed85f947e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70AC\|">
-                            <Actions>
-                              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go red side portal" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                    </Folders>
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Destructive Bolt" Id="ccea6f98-9499-4209-9b2f-fec6ab3c28a2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70B4\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rhalgr's Beacon" Id="f715df89-ec12-44f5-adee-bd55cde2cf76" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70B8\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="knockback, avoid orbs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Lightning Reign" Id="0e92705f-da9c-4bcd-a90f-dfe07655be12" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A5\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder Id="3ea9e680-d714-4ea4-8296-d9b18487c13e" Name="Byregot" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Byregot's Strike" Id="aaff0fd8-c8db-40ec-9136-a5a84a5fc3f3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|725A\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ordeal of Thunder" Id="6a10aaf0-204a-4ff3-9f2e-e81eaec6bd01" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7176\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Byregot's Strike Lightning" Id="8ca2a4bd-1b58-4943-a847-dde8fba27ae5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7167\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Knockback intercards" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder Id="e6e933dd-7f12-4a69-840a-16dbbaf61945" Name="Rhalgr's Emissary" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bolts from the Blue" Id="61b7119e-4770-4ada-b747-8c08a8f8194a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70E3\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Destructive Strike" Id="38fce3c7-9947-4705-91d0-ab5aa6a0f22c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70D9\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Destructive Static" Id="3199ff2c-8dff-45a0-a898-3d1fc7ce84ed" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70E0\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder Id="b5bd6c2b-d94b-4923-b018-2cbc8bc34fb5" Name="Lions" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Slash and Burn Lion first" Id="1628d6be-b6ce-4d8f-8596-14e8197e40b4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|71D0\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="out then in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Slash and Burn Lioness first" Id="bd3ef0eb-a68a-4900-bccc-6029ccd67084" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|71D2\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="in then out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Double Immolation" Id="15fde1d5-8feb-4e69-8723-d207066c6d9b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7177\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder Id="96bc31ae-7a6c-4454-b8c7-b5d12ee88f11" Name="Azeyma" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fleeting Spark" Id="a218e941-4b64-4731-b1ef-7873af5a8f31" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|709C\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Warden's Prominence" Id="c5a2b4fc-2753-48c0-b71d-28d9cb18edf4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A0\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Warden's Warmth" Id="07e0525b-9135-43c3-8b24-e6c8a2ef9d89" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|709F\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sublime Sunset" Id="93f730e3-2dc1-4e4f-bab6-13f582c408ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7098\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder Id="a16636e8-6b3b-44b2-9de8-8c6c7367aaa0" Name="Nald'thal" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Far Above, Deep Below Blue" Id="9a4cf02e-2e15-4ee7-94e3-134c21c6b484" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73AA\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Don't stack, markers out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heat Above, Flames Below Blue" Id="43945345-3a6e-47a2-930e-b0fb68e4242c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73A5\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heat Above, Flames Below Orange" Id="06303c4b-0295-4825-a131-9db0461f59d0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73A4\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hells' Trial" Id="8f24f74b-aae5-45d0-9da1-9b0875189a87" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7121\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Once Above, Ever Below Blue" Id="3f025fa3-d9b6-4d6c-858b-578269bec196" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73C0|741C)\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go orange corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hell of Fire Back" Id="97fe8d77-a4fc-49fd-9938-1cd59cc074df" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|72B9\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hell of Fire Front" Id="9b505e0c-de0b-4c80-bed1-240622e08df1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|72B7\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hearth Above, Flight Below Orange" Id="df44d05e-2e04-4bdf-b46f-7fca0691e1ae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73CB|74FB)\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go out and stack, ignore chase marks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stygian Tenet" Id="4a2d4269-db53-4f17-893d-89b1a864f904" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|711D\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Once Above, Ever Below Orange" Id="6cf6f4f8-fe91-4cd3-8119-c3d293add036" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73BF|741D)\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go blue corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Golden Tenet" Id="030cb2b5-aa49-488c-ae4e-47f6c1a678bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|711B\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Far Above, Deep Below Orange" Id="ffbcf9b9-1203-4e3b-b839-08ef7773af8c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73AB\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stack, ignore marks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hearth Above, Flight Below Blue" Id="0c0eab48-1ff0-49ae-91b7-e49b488a05c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73C(A|C)*\|">
-                        <Actions>
-                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go in, then markers out, ignore stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
+				  <Folder Id="3bceca1f-c909-4d34-96bf-fc158c1f9610" Name="Add Fights" Enabled="true">
+					<Folders>
+					  <Folder Id="e6e933dd-7f12-4a69-840a-16dbbaf61945" Name="01.1 - Rhalgr's Emissary" Enabled="true">
+						<Folders />
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Bolts from the Blue" Id="61b7119e-4770-4ada-b747-8c08a8f8194a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70E3\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="TB - Destructive Strike" Id="38fce3c7-9947-4705-91d0-ab5aa6a0f22c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70D9\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Behind - Destructive Static" Id="3199ff2c-8dff-45a0-a898-3d1fc7ce84ed" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70E0\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					  <Folder Id="b5bd6c2b-d94b-4923-b018-2cbc8bc34fb5" Name="02.1 - Lions" Enabled="true">
+						<Folders />
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Out -&gt; In - Slash and Burn Lion first" Id="1628d6be-b6ce-4d8f-8596-14e8197e40b4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|71D0\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="out then in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="In -&gt; Out - Slash and Burn Lioness first" Id="bd3ef0eb-a68a-4900-bccc-6029ccd67084" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|71D2\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="in then out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Double Immolation" Id="15fde1d5-8feb-4e69-8723-d207066c6d9b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7177\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					</Folders>
+					<Triggers />
+				  </Folder>
+				  <Folder Id="2bbe1cec-3580-4d9c-a0b5-11adc6b816ee" Name="Bosses" Enabled="true">
+					<Folders>
+					  <Folder Id="3ea9e680-d714-4ea4-8296-d9b18487c13e" Name="01 - Byregot" Enabled="true">
+						<Folders />
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback - Byregot's Strike" Id="aaff0fd8-c8db-40ec-9136-a5a84a5fc3f3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|725A\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Ordeal of Thunder" Id="6a10aaf0-204a-4ff3-9f2e-e81eaec6bd01" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7176\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback - Byregot's Strike Lightning" Id="8ca2a4bd-1b58-4943-a847-dde8fba27ae5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7167\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Knockback intercards" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					  <Folder Id="fa71be67-3909-4c03-8063-1aa0b646bbf3" Name="02 - Rhalgr" Enabled="true">
+						<Folders>
+						  <Folder Id="836a54f9-9102-46b7-8008-0d9584678fc5" Name="Hand of the Destroyer" Enabled="true">
+							<Folders />
+							<Triggers>
+							  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Go blue" Id="13ca8efe-79f0-4546-ba68-b566d2b619af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A8\|">
+								<Actions>
+								  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stay on blue side" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+									<Condition Enabled="false" Grouping="Or" />
+								  </Action>
+								</Actions>
+								<Condition Enabled="false" Grouping="Or" />
+							  </Trigger>
+							  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Go red" Id="4b0c4679-efc7-4322-9c58-e3fd49fb6a81" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A9\|">
+								<Actions>
+								  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stay on red side" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+									<Condition Enabled="false" Grouping="Or" />
+								  </Action>
+								</Actions>
+								<Condition Enabled="false" Grouping="Or" />
+							  </Trigger>
+							  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Go Portal" Id="69ce84fa-66da-42ed-90f7-b66ed85f947e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70AC\|">
+								<Actions>
+								  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go red side portal" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+									<Condition Enabled="false" Grouping="Or" />
+								  </Action>
+								</Actions>
+								<Condition Enabled="false" Grouping="Or" />
+							  </Trigger>
+							</Triggers>
+						  </Folder>
+						</Folders>
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="TB - Destructive Bolt" Id="ccea6f98-9499-4209-9b2f-fec6ab3c28a2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70B4\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback - Rhalgr's Beacon" Id="f715df89-ec12-44f5-adee-bd55cde2cf76" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70B8\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="knockback, avoid orbs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Lightning Reign" Id="0e92705f-da9c-4bcd-a90f-dfe07655be12" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A5\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					  <Folder Id="96bc31ae-7a6c-4454-b8c7-b5d12ee88f11" Name="03 - Azeyma" Enabled="true">
+						<Folders />
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Go behind - Fleeting Spark" Id="a218e941-4b64-4731-b1ef-7873af5a8f31" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|709C\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Warden's Prominence" Id="c5a2b4fc-2753-48c0-b71d-28d9cb18edf4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|70A0\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="TB - Warden's Warmth" Id="07e0525b-9135-43c3-8b24-e6c8a2ef9d89" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|709F\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Behind and out - Sublime Sunset" Id="93f730e3-2dc1-4e4f-bab6-13f582c408ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7098\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					  <Folder Id="a16636e8-6b3b-44b2-9de8-8c6c7367aaa0" Name="04 - Nald'thal" Enabled="true">
+						<Folders />
+						<Triggers>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markers out - Far Above, Deep Below Blue" Id="9a4cf02e-2e15-4ee7-94e3-134c21c6b484" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73AA\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Don't stack, markers out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="In - Heat Above, Flames Below Blue" Id="43945345-3a6e-47a2-930e-b0fb68e4242c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73A5\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Out - Heat Above, Flames Below Orange" Id="06303c4b-0295-4825-a131-9db0461f59d0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73A4\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="AoE - Hells' Trial" Id="8f24f74b-aae5-45d0-9da1-9b0875189a87" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7121\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Once Above, Ever Below Blue" Id="3f025fa3-d9b6-4d6c-858b-578269bec196" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73C0|741C)\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go orange corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Front - Hell of Fire Back" Id="97fe8d77-a4fc-49fd-9938-1cd59cc074df" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|72B9\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Behind - Hell of Fire Front" Id="9b505e0c-de0b-4c80-bed1-240622e08df1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|72B7\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Out and stack - Hearth Above, Flight Below Orange" Id="df44d05e-2e04-4bdf-b46f-7fca0691e1ae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73CB|74FB)\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go out and stack, ignore chase marks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="TB - Stygian Tenet" Id="4a2d4269-db53-4f17-893d-89b1a864f904" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|711D\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Once Above, Ever Below Orange" Id="6cf6f4f8-fe91-4cd3-8119-c3d293add036" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(73BF|741D)\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go blue corner" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="TB - Golden Tenet" Id="030cb2b5-aa49-488c-ae4e-47f6c1a678bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|711B\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stack - Far Above, Deep Below Orange" Id="ffbcf9b9-1203-4e3b-b839-08ef7773af8c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73AB\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Stack, ignore marks" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						  <Trigger Enabled="true" Source="FFXIVNetwork" Name="In -&gt; Out - Hearth Above, Flight Below Blue" Id="0c0eab48-1ff0-49ae-91b7-e49b488a05c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73C(A|C)*\|">
+							<Actions>
+							  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Go in, then markers out, ignore stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+								<Condition Enabled="false" Grouping="Or" />
+							  </Action>
+							</Actions>
+							<Condition Enabled="false" Grouping="Or" />
+						  </Trigger>
+						</Triggers>
+					  </Folder>
+					</Folders>
+					<Triggers />
+				  </Folder>
+
                 </Folders>
                 <Triggers />
                 <Folders />
