@@ -98,6 +98,12 @@ This part will cover a wide range of questions frequently asked in Triggernometr
 
 ## How to install Triggernometry ?
 
+Automatically :  
+1. `Advanced Combat Tracker` => `Plugins` => `Plugin Listing` => TOP RIGHT `Get Plugins`
+1. Select `Triggernometry` => `Download and Enable`
+1. Congratulations. Now navigate to the `Triggernometry` tab and read the welcome screen.
+
+Manually :
 1. Download the [LATEST](https://github.com/paissaheavyindustries/Triggernometry/releases/latest) version.
 1. Extract the ZIP
 1. Place the file `Triggernometry.dll` in your ACT Folder (`C:\Users\<USER>\AppData\Roaming\Advanced Combat Tracker\Plugins` by default).
@@ -108,6 +114,8 @@ This part will cover a wide range of questions frequently asked in Triggernometr
 NOTE: While you can put the `.dll` file whereever you want, it is NOT encouraged as it invites more variables for troubleshooting.
 
 ## How do i update Triggernometry ?
+
+<!-- TODO : Add update steps -->
 
 1. THIS ASSUMES YOU ALREADY HAVE TRIGGERNOMETRY INSTALLED
 1. Download the [LATEST](https://github.com/paissaheavyindustries/Triggernometry/releases/latest) version.
