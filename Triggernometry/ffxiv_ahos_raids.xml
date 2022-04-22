@@ -7077,205 +7077,425 @@
                     </Triggers>
                   </Folder>
                   <Folder Id="f956adb8-af75-4770-8ec8-4064e45969d8" Name="Nael RP" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Iron Chariot" Id="2eb742a0-b543-48f0-a8e7-ba7323ecfb74" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Blazing path, lead me to iron rule!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                    <Folders>
+                      <Folder Id="cf9dac3c-c557-405c-9b72-b756112863ab" Name="EN" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Dalamud Dive -&gt; Thermionic Beam" Id="14549bf1-2a93-470f-b6dc-dfdea972fe9f" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Fleeting light! 'Neath the red moon, scorch you the earth!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="Dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="stack and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="edfbc108-9a76-4f5a-9be3-6556386a64e6" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Unbending iron, descend with fiery edge!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="out and dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot" Id="1569a138-9414-4681-bc0e-43c8f51cb7a4" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|O hallowed moon, shine you the iron path!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="in and out in and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Lunar Dynamo" Id="546cd14c-217a-4b3a-8c74-561648e137fb" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Take fire, O hallowed moon!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="fe8e7832-a405-4e45-a385-d36992abb935" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Unbending iron, take fire and descend!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="out and stack and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:thermionicbeam:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="stack and in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="01865757-4eef-4135-ac3d-7a6b6487066e" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I bare iron, in my descent to wield!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="in, and out and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="9a1a7acb-4830-4230-b868-7722f51f6f68" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I descend, a rain of stars to bring!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="in, and dive and spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Meteor Stream -&gt; Dalamud Dive" Id="31f9afcf-74e5-427e-889c-181dbb102ada" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Fleeting light! Amid a rain of stars, exalt you the red moon!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="640718d3-4bd6-4eb6-944f-82ae3d6b37f7" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I descend, upon burning earth to tread!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="in, and dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="spread and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="0dfc9a4b-6ad2-480b-aae3-5e24d7f61310" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|O hallowed moon, take fire and scorch my foes!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="in and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":meteorstream:ravendive::" TriggerForce="refire,parent" ActionType="Trigger">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Meteor Stream -&gt; Dalamud Dive" Id="31f9afcf-74e5-427e-889c-181dbb102ada" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Fleeting light! Amid a rain of stars, exalt you the red moon!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="spread and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":meteorstream:ravendive::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Dalamud Dive -&gt; Thermionic Beam" Id="14549bf1-2a93-470f-b6dc-dfdea972fe9f" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Fleeting light! 'Neath the red moon, scorch you the earth!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Iron Chariot" Id="40b51e1e-592e-4311-8829-ada5716d31b3" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the iron path to (call|walk)!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="dive and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo" Id="b8fe05c7-e1e7-43be-9731-ab9f9453e94c" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the hallowed moon to call!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="dive and in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="2509966b-90e2-403e-9e38-3156a93406e9" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the moon and stars to bring!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="dive and in and spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="0dfc9a4b-6ad2-480b-aae3-5e24d7f61310" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|O hallowed moon, take fire and scorch my foes!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Iron Chariot" Id="2eb742a0-b543-48f0-a8e7-ba7323ecfb74" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Blazing path, lead me to iron rule!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="stack and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="in and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Lunar Dynamo" Id="546cd14c-217a-4b3a-8c74-561648e137fb" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Take fire, O hallowed moon!">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="stack and in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                      <Folder Id="96c99f26-e818-411e-acd0-40ec3d0c0def" Name="JP" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Dalamud Dive -&gt; Thermionic Beam" Id="6e6a1e0d-f437-4b56-95b8-4951c7e23276" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|超新星よ、輝きを増せ！ 紅月下の赤熱せし地を照らせ！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="ダイビングとスタック" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot" Id="1569a138-9414-4681-bc0e-43c8f51cb7a4" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|O hallowed moon, shine you the iron path!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="3449c383-5502-4611-b0c1-4321afc18609" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|鉄よ、舞い降りし 我の刃となり赤熱せよ！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="アウトとダイビングとスタック" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="in and out in and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot" Id="f7ff4f6a-9ad4-481c-84b3-2b20c0a3666c" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|月よ！ 鉄の覇道を照らせ！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="出たり入ったり" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="7939bafc-ba99-4a32-91c5-72018487662a" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|鉄よ、赤熱せよ！ 舞い降りし我が刃となれ！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="アウトとスタックとダイビング" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:thermionicbeam:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo" Id="b8fe05c7-e1e7-43be-9731-ab9f9453e94c" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the hallowed moon to call!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="5246ad28-ec51-43ce-8b78-4dcdcc5a2435" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、月より鉄を備え 舞い降りん！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="出入りとダイビング" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="dive and in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="98ac8c28-259c-4234-b9c2-d90b0ae77452" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、月より舞い降りて 星降りの夜を招かん！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="で、ダイビングして広げる" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="99265ae3-d75e-4987-bae5-4f4dbb32d27c" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、月より舞い降りて 赤熱せし地を歩まん！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="インとダイビングとスタック" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Iron Chariot" Id="40b51e1e-592e-4311-8829-ada5716d31b3" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the iron path to (call|walk)!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Thermionic Beam" Id="4044d636-97d1-4c33-b556-b95722a5bd5c" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|月よ！ 赤熱し、神敵を焼け！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="とスタック" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:thermionicbeam::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="dive and out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Meteor Stream -&gt; Dalamud Dive" Id="7304f451-478d-4fcc-8460-401708914f60" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|超新星よ、輝きを増せ！ 星降りの夜に、紅月を称えよ！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="スプレッドとダイビング" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":meteorstream:ravendive::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Iron Chariot" Id="956308ea-546e-445f-81cd-fac32f10d2ca" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、舞い降りて 鉄の覇道を征く！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="ダイビングとアウト" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Meteor Stream" Id="9a1a7acb-4830-4230-b868-7722f51f6f68" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I descend, a rain of stars to bring!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo" Id="9a29eecf-015d-402a-bb1c-11e9b14409fd" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、舞い降りて 月を仰がん！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="ダイビングとイン" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="in, and dive and spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="d806b0b2-3e50-4372-9e22-db16b6775cdf" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|我、舞い降りて月を仰ぎ 星降りの夜を招かん！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="ダイビングとインとスプレッド" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Iron Chariot" Id="a326471a-09b9-44d1-80e2-f26335765849" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|赤熱し、焼かれし道を 鉄の覇道と成す！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="スタックとアウト" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:ironchariot::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Raven's Dive -&gt; Lunar Dynamo -&gt; Meteor Stream" Id="2509966b-90e2-403e-9e38-3156a93406e9" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From on high I descend, the moon and stars to bring!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Thermionic Beam -&gt; Lunar Dynamo" Id="a084448a-f2ae-485a-976d-723a5ea6ead9" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|赤熱せし 月の祝福を！">
+                            <Actions>
+                              <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" UseTTSTextExpression="スタックと" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":thermionicbeam:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="dive and in and spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo:meteorstream:" TriggerForce="refire,parent" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Iron Chariot -&gt; Raven's Dive" Id="01865757-4eef-4135-ac3d-7a6b6487066e" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I bare iron, in my descent to wield!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="in, and out and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ironchariot:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Raven's Dive -&gt; Thermionic Beam" Id="edfbc108-9a76-4f5a-9be3-6556386a64e6" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Unbending iron, descend with fiery edge!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="out and dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Lunar Dynamo -&gt; Raven's Dive -&gt; Thermionic Beam" Id="640718d3-4bd6-4eb6-944f-82ae3d6b37f7" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|From hallowed moon I descend, upon burning earth to tread!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="in, and dive and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":lunardynamo:ravendive:thermionicbeam:" TriggerForce="refire,parent" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Iron Chariot -&gt; Thermionic Beam -&gt; Raven's Dive" Id="fe8e7832-a405-4e45-a385-d36992abb935" RegularExpression="^00\|[^|]*\|0044\|[^|]*\|Unbending iron, take fire and descend!">
-                        <Actions>
-                          <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="UCOB-Nael" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="out and stack and dive" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ironchariot:thermionicbeam:ravendive:" TriggerForce="refire,parent" ActionType="Trigger">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                    </Triggers>
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers />
                   </Folder>
                   <Folder Id="292bf085-0030-4c7b-919a-757857291234" Name="P5" Enabled="true">
                     <Folders />
@@ -7409,7 +7629,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# UCOB Settings" Id="3c28e8c7-8f65-471f-8100-54b4727e0caa" RegularExpression="01\|.*?\|2DD\|the Unending Coil of Bahamut \(Ultimate\)" EditAutofire="True">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# UCOB Settings" Id="3c28e8c7-8f65-471f-8100-54b4727e0caa" RegularExpression="^01\|.*?\|2DD\|the Unending Coil of Bahamut \(Ultimate\)$" EditAutofire="True">
                         <Actions>
                           <Action OrderNumber="1" AuraName="UCOB-ImagePlacer" AuraImage="https://raw.githubusercontent.com/paissaheavyindustries/Triggernometry/master/Repositories/Resources/FFXIV/AST.png" AuraXIniExpression="${_screenwidth}/2" AuraYIniExpression="${_screenheight}/2" AuraWIniExpression="64" AuraHIniExpression="64" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                             <Condition Enabled="false" Grouping="Or" />
