@@ -360,7 +360,7 @@
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^882$" Id="5598de44-9caa-4be0-a20f-69337a458487" ZoneFilterRegularExpression="The\ Copied\ Factory" Name="5.1 - The Copied Factory" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Clanging Blow" Id="66a9c5b1-eb4c-44df-a0bb-bf0964ad4946" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|48CE\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Clanging Blow" Id="66a9c5b1-eb4c-44df-a0bb-bf0964ad4946" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|48CE\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -496,7 +496,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Neutralisation" Id="99831f94-3aec-4aa9-9b69-319d8cd73cf3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|48F5\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Neutralisation" Id="99831f94-3aec-4aa9-9b69-319d8cd73cf3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|48F5\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="Buster on ${player}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
