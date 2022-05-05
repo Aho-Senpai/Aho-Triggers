@@ -1463,7 +1463,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="false" Name="Absolute Flash (need log line to fix)" Id="2fe4308d-d7a7-4ec4-b941-b039a4eae892" RegularExpression="1B:[0-9A-F]{8}:(?&lt;char&gt;[a-zA-Z' ]{3,21}):[0-9A-F]{4}:[0-9A-F]{4}:00B3:">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Absolute Flash (need log line to fix)" Id="2fe4308d-d7a7-4ec4-b941-b039a4eae892" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;char&gt;[^|]*)\|[^|]*\|[^|]*\|00B3\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Look Away from ${char}" TextAuraFontSize="0" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
