@@ -1328,7 +1328,7 @@
                       <Folder Id="70f459a8-271f-44fe-bfdf-76488c0f412c" Name="Sabers New" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Name="Coruscant Saber" Id="67f6c276-6270-403e-bb81-2816f53dd357" RegularExpression="14:(?&lt;Saber&gt;4EF[12]):" PeriodRefire="Deny" RefirePeriodExpression="2000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Coruscant Saber" Id="67f6c276-6270-403e-bb81-2816f53dd357" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Saber&gt;4EF[12])\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
                             <Actions>
                               <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Out, Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1343,7 +1343,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Imbued Coruscance" Id="14bfc6a8-8b4e-48a0-afba-a4ad1b02a8e9" RegularExpression="14:(?&lt;Coruscance&gt;4F4[9ABC]):" PeriodRefire="Deny" RefirePeriodExpression="2000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Imbued Coruscance" Id="14bfc6a8-8b4e-48a0-afba-a4ad1b02a8e9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Coruscance&gt;4F4[9ABC])\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Out" VariableOp="SetString" VariableName="Coruscance" VariableExpression="Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1364,7 +1364,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Imbued Saber 1" Id="d09268d8-4d5b-4b4d-af2e-a442ac67d341" RegularExpression="14:(?&lt;Imbue&gt;4EF[56]):" PeriodRefire="Deny" RefirePeriodExpression="2000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Imbued Saber 1" Id="d09268d8-4d5b-4b4d-af2e-a442ac67d341" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Imbue&gt;4EF[56])\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Earth" VariableOp="SetString" VariableName="Clocks" VariableExpression="4EF6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1389,7 +1389,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="Imbued Saber 2" Id="5a521cb1-b2f2-4357-9838-394b73902248" RegularExpression="14:(?&lt;Imbue&gt;4(EF[34|]F1[23])):" PeriodRefire="Deny" RefirePeriodExpression="2000">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Imbued Saber 2" Id="5a521cb1-b2f2-4357-9838-394b73902248" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Imbue&gt;4(EF[34|]F1[23]))\|" PeriodRefire="Deny" RefirePeriodExpression="2000">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Ice" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1419,7 +1419,7 @@
                       <Folder Id="9661982a-64a0-4c87-9d8d-a7de4be86c4f" Name="Limit" Enabled="true">
                         <Folders />
                         <Triggers>
-                          <Trigger Enabled="true" Name="Limit Break" Id="cb145961-9b88-493b-a3b7-bf2a9d0e134e" RegularExpression="14:(?&lt;LimitBreak&gt;515C|53CB|4EFB):">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Limit Break" Id="cb145961-9b88-493b-a3b7-bf2a9d0e134e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;LimitBreak&gt;515C|53CB|4EFB)\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Meteors" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1439,7 +1439,7 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Name="To the Limit" Id="e36980d8-1ea2-49f4-bc4c-1ba86660fee4" RegularExpression="14:(?&lt;ToTheLimit&gt;4F3[456]):">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="To the Limit" Id="e36980d8-1ea2-49f4-bc4c-1ba86660fee4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;ToTheLimit&gt;4F3[456])\|">
                             <Actions>
                               <Action OrderNumber="1" UseTTSTextExpression="Meteors soon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="Or">
@@ -1463,7 +1463,7 @@
                       </Folder>
                     </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Name="Absolute Flash" Id="2fe4308d-d7a7-4ec4-b941-b039a4eae892" RegularExpression="1B:[0-9A-F]{8}:(?&lt;char&gt;[a-zA-Z' ]{3,21}):[0-9A-F]{4}:[0-9A-F]{4}:00B3:">
+                      <Trigger Enabled="false" Name="Absolute Flash (need log line to fix)" Id="2fe4308d-d7a7-4ec4-b941-b039a4eae892" RegularExpression="1B:[0-9A-F]{8}:(?&lt;char&gt;[a-zA-Z' ]{3,21}):[0-9A-F]{4}:[0-9A-F]{4}:00B3:">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="Look Away from ${char}" TextAuraFontSize="0" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
@@ -1479,7 +1479,7 @@
               <Folder Id="8f1dc2d7-47ca-4d2e-b748-169da1f0bd4c" Name="Quintuple Cast (NEED CLEANUP AND SETTINGS)" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="Quintuple Setup" Id="c1c530a5-596a-4565-aee2-244df3531802" RegularExpression="14:4EEF:">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Quintuple Setup" Id="c1c530a5-596a-4565-aee2-244df3531802" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4EEF\|">
                     <Actions>
                       <Action OrderNumber="1" ListVariableName="quintuple" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -1493,7 +1493,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Quint Moves" Id="cb45903c-8028-4706-8181-0449d1759434" RegularExpression="27\|.*?\|[A-Fa-f0-9]{8}\|[a-zA-Z-' ]{3,21}\|.{4}\|.{4}\|(?&lt;eye&gt;[a-fA-F0-9]{4})\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Quint Moves" Id="cb45903c-8028-4706-8181-0449d1759434" RegularExpression="^27\|.*?\|[A-Fa-f0-9]{8}\|[a-zA-Z-' ]{3,21}\|.{4}\|.{4}\|(?&lt;eye&gt;[a-fA-F0-9]{4})\|">
                     <Actions>
                       <Action OrderNumber="1" ListVariableOp="Push" ListVariableName="quintuple" ListVariableExpression="eye" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" RefireRequeue="False">
                         <Condition Enabled="true" Grouping="And">
@@ -1551,7 +1551,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="Wipe" Id="5a262961-c723-4f70-87bd-40acc1ae5b9c" RegularExpression="21:[\w]{8}:400000(?&gt;03|10)">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe" Id="5a262961-c723-4f70-87bd-40acc1ae5b9c" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
                     <Actions>
                       <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="quintuple" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -1566,7 +1566,7 @@
               </Folder>
             </Folders>
             <Triggers>
-              <Trigger Enabled="true" Name="Terror Unleashed - 1HP" Id="58299a40-3ead-4159-8284-7381687f207f" RegularExpression="14:(?&gt;4F09|4F27):">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Terror Unleashed - 1HP" Id="58299a40-3ead-4159-8284-7381687f207f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4EEF\|(?&gt;4F09|4F27)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Heal - 1HP" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1574,7 +1574,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="The Bitter End - TB+Swap" Id="4db95eb1-1ef2-4594-a60a-a3d911feb693" RegularExpression="14:4F(?&gt;28|0A):.+? starts using The Bitter End on (?&lt;target&gt;[a-zA-Z-' ]{3,21})\.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="The Bitter End - TB+Swap" Id="4db95eb1-1ef2-4594-a60a-a3d911feb693" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4F(?&gt;28|0A)\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="Buster on ${target} - Tank Swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1582,7 +1582,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Elddragon Dive - Raid Wide" Id="c4c170b1-c0e1-47a2-936f-214f25a84af3" RegularExpression="14:4F(?&gt;0B|29):">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Elddragon Dive - Raid Wide" Id="c4c170b1-c0e1-47a2-936f-214f25a84af3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4F(?&gt;0B|29)\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1590,7 +1590,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Coruscant Saber" Id="ce76f8ad-305f-4b18-adca-e496e95428fb" RegularExpression="14:(?&lt;ID&gt;4(EF[12]|F1[01])):">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Coruscant Saber" Id="ce76f8ad-305f-4b18-adca-e496e95428fb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;ID&gt;4(EF[12]|F1[01]))\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="go out go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
@@ -1605,7 +1605,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Absolute Stone III" Id="4a3e3606-667b-4250-a95c-ae37b7257540" RegularExpression="14:4F2C:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Absolute Stone III" Id="4a3e3606-667b-4250-a95c-ae37b7257540" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4F2C\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="clock positions" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1613,7 +1613,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="Summon Wyrm" Id="4a3d82cf-d3f0-4ebb-8a99-c0c0b96efd90" RegularExpression="14:4F41:">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Summon Wyrm" Id="4a3d82cf-d3f0-4ebb-8a99-c0c0b96efd90" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4F41\|">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="avoid dragon dash" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2396,7 +2396,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Multiple aoe stars" Id="9b2e2cc8-f751-494b-810e-d13e6d596f9d" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|(?&lt;id&gt;6FF[EF])\|(?&gt;[^|]*\|){25}(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|[^|]*\|(?&lt;heading&gt;[^|]*)\|">
                         <Actions>
@@ -2412,7 +2411,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
