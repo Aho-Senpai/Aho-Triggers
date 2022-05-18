@@ -19,7 +19,7 @@ In case you are wondering how to install this :
 
 > Select `Aho's Raid Buffs` > BOTTOM LEFT > `Add Selected`  
 
-Congrats, you have it installed. Now, on to [Setting Up](#Setup)  
+Congrats, you have it installed. Now, on to [Setting Up](#setting-up)  
 ## Setting Up
 ### # Setting up from in-game
 Q. Why would i want to do this ?  
