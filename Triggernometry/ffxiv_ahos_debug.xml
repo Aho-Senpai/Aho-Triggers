@@ -33,7 +33,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="false" Source="None" Name="Disable All Debugg Auras" Id="b362cb30-730b-4925-9bca-d44dc456028a" RegularExpression="">
+      <Trigger Enabled="true" Source="None" Name="Z - Disable All Debugg Auras" Id="b362cb30-730b-4925-9bca-d44dc456028a" RegularExpression="">
         <Actions>
           <Action OrderNumber="1" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="AhoDebugTextPlayerInfo" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
@@ -46,7 +46,7 @@
       </Trigger>
       <Trigger Enabled="false" Source="None" Name="Party List Debug Text Aura" Id="185b3e1c-03f6-40f9-99ca-f17309e81aef" RegularExpression="">
         <Actions>
-          <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="AhoDebugTextPartyList" TextAuraExpression="${_ffxivparty[1].order} - ${_ffxivparty[1].job} - ${_ffxivparty[1].name} - ${_ffxivparty[1].id}&#xD;&#xA;${_ffxivparty[2].order} - ${_ffxivparty[2].job} - ${_ffxivparty[2].name} - ${_ffxivparty[2].id}&#xD;&#xA;${_ffxivparty[3].order} - ${_ffxivparty[3].job} - ${_ffxivparty[3].name} - ${_ffxivparty[3].id}&#xD;&#xA;${_ffxivparty[4].order} - ${_ffxivparty[4].job} - ${_ffxivparty[4].name} - ${_ffxivparty[4].id}&#xD;&#xA;${_ffxivparty[5].order} - ${_ffxivparty[5].job} - ${_ffxivparty[5].name} - ${_ffxivparty[5].id}&#xD;&#xA;${_ffxivparty[6].order} - ${_ffxivparty[6].job} - ${_ffxivparty[6].name} - ${_ffxivparty[6].id}&#xD;&#xA;${_ffxivparty[7].order} - ${_ffxivparty[7].job} - ${_ffxivparty[7].name} - ${_ffxivparty[7].id}&#xD;&#xA;${_ffxivparty[8].order} - ${_ffxivparty[8].job} - ${_ffxivparty[8].name} - ${_ffxivparty[8].id}" TextAuraXIniExpression="0" TextAuraYIniExpression="0" TextAuraWIniExpression="${_screenwidth}/3" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+          <Action OrderNumber="1" TextAuraAlignment="TopLeft" TextAuraFontSize="15.75" TextAuraName="AhoDebugTextPartyList" TextAuraExpression="${_ffxivparty[1].order} - ${_ffxivparty[1].job} - ${_ffxivparty[1].name} - ${_ffxivparty[1].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[2].order} - ${_ffxivparty[2].job} - ${_ffxivparty[2].name} - ${_ffxivparty[2].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[3].order} - ${_ffxivparty[3].job} - ${_ffxivparty[3].name} - ${_ffxivparty[3].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[4].order} - ${_ffxivparty[4].job} - ${_ffxivparty[4].name} - ${_ffxivparty[4].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[5].order} - ${_ffxivparty[5].job} - ${_ffxivparty[5].name} - ${_ffxivparty[5].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[6].order} - ${_ffxivparty[6].job} - ${_ffxivparty[6].name} - ${_ffxivparty[6].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[7].order} - ${_ffxivparty[7].job} - ${_ffxivparty[7].name} - ${_ffxivparty[7].id} - ${_ffxivparty[1].role}&#xD;&#xA;${_ffxivparty[8].order} - ${_ffxivparty[8].job} - ${_ffxivparty[8].name} - ${_ffxivparty[8].id} - ${_ffxivparty[1].role}" TextAuraXIniExpression="0" TextAuraYIniExpression="0" TextAuraWIniExpression="${_screenwidth}/3" TextAuraHIniExpression="${_screenheight}" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
@@ -71,7 +71,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Reset" Id="d16b1e64-b7b7-4ce2-9362-d3b0daecae3d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="ZZ - Reset" Id="d16b1e64-b7b7-4ce2-9362-d3b0daecae3d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
         <Actions>
           <Action OrderNumber="1" ListVariableName="DebugBossCastsList" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
             <Condition Enabled="false" Grouping="Or" />
@@ -79,9 +79,9 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="None" Sequential="True" Name="TargetIDDebug" Id="20125e07-2be0-4dd0-a84f-b8ee386382a1" RegularExpression="" DebugLevel="Verbose" EditAutofire="True">
+      <Trigger Enabled="false" Source="None" Sequential="True" Name="TargetIDDebug" Id="20125e07-2be0-4dd0-a84f-b8ee386382a1" RegularExpression="" DebugLevel="Verbose" EditAutofire="True">
         <Actions>
-          <Action OrderNumber="1" MessageBoxIconType="Information" NamedCallbackName="command" NamedCallbackParam="/e ${_ffxivparty[${_ffxivplayer}].targetid}" TextAuraFontSize="15.75" TextAuraName="targetIDTest" TextAuraExpression="${_ffxivparty[${_ffxivplayer}].targetid}" TextAuraXIniExpression="${_screenwidth}/2-150" TextAuraYIniExpression="${_screenheight}/2-50" TextAuraWIniExpression="300" TextAuraHIniExpression="100" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft YaHei UI" ActionType="TextAura">
+          <Action OrderNumber="1" MessageBoxIconType="Information" NamedCallbackName="command" NamedCallbackParam="/e ${_ffxivparty[${_ffxivplayer}].targetid}" TextAuraFontSize="15.75" TextAuraName="targetIDTest" TextAuraExpression="${_ffxivparty[${_ffxivplayer}].targetid}&#xD;&#xA;${_ffxiventity[${_ffxivparty[${_ffxivplayer}].targetid}].currenthp}" TextAuraXIniExpression="${_screenwidth}/2-150" TextAuraYIniExpression="${_screenheight}/2-50" TextAuraWIniExpression="300" TextAuraHIniExpression="100" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft YaHei UI" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
