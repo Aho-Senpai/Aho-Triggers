@@ -2176,7 +2176,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Anemos NM Spawn" Id="17a54343-7bef-4da4-94b3-aa4d294997f4" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|71(?&gt;4[3789]|5[01278]|6[05-9]|7[0-37])\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Anemos NM Spawn" Id="17a54343-7bef-4da4-94b3-aa4d294997f4" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|^71(4[3789]|5[01278]|6[056789]|7[01237])\|">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
@@ -2291,14 +2291,13 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pagos NM Spawn" Id="008d1e13-2e24-4177-8b71-7075eefd79ad" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7(?&gt;49[579]|5[0-3][02-689])\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pagos NM Spawn" Id="008d1e13-2e24-4177-8b71-7075eefd79ad" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7(?&gt;49[579]|5(?&gt;0[358]|1[24568]|2[023469]|35))\|">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -2407,14 +2406,13 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pyros NM Spawn" Id="dbf3150d-b484-4328-a8a9-815d0695dba2" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|77[2-6][0-46-9]\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pyros NM Spawn" Id="dbf3150d-b484-4328-a8a9-815d0695dba2" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|77(?&gt;2[679]|3[169]|4[0268]|5[03469]|6[03])\|">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -2493,14 +2491,13 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Hydatos NM Spawn" Id="fcf52602-d81b-4f9d-a65b-d0d79ff90b83" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&gt;79(?&gt;55|6[567])|80[67][0-389])\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Hydatos NM Spawn" Id="fcf52602-d81b-4f9d-a65b-d0d79ff90b83" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&gt;79(?&gt;55|6[567])|80(?&gt;6[01389]|7[023]))\|">
                     <Actions>
                       <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
