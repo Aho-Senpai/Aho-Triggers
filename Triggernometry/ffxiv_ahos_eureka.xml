@@ -2054,11 +2054,11 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder Id="f73f148e-cb47-475f-ae2c-5ac498cdce02" Name="Eureka Callouts" Enabled="false">
+          <Folder Id="f73f148e-cb47-475f-ae2c-5ac498cdce02" Name="Eureka Callouts" Enabled="true">
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^732$" Id="1b92a74b-7de0-4f13-9992-cc9d487719a6" ZoneFilterRegularExpression="Eureka\ Anemos" Name="1. Anemos" Enabled="true">
                 <Folders>
-                  <Folder Id="7676598a-9bce-406c-96e1-873a36539933" Name="Level 1 - 9" Enabled="true">
+                  <Folder Id="7676598a-9bce-406c-96e1-873a36539933" Name="Level 1 - 9" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 1] Sabotender Corrido" Id="6358d309-c25c-4dbb-948a-edcae8ead818" RegularExpression="Added new combatant (?&lt;hunt&gt;Sabotender Corrido)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2108,7 +2108,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="ab722e01-924d-4812-976e-71459392dff8" Name="Level 10 - 20" Enabled="true">
+                  <Folder Id="ab722e01-924d-4812-976e-71459392dff8" Name="Level 10 - 20" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 11] Serket" Id="5a34f5da-a730-4c1c-9b1e-d36e3e7c6f42" RegularExpression="Added new combatant (?&lt;hunt&gt;Serket)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2170,16 +2170,25 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Anemos Elemental" Id="71b2d6a4-69ac-4608-8e5a-231eee0b0eae" RegularExpression="Added new combatant (?&lt;hunt&gt;Anemos Elemental)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Anemos Elemental" Id="71b2d6a4-69ac-4608-8e5a-231eee0b0eae" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;hunt&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7184\|" PeriodRefire="Deny">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="${hunt} Nearby" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Anemos NM Spawn" Id="17a54343-7bef-4da4-94b3-aa4d294997f4" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|71(?&gt;4[3789]|5[01278]|6[05-9]|7[0-37])\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                 </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^827$" Id="73d12e93-7f14-4ce3-8fda-abdb6481d12e" ZoneFilterRegularExpression="The\ Forbidden\ Land,\ Eureka\ Pagos" Name="2. Pagos" Enabled="true">
                 <Folders>
-                  <Folder Id="97035d53-fbf8-4d38-b0db-e15b62fcf0e3" Name="Level 20 - 29" Enabled="true">
+                  <Folder Id="97035d53-fbf8-4d38-b0db-e15b62fcf0e3" Name="Level 20 - 29" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 23] Glavoid" Id="9b582613-207e-4f03-a04b-986168ab2c1c" RegularExpression="Added new combatant (?&lt;hunt&gt;Glavoid|The Glavoid)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2234,7 +2243,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="22349248-d07b-44b5-aa3d-95d827cc466e" Name="Level 30 - 35" Enabled="true">
+                  <Folder Id="22349248-d07b-44b5-aa3d-95d827cc466e" Name="Level 30 - 35" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 34] Arch Angra Mainyu" Id="887cb75b-a0b3-402c-a8af-aec49204744b" RegularExpression="Added new combatant (?&lt;hunt&gt;Arch Angra Mainyu|Angra Mainyu)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2276,16 +2285,26 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Pagos Elemental" Id="04448fff-14cc-434f-9bb6-725ab317f627" RegularExpression="Added new combatant (?&lt;hunt&gt;Pagos Elemental)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pagos Elemental" Id="04448fff-14cc-434f-9bb6-725ab317f627" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;hunt&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7567\|" PeriodRefire="Deny">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="${hunt} Nearby" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pagos NM Spawn" Id="008d1e13-2e24-4177-8b71-7075eefd79ad" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7(?&gt;49[579]|5[0-3][02-689])\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^763$" Id="76fb9098-8d32-4474-b76e-c04e6adfe925" ZoneFilterRegularExpression="The\ Forbidden\ Land,\ Eureka\ Pyros" Name="3. Pyros" Enabled="true">
                 <Folders>
-                  <Folder Id="2453ee1b-bc04-4217-b9c5-5eb39fb3becd" Name="Level 35 - 39" Enabled="true">
+                  <Folder Id="2453ee1b-bc04-4217-b9c5-5eb39fb3becd" Name="Level 35 - 39" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 38] Graffiacane" Id="1a3b5941-0239-489f-bf10-9cc18e7b7675" RegularExpression="Added new combatant (?&lt;hunt&gt;Graffiacane)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2315,7 +2334,7 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder Id="8069c364-239d-4ecf-8488-34284e256580" Name="Level 40 - 50" Enabled="true">
+                  <Folder Id="8069c364-239d-4ecf-8488-34284e256580" Name="Level 40 - 50" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 40] Grand Duke Batym" Id="d8226bba-d330-417f-ba49-c8940e617e35" RegularExpression="Added new combatant (?&lt;hunt&gt;Grand Duke Batym)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2382,16 +2401,26 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Pyros Elemental" Id="e643a0e2-2f5b-4973-b05a-52a108190ff7" RegularExpression="Added new combatant (?&lt;hunt&gt;Pyros Elemental)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Pyros Elemental" Id="e643a0e2-2f5b-4973-b05a-52a108190ff7" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;hunt&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|7764\|" PeriodRefire="Deny">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="${hunt} Nearby" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
                     </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Pyros NM Spawn" Id="dbf3150d-b484-4328-a8a9-815d0695dba2" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|77[2-6][0-46-9]\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^795$" Id="fe5b3caf-d5f9-410e-a659-c3579da28cb6" ZoneFilterRegularExpression="The\ Forbidden\ Land,\ Eureka\ Hydatos" Name="4. Hydatos" Enabled="true">
                 <Folders>
-                  <Folder Id="8ab438bb-7769-4ee7-8d91-a9ea7fe914af" Name="Notorious Monsters" Enabled="true">
+                  <Folder Id="8ab438bb-7769-4ee7-8d91-a9ea7fe914af" Name="Notorious Monsters" Enabled="false">
                     <Folders />
                     <Triggers>
                       <Trigger Enabled="true" Name="[Lvl. 52] Molech" Id="04bcbc02-ddda-4f99-9fe7-9105a45cf6a1" RegularExpression="Added new combatant (?&lt;hunt&gt;Molech)\." PeriodRefire="Deny" RefirePeriodExpression="900000">
@@ -2458,8 +2487,20 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Name="Hydatos Elemental" Id="0dcb790e-6ca0-454c-bd41-4a2670fe33bc" RegularExpression="Added new combatant (?&lt;hunt&gt;Hydatos Elemental)\.">
-                    <Actions />
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hydatos Elemental" Id="0dcb790e-6ca0-454c-bd41-4a2670fe33bc" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;hunt&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|8131\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="${hunt} Nearby" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" RefireInterrupt="True" />
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Hydatos NM Spawn" Id="fcf52602-d81b-4f9d-a65b-d0d79ff90b83" RegularExpression="^03\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&gt;79(?&gt;55|6[567])|80[67][0-389])\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="${name} in zone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>

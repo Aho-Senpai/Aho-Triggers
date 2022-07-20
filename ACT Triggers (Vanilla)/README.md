@@ -52,10 +52,10 @@ Honnestly, i wanted to break it down further, but you should go read my other RE
 Contact me!
 
 Ping me on the [ACT Discord](https://discord.gg/ahFKcmx)  
-DM me on Discord : `Aho Senpai#0818`
+DM me on Discord : `Aho Senpai#0818`  
 Join my Github projects Discord [Aho-Senpai's Github Projects](https://discord.gg/dPFSM53)
 
 ## Thanks
 
-Thanks to `EQAditu` for making ACT maintaining it all this time, as well as for his amazing support when asked help <3
+Thanks to `EQAditu` for making ACT maintaining it all this time, as well as for his amazing support when asked help <3  
 Thanks to `ngld` for pointing to [DownGit](https://minhaskamal.github.io/DownGit/#/home)
