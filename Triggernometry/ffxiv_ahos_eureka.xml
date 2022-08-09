@@ -2130,6 +2130,11 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
+                  <Trigger Enabled="true" Source="None" Sequential="True" Name="NOTE : Hydatos NMs are NOT mapwide spawns. You will not hear the callout until you are close to it." Id="b555e728-8058-444d-a756-c11434d58096" RegularExpression="">
+                    <Actions />
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
                 </Triggers>
               </Folder>
             </Folders>
