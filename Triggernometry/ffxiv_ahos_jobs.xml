@@ -3672,7 +3672,7 @@
           <ConditionSingle Enabled="true" ExpressionL="${playerName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe/Clear Detection" Id="31f2be88-f373-40e3-950f-aaa48434f53d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe/Clear Detection" Id="31f2be88-f373-40e3-950f-aaa48434f53d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
         <Actions>
           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="55f05e2a-3951-4677-80c1-fcc9fc4a357d" TriggerForce="regexp" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />

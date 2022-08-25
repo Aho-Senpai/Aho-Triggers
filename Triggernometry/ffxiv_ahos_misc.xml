@@ -31,7 +31,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Z - Wipe or Clear Reset" Id="4c27b294-5f1d-4403-8bde-3690c4592981" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Z - Wipe or Clear Reset" Id="4c27b294-5f1d-4403-8bde-3690c4592981" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
         <Actions>
           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter">
             <Condition Enabled="false" Grouping="Or" />

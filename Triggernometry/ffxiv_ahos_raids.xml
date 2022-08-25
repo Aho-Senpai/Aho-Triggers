@@ -7742,7 +7742,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Wipe Reset UCOB" Id="ed2a4c31-f19e-492a-913c-94e6d2fe2cc2" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Wipe Reset UCOB" Id="ed2a4c31-f19e-492a-913c-94e6d2fe2cc2" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="UCOB-Tenstrike" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />

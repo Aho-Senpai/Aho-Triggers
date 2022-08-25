@@ -71,7 +71,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="ZZ - Reset" Id="d16b1e64-b7b7-4ce2-9362-d3b0daecae3d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="ZZ - Reset" Id="d16b1e64-b7b7-4ce2-9362-d3b0daecae3d" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
         <Actions>
           <Action OrderNumber="1" ListVariableName="DebugBossCastsList" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
             <Condition Enabled="false" Grouping="Or" />

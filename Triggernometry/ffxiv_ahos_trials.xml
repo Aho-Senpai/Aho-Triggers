@@ -1551,7 +1551,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe" Id="5a262961-c723-4f70-87bd-40acc1ae5b9c" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe" Id="5a262961-c723-4f70-87bd-40acc1ae5b9c" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
                     <Actions>
                       <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="quintuple" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -2034,7 +2034,7 @@
               <Folder Id="6bfd45b5-8034-4110-95d0-6cd940c0e011" Name="WeaponCounter" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Set Counter to 0" Id="d1a0b9bb-2a6b-4d3c-bb08-4b09bd7a699b" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Set Counter to 0" Id="d1a0b9bb-2a6b-4d3c-bb08-4b09bd7a699b" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
                     <Actions>
                       <Action OrderNumber="1" VariableName="HydaelynEXWeaponCounter" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
