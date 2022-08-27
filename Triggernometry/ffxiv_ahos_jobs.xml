@@ -1686,7 +1686,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Jump" Id="e4b5dea8-c4c5-405f-8715-94fc5dbc1599" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(5C|405E)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Jump/High Jump" Id="e4b5dea8-c4c5-405f-8715-94fc5dbc1599" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(5C|405E)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -3110,7 +3110,7 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bloodfest" Id="e9f3a594-b7c4-4dd0-9e04-81fc55e9f8fb" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F24\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="89000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
