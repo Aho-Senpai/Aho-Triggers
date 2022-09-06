@@ -8,7 +8,7 @@ before we start, i feel the need to mention that when you copy/paste from ACT lo
 
 so, le's go over a few basics regex elements to begin with  
 `.` will match any single character  
-`\d` will match and digit  
+`\d` will match any digit  
 `\w` match world characters (is equal to `[a-zA-Z0-9 ]`  
 `+` is a quantifier, and will match  or more (is used after a character or a group. for example : `F+XIV` would match the string "FFXIV" but also "FFFXIV" so be careful)  
 `?` is another quantifier, will match 0 or 1 of (`FFXI?V` would match "FFXIV" but also "FFXV")  
