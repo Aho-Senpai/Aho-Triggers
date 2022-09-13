@@ -6975,6 +6975,528 @@
                   </Trigger>
                 </Triggers>
               </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^108[12]$" Id="386fe731-787e-4f31-ac50-6b1f1afe0d87" Name="05 - Asphodeols: The Fifth Circle" Enabled="true">
+                <Folders>
+                  <Folder Id="ce45d58c-cf8b-42f8-8064-ce778117f574" Name="Savage" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="sonic howl" Id="b81f8ca1-f89c-4bcd-b000-664839717eaf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7720\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="ruby glow" Id="d3fbc0dd-fc55-4a0b-88b6-e174c3abd263" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F3\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="venomous mass" Id="f33be5c5-d3c7-4f13-a663-623ecab7aced" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|771D\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="tank swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="toxic crunch" Id="6b06f1b8-8a21-479a-a2cf-5e533c542ecc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|784A\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="double rush" Id="c7f1ff9d-ae4d-49d3-aaa5-eb967362d4d7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|771B\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="tail to claws" Id="954f624a-2fb8-495d-82a5-814d00feb0c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7712\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="front then back" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="raging tail move" Id="8f01b36f-a5a4-4575-8230-787d3a4c7c3b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A0C\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="claw to tail" Id="55bb3d62-de6f-48e2-9f3a-1d98700d4d34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|770E\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="back then front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="raging claw" Id="29b2fb65-e988-44ef-8f99-3133cfb50dd6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76FA\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Searing Ray" Id="c64ded49-2ca1-46ff-9034-bd5720119ba5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76[DF]7\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="ruby glow" Id="1ae47157-0fcb-46f5-84ea-e19044bf67ef" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76D[45]\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="crunch" Id="831dfff6-7be0-4f9f-9abf-946521609f38" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F0\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="sonic howl" Id="a3d8fc2a-6c53-4b5e-9694-483fb69b6f4b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F2\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="acidic slaver" Id="5b6823cf-b38a-47f7-b396-ce9d6fc6acaf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76E8\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="toxic crunch" Id="d7b8c3ba-9037-467a-99ce-595fd8ffb1bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F1\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^108[34]$" Id="9eff2a9b-d6e0-4b63-9a95-536f1772420d" Name="06 - Asphodeols: The Sixth Circle" Enabled="true">
+                <Folders>
+                  <Folder Id="9f031f4c-b45b-4f01-8007-814df430c187" Name="Savage" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="hemitheos dark iv" Id="9915a461-e01d-48df-b121-e7c852c8942f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7860\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Chelic synergy" Id="dcceab12-0076-4ab3-a977-e0ec7b68b948" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|788A\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="shared buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="synergy" Id="c8adb8bc-56ce-479d-b9a5-f7d3c3d2981e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7887\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="split busters" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou sides" Id="e65c42c6-83c7-4da4-9fc2-50ee63f3e0e0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7883\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go front" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou front/back" Id="438d90de-375b-4096-a4c1-47199d513ae2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7881\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="dark doom" Id="bb6a009b-f942-4e21-a7f8-2369fffa852f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|788B\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="bait circles" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="hemitheos dark iv" Id="6ea8bc02-a6e9-4656-84e4-d93363334d6c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|784E\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou sides" Id="2fb7d0df-d8e5-4286-963e-ca6b7f754f9f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7858\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go behind" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou front/back" Id="39a89819-285f-4aa7-b0c2-de7641b6a9db" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7857\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Parasite look away" Id="a9766fc6-f1dc-4f26-b762-28ddccb84cfa" RegularExpression="^26\|[^|]*\|CF2\|[^|]*\|(?&lt;Duration&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;PlayerID&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="(${Duration}*1000)-5000">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${PlayerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^108[56]$" Id="2d235e2b-7edb-4215-ad03-a365d69fadfb" Name="07 - Asphodeols: The Seventh Circle" Enabled="true">
+                <Folders>
+                  <Folder Id="41e4c695-3ace-431a-965a-944ed86230be" Name="Savage" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="condensed aero ii" Id="8d1f0b46-4164-406a-809c-f1944ced26ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7836\\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="shared buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="dispersed aero ii" Id="c71b64ed-e7e5-4336-b0f6-93020ca92089" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7835\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="split buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis left" Id="8ebf0eaa-19d3-4897-991d-39e94d4bffb0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7824\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis right" Id="e70ca75f-f077-4d84-bea7-c73daa2c93f7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7823\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hemitheos aero iv" Id="1e2ab099-b1b3-4b10-a34e-7e6f2a3600e4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A0B\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="knockback" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="spark of life" Id="f9f4ea17-1c17-4df4-876e-52512de55ff3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7839\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe bleed" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis out" Id="b7cbb5bd-3acd-4e49-9940-23e3a2342db5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77F9\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go south" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis in" Id="4e46c294-bc68-42da-8dca-20ed8d300f1d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FE\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="north" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis left" Id="4ba47b4b-d172-466d-9c3e-248c46c35f50" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FC\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis right" Id="c9b3e5b4-eabd-487d-81b2-4b1f2026b893" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FB\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="hemitheos glare" Id="6f15e1d1-afdf-4654-8e11-b93591f45043" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FA\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="move middle when safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="immortals obol" Id="b59a4c28-3974-4b0c-948f-3b8e7a66ce3e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77F5\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="get to edge" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^108[78]$" Id="04612ef8-ec55-4b15-b4ec-3d584f39721a" Name="08 - Asphodeols: The Eighth Circle" Enabled="true">
+                <Folders>
+                  <Folder Id="ce209c12-b045-42b8-a5f6-d6c074470a33" Name="Savage" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="genesis of flame" Id="dbf1e72b-7387-4903-bbbd-63c21718746b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7944\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="flameviper" Id="0ed54854-7bf5-4879-83c5-6ce7b5bd6d7a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7945\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="tank buster swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="ektothermos" Id="1fc6291f-e020-4a57-ab98-aba32a14366d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79EA\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="footprint" Id="da42c944-3616-4889-8a33-95a1ec488e90" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|794B\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="snaking kick" Id="cb6714db-472f-4e8f-86ef-d807c0682506" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|794C\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="aioniopyr" Id="fde0deaf-60d2-4de3-9edf-3ed53b2ceba3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79DF\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="aoe + bleed" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="tyrant's unholy darkness" Id="53c44834-2947-4277-bdf0-c2e768f56a66" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79DD\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="split buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="genesis of flame" Id="5be25469-6c29-431f-9e2d-1bcac739f7d1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7095\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="scorching fang" Id="f77b8978-6314-493c-98cd-32b3f086a2a4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78EE\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="sun's pinion" Id="dfeeff5d-4760-4d0a-a212-745fd5f6fc12" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78EF\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="flameviper" Id="70ac32b8-7f81-4fb1-a60b-2a12c7f51627" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7908\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="tank cleave + bleed" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="petrification" Id="90019eb5-3f78-43ab-8259-52ee3b0f13c0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78FC\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="look away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="ektothermos" Id="32e1db16-38f7-4d84-b6f3-a642d711934d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78FE\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="abyssal fires" Id="fa0ea5aa-25ab-4871-af31-de40f324cafc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78F1\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="go middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rearing rampage" Id="d0eeb0c1-f0be-4c70-b09d-0ef6807385ea" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79AB\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="hermitheos flare" Id="bd5481a3-c610-4280-8e29-944369a66858" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7907\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
             </Folders>
             <Triggers />
           </Folder>
@@ -7742,7 +8264,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Wipe Reset UCOB" Id="ed2a4c31-f19e-492a-913c-94e6d2fe2cc2" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Wipe Reset UCOB" Id="ed2a4c31-f19e-492a-913c-94e6d2fe2cc2" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|400000(?&gt;03|10)\|">
                         <Actions>
                           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="UCOB-Tenstrike" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                             <Condition Enabled="false" Grouping="Or" />
@@ -10009,7 +10531,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rest LaserVar" Id="61c50437-79bd-4391-9b34-101ee20ff87d" RegularExpression="^01\|[^|]*\|3C8\|">
                             <Actions>
@@ -10018,7 +10539,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -10061,7 +10581,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="true" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="ColorReset" Id="3a03b9fb-2b2d-4f03-934f-b15ac885a237" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                             <Actions>
@@ -10073,7 +10592,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -10086,7 +10604,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Holiest Hallowing" Id="7b1ea9db-b6d1-48e4-ae17-dd0678687e95" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62D0\|">
                         <Actions>
@@ -10095,7 +10612,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Brightwing" Id="08962b1c-d550-47d6-a315-105f58f2612b" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|6319\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="1000" MutexToCapture="brightwing">
                         <Actions>
@@ -10119,7 +10635,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Brightwing start" Id="e7d5d441-4a10-445c-93fe-d0e365dcfa4e" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|6316\|">
                         <Actions>
@@ -10131,7 +10646,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Empty Dimension / Full Dimension" Id="92fce6bd-3ba9-4eb5-bd37-b61131da2579" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Dimension&gt;62D[AB])\|">
                         <Actions>
@@ -10147,7 +10661,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="false" Source="FFXIVNetwork" Name="Tether Partner" Id="1922d8f7-5e67-48c3-9203-22bb5461d341" RegularExpression="^35\|[^|]*\|[^|]*\|(?&lt;Player1&gt;[^\|]*)\|[^|]*\|(?&lt;Player2&gt;[^\|]*)\|[^|]*\|[^|]*\|0009\|">
                         <Actions>
@@ -10166,7 +10679,6 @@
                           <ConditionSingle Enabled="true" ExpressionL="${Player1}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                           <ConditionSingle Enabled="true" ExpressionL="${Player2}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -10187,7 +10699,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dive From Grace - Text/Aura" Id="6e19a4f5-76b0-4976-b031-6fff6b7cb040" RegularExpression="^26\|[^|]*\|AC(?&lt;id&gt;[3-5])\|[^|]*\|(?&lt;duration&gt;[^.]*)\.[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
                         <Actions>
@@ -10229,7 +10740,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="In Line" Id="665ea6a8-40d8-439b-8a64-1e8d65fba864" RegularExpression="^26\|[^|]*\|BB(?&lt;id&gt;[C-E])\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
                         <Actions>
@@ -10253,7 +10763,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Final Chorus" Id="2db65684-5fce-46c1-9e7c-a34056faebb0" RegularExpression="^21\|(?:[^|]*\|){3}6708\|">
                         <Actions>
@@ -10262,7 +10771,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eye of the Tyrant" Id="b6ae7331-1d5e-41fe-b58e-616bd3059e92" RegularExpression="^21\|(?:[^|]*\|){3}6714\|[^|]*\|[^|]*\|(?&lt;name&gt;[^ ]*)[^|]*\|">
                         <Actions>
@@ -10271,7 +10779,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Soul Tether" Id="7b839448-0d5f-4997-ab91-5e2232c48857" RegularExpression="^21\|(?:[^|]*\|){3}671C\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
                         <Actions>
@@ -10287,7 +10794,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Drachenlance" Id="3b62d09a-fd1e-4367-b559-1332b77be15f" RegularExpression="^20\|(?:[^|]*\|){3}670B\|">
                         <Actions>
@@ -10296,7 +10802,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Darkdragon Dive" Id="64bc9ee4-5342-4bda-a45a-1e6b02fde539" RegularExpression="^20\|(?:[^|]*\|){3}6711\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                         <Actions>
@@ -10305,7 +10810,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -10393,7 +10897,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Flag Reset" Id="65f823d4-0376-4e62-90a2-85f6c57657b3" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                             <Actions>
@@ -10405,7 +10908,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -10418,7 +10920,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Twister" Id="7bb3c55e-e9a9-459d-9ef9-0ef0dedd7308" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63C8\|">
                         <Actions>
@@ -10427,43 +10928,51 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Thordan Position - Credit @ Izanami" Id="4f7564dc-24fb-4e45-bf32-523c9b0448c9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63CE\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;Direction&gt;[^|]*)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Thordan Position - Credit @ Izanami" Id="4f7564dc-24fb-4e45-bf32-523c9b0448c9" RegularExpression="^20\|(?:[^|]*\|){3}63CE\|(?:[^|]*\|){6}(?&lt;Direction1&gt;[^|]*)\|(?&lt;Direction2&gt;[^|]*)\|">
                         <Actions>
-						<Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Thordan North" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="0.00" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
-						</Action>
-						<Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="Thordan South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="3.14" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
-						</Action>
-						<Action OrderNumber="3" OBSEndPoint="" PlaySpeechMyself="True" UseTTSTextExpression="Thordan East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="-1.57" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
-						</Action>
-						<Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="Thordan West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="1.57" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
-						</Action>
-						<Action OrderNumber="5" OBSEndPoint="" UseTTSTextExpression="Thordan North West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="0.79" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
-						</Action>
-						<Action OrderNumber="6" OBSEndPoint="" UseTTSTextExpression="Thordan North East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-							<Condition Enabled="true" Grouping="Or">
-							<ConditionSingle Enabled="true" ExpressionL="${Direction}" ExpressionTypeL="Numeric" ExpressionR="-0.79" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-							</Condition>
+                          <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Thordan North" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction1}" ExpressionTypeL="String" ExpressionR="0.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="Thordan South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction1}" ExpressionTypeL="String" ExpressionR="3.14" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" OBSEndPoint="" PlaySpeechMyself="True" UseTTSTextExpression="Thordan West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction2}" ExpressionTypeL="String" ExpressionR="-1.57" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="Thordan East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction1}" ExpressionTypeL="String" ExpressionR="1.57" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="5" OBSEndPoint="" UseTTSTextExpression="Thordan North East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction1}" ExpressionTypeL="String" ExpressionR="0.79" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="6" OBSEndPoint="" UseTTSTextExpression="Thordan North West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction2}" ExpressionTypeL="String" ExpressionR="-0.79" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="7" OBSEndPoint="" UseTTSTextExpression="Thordan South West" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction2}" ExpressionTypeL="String" ExpressionR="-2.36" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="8" OBSEndPoint="" UseTTSTextExpression="Thordan South East" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${Direction1}" ExpressionTypeL="String" ExpressionR="2.36" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback" Id="a1019e6c-add6-482d-88b4-189090bcabeb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|62DC\|">
                         <Actions>
@@ -10472,17 +10981,7 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
-					    <Trigger Enabled="true" Source="FFXIVNetwork" Name="Meteor Role Call" Id="45cab55a-65f6-403a-8bbc-fd68d8192395" RegularExpression="^26\|[^|]*\|232\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
-					<Actions>
-						<Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Meteor on ${_ffxivparty[${name}].role}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-						<Condition Enabled="false" Grouping="Or" />
-						</Action>
-					</Actions>
-					<Condition Enabled="false" Grouping="Or" />
-					<Conditions />
-						</Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ascalon's Mercy Concealed" Id="29c5d0e6-85a3-4337-bfa9-f7cb4a17ae1c" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|63C8\|">
                         <Actions>
                           <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Protean" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -10490,7 +10989,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ascalon's Might" Id="132b23c3-ecf7-4cdd-8bfd-122c5d1b6191" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|63C5\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
                         <Actions>
@@ -10506,7 +11004,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ancient Quaga" Id="44c33c73-5b84-4d4f-98f0-9b7a43a1c097" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63C6\|">
                         <Actions>
@@ -10515,7 +11012,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Heavenly Hell" Id="0ed073e6-5f54-411a-8de5-7e27272f309d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63C7\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|">
                         <Actions>
@@ -10530,7 +11026,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ultimate End" Id="18c7388d-b5d9-4dc4-bc4f-c1e110609eab" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|63BD\|">
                         <Actions>
@@ -10539,7 +11034,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Broad Swing" Id="b50c1f83-5381-4036-b1f5-72d956d16704" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|63C1\|">
                         <Actions>
@@ -10548,7 +11042,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
