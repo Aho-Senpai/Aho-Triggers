@@ -6987,7 +6987,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="ruby glow" Id="d3fbc0dd-fc55-4a0b-88b6-e174c3abd263" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F3\|">
                         <Actions>
@@ -6996,7 +6995,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="venomous mass" Id="f33be5c5-d3c7-4f13-a663-623ecab7aced" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|771D\|">
                         <Actions>
@@ -7005,7 +7003,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="toxic crunch" Id="6b06f1b8-8a21-479a-a2cf-5e533c542ecc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|784A\|">
                         <Actions>
@@ -7014,7 +7011,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="double rush" Id="c7f1ff9d-ae4d-49d3-aaa5-eb967362d4d7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|771B\|">
                         <Actions>
@@ -7023,7 +7019,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="tail to claws" Id="954f624a-2fb8-495d-82a5-814d00feb0c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7712\|">
                         <Actions>
@@ -7032,7 +7027,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="raging tail move" Id="8f01b36f-a5a4-4575-8230-787d3a4c7c3b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A0C\|">
                         <Actions>
@@ -7041,7 +7035,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="claw to tail" Id="55bb3d62-de6f-48e2-9f3a-1d98700d4d34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|770E\|">
                         <Actions>
@@ -7050,7 +7043,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="raging claw" Id="29b2fb65-e988-44ef-8f99-3133cfb50dd6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76FA\|">
                         <Actions>
@@ -7059,7 +7051,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7080,7 +7071,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="crunch" Id="831dfff6-7be0-4f9f-9abf-946521609f38" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F0\|">
                     <Actions>
@@ -7089,7 +7079,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="sonic howl" Id="a3d8fc2a-6c53-4b5e-9694-483fb69b6f4b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F2\|">
                     <Actions>
@@ -7098,7 +7087,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="acidic slaver" Id="5b6823cf-b38a-47f7-b396-ce9d6fc6acaf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76E8\|">
                     <Actions>
@@ -7107,7 +7095,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="toxic crunch" Id="d7b8c3ba-9037-467a-99ce-595fd8ffb1bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F1\|">
                     <Actions>
@@ -7116,7 +7103,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -7132,7 +7118,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Chelic synergy" Id="dcceab12-0076-4ab3-a977-e0ec7b68b948" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|788A\|">
                         <Actions>
@@ -7141,7 +7126,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="synergy" Id="c8adb8bc-56ce-479d-b9a5-f7d3c3d2981e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7887\|">
                         <Actions>
@@ -7150,7 +7134,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou sides" Id="e65c42c6-83c7-4da4-9fc2-50ee63f3e0e0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7883\|">
                         <Actions>
@@ -7159,7 +7142,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou front/back" Id="438d90de-375b-4096-a4c1-47199d513ae2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7881\|">
                         <Actions>
@@ -7168,7 +7150,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="dark doom" Id="bb6a009b-f942-4e21-a7f8-2369fffa852f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|788B\|">
                         <Actions>
@@ -7177,7 +7158,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7190,7 +7170,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou sides" Id="2fb7d0df-d8e5-4286-963e-ca6b7f754f9f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7858\|">
                     <Actions>
@@ -7199,7 +7178,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="choros ixou front/back" Id="39a89819-285f-4aa7-b0c2-de7641b6a9db" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7857\|">
                     <Actions>
@@ -7208,7 +7186,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Parasite look away" Id="a9766fc6-f1dc-4f26-b762-28ddccb84cfa" RegularExpression="^26\|[^|]*\|CF2\|[^|]*\|(?&lt;Duration&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;PlayerID&gt;[^|]*)\|">
                     <Actions>
@@ -7219,7 +7196,6 @@
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${PlayerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                     </Condition>
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -7228,14 +7204,13 @@
                   <Folder Id="41e4c695-3ace-431a-965a-944ed86230be" Name="Savage" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="condensed aero ii" Id="8d1f0b46-4164-406a-809c-f1944ced26ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7836\\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="condensed aero ii" Id="8d1f0b46-4164-406a-809c-f1944ced26ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7836\|">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="shared buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="dispersed aero ii" Id="c71b64ed-e7e5-4336-b0f6-93020ca92089" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7835\|">
                         <Actions>
@@ -7244,7 +7219,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis left" Id="8ebf0eaa-19d3-4897-991d-39e94d4bffb0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7824\|">
                         <Actions>
@@ -7253,7 +7227,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis right" Id="e70ca75f-f077-4d84-bea7-c73daa2c93f7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7823\|">
                         <Actions>
@@ -7262,7 +7235,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hemitheos aero iv" Id="1e2ab099-b1b3-4b10-a34e-7e6f2a3600e4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A0B\|">
                         <Actions>
@@ -7271,7 +7243,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="spark of life" Id="f9f4ea17-1c17-4df4-876e-52512de55ff3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7839\|">
                         <Actions>
@@ -7280,7 +7251,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7293,7 +7263,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis in" Id="4e46c294-bc68-42da-8dca-20ed8d300f1d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FE\|">
                     <Actions>
@@ -7302,7 +7271,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis left" Id="4ba47b4b-d172-466d-9c3e-248c46c35f50" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FC\|">
                     <Actions>
@@ -7311,7 +7279,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="bough of attis right" Id="c9b3e5b4-eabd-487d-81b2-4b1f2026b893" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FB\|">
                     <Actions>
@@ -7320,7 +7287,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="hemitheos glare" Id="6f15e1d1-afdf-4654-8e11-b93591f45043" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77FA\|">
                     <Actions>
@@ -7329,7 +7295,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="immortals obol" Id="b59a4c28-3974-4b0c-948f-3b8e7a66ce3e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|77F5\|">
                     <Actions>
@@ -7338,7 +7303,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -7354,7 +7318,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="flameviper" Id="0ed54854-7bf5-4879-83c5-6ce7b5bd6d7a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7945\|">
                         <Actions>
@@ -7363,7 +7326,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="ektothermos" Id="1fc6291f-e020-4a57-ab98-aba32a14366d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79EA\|">
                         <Actions>
@@ -7372,7 +7334,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="footprint" Id="da42c944-3616-4889-8a33-95a1ec488e90" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|794B\|">
                         <Actions>
@@ -7381,7 +7342,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="snaking kick" Id="cb6714db-472f-4e8f-86ef-d807c0682506" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|794C\|">
                         <Actions>
@@ -7390,7 +7350,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="aioniopyr" Id="fde0deaf-60d2-4de3-9edf-3ed53b2ceba3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79DF\|">
                         <Actions>
@@ -7399,7 +7358,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="tyrant's unholy darkness" Id="53c44834-2947-4277-bdf0-c2e768f56a66" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79DD\|">
                         <Actions>
@@ -7408,7 +7366,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7421,7 +7378,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="scorching fang" Id="f77b8978-6314-493c-98cd-32b3f086a2a4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78EE\|">
                     <Actions>
@@ -7430,7 +7386,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="sun's pinion" Id="dfeeff5d-4760-4d0a-a212-745fd5f6fc12" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78EF\|">
                     <Actions>
@@ -7439,7 +7394,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="flameviper" Id="70ac32b8-7f81-4fb1-a60b-2a12c7f51627" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7908\|">
                     <Actions>
@@ -7448,7 +7402,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="petrification" Id="90019eb5-3f78-43ab-8259-52ee3b0f13c0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78FC\|">
                     <Actions>
@@ -7457,7 +7410,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="ektothermos" Id="32e1db16-38f7-4d84-b6f3-a642d711934d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78FE\|">
                     <Actions>
@@ -7466,7 +7418,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="abyssal fires" Id="fa0ea5aa-25ab-4871-af31-de40f324cafc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|78F1\|">
                     <Actions>
@@ -7475,7 +7426,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rearing rampage" Id="d0eeb0c1-f0be-4c70-b09d-0ef6807385ea" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79AB\|">
                     <Actions>
@@ -7484,7 +7434,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="hermitheos flare" Id="bd5481a3-c610-4280-8e29-944369a66858" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7907\|">
                     <Actions>
@@ -7493,7 +7442,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
