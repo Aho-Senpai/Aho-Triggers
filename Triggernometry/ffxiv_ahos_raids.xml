@@ -7006,7 +7006,7 @@
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="toxic crunch" Id="6b06f1b8-8a21-479a-a2cf-5e533c542ecc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|784A\|">
                         <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                          <Action OrderNumber="1" UseTTSTextExpression="buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
