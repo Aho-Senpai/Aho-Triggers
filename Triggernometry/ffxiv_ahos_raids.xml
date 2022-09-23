@@ -7204,7 +7204,7 @@
                   <Folder Id="41e4c695-3ace-431a-965a-944ed86230be" Name="Savage" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="condensed aero ii" Id="8d1f0b46-4164-406a-809c-f1944ced26ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7836\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="condensed aero ii" Id="8d1f0b46-4164-406a-809c-f1944ced26ab" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7836\|" PrevActionsRefire="Deny" RefirePeriodExpression="100">
                         <Actions>
                           <Action OrderNumber="1" UseTTSTextExpression="shared buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                             <Condition Enabled="false" Grouping="Or" />
