@@ -2144,14 +2144,13 @@
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1070$" Id="aba478a0-86c2-4f78-869a-a02db4df6597" Name="90 - The Fell Court of Troia" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Out of Front - Dark Vision" Id="ae6db0a4-f7bf-4933-9567-e42e786af6db" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73B[8C]\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Out of Front - Dark Vision" Id="ae6db0a4-f7bf-4933-9567-e42e786af6db" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|73B[8B]\|" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
                   <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Hush" Id="47db4fd8-9f1b-4fd7-873d-8f56b91fe96e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7480\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                 <Actions>
@@ -2160,7 +2159,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss2 - Look Away - Death Forseen" Id="0e0818b7-ea6f-417f-9e6e-590c426df8c4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|747D\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
                 <Actions>
@@ -2169,7 +2167,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Eye of Troia" Id="215913c4-a15c-4b98-bf90-25bb79239ba2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|747A\|">
                 <Actions>
@@ -2178,7 +2175,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Away - Blighted Bedivelment" Id="7a1c0796-6feb-4ac9-b92f-a50c92df5f45" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|761B\|">
                 <Actions>
@@ -2187,7 +2183,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Behind - Blighted Bladework" Id="47d95709-7687-4430-9072-69889b77c6f2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|763[34]\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
                 <Actions>
@@ -2196,7 +2191,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Behind - Blighted Sweep" Id="e29fe86e-6017-40a4-9f05-56f98a91bf31" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7635\|">
                 <Actions>
@@ -2205,7 +2199,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Cursed Echo" Id="44a08388-bf3c-4d80-ae87-cdda137d9a11" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7631\|">
                 <Actions>
@@ -2214,7 +2207,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss3 - TB - Firedamp" Id="f853206c-40f7-423d-9a99-83625bd26f9d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|763[67]\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
                 <Actions>
@@ -2223,7 +2215,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
