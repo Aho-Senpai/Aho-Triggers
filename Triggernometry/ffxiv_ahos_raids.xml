@@ -7052,11 +7052,19 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="searing ray" Id="917c6a5f-8570-41d8-8b52-1adabe17675b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76F7\|">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="go front" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
                     </Triggers>
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Searing Ray" Id="c64ded49-2ca1-46ff-9034-bd5720119ba5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76[DF]7\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="searing ray" Id="c64ded49-2ca1-46ff-9034-bd5720119ba5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|76D7\|">
                     <Actions>
                       <Action OrderNumber="1" UseTTSTextExpression="go behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
