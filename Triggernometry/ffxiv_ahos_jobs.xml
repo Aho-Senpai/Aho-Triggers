@@ -116,12 +116,12 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Essential Dignity" Id="c362ba22-577a-4bf1-9608-faef106b1a34" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|E1E\|(?&lt;spell&gt;[^|]+)\|">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="3" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+40000,${_systemtimems})" ActionType="Variable">
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;3,${var:AhoJobCharges${spell}CD}+40000,${_systemtimems})" ActionType="Variable">
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
@@ -129,7 +129,7 @@
                   </Action>
                   <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+40000)">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
@@ -142,22 +142,22 @@
               </Trigger>
               <Trigger Enabled="true" Source="None" Name="! - Cancel All AST Triggers" Id="d8f82712-924b-45e2-bb0a-37ccc6393b25" RegularExpression="">
                 <Actions>
-                  <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="0b7c5419-3277-4128-8745-6e3eb35d92f9" ActionType="Trigger">
+                  <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="dc1cd034-c9c6-4c90-ae5d-2084f76cf4d8" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="6264cc8f-2aea-4e27-b780-8e3ed6e64511" ActionType="Trigger">
+                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="0b7c5419-3277-4128-8745-6e3eb35d92f9" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="5a3ab36c-f383-4337-898a-c7fc37176c80" ActionType="Trigger">
+                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="6264cc8f-2aea-4e27-b780-8e3ed6e64511" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="c461d020-e6e9-4cba-9dc6-47aa649ec52a" ActionType="Trigger">
+                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="5a3ab36c-f383-4337-898a-c7fc37176c80" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="ebac72cc-5683-46ae-97ba-92ab2e05803d" ActionType="Trigger">
+                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="c461d020-e6e9-4cba-9dc6-47aa649ec52a" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="dc1cd034-c9c6-4c90-ae5d-2084f76cf4d8" ActionType="Trigger">
+                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="ebac72cc-5683-46ae-97ba-92ab2e05803d" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="d16b510d-286f-402c-9554-ecdc8d263b6a" ActionType="Trigger">
@@ -190,25 +190,9 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Draw" Id="dc1cd034-c9c6-4c90-ae5d-2084f76cf4d8" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|E06\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Astral/Umbral Draw" Id="dc1cd034-c9c6-4c90-ae5d-2084f76cf4d8" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|909[9A]\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+30000,${_systemtimems})" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="And" />
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+30000)">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -311,9 +295,25 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tetragrammaton" Id="0fe26b42-6c44-469c-9c35-b29c752a2bc2" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|DF2\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Tetragrammaton" Id="0fe26b42-6c44-469c-9c35-b29c752a2bc2" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|DF2\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,&#xD;&#xA;${var:AhoJobCharges${spell}CD}+60000,&#xD;&#xA;${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+60000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -326,34 +326,37 @@
                   <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="ab033f35-8c2f-432f-bf75-e0eca301952c" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="aaf47499-4b58-445e-a567-5df597505db8" ActionType="Trigger">
+                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="92998b5d-16dd-429d-9747-2838873fff99" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="4d6b5fe0-fbf6-4ea7-b3c3-be1726287c41" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="e5230676-359d-486e-a92c-64d112b1cc83" ActionType="Trigger">
+                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="b7cf48d7-9889-4114-a4ef-19afa989cacf" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="ab879318-4a1d-4268-aba1-ea65531346b9" ActionType="Trigger">
+                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="e5230676-359d-486e-a92c-64d112b1cc83" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="3b77070c-dd93-4ede-a6e4-42520b360acf" ActionType="Trigger">
+                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="ab879318-4a1d-4268-aba1-ea65531346b9" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="846b08b9-b544-427d-87ba-bf92f1df20c7" ActionType="Trigger">
+                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="3b77070c-dd93-4ede-a6e4-42520b360acf" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="1327c210-00b8-4688-b37c-844137cd7754" ActionType="Trigger">
+                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="846b08b9-b544-427d-87ba-bf92f1df20c7" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="55f3801b-b52b-425a-a85e-968822d05898" ActionType="Trigger">
+                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="1327c210-00b8-4688-b37c-844137cd7754" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="0fe26b42-6c44-469c-9c35-b29c752a2bc2" ActionType="Trigger">
+                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="55f3801b-b52b-425a-a85e-968822d05898" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="3ac4e2d7-fc09-4612-9bf3-36fae9cdc71c" ActionType="Trigger">
+                  <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="0fe26b42-6c44-469c-9c35-b29c752a2bc2" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="3ac4e2d7-fc09-4612-9bf3-36fae9cdc71c" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -430,6 +433,17 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Aetherial Shift" Id="92998b5d-16dd-429d-9747-2838873fff99" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|9090\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -555,7 +569,12 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Recitation" Id="7973c3e5-bf41-4a51-8b85-7ad0ff2a783c" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|409E\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="89000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="98" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="30000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -637,10 +656,13 @@
                   <Action OrderNumber="14" TriggerOp="CancelTrigger" TriggerId="ae7210e1-acf5-46f5-aa0c-dd6492400364" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="138d2d64-25b1-43df-b4bb-bef1dd4cea35" ActionType="Trigger">
+                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="5819b66d-6f58-4bcd-baef-70a241460586" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="16" TriggerOp="CancelTrigger" TriggerId="2c289293-d387-4a91-9182-60f15f038fd5" ActionType="Trigger">
+                  <Action OrderNumber="16" TriggerOp="CancelTrigger" TriggerId="138d2d64-25b1-43df-b4bb-bef1dd4cea35" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="17" TriggerOp="CancelTrigger" TriggerId="2c289293-d387-4a91-9182-60f15f038fd5" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -665,6 +687,17 @@
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Seraphism" Id="5819b66d-6f58-4bcd-baef-70a241460586" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|9096\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="179000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -719,7 +752,12 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Soteria" Id="e33b6cd9-164f-445d-a1b5-cafe1e7a2021" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|5EE6\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="89000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="30000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -839,16 +877,19 @@
                   <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="acf3d133-ea9c-42c2-b466-cb34dbd66dae" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="25543cae-c359-4bb9-bfbc-974e1c5d4f6f" ActionType="Trigger">
+                  <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="45c35c98-8847-45db-a4d3-b3233840aad1" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="13" TriggerOp="CancelTrigger" TriggerId="e33b6cd9-164f-445d-a1b5-cafe1e7a2021" ActionType="Trigger">
+                  <Action OrderNumber="13" TriggerOp="CancelTrigger" TriggerId="25543cae-c359-4bb9-bfbc-974e1c5d4f6f" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="14" TriggerOp="CancelTrigger" TriggerId="41fe1b90-d8c5-4e7d-a000-bf12e410c361" ActionType="Trigger">
+                  <Action OrderNumber="14" TriggerOp="CancelTrigger" TriggerId="e33b6cd9-164f-445d-a1b5-cafe1e7a2021" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="1f89c46f-f49d-448e-a4f8-d3e818025a1b" ActionType="Trigger">
+                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="41fe1b90-d8c5-4e7d-a000-bf12e410c361" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="16" TriggerOp="CancelTrigger" TriggerId="1f89c46f-f49d-448e-a4f8-d3e818025a1b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -896,18 +937,40 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="!Aura! - Kardia Reminder" Id="58edbbc0-394a-44af-82d5-1e97fb6cea08" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|40000001\|">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="72" TextAuraForeground="Red" TextAuraOutline="Black" TextAuraName="KardiaReminderFlash" TextAuraExpression="Kardia !" TextAuraXIniExpression="(${_screenwidth}-400)/2" TextAuraYIniExpression="(${_screenheight}-200)/2" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraOTickExpression="50+(cos(${_sincems}/100)*30)" TextAuraTTLTickExpression="5-${_since}" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+                  <Action OrderNumber="1" TextAuraFontSize="72" TextAuraForeground="Red" TextAuraOutline="Black" TextAuraName="KardiaReminderFlash" TextAuraExpression="Kardia !" TextAuraXIniExpression="(${_screenwidth}-400)/2" TextAuraYIniExpression="(${_screenheight}-200)/2" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraOTickExpression="50+(cos(${_sincems}/100)*30)" TextAuraTTLTickExpression="5-${_since}" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Psyche" Id="45c35c98-8847-45db-a4d3-b3233840aad1" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|909A\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Philosophia" Id="d68a16cf-99d7-4add-979e-7df26104f279" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|90AB\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="179000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="17263755328" Id="1a9da9fb-00da-4028-8255-4be1e9cf3133" Name="Magical Ranged DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="2216287010880" Id="1a9da9fb-00da-4028-8255-4be1e9cf3133" Name="Magical Ranged DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="17179869184" Id="61c85011-9311-4605-8823-db782846a115" Name="RDM" Enabled="true">
             <Folders />
@@ -1168,12 +1231,12 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Manafont" Id="725bb3d0-1624-4981-a076-d3a26db290bc" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|9E\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="99000" RefireInterrupt="True">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="84" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="60000" RefireInterrupt="True">
+                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="20000" RefireInterrupt="True">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="84" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                     </Condition>
@@ -1229,25 +1292,9 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Sharpcast" Id="99286631-e77a-4182-a49f-7f57d7280803" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|DF6\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Retrace" Id="99286631-e77a-4182-a49f-7f57d7280803" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|907C\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+29000,${_systemtimems})" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="And" />
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+29000)">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="39000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -1293,10 +1340,153 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="2199023255552" Id="a83cd48e-3aaa-4b23-ad82-e7bdd6527254" Name="PCT" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Living Muse" Id="d1eb065c-b6b5-4d6f-b6b1-5d3de12414a4" RegularExpression="^21\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|87(?&gt;6[EF]|7[01])\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="3" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;3,${var:AhoJobCharges${spell}CD}+40000,${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+40000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Striking Muse" Id="8460b18f-877d-41b1-a3bd-f72df83aef99" RegularExpression="^21\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|8772\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+60000,${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+60000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Starry Sky Motif" Id="063e4260-c0ce-45f0-9db1-435983e56b85" RegularExpression="^21\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|876D\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="None" Name="! - Cancel All PictoTriggers" Id="1d0762f0-fc34-4157-b050-52bb9c9d8726" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+                <Actions>
+                  <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="d1eb065c-b6b5-4d6f-b6b1-5d3de12414a4" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="aa18787d-8e1b-4b01-945f-38be9cc4180f" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="235dd3b2-3d35-4729-a3e1-d2884ca81f76" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="063e4260-c0ce-45f0-9db1-435983e56b85" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="8460b18f-877d-41b1-a3bd-f72df83aef99" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="fed6b0d2-cf6f-46dc-8c6c-05aa15768c0f" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tempera Coat" Id="fed6b0d2-cf6f-46dc-8c6c-05aa15768c0f" RegularExpression="^21\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|877D\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Smudge" Id="235dd3b2-3d35-4729-a3e1-d2884ca81f76" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|877C\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+19000,${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+19000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mog of the Ages" Id="aa18787d-8e1b-4b01-945f-38be9cc4180f" RegularExpression="^21\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|8774\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="284275769354" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="Melee DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1383787397130" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="Melee DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="805306368" Id="86dd4f6d-60b4-48fc-b86b-df4ceb7872d0" Name="NIN" Enabled="true">
             <Folders />
@@ -1381,7 +1571,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Trick Attack" Id="6fd0f899-64bb-4a89-a060-eb5c1188436b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|8D2\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Trick Attack/Kunai's Bane" Id="6fd0f899-64bb-4a89-a060-eb5c1188436b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;8D2|905E)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1396,31 +1586,34 @@
                   <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="82fa4e92-8e24-4323-9015-2fff6cb6f6fd" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="15222ba5-52a2-445a-bdba-39b9d36b8344" ActionType="Trigger">
+                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="5e710481-a37f-4dd0-904e-c0f9ef24c285" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="d1907395-7eee-4076-908a-9b8578d54c33" ActionType="Trigger">
+                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="15222ba5-52a2-445a-bdba-39b9d36b8344" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="7eb96fba-02df-4925-aff3-dd86975f42ab" ActionType="Trigger">
+                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="d1907395-7eee-4076-908a-9b8578d54c33" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="38cfa082-58bd-4464-b4cf-38d1084307a6" ActionType="Trigger">
+                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="7eb96fba-02df-4925-aff3-dd86975f42ab" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="a3713bda-27b4-4d18-8d23-8ac3141598a4" ActionType="Trigger">
+                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="38cfa082-58bd-4464-b4cf-38d1084307a6" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="9cb0fabe-d549-4d75-bf35-21dd81b9750c" ActionType="Trigger">
+                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="a3713bda-27b4-4d18-8d23-8ac3141598a4" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="612230a2-1f15-4cb8-a1f5-937eb951d5a4" ActionType="Trigger">
+                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="9cb0fabe-d549-4d75-bf35-21dd81b9750c" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="663c73a7-d18b-4095-ba64-32d844dab921" ActionType="Trigger">
+                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="612230a2-1f15-4cb8-a1f5-937eb951d5a4" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="6fd0f899-64bb-4a89-a060-eb5c1188436b" ActionType="Trigger">
+                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="663c73a7-d18b-4095-ba64-32d844dab921" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="6fd0f899-64bb-4a89-a060-eb5c1188436b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -1452,6 +1645,17 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dokumori" Id="5e710481-a37f-4dd0-904e-c0f9ef24c285" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|905D\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
             </Triggers>
           </Folder>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="8589934592" Id="9d5eb9cd-378b-4728-b523-e0a74e139a37" Name="SAM" Enabled="true">
@@ -1459,14 +1663,28 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Guren/Senei" Id="f579fa84-6b62-44f4-9f2e-f7f8e91d5dd4" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;1D48|4061)\|Hissatsu: (?&lt;ability&gt;Guren|Senei)\|" PrevActions="Interrupt">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Gurren" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
-                    <Condition Enabled="true" Grouping="Or">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Gurren" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${ability}" ExpressionTypeL="String" ExpressionR="Guren" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Gurren" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${ability}" ExpressionTypeL="String" ExpressionR="Guren" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="Sennai" ActionType="UseTTS">
-                    <Condition Enabled="true" Grouping="Or">
+                    <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${ability}" ExpressionTypeL="String" ExpressionR="Senei" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="Sennai" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${ability}" ExpressionTypeL="String" ExpressionR="Senei" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                     </Condition>
                   </Action>
                 </Actions>
@@ -1514,7 +1732,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Third Eye" Id="3b487497-f5f8-48c1-9b0d-9c401a62b716" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1D4A\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Third Eye/Tengetsu" Id="3b487497-f5f8-48c1-9b0d-9c401a62b716" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;1D4A|9062)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="14000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1656,16 +1874,6 @@
                   <ConditionSingle Enabled="true" ExpressionL="${casterName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dragon Sight" Id="c2e9c499-9061-4df0-a8eb-dce52e15df34" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1CE6\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
-                <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="true" Grouping="And">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                </Condition>
-              </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dragonfire Dive" Id="54783d7a-a8aa-4196-9667-b29f41ccb915" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|60\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
@@ -1704,28 +1912,25 @@
                   <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="71dc5cdb-a2a1-4b78-afa4-5502b107d4b6" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="c2e9c499-9061-4df0-a8eb-dce52e15df34" ActionType="Trigger">
+                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="54783d7a-a8aa-4196-9667-b29f41ccb915" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="54783d7a-a8aa-4196-9667-b29f41ccb915" ActionType="Trigger">
+                  <Action OrderNumber="4" TriggerOp="CancelTrigger" TriggerId="e4b5dea8-c4c5-405f-8715-94fc5dbc1599" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="e4b5dea8-c4c5-405f-8715-94fc5dbc1599" ActionType="Trigger">
+                  <Action OrderNumber="5" TriggerOp="CancelTrigger" TriggerId="032a4bf7-58ee-4c02-bd6f-2aa17cb481b9" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="032a4bf7-58ee-4c02-bd6f-2aa17cb481b9" ActionType="Trigger">
+                  <Action OrderNumber="6" TriggerOp="CancelTrigger" TriggerId="8b6fe35e-a1ec-43ad-af1e-b4328d9587fb" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="8b6fe35e-a1ec-43ad-af1e-b4328d9587fb" ActionType="Trigger">
+                  <Action OrderNumber="7" TriggerOp="CancelTrigger" TriggerId="4229a57e-c42b-4b47-b840-c66cf518b05b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="4229a57e-c42b-4b47-b840-c66cf518b05b" ActionType="Trigger">
+                  <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="d407d00d-6d7b-49de-85e2-7fad802237e7" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="d407d00d-6d7b-49de-85e2-7fad802237e7" ActionType="Trigger">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="bcd9aa38-a0c8-4ee6-b9ff-29ac4fb3029d" ActionType="Trigger">
+                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="bcd9aa38-a0c8-4ee6-b9ff-29ac4fb3029d" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -1757,25 +1962,9 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Spineshatter Dive" Id="d407d00d-6d7b-49de-85e2-7fad802237e7" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|5F\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Winged Glide" Id="d407d00d-6d7b-49de-85e2-7fad802237e7" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|9057\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+59000,${_systemtimems})" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="And" />
-                  </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+59000)">
-                    <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                    </Condition>
-                  </Action>
-                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -1830,7 +2019,7 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Riddle of Earth" Id="3b1b64ea-2bc4-4da1-b616-583bb0bbea88" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1CE2\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -2058,6 +2247,91 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1099511627776" Id="9aba7f81-487a-4aef-a09e-6a838058893c" Name="VPR" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Serpent's Ire" Id="00cf2eed-8911-423c-8ea2-4f94b18694be" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|8757\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="None" Name="! - Cancel All Viper Triggers" Id="3b0a3800-039b-449e-b8df-d2493be065eb" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+                <Actions>
+                  <Action OrderNumber="1" TriggerOp="CancelTrigger" TriggerId="d85cfd82-4dce-42e1-9a45-c483478b3592" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" TriggerOp="CancelTrigger" TriggerId="00cf2eed-8911-423c-8ea2-4f94b18694be" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" TriggerOp="CancelTrigger" TriggerId="ad5fddfd-eebe-4fff-9fb4-f57a8c0f2a43" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Dreadwinder/Pit of Dread" Id="d85cfd82-4dce-42e1-9a45-c483478b3592" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|873[F|C]\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobChargesDread" VariableExpression="3" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobChargesDread}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobChargesDreadCD" VariableExpression="if(${var:AhoJobChargesDread}&lt;3,${var:AhoJobChargesDreadCD}+40000,${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobChargesDread" VariableExpression="${var:AhoJobChargesDread}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobChargesDread" VariableExpression="${var:AhoJobChargesDread}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobChargesDreadCD}-${_systemtimems}+40000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobChargesDread}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" UseTTSTextExpression="Dread" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Slither" Id="ad5fddfd-eebe-4fff-9fb4-f57a8c0f2a43" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|8756\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+29000,${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+29000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
@@ -2078,7 +2352,23 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Drill/Bioblaster" Id="717c3da7-312e-476d-ad84-35953f1bd833" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|407[23]\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="19000" RefireInterrupt="True">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,&#xD;&#xA;${var:AhoJobCharges${spell}CD}+20000,&#xD;&#xA;${_systemtimems})" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+20000)">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -2412,7 +2702,7 @@
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="137438953472" Id="53dcd447-9fb1-4502-a80b-28d6ba77b4cd" Name="DNC" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Curing Waltz" Id="ea0070e1-cfa2-4813-beb7-b66a4ac86d7a" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|E38F\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Curing Waltz" Id="ea0070e1-cfa2-4813-beb7-b66a4ac86d7a" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3E8F\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2622,7 +2912,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Requiescat" Id="2703c718-18c2-4e22-a225-9666a0769aea" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1CD7\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Requiescat/Imperator" Id="2703c718-18c2-4e22-a225-9666a0769aea" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;1CD7|9039)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2632,7 +2922,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sentinel" Id="a330ea2c-891b-4e6d-812a-8b24737a1ecc" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|11\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sentinel/Guardian" Id="a330ea2c-891b-4e6d-812a-8b24737a1ecc" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;11|9038)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2642,7 +2932,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spirits Within" Id="4a89fa5f-dd54-461a-ae8c-891f29801e38" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1D\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spirits Within/Expiacion" Id="4a89fa5f-dd54-461a-ae8c-891f29801e38" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;1D|6493)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2811,7 +3101,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Vengence" Id="11c3a1da-ccbd-40ad-9b67-76c1b40358a7" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|2C\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Vengence/Damnation" Id="11c3a1da-ccbd-40ad-9b67-76c1b40358a7" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;2C|903B)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2885,14 +3175,14 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Infuriate" Id="5a7b6e8f-1207-4e09-aed7-179a671deb1b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|34\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Infuriate (Needs Fixing : CD goes down with FC use)" Id="5a7b6e8f-1207-4e09-aed7-179a671deb1b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|34\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="3" ActionType="Variable">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
                       <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;3,${var:AhoJobCharges${spell}CD}+60000,${_systemtimems})" ActionType="Variable">
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,${var:AhoJobCharges${spell}CD}+60000,${_systemtimems})" ActionType="Variable">
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
@@ -2996,7 +3286,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shadow Wall" Id="343fa7a2-5c60-48e9-ba82-79c2e7e868aa" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|E34\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shadow Wall/Vigil" Id="343fa7a2-5c60-48e9-ba82-79c2e7e868aa" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;E34|903F)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -3006,7 +3296,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Plunge" Id="ab9dc753-5cf3-48cb-a175-806cb3dd061b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|E38\|(?&lt;spell&gt;[^|]+)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Shadowstride" Id="ab9dc753-5cf3-48cb-a175-806cb3dd061b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|903E\|(?&lt;spell&gt;[^|]+)\|">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
@@ -3058,16 +3348,16 @@
                   <Action OrderNumber="8" TriggerOp="CancelTrigger" TriggerId="ca4236d0-e392-4fcb-b4fc-9aa58a424f74" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="ab9dc753-5cf3-48cb-a175-806cb3dd061b" ActionType="Trigger">
+                  <Action OrderNumber="9" TriggerOp="CancelTrigger" TriggerId="3026f424-7238-489f-857c-9c886ad37a12" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="3026f424-7238-489f-857c-9c886ad37a12" ActionType="Trigger">
+                  <Action OrderNumber="10" TriggerOp="CancelTrigger" TriggerId="343fa7a2-5c60-48e9-ba82-79c2e7e868aa" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="343fa7a2-5c60-48e9-ba82-79c2e7e868aa" ActionType="Trigger">
+                  <Action OrderNumber="11" TriggerOp="CancelTrigger" TriggerId="c06793bb-73ba-409a-baaf-5ebe37f0bc95" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="c06793bb-73ba-409a-baaf-5ebe37f0bc95" ActionType="Trigger">
+                  <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="ab9dc753-5cf3-48cb-a175-806cb3dd061b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -3168,7 +3458,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Nebula" Id="362c7802-bb0b-4945-8194-b034195efe31" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F14\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Nebula/Great Nebula" Id="362c7802-bb0b-4945-8194-b034195efe31" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;3F14|9047)\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -3208,7 +3498,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Rough Divide" Id="87853282-fdcd-412c-a2a2-9be583dabc25" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|3F1A\|(?&lt;spell&gt;[^|]+)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Trajectory" Id="87853282-fdcd-412c-a2a2-9be583dabc25" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|9046\|(?&lt;spell&gt;[^|]+)\|">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
@@ -3272,13 +3562,13 @@
                   <Action OrderNumber="12" TriggerOp="CancelTrigger" TriggerId="a12f2910-666d-4760-bae6-55ce0152c503" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="13" TriggerOp="CancelTrigger" TriggerId="87853282-fdcd-412c-a2a2-9be583dabc25" ActionType="Trigger">
+                  <Action OrderNumber="13" TriggerOp="CancelTrigger" TriggerId="412ff50f-1e0f-485f-b977-eb78aa941208" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="14" TriggerOp="CancelTrigger" TriggerId="412ff50f-1e0f-485f-b977-eb78aa941208" ActionType="Trigger">
+                  <Action OrderNumber="14" TriggerOp="CancelTrigger" TriggerId="cc5850f5-6af7-4d9a-b487-452ab8e09b0c" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="cc5850f5-6af7-4d9a-b487-452ab8e09b0c" ActionType="Trigger">
+                  <Action OrderNumber="15" TriggerOp="CancelTrigger" TriggerId="87853282-fdcd-412c-a2a2-9be583dabc25" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -3440,8 +3730,15 @@
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Swiftcast" Id="6475b05e-2d2d-4346-adec-46e8c842e85a" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1D89\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
             <Actions>
-              <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
-                <Condition Enabled="false" Grouping="Or" />
+              <Action OrderNumber="1" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="39000">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="19000" RefireInterrupt="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].level}" ExpressionTypeL="Numeric" ExpressionR="94" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
