@@ -192,7 +192,7 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Astral/Umbral Draw" Id="dc1cd034-c9c6-4c90-ae5d-2084f76cf4d8" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|909[9A]\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="29000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="59000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -2565,7 +2565,7 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Nature's Minne" Id="4ba61c01-9305-4d57-a5ec-40f0bb3f73b2" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1CF0\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="89000" RefireInterrupt="True">
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS" ExecutionDelayExpression="119000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
