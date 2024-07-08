@@ -1,6 +1,6 @@
 # Let's Talk Regex
 
-Make sure you do check out [Quisquous Log Guide](https://github.com/quisquous/cactbot/blob/master/docs/LogGuide.md)
+Make sure you do check out [Quisquous Log Guide](https://github.com/OverlayPlugin/cactbot/blob/main/docs/LogGuide.md)
 
 Here, we have 2 choices : Either use "ACT-Formatted" log lines (fields are `:` separated), or use "Raw Network Lines" (fields are `|` formatted).  
 
@@ -28,7 +28,7 @@ First, let's see we have ... let's take a simple `Auto Attack` line to start wit
 ```
 Looks scary? Worry not. We can and will break it down.  
 
-Again, don't hesitate to reference [Quisquous Log Guide](https://github.com/quisquous/cactbot/blob/master/docs/LogGuide.md). It has a Table Of Contents at the top.  
+Again, don't hesitate to reference [Quisquous Log Guide](https://github.com/OverlayPlugin/cactbot/blob/main/docs/LogGuide.md). It has a Table Of Contents at the top.  
 
 How does that help? Well, Network lines have the LineID as the first field of the line. `21` in this case. So, combined with the log guide from above, we can easily check that specific line structure : https://github.com/quisquous/cactbot/blob/main/docs/LogGuide.md#line-21-0x15-networkability (If the link doesn't scroll to the correct place, try refreshing the page, and/or manually scrolling to it. Or, scroll all the way to the top and click on the correct link again.)  
 
