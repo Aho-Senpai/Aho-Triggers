@@ -7,13 +7,13 @@
         <Triggers>
           <Trigger Enabled="true" Source="None" Sequential="True" Name="# Misc Repo Settings" Id="19e6796e-924c-41e6-a6f4-2f01d9dcadf7" RegularExpression="" EditAutofire="True">
             <Actions>
-              <Action OrderNumber="1" TextAuraFontSize="15.75" TextAuraName="MiscRepoPotTextPlacer" TextAuraExpression="Infusion PLACER" TextAuraXIniExpression="${_screenwidth}/2-59" TextAuraYIniExpression="${_screenheight}/2-40" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="1" TextAuraFontSize="15.75" TextAuraName="MiscRepoPotTextPlacer" TextAuraExpression="Infusion PLACER" TextAuraXIniExpression="${_screenwidth}/2-59" TextAuraYIniExpression="${_screenheight}/2-40" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="2" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownTextPlacer" TextAuraExpression="Countdown PLACER" TextAuraXIniExpression="${_screenwidth}/2-75" TextAuraYIniExpression="${_screenheight}/3-40" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="2" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownTextPlacer" TextAuraExpression="Countdown PLACER" TextAuraXIniExpression="${_screenwidth}/2-75" TextAuraYIniExpression="${_screenheight}/3-40" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="3" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoPulTimerTextPlacer" TextAuraExpression="Pull Timer PLACER" TextAuraXIniExpression="${_screenwidth}/2-50" TextAuraYIniExpression="${_screenheight}/1.5-25" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="3" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoPulTimerTextPlacer" TextAuraExpression="Pull Timer PLACER" TextAuraXIniExpression="${_screenwidth}/2-50" TextAuraYIniExpression="${_screenheight}/1.5-25" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="4" ActionType="Placeholder" ExecutionDelayExpression="500" Description="^ ONLY EDIT ACTIONS ABOVE ^" DescriptionOverride="True">
@@ -52,13 +52,13 @@
               <Action OrderNumber="15" TableVariableOp="Set" TableVariableExpressionType="Numeric" TableVariableName="MiscRepoSettings" TableVariableExpression="${_textaura[MiscRepoPulTimerTextPlacer].y}" TableVariableX="4" TableVariableY="3" ActionType="TableVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="16" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraName="MiscRepoPotTextPlacer" TextAuraExpression="Potion Timer Text Goes HERE" TextAuraXIniExpression="${_screenwidth}/2" TextAuraYIniExpression="${_screenheight}/3" TextAuraWIniExpression="300" TextAuraHIniExpression="20" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" ExecutionDelayExpression="1000">
+              <Action OrderNumber="16" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraName="MiscRepoPotTextPlacer" TextAuraExpression="Potion Timer Text Goes HERE" TextAuraXIniExpression="${_screenwidth}/2" TextAuraYIniExpression="${_screenheight}/3" TextAuraWIniExpression="300" TextAuraHIniExpression="20" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" ExecutionDelayExpression="1000">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="17" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownTextPlacer" TextAuraExpression="Countdown PLACER" TextAuraXIniExpression="${_screenwidth}/2-60" TextAuraYIniExpression="${_screenheight}/3-40" TextAuraWIniExpression="120" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="17" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownTextPlacer" TextAuraExpression="Countdown PLACER" TextAuraXIniExpression="${_screenwidth}/2-60" TextAuraYIniExpression="${_screenheight}/3-40" TextAuraWIniExpression="120" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="18" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoPulTimerTextPlacer" TextAuraExpression="Pull Timer PLACER" TextAuraXIniExpression="${_screenwidth}/2-50" TextAuraYIniExpression="${_screenheight}/1.5-25" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="18" TextAuraOp="DeactivateAura" TextAuraFontSize="15.75" TextAuraForeground="Red" TextAuraName="MiscRepoPulTimerTextPlacer" TextAuraExpression="Pull Timer PLACER" TextAuraXIniExpression="${_screenwidth}/2-50" TextAuraYIniExpression="${_screenheight}/1.5-25" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -70,7 +70,7 @@
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Countdown" Id="728eacfa-8b25-4731-9191-9c3a3fc5ee25" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in (?&lt;countdown&gt;\d+) seconds!" PrevActions="Interrupt">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="${countdown} seconds" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraName="MiscRepoCountdownText" TextAuraExpression="${numeric:round((-${countdown}*1000+${_sincems})/1000, 1)}" TextAuraXIniExpression="${tvar:MiscRepoSettings[3][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[3][3]}" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${countdown}-${_since}-1" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
+              <Action OrderNumber="1" UseTTSTextExpression="${countdown} seconds" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="Red" TextAuraOutline="white" TextAuraName="MiscRepoCountdownText" TextAuraExpression="${numeric:round((-${countdown}*1000+${_sincems})/1000, 1)}" TextAuraXIniExpression="${tvar:MiscRepoSettings[3][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[3][3]}" TextAuraWIniExpression="150" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${countdown}-${_since}-1" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -78,12 +78,12 @@
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Pot/Infu/Tincture" Id="16330d3c-d557-4d56-a69e-30c17d6c4988" RegularExpression="^00\|[^|]+\|082C\|\|You use a [\w\- ]+ of (strength|dexterity|vitality|intelligence|mind) ?(?&lt;hq&gt;[]?)\.">
             <Actions>
-              <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraName="HQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+270-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="270-${_since}" TextAuraUseOutline="True" TextAuraFontName="Arial Black" ActionType="TextAura">
+              <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraOutline="white" TextAuraName="HQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+270-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="270-${_since}" TextAuraFontName="Arial Black" ActionType="TextAura">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${hq}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Action>
-              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraName="NQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+300-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="300-${_since}" TextAuraUseOutline="True" TextAuraFontName="Arial Black" ActionType="TextAura">
+              <Action OrderNumber="2" TextAuraEffect="Bold" TextAuraFontSize="15.75" TextAuraOutline="white" TextAuraName="NQPotTimerText" TextAuraExpression="Infusion in: ${numeric:+300-${_since}}s" TextAuraXIniExpression="${tvar:MiscRepoSettings[2][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[2][3]}" TextAuraWIniExpression="118" TextAuraHIniExpression="80" TextAuraOIniExpression="100" TextAuraTTLTickExpression="300-${_since}" TextAuraFontName="Arial Black" ActionType="TextAura">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${hq}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
                 </Condition>
@@ -93,7 +93,7 @@
           </Trigger>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="AURA - Pull Duration" Id="d4cdafea-da04-47e9-b44f-2e00e97efc3b" RegularExpression="00\|[^|]*\|0039\|\|Engage!">
             <Actions>
-              <Action OrderNumber="1" TextAuraAlignment="BottomCenter" TextAuraEffect="Bold" TextAuraFontSize="27.75" TextAuraForeground="Red" TextAuraName="MiscRepoPullDuration" TextAuraExpression="${numeric:floor(${_since}/60)}:${numeric:${_since}-${numeric:${numeric:floor(${_since}/60)}*60}}" TextAuraXIniExpression="${tvar:MiscRepoSettings[4][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[4][3]}" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="1" TextAuraAlignment="BottomCenter" TextAuraEffect="Bold" TextAuraFontSize="27.75" TextAuraForeground="Red" TextAuraOutline="white" TextAuraName="MiscRepoPullDuration" TextAuraExpression="${numeric:floor(${_since}/60)}:${numeric:${_since}-${numeric:${numeric:floor(${_since}/60)}*60}}" TextAuraXIniExpression="${tvar:MiscRepoSettings[4][2]}" TextAuraYIniExpression="${tvar:MiscRepoSettings[4][3]}" TextAuraWIniExpression="100" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -152,12 +152,12 @@
           </Trigger>
           <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Countdown TTS" Id="57bc8eba-e410-48e1-80a3-ffa0402dc3f5" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in (?&lt;CD&gt;\d+) seconds!">
             <Actions>
-              <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${CD}" UseTTSRateExpression="+3" ActionType="UseTTS">
+              <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${CD}" UseTTSRateExpression="+5" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${CD}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </Condition>
               </Action>
-              <Action OrderNumber="2" TriggerId="57bc8eba-e410-48e1-80a3-ffa0402dc3f5" TriggerText="00|0|00B9||Battle commencing in ${numeric:${CD}-1} seconds!" ActionType="Trigger" ExecutionDelayExpression="1000">
+              <Action OrderNumber="2" TriggerId="57bc8eba-e410-48e1-80a3-ffa0402dc3f5" TriggerText="00|0|00B9||Battle commencing in ${numeric:${CD}-1} seconds!" ActionType="Trigger">
                 <Condition Enabled="true" Grouping="And">
                   <ConditionSingle Enabled="true" ExpressionL="${CD}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                 </Condition>
@@ -171,6 +171,121 @@
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
         </Triggers>
+      </Folder>
+      <Folder Id="e7451f35-ac18-492f-860b-1cf76c2cc6b2" Name="Positional Miss" Enabled="true">
+        <Folders>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="2097152" Id="e0b493bd-ea66-4ed6-a227-a65ef55f4157" Name="DRG" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="DRG Wheeling Thrust/Fang and Claw" Id="13a30611-5ac6-4ab0-a348-105a65c9ded7" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|DE[24]\|[^|]*\|[^|]*\|[^|]*\|3D">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="DRG Chaos Thrust" Id="cc34e265-a111-4015-a085-49232aa95d29" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|58\|[^|]*\|[^|]*\|[^|]*\|36">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="524288" Id="060e3493-f0b3-45b6-adfc-a7225b047ffd" Name="MNK" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MNK" Id="c6668c77-803d-4987-9ccf-9a5d17ab49e5" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;38|42)\|[^|]+\|[^|]+\|[^|]+\|7">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="536870912" Id="a2950ffe-3caa-496f-b5d8-2a21a8717d31" Name="NIN" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="NIN" Id="13823c11-c566-4085-b4d4-316a2b32d992" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;8CF|DEB)\|[^|]*\|[^|]*\|[^|]*\|[23]A">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="8589934592" Id="e178ba5c-4f1c-4a96-8179-57d03ed00ae9" Name="SAM" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="SAM" Id="cc7d8df8-e4db-4c25-b922-655b9e8818b8" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;1D3[A9])\|[^|]*\|[^|]*\|[^|]*\|43">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="274877906944" Id="2be7e571-f26c-41f2-8c92-0bb384de7eb7" Name="RPR" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="RPR" Id="334bef72-8e4e-4a8c-b73c-e5a483f77b85" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;5F3[EF])\|[^|]*\|[^|]*\|[^|]*\|7">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1099511627776" Id="2a1f1d1d-a157-415e-9c1e-408ff4b49350" Name="VPR" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="VPR Hunter's Coil/Swiftskin's Coil" Id="165fe663-2e1b-4760-8c0f-c031e86ce9ec" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;873[DE])[^|]*\|[^|]*\|[^|]*\|[^|]*\|7">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="VPR" Id="9f47b2ea-0f95-4cb9-9a88-fb96e662e6dc" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;skill&gt;873[2345])[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;flags&gt;[^3][^6][^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="Miss" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers />
       </Folder>
     </Folders>
     <Triggers>
@@ -199,35 +314,6 @@
         </Actions>
         <Condition Enabled="true" Grouping="And">
           <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${playerName}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-        </Condition>
-      </Trigger>
-      <Trigger Enabled="false" Name="Missed Combo" Id="2fa95c21-7b80-480c-8d33-4b6d5424e996" RegularExpression="1[56]:[A-F0-9]{8}:(?&lt;player&gt;[a-zA-Z-' ]{1,31}):(?&lt;skillID&gt;0F|DD3|DD2|4049|25|2A|2D|404E|E27|E30|4054|3F0B|3F11|3F15|4E|54|57|58|1CE5|405D|8C2|8CF|4068|DEB|1D37|1D3A|1D36|1D39|1D38|1D3D|1D3C|1CF4|1CF5|3E76|3E7A|1D68|1D69|1D58|1D5C|5F3E|5F3F):(?&lt;skill&gt;[a-zA-Z' ]{1,50}):[A-F0-9]{8}:[\w\-'èéêîïôàæûç, ]{1,99}:7[125]0\d03:" PeriodRefire="Deny" RefirePeriodExpression="500">
-        <Actions>
-          <Action OrderNumber="1" UseTTSTextExpression="${player} missed ${skill}" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="And" />
-          </Action>
-        </Actions>
-        <Condition Enabled="false" Grouping="Or" />
-      </Trigger>
-      <Trigger Enabled="false" Name="missed combo test" Id="e2a49151-5409-41d9-85f6-445b9fc28944" RegularExpression="1[56]:[A-F0-9]{8}:(?&lt;player&gt;[a-zA-Z-' ]{3,21}):(?&gt;0F|DD3|DD2|4049|25|2A|2D|404E|E27|E30|4054|3F0B|3F11|3F15|4E|54|57|58|1CE5|405D|8C2|8CF|4068|DEB|1D37|1D3A|1D36|1D39|1D38|1D3D|1D3C|1CF4|1CF5|3E76|3E7A|1D68|1D69|1D58|1D5C):(?&lt;combo&gt;[a-zA-Z-' ]{1,}):[A-F0-9]{8}:[\w-'èéêîïôàæûç, ]{1,51}:[A-F0-9]{1,8}:[A-F0-9]{1,8}:(0):">
-        <Actions>
-          <Action OrderNumber="1" PlaySpeechMyself="True" UseTTSTextExpression="${combo}" Enabled="False" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-          <Action OrderNumber="2" ActionType="SystemBeep">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-        </Actions>
-        <Condition Enabled="false" Grouping="Or" />
-      </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Positional miss (regex by @aya, adjusted for network lines by @Makar)" Id="105a27a8-4c16-439a-9765-00d10bf73417" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|((38|42|8(CF|D2)|5F3[EF]|DE[B24]|64AC|1D3[9A])\|[^|]+\|[^|]+\|[^|]+\|(7|3[9ADF]|4[36])|(DEB|58)\|[^|]+\|[^|]+\|[^|]+\|(36|44))">
-        <Actions>
-          <Action OrderNumber="1" UseTTSTextExpression="miss" ActionType="UseTTS">
-            <Condition Enabled="false" Grouping="Or" />
-          </Action>
-        </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Player Start using LB" Id="9389441d-a1be-47f7-adb9-2ca99de9fe8d" RegularExpression="^20\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;C[5-F]|109[0-8]|42D[12]|1EB[56]|611[AB]|108[EF]|D0)\|(?&lt;spell&gt;[^|]+)\|">
