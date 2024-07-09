@@ -2321,22 +2321,22 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Drill/Bioblaster" Id="717c3da7-312e-476d-ad84-35953f1bd833" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|407[23]\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Drill/Bioblaster" Id="717c3da7-312e-476d-ad84-35953f1bd833" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|407[23]\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="2" ActionType="Variable">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="AhoJobChargesDrill" VariableExpression="2" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:AhoJobChargesDrill}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                     </Condition>
                   </Action>
-                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,&#xD;&#xA;${var:AhoJobCharges${spell}CD}+20000,&#xD;&#xA;${_systemtimems})" ActionType="Variable">
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="AhoJobChargesDrillCD" VariableExpression="if(${var:AhoJobChargesDrill}&lt;2,${var:AhoJobChargesDrillCD}+20000,${_systemtimems})" ActionType="Variable">
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
-                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
+                  <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="AhoJobChargesDrill" VariableExpression="${var:AhoJobChargesDrill}-1" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+20000)">
+                  <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="AhoJobChargesDrill" VariableExpression="${var:AhoJobChargesDrill}+1" ActionType="Variable" ExecutionDelayExpression="(${var:AhoJobCharges${spell}CD}-${_systemtimems}+20000)">
                     <Condition Enabled="true" Grouping="And">
-                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobCharges${spell}}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:AhoJobChargesDrill}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
                     </Condition>
                   </Action>
                   <Action OrderNumber="5" PlaySpeechMyself="True" UseTTSTextExpression="${spell}" ActionType="UseTTS">
