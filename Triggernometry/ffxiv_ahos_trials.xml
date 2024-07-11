@@ -2623,123 +2623,7 @@
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="119[56]" Id="bffd8e70-7ca4-415b-b153-6dc9978498ff" Name="Worqor Lar Dor" Enabled="true">
             <Folders>
               <Folder Id="6ca8ffea-fffc-4ded-9f8c-a9cc9c0dca16" Name="EX" Enabled="true">
-                <Folders>
-                  <Folder Id="ff40f9e8-0d97-49db-a47d-53d340c4fe5d" Name="Valigarmanda EX" Enabled="false">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Susurrant Breath (cone)" Id="eee3106c-31d8-4966-9ed1-6df19e851b40" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|(8FC8|8FC5|8FC6)\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and pairs" ActionType="Variable" Description="fire" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" VariableOp="SetString" VariableName="_valichan_after" ActionType="Variable" Description="ice" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and move" ActionType="Variable" Description="lightning" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="4" UseTTSTextExpression="cone${var:_valichan_after}" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Strangling Coil (donut)" Id="820f7c53-bc54-4a7c-a662-770ac2daa14b" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|(8FCD|8FD0|8FCE)\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and pairs" ActionType="Variable" Description="fire" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" VariableOp="SetString" VariableName="_valichan_after" ActionType="Variable" Description="ice" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and move" ActionType="Variable" Description="lightning" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="4" UseTTSTextExpression="donut${var:_valichan_after}" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Slithering Strike (cleave)" Id="f7f76798-4aea-4e59-9b7c-ac8828284d68" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|(8FCB|8FCC|8FCA)\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and pairs" ActionType="Variable" Description="fire" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" VariableOp="SetString" VariableName="_valichan_after" ActionType="Variable" Description="ice" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" VariableOp="SetString" VariableName="_valichan_after" VariableExpression=" and move" ActionType="Variable" Description="lightning" DescriptionOverride="True">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:_valichan_skyruin}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="4" UseTTSTextExpression="go out ${var:_valichan_after}" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Skyruin (fire)" Id="8a5f6cb7-de33-4a83-9d8b-54f57fe983b5" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|8FD4\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="_valichan_skyruin" VariableExpression="1" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Skyruin (lightning)" Id="cf0ea9be-794b-4194-910a-e3da7682b4a4" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|8FD3\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="_valichan_skyruin" VariableExpression="3" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Skyruin (ice)" Id="3b579f4a-f97a-4958-8c15-c35b73290d6c" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|8FD2\|">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="_valichan_skyruin" VariableExpression="2" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Arcane Sphere" Id="4fc800cf-c5af-4496-b6c0-528c68934c5d" RegularExpression="^03\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|12857\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|(?&lt;x&gt;[^\|]*)\|(?&lt;y&gt;[^\|]*)\|">
-                        <Actions>
-                          <Action OrderNumber="1" UseTTSTextExpression="go left" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="go right" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
-                            </Condition>
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                </Folders>
+                <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Skyruin Ice : AoE Bleed" Id="c02add61-2ea6-436a-9d73-c57b930feef7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8FD1\|">
                     <Actions>
@@ -3043,6 +2927,97 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="1201" Id="6677b161-a8ca-42bf-a2d4-433e05669b3b" Name="Everkeep" Enabled="true">
+            <Folders>
+              <Folder Id="b311b6a5-6036-41ea-8f02-7fe5d63dc67a" Name="EX" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Actualize - AoE" Id="a4831f9b-e5d2-49d9-a650-f1da3b83e642" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|9398\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="AoE" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Dawn of an Age - AoE" Id="7294ddb3-991a-4b31-ac56-bef51b119fc4" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|9397\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="AoE" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Might of Vollok Left Sword" Id="70b2c68c-76b4-471f-af90-d9d3ef47f5b5" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|9369\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Go Boss Right" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Might of Vollok Right Sword" Id="ebe2b564-0199-49dd-999b-021f95749a99" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|9368\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Go Boss Left" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Phase Tracker" Id="d2a92c9a-fdc2-448d-860c-84d111044639" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|(?&lt;id&gt;93(?&gt;97|8[FA]|A2))\|">
+                    <Actions>
+                      <Action OrderNumber="1" VariableOp="SetString" VariableName="DTEX2Phase" VariableExpression="swords" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="9397" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" VariableOp="SetString" VariableName="DTEX2Phase" VariableExpression="knockaround" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="938F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" VariableOp="SetString" VariableName="DTEX2Phase" VariableExpression="lines" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="938A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" VariableOp="SetString" VariableName="DTEX2Phase" VariableExpression="arena" ActionType="Variable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="93A2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Z - Wipe or Clear Reset" Id="f588818b-0d1b-404f-9724-245f775c04b5" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+                    <Actions>
+                      <Action OrderNumber="1" VariableName="DTEX2Phase" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" FolderOp="CancelFolder" FolderId="b311b6a5-6036-41ea-8f02-7fe5d63dc67a" ActionType="Folder">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Bitter Whirlwind - TB Swap" Id="fecca459-da41-4a6a-a577-61927ade2ef2" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|993E\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Tank Buster Swap" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
