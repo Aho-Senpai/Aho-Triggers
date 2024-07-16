@@ -11,16 +11,18 @@
         <Trigger Active="True" Regex="(?#-- Brotherhood --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:1CE4:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Chain Stragagem -->
         <Trigger Active="True" Regex="(?#-- Chain Stratagem --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:1D0C:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Dokumori -->
+        <Trigger Active="True" Regex="(?#-- Dokumori --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:905D:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Divination -->
         <Trigger Active="True" Regex="(?#-- Divination --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:40A8:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Embolden -->
         <Trigger Active="True" Regex="(?#-- Embolden --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:1D60:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
-        <!-- Mug -->
-        <Trigger Active="True" Regex="(?#-- Mug --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:8C8:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Radiant Finale -->
         <Trigger Active="True" Regex="(?#-- Radiant Finale --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:64B9:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Searing Light -->
         <Trigger Active="True" Regex="(?#-- Searing Light --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:64C9:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
+        <!-- Starry Muse -->
+        <Trigger Active="True" Regex="(?#-- Starry Muse --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:8773:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
         <!-- Technical Step -->
         <Trigger Active="True" Regex="(?#-- Technical Step --)\A(?>AOE)?ActionEffect 1[56]:[A-F0-9]{8}:[^:]*:3F4[1234]:(?&lt;name&gt;[^:]*):" SoundData="${name}" SoundType="3" CategoryRestrict="False" Category="Raid Buffs by Aho Senpai" Timer="False" TimerName="" Tabbed="False" />
     </CustomTriggers>
