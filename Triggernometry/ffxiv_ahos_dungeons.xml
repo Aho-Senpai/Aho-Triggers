@@ -1456,7 +1456,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Portal Open - EN ONLY" Id="acf28438-3eaa-48a4-97a1-c679f7980816" RegularExpression="^00\|[^|]*\|0839\|\|The (?&gt;Beacon|Cairn) of Passage is activated!">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Portal Open - EN ONLY" Id="acf28438-3eaa-48a4-97a1-c679f7980816" RegularExpression="^00\|[^|]*\|0839\|\|The (?&gt;Beacon|Cairn|Pylon) of Passage is activated!">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Portal Open" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -1464,7 +1464,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duplicate Pommander - EN ONLY" Id="a978fb59-9dca-4ef2-b216-f583bd9831d9" RegularExpression="^00\|[^|]*\|0839\|\|You return the pomander of (?&lt;item&gt;[^|]*) to the coffer\. You cannot carry any more of that item\.">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duplicate Pommander - EN ONLY" Id="a978fb59-9dca-4ef2-b216-f583bd9831d9" RegularExpression="^00\|[^|]*\|0839\|\|You return the (?&gt;po|proto)mander of (?&lt;item&gt;[^|]*) to the coffer\. You cannot carry any more of that item\.">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="${item} duplicate" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -2116,6 +2116,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
+
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Entr'acte" Id="cf5ee2d2-aa69-49b2-9d24-527bb27fe03e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6465\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
