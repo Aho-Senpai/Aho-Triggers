@@ -7756,8 +7756,185 @@
                 </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^123[12]$" Id="3b95af1f-2df3-4d0c-8ca8-7f94808355ac" Name="AAC Light-heavyweight M4" Enabled="true">
-                <Folders />
-                <Triggers />
+                <Folders>
+                  <Folder Id="df805f6d-d067-4f48-b3dc-38c4589be6eb" Name="Custom Callouts" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Threefold Blast - 92AD - south&gt;north&gt;south" Id="18b9ba9a-298b-4339-9887-6d7249023dd3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92AD\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="south north south" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="fourfold Blast - 9B4F - south south north south" Id="79c21cfe-20cb-4185-b56c-d386db31c12b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B4F\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="south south north south" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="fivefold blast 9B56 south &gt; north &gt; south &gt; south &gt; north" Id="d9d1f4bb-5ea7-4a11-b879-9b307182356e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B56\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="south north south south north" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Adds Left/Right (North/South/East/West Safe) lines 26" Id="a50dfeaf-0a19-4a27-8a4d-30e9097d989a" RegularExpression="^26\|[^|]*\|808\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|(?&lt;count&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go North" ActionType="UseTTS" Description="Spawn East 31A : North Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="31A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="110" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go South" ActionType="UseTTS" Description="Spawn East 319 : South Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="110" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go South" ActionType="UseTTS" Description="Spawn West 31A : South Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="31A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="4" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go North" ActionType="UseTTS" Description="Spawn West 319 : North Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="5" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West" ActionType="UseTTS" Description="Spawn North 31A : West Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="31A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="6" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East" ActionType="UseTTS" Description="Spawn North 319 : East Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="7" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East" ActionType="UseTTS" Description="Spawn South 31A : East Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="31A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="110" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="8" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West" ActionType="UseTTS" Description="Spawn South 319 : West Safe" DescriptionOverride="True">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="110" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Threefold Blast - 92B0 - North South North" Id="04201c88-bd2a-4f5b-953c-0da2e7978918" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92B0\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="north south north" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="fourfold Blast - 9B55 - north north south north" Id="cb3322ee-f099-42ef-a7ce-a05f730b0895" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B55\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="north north south north" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="fivefold blast 9B57 north south north north south" Id="0cbbb275-5bf5-4ddf-8615-3d585cf3c399" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B57\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="north south north north south" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wrath of Zeus - AoE" Id="1b834aff-fed9-4a6e-9a82-4384f871494d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sidewise Spark - Go Left/Right" Id="8f6c9506-fd95-4b7b-af5a-fb3cbd83a1c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92B(?&lt;move&gt;[CDEF])\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="bb1a8cb2-a03e-4e7e-b3b9-6b6630d39640" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="c181898f-5b9b-45a8-a7c0-517920bde931" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Jolt - TB on ${player}" Id="ba322148-a731-48cf-8f7a-f092ab2cb874" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C8\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="b244f12c-d14a-40dc-9edc-e55911e4b031" TriggerText="${_ffxivparty[${targetID}].name}" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Bolt - Stack" Id="fd20c450-268a-4f13-8f8b-388a75e29055" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C2\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="4886c512-f3e3-4ae5-8426-5a06ef8dbcb4" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Soaring Soulpress - Stack" Id="d1ef759a-4a87-4701-a06c-92f412e044a5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C0\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="4886c512-f3e3-4ae5-8426-5a06ef8dbcb4" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
               </Folder>
             </Folders>
             <Triggers />
@@ -8213,6 +8390,7 @@
                               </Action>
                               <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="ダイビングとイン" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
+
                               </Action>
                               <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -9489,6 +9667,7 @@
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
+
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
                         </Triggers>
@@ -10652,7 +10831,6 @@
                                 </Condition>
                               </Action>
                               <Action OrderNumber="10" JsonEndpointExpression="http://localhost:1337/place" JsonPayloadExpression="{&quot;Two&quot;:{&quot;X&quot;:108.0,&quot;Y&quot;:0.0,&quot;Z&quot;:108.0,&quot;ID&quot;:2,&quot;Active&quot;:true}}" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Four" VariableOp="SetString" VariableName="Location2" VariableExpression="Four" ActionType="Variable" Asynchronous="False" RefireInterrupt="True">
-
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder.size}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                   <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder[1]}" ExpressionTypeL="Numeric" ExpressionR="92" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -12011,6 +12189,28 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Stack" Id="4886c512-f3e3-4ae5-8426-5a06ef8dbcb4" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Stack" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Junte" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Packez-vous" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
