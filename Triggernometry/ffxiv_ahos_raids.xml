@@ -7659,7 +7659,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Barbarous Barrage - KB Towers" Id="eb7b5338-9b10-47c5-9e8f-2537b32f0a4c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93B2\|">
                         <Actions>
@@ -7668,7 +7667,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7735,7 +7733,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Fire Spin - Clockwise/Counterclockwise" Id="c2bb3e3c-1272-410c-b4be-74a4ea0d3096" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93D(?&lt;move&gt;[01])\|">
                     <Actions>
@@ -7751,42 +7748,56 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^123[12]$" Id="3b95af1f-2df3-4d0c-8ca8-7f94808355ac" Name="AAC Light-heavyweight M4" Enabled="true">
                 <Folders>
                   <Folder Id="df805f6d-d067-4f48-b3dc-38c4589be6eb" Name="Custom Callouts" Enabled="true">
-                    <Folders />
+                    <Folders>
+                      <Folder Id="0f7680b4-4189-4a42-9e80-3f5646bc8a7d" Name="3/4/5fold Blast" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="XFold Blast (TTS + Text Aura)" Id="5558f73a-95df-4404-8a1b-93c237cbf8d5" RegularExpression="^26\|[^|]*\|B9A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;move&gt;2D[34])\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="South" ActionType="UseTTS">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2D3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="North" ActionType="UseTTS">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2D4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="AhoAACM4NormalXFold" ListVariableExpression="South" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="South" ActionType="ListVariable">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2D3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="AhoAACM4NormalXFold" ListVariableExpression="North" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="South" ActionType="ListVariable">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2D4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="5" SoundRouting="None" TTSRouting="None" TextAuraFontSize="36" TextAuraForeground="white" TextAuraOutline="black" TextAuraName="AhoAACM4NormalXFoldText" TextAuraExpression="${lvar:AhoAACM4NormalXFold[1]} &gt; ${lvar:AhoAACM4NormalXFold[2]} &gt; ${lvar:AhoAACM4NormalXFold[3]} &gt; ${lvar:AhoAACM4NormalXFold[4]} &gt; ${lvar:AhoAACM4NormalXFold[5]}" TextAuraXIniExpression="${_screenwidth}/2 - 450" TextAuraYIniExpression="${_screenheight}/4 - 30" TextAuraWIniExpression="900" TextAuraHIniExpression="60" TextAuraOIniExpression="100" TextAuraTTLTickExpression="15-${_since}" TextAuraFontName="Tahoma" ActionType="TextAura">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Reset List On Xfold Cast" Id="64ba2111-a543-4b0b-b590-255a53c651b0" RegularExpression="^20\|[[^|]*\|[^|]*\|^|]*\|9(2(AB|B0)|B(4F|5[567]))">
+                            <Actions>
+                              <Action OrderNumber="1" ListVariableName="AhoAACM4NormalXFold" SoundRouting="None" TTSRouting="None" ActionType="ListVariable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Threefold Blast - 92AD - south&gt;north&gt;south" Id="18b9ba9a-298b-4339-9887-6d7249023dd3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92AD\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="south north south" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="fourfold Blast - 9B4F - south south north south" Id="79c21cfe-20cb-4185-b56c-d386db31c12b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B4F\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="south south north south" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="fivefold blast 9B56 south &gt; north &gt; south &gt; south &gt; north" Id="d9d1f4bb-5ea7-4a11-b879-9b307182356e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B56\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="south north south south north" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Adds Left/Right (North/South/East/West Safe) lines 26" Id="a50dfeaf-0a19-4a27-8a4d-30e9097d989a" RegularExpression="^26\|[^|]*\|808\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|(?&lt;count&gt;[^|]*)\|">
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go North" ActionType="UseTTS" Description="Spawn East 31A : North Safe" DescriptionOverride="True">
@@ -7847,34 +7858,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Threefold Blast - 92B0 - North South North" Id="04201c88-bd2a-4f5b-953c-0da2e7978918" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92B0\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="north south north" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="fourfold Blast - 9B55 - north north south north" Id="cb3322ee-f099-42ef-a7ce-a05f730b0895" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B55\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="north north south north" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="fivefold blast 9B57 north south north north south" Id="0cbbb275-5bf5-4ddf-8615-3d585cf3c399" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B57\|">
-                        <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="north south north north south" ActionType="UseTTS">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -7887,7 +7870,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sidewise Spark - Go Left/Right" Id="8f6c9506-fd95-4b7b-af5a-fb3cbd83a1c3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92B(?&lt;move&gt;[CDEF])\|">
                     <Actions>
@@ -7905,7 +7887,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Jolt - TB on ${player}" Id="ba322148-a731-48cf-8f7a-f092ab2cb874" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C8\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                     <Actions>
@@ -7914,7 +7895,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Bolt - Stack" Id="fd20c450-268a-4f13-8f8b-388a75e29055" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C2\|">
                     <Actions>
@@ -7923,7 +7903,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Soaring Soulpress - Stack" Id="d1ef759a-4a87-4701-a06c-92f412e044a5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|92C0\|">
                     <Actions>
@@ -7932,7 +7911,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -8390,7 +8368,6 @@
                               </Action>
                               <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="ダイビングとイン" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
-
                               </Action>
                               <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerId="3ce724b2-c4ac-46ec-a443-18bbef2991f8" TriggerText=":ravendive:lunardynamo::" TriggerForce="refire,parent" ActionType="Trigger">
                                 <Condition Enabled="false" Grouping="Or" />
@@ -9667,7 +9644,6 @@
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
-
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
                         </Triggers>
@@ -9702,6 +9678,7 @@
                   <Folder Id="eb894465-6a60-4752-aab6-c52399b85c9f" Name="P1 - Garuda" Enabled="true">
                     <Folders />
                     <Triggers>
+
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Friction" Id="6b5f0760-f21b-4304-825c-23502c014bd5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2B58\|">
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Stack" ActionType="UseTTS">
@@ -10708,6 +10685,7 @@
                       <Folder Id="b678173b-ddf0-4702-8d85-76143bf614a1" Name="Optical Sight" Enabled="true">
                         <Folders />
                         <Triggers>
+
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Optical Sight - Spread" Id="17160c58-786a-48ee-802f-252c780dddef" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|488A\|">
                             <Actions>
                               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Spread" ActionType="UseTTS">
@@ -10815,6 +10793,7 @@
                               </Action>
                               <Action OrderNumber="7" LogMessageText="delay" SoundRouting="None" TTSRouting="None" ActionType="LogMessage" ExecutionDelayExpression="50" Asynchronous="False" DebugLevel="None">
                                 <Condition Enabled="false" Grouping="Or" />
+
                               </Action>
                               <Action OrderNumber="8" JsonEndpointExpression="http://localhost:1337/place" JsonPayloadExpression="{&quot;Two&quot;:{&quot;X&quot;:100.0,&quot;Y&quot;:0.0,&quot;Z&quot;:100.0,&quot;ID&quot;:2,&quot;Active&quot;:true}}" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Center" VariableOp="SetString" VariableName="Location2" VariableExpression="Center" ActionType="Variable" Asynchronous="False" RefireInterrupt="True">
                                 <Condition Enabled="true" Grouping="And">
@@ -11012,6 +10991,7 @@
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${ColorTarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:ColorHeadMarkValue}" ExpressionTypeL="String" ExpressionR="49" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+
                                 </Condition>
                               </Action>
                               <Action OrderNumber="6" OBSEndPoint="" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="BLUE C &amp; 3" ActionType="UseTTS">
@@ -11421,6 +11401,7 @@
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
+
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ascalon's Mercy Concealed" Id="29c5d0e6-85a3-4337-bfa9-f7cb4a17ae1c" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|63C8\|">
@@ -11464,6 +11445,7 @@
                                 <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxiplayer}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                               </ConditionGroup>
                             </Condition>
+
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -12210,7 +12192,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
