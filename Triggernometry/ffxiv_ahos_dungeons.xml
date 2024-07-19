@@ -1430,7 +1430,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Draong's Voice" Id="491c54e8-5da4-45d4-ada2-9b35c0ba7899" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3090\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Dragon's Voice" Id="491c54e8-5da4-45d4-ada2-9b35c0ba7899" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3090\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1447,6 +1447,1180 @@
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1099|110[0-8]$" Id="c45292a0-2699-4243-8774-153fdfce2152" Name="Eureka Orthos" Enabled="true">
+            <Folders>
+              <Folder Id="61603a25-3975-4e46-bc4d-4d2d49d655d4" Name="1-10" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Grenade Big Burst" Id="3964c6ca-fe73-49bb-9c92-0915ce00b366" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7E7D\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - KB - Behemoth Wild Horn" Id="b388087f-76d6-40e7-a5d8-b033161335eb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7E7C\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="89e7cae8-6fbf-410d-af87-d5b4c475265c" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Fachan Dread Gaze" Id="202b85b3-1843-475d-8deb-903e0c288d3c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7E82\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Gancanagh Mandrastorm" Id="382afb41-4c20-4166-bafd-76bbff3142fa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AF7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="a52c49fd-145b-462c-8c50-26f0aee3f6ed" Name="11-20" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front - Sawtooth Mean Thrash" Id="3aa3e1fb-26e1-4ed6-950e-e299b3e32f14" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7E93\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="3be9da89-c688-44a9-8e54-48e56b288ad6" Name="21-30" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Dragon Swinge" Id="a3e7f969-9996-4c1b-8686-974e26c3615f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EA5\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Orthoknight Electromagnetism" Id="3ea801c3-8720-41e8-8a94-e2b5edb5dcee" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7E9D\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Vanara Scythe Tail" Id="5eb8ce87-df76-4032-bece-01de89924acf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EAC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Diamondback" Id="e260cef0-27d8-4fe5-a1bf-3720ed8e81ad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EAF\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="74d40c2b-974b-4703-97fe-999cec04750e" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Cold Gaaze" Id="d617331b-b43e-4c4d-bdf7-0781b6e5ed4b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EAB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Middle - Dark Wyrmwing" Id="3e941072-e599-45f4-9747-f032ebfa3356" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C65\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="103b0838-f0cf-4913-b9ce-87e14bf85100" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Sides - Dark Wyrmtail" Id="8b1250f8-b43d-465f-9f1c-e8f1c59301a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C63\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="cba2e850-8a92-4139-b069-a4b693ab9d0b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="e1363663-e4a3-492d-a766-c2dfdfc77754" Name="31-40" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Double Hex Eye" Id="9b74e786-3cf8-4ca7-b74d-48afc396d28c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EB5\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Orthospider Particle Collision" Id="65539053-4317-4aa3-b80f-327faba9787c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F25\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Cursed Gaze" Id="c0f594c5-4e70-48e1-b4a9-1c4b513a2343" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EC0\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - 111-tonze Swing" Id="646ca185-8893-4be0-9527-d02b5d5e9a01" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EB8\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - 111-tonze Swipe" Id="2eda5cb1-99aa-48ff-af04-5aeeb5736b07" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EB7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Forearming" Id="5c9b7512-dcf1-41b2-b9a2-7e873dc8d755" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8193\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Atmospheric Displacement" Id="5f270308-ceef-48e3-bf24-9a17e69412f8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EB4\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Ram's Voice" Id="150c1322-cba9-48ed-bf16-99d108f24277" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EBB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Dragon's Voice" Id="8586013d-b399-4703-9dc7-dd7742c679b5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EBC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - KB - Kneeling Snath" Id="c7a3f009-4f50-47d3-a208-a1a8d90e6d8b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EC1\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="89e7cae8-6fbf-410d-af87-d5b4c475265c" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - KB - Turbine" Id="87564322-e28c-4916-a417-7009cc547729" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AEB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="89e7cae8-6fbf-410d-af87-d5b4c475265c" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - CUSTOM - Twister" Id="f416938e-80f0-4e26-8f62-791d476937dd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AEC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Twister" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Tornades" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - CUSTOM - Twisting Dive" Id="10515bc3-5c33-4092-b6a5-72949aef5f24" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AEF\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Divebomb" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="BOMBE PLONGEANTE" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - CUSTOM - Twister (End Cast)" Id="502186c9-5275-4609-b677-a3c4a99ccb87" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|7AEF\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Twister" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Tornades" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="710ecdbc-0df8-49b8-8ac5-9897c9086f7e" Name="41-50" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Back - Elbow Drop" Id="6386d48f-fe14-4ffd-8de5-ad494f60b54a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8198\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="51d52878-8ca5-4565-9826-e77b69641254" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Quake" Id="7743e4ab-7bb2-45c2-8f6f-8ef7f95722ea" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ED6\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="74d40c2b-974b-4703-97fe-999cec04750e" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Bloody Puddle" Id="fc3107da-09ca-48b3-82ab-d98859b07f00" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ECC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Sickly Sneeze" Id="513fcf7e-1c67-4fec-a7d9-cd1f88a8976c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ED9\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Gelato Explosion" Id="dc9e180b-9d55-4152-9977-c072cf2f2488" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EC4\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - CUSTOM - Abyssal Cry" Id="4e106f45-4749-42c6-83a5-c833b9c8f13a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ED3\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Break Line of Sight" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="briser la ligne de vue" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Right - Leftbreathed Thunder" Id="e5e0dbad-c1ae-4d1b-8ac2-48e630267855" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C75\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Left - Rightbreathed Thunder" Id="1cc54b94-28cd-4a9c-ae71-cd3e33bbfc23" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C77\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Out then In - Songs of Ice and Thunder" Id="1593a58e-fbae-4e5b-b800-9bed4553e0c4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C6B\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2346c43e-b61f-4db4-9d95-4445fa4cb333" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In then Out - Songs of Thunder and Ice" Id="8477ba26-4beb-4b80-928a-b20e7f1b38b0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C6C\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="be0a3fe9-ed59-401c-bf94-4b92feb59571" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Out then In - Cold Thunder" Id="046c3be6-e953-4804-9dde-61715d564d35" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C6F\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2346c43e-b61f-4db4-9d95-4445fa4cb333" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In then Out - Thunderous Cold" Id="de4f2696-d501-4cc2-90a6-fb024c2acb10" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C70\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="be0a3fe9-ed59-401c-bf94-4b92feb59571" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="f4ba3371-3dd2-476f-9d7b-5e3cba498ada" Name="51-60" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Hypothermal Combustion" Id="9cde5b49-f545-433b-bff3-1ffcbd64bb2a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EF0\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - CUSTOM + AURA - Ice Spikes" Id="ba14701f-b665-457c-b217-3c81c0b06d34" RegularExpression="^26\|[^|]*\|C6\|[^|]*\|(?&lt;duration&gt;[^.]*)\.[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Stop Attacking ${target}" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TextAuraFontSize="27.75" TextAuraForeground="white" TextAuraOutline="Black" TextAuraName="AhoEurekaOrthosCounterAttackText" TextAuraExpression="Stop Attacking ${target}" TextAuraXIniExpression="${_screenwidth}/2 - 250" TextAuraYIniExpression="${_screenheight}/2 - 25" TextAuraWIniExpression="500" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${duration}-${_since}" TextAuraFontName="Tahoma" ActionType="TextAura">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - CUSTOM - Aqua Spear" Id="f05fca64-37a4-4909-96f8-b63ca473c3cb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EF4\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Break Line of Sight" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="briser la ligne de vue" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind then Front - Sewer Water Back First" Id="8cb46207-d227-4b66-ab0a-8c11d9424a70" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EEB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5a108c8a-b5f8-4f36-aae0-5da2b4169c11" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front - Dribble" Id="1d88ef51-1e78-43a7-9628-b84daa8fd9f0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EE5\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front then Behind - Sewer Water Front First" Id="4ae3b799-d343-4b4d-905c-50daf9c3960d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EEC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="14c4eef4-20a7-46b6-b762-898c82551405" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Expulsion" Id="083f09fa-1ffb-445c-82fd-fe716a9abff1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81A1\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Electric Whorl" Id="eca37cfe-3c13-4053-a913-9c333596e63b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81A2\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Out of Front - Bullish Swipe" Id="2958b6ea-1335-4edb-83e9-002c48a94186" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|801B\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Out - Bullish Swing" Id="9f4cd0f4-689b-4527-a022-d8ea461651cf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C83\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In - Disorienting Groan" Id="e219aadf-8108-4feb-a8ec-af67d205db7d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C84\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Thundercall" Id="5358ac08-c152-454f-a023-c02d01d4bd54" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7C81\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="bbb64e96-4dde-48a1-9092-3f8593da1eb2" Name="61-70" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front - Whip Back" Id="be12e69b-022c-4901-a967-78c3bd0b7105" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80BA\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Body Press" Id="b2eb89c6-f872-4c7f-951d-54fa5909cd26" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80CF\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Ripper Claw" Id="0eee3ab4-7b7e-4cb8-a7af-a17a5d3c368f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80D7\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front - Tail Smash" Id="f483fabb-b495-450d-9e53-41fbf3fcc027" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80DA\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Smoldering Scales" Id="44eb92d5-9eed-4666-adf4-77479878ecad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80B8\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="74d40c2b-974b-4703-97fe-999cec04750e" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - CUSTOM + AURA - Blaze Spikes" Id="6a5b4782-4aa3-40ea-b2b8-f1f5441f811e" RegularExpression="^26\|[^|]*\|C5\|[^|]*\|(?&lt;duration&gt;[^.]*)\.[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Stop Attacking ${target}" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TextAuraFontSize="27.75" TextAuraForeground="white" TextAuraOutline="Black" TextAuraName="AhoEurekaOrthosCounterAttackText" TextAuraExpression="Stop Attacking ${target}" TextAuraXIniExpression="${_screenwidth}/2 - 250" TextAuraYIniExpression="${_screenheight}/2 - 25" TextAuraWIniExpression="500" TextAuraHIniExpression="50" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${duration}-${_since}" TextAuraFontName="Tahoma" ActionType="TextAura">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Electric Cachexia" Id="381d653e-cb34-437a-bf8a-f3c1af9f4091" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80D3\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Stone Gaze" Id="e32168d1-02d9-4d8f-a32e-382d2d3d3ffe" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|80C7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - TB - Steel Claw" Id="2bac5092-0386-4859-b169-cffb2c43f739" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AD5\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In - Turn In" Id="8a53deb3-c3a1-46c0-b88d-b9dd1d685993" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ACD\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Out - Turn Out" Id="54265742-8c23-4cf3-961e-55f88c745b04" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ACC\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Roar" Id="00a3c56c-bfbe-41a4-be82-ce92593659f5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ACB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="a80ccf7a-cd6c-4729-b1cc-4530101b2e17" Name="71-80" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Slowcall" Id="5ae76ec2-c299-4370-88c1-840866c00021" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F7B\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Rear" Id="cb97a1bc-3bc3-40dd-92a6-d5dd65531eb9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81A8\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Wide Blaster" Id="18507608-c5c3-413d-a97f-ec5d9085a2ae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81A6\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Back - Tail Swing" Id="5a67ac30-3129-40c0-925d-2036ae580ce8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F87\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="51d52878-8ca5-4565-9826-e77b69641254" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Scythe Tail" Id="9f443046-6616-48f7-b6dd-fc72cc878ad1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F90\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Spark" Id="72400f1e-993d-4c23-966a-83a3c90beb40" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F94\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Killing Paw (+ go Behind after 2.5s)" Id="760caa48-63d5-4933-926d-ff89d4cfb0d5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81A9\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="2500">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Chirp" Id="1ee40130-8509-4dee-8343-4060d8da9b04" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F7D\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Blistering Roar" Id="2b6db1b3-3d29-4ab1-be7d-06c3cef79370" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81AF\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Eye of the Fierce" Id="89ab3aa7-562b-4d83-af97-e8a906c6ca5a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F98\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Away from ${target} - Revelation" Id="092627c7-7df1-43f8-8286-3c5919575f93" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7F9A\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="e1611bdb-1980-48ee-a23a-f19b421fb11d" TriggerText="${target}" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - CUSTOM - Winds of Winter" Id="12d7c649-9930-4194-bbfe-56cd043643a5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81AA\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Break Line of Sight" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="briser la ligne de vue" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - CUSTOM - Ripe Banana" Id="e9bdf4dc-2a7f-4dca-a0cb-37e185a8a83f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81AB\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Break Line of Sight" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="briser la ligne de vue" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Left - Rightward Nerve Gas" Id="2c64441f-4768-4edf-aa03-cce5678d727b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AC1\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Right - Leftward Nerve Gas" Id="cd2a9070-dd29-46c6-b798-e28273afa4a6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AC0\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Out of Front - Centralized Nerve Gas" Id="50b2d8c5-a383-4133-872c-0f81717d5392" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ABF\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - TB - Resonance" Id="24cbb7bc-0d89-436c-b03f-4d35110bdadf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7ABE\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="bfca9c3a-b4ec-4d7f-a462-e31a4fceeac8" Name="81-90" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Glass Punch" Id="f60867ed-c2d1-4322-ad1b-5153c21f1e8b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FF7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Moldy Sneeze" Id="0b31b437-a21a-4f48-98f2-ac4a9ff601d9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FED\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Hex Eye" Id="84ba8544-7d02-42ea-a43c-dd4c313151ed" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FDB\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Demon Eye" Id="0d4489aa-7346-471b-8139-0fe45dcc6e02" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FF9\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Hypnotize" Id="71d340a7-6c50-4bb6-bcc5-31bcb9f8328a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FE1\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Triple Trial" Id="197df5c1-187c-408a-a82e-fcbc22dda1f4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FE4\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Right - Left Sweep" Id="9435d790-f2e3-43d7-983c-e920a9b91815" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8008\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Left - Right Sweep" Id="3042e8f4-6025-422c-8625-766057956e6a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8009\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Ringing Burst" Id="4457b9e3-b1db-4d4d-a275-61e2a6700227" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8007\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Surrounding Burst" Id="072171d7-d074-4404-8f57-1d6d14f463f1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8006\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Scream" Id="b7f35ac1-13a5-4afa-9295-a484bca06d14" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8004\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Blustering Blink" Id="63a090cd-a800-44d7-9347-88af89cfe622" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FF4\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Nicker" Id="9dd09600-a9b8-46df-be8b-85d125d5baee" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8000\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In - Peripheral Lasers" Id="7ede65e1-941c-43fd-87e3-5446a41c2e25" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AD7\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Laserstream" Id="955e6603-2093-4f5f-bb17-435a5068cbb0" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7AE0\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="29506fd8-ccbb-4898-8870-d3e43c1bf6b4" Name="91-100" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Aetherochemical Cannon" Id="da97b444-ca0e-414a-98f7-a8940ec562d4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|81B0\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Go Out - High Voltage" Id="b497234f-b765-4ed4-911b-bc74e5c2d430" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|806E\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Go Out - Repelling Cannons" Id="2b40302a-5b4e-43a0-90d2-53c452a1251e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|806D\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Ring Cannon" Id="2f27a362-4c61-48fa-bbb0-eea0df51e78e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|806C\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Aetherochemical Cannon a" Id="12bf1833-4939-4aa6-8219-12fe679a95d9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8074\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Go Out - Self-detonate" Id="d0d38a94-80e6-44e1-ac15-d6b3e7e26deb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|806A\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Citadel Buster" Id="59ba6caf-6ce3-4080-a935-e58afbd4725d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8084\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - 32-tonze Swipe" Id="72832dcc-db03-46fc-a96b-e5e28580ef70" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8099\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Go Out - 128-tonze Swing" Id="ee43c309-5671-407f-993a-2cb5e91c437d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|809A\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Left - Engulfing Ice" Id="a572686d-711f-4b9b-84c7-e59ecd020038" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|808A\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Right - Dragon's Breath" Id="5b02449e-c32f-46ff-951a-661874de6ba2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|808B\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go in Front - Scorpion's Sting" Id="d9157fa2-c966-4a3c-b34d-4da2320d8552" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|808C\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - Ram's Voice" Id="d5a88d25-f51c-4ab5-9346-b082b104afaa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|808D\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Dragon's Voice" Id="050d8669-6e84-4c1c-b02a-b1f0caa57a85" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|808E\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Laserblade" Id="a289f1ef-448a-4667-82f1-c659f34077e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8070\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Naked Soul" Id="8cbffcfb-1eef-43d3-92e7-cdd1b0f9868b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8093\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Swinge" Id="e3583507-d815-4a1d-a8a7-29e9e45440d8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8091\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Away from ${target} - Pounce Errant" Id="8ef9be0a-4d8d-4916-b5a9-68d860511f5c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8078\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="e1611bdb-1980-48ee-a23a-f19b421fb11d" TriggerText="${target}" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Allagan Fear" Id="88e79037-8a55-4aa5-aa17-384a4d58a5c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8078\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="c2647934-e4ad-4abe-84e8-d0d26f5004de" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Rotoswipe" Id="18133223-35e6-4210-b8a5-9bc0c7bf96f1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|807D\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go In - Empty Souls' Caliber" Id="0400a7a6-81bf-426c-809b-7208255ef1db" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A60\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss - Go Out - Solid Souls' Caliber" Id="cfe5fa63-7fd0-41e1-b9fd-07e18c7ffe78" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A5F\|">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Go Behind - Caliburni" Id="d508dc04-e3e7-4fbd-b26a-df2354896c9b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A65\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Paradoxum" Id="3105604d-99f7-442a-af30-532745176cfb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7A79\|">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers />
           </Folder>
         </Folders>
         <Triggers>
@@ -2116,7 +3290,6 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Entr'acte" Id="cf5ee2d2-aa69-49b2-9d24-527bb27fe03e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6465\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
@@ -2223,7 +3396,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder Id="4c9fb6b0-a60c-4756-98ee-329a526cbc7e" Name="TTS Callouts" Enabled="true">
+      <Folder Id="4c9fb6b0-a60c-4756-98ee-329a526cbc7e" Name="! - TTS Callouts" Enabled="true">
         <Folders>
           <Folder Id="f20a62d3-89e5-4f7b-837c-9fc6395f444a" Name="# - Settings" Enabled="true">
             <Folders />
@@ -2578,6 +3751,7 @@
           </Trigger>
           <Trigger Enabled="true" Source="None" Name="Go Out" Id="45b8a806-f8f3-4ffe-a631-6b014060add4" RegularExpression="">
             <Actions>
+
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Out" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
@@ -2749,6 +3923,160 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go Middle" Id="103b0838-f0cf-4913-b9ce-87e14bf85100" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Middle" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para o Meio" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez au milieu" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go Sides" Id="cba2e850-8a92-4139-b069-a4b693ab9d0b" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Sides" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="vá para os lados" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Aller sur les Côtés" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go Out then In" Id="2346c43e-b61f-4db4-9d95-4445fa4cb333" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Out then In" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para fora e depois para dentro" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez dehors puis dedans" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go In then Out" Id="be0a3fe9-ed59-401c-bf94-4b92feb59571" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go In then Out" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para dentro e depois para fora" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez à l'interieur puis a l'exterieur" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go in Front then Behind" Id="14c4eef4-20a7-46b6-b762-898c82551405" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go in Front then Behind" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="vá na frente e depois atrás" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez Devant puis derrière" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go Behind then in Front" Id="5a108c8a-b5f8-4f36-aae0-5da2b4169c11" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Behind then in Front" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="vá atrás e depois na frente" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Aller derrière puis devant" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Away from ${player}" Id="e1611bdb-1980-48ee-a23a-f19b421fb11d" RegularExpression="^(?&lt;player&gt;.*)$">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Away from ${player}" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="vá embora de ${player}" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Eloignez vous de ${player}" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
