@@ -1361,7 +1361,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Stone Gazr" Id="dc4d1a4f-24f2-4681-9371-34e3ed337be7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|18CF\|">
                     <Actions>
@@ -1370,7 +1369,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - KB - Overtow" Id="cecdfe5b-fac6-4bf3-bb75-20f0da5311bd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E65\|">
                     <Actions>
@@ -1379,7 +1377,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1393,7 +1390,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Look Away - Neuro Squama" Id="cae899d5-9d8c-475c-be8a-48aa18ff57bd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E7C\|">
                     <Actions>
@@ -1402,7 +1398,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1416,7 +1411,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Behind - Tenka Goken" Id="8a4c34c7-3f1d-424b-9f3e-8c4fd74b831d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2F47\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
                     <Actions>
@@ -1425,7 +1419,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - CUSTOM - Cloud+Stomp" Id="fa3104b6-16b8-4d88-b3bb-ef7b360b008b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2C1B\|">
                     <Actions>
@@ -1442,7 +1435,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1456,7 +1448,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - KB - Ancient Aero III" Id="32ea328f-468b-41ba-85d4-dfe2b75f7f17" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E80\|">
                     <Actions>
@@ -1465,7 +1456,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1487,7 +1477,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Out of Front - Words of Woe" Id="bef8c43b-0e8c-4bc7-bbbf-306ef9db4181" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E90\|">
                     <Actions>
@@ -1496,7 +1485,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1510,7 +1498,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Stun - Electromagnetism" Id="75eb9dbc-3f36-494c-ae9e-7fbe8655fbbf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3068\|">
                     <Actions>
@@ -1519,7 +1506,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Ancient Flare" Id="bdbd52b4-3a67-4568-b7a7-0d6196016241" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2E98\|">
                     <Actions>
@@ -1528,7 +1514,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1558,7 +1543,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Frond Fatale" Id="a8aca03b-bd1b-418c-b4ac-42f76df3689b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3080\|">
                     <Actions>
@@ -1567,7 +1551,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Out of Front - Predator Claws" Id="8bdd0d1e-b820-422c-bf7d-e0ca5f6272c6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FAD\|">
                     <Actions>
@@ -1576,7 +1559,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Ululation" Id="87698786-2e0f-4815-aad8-7091cf72cc5f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FB0\|">
                     <Actions>
@@ -1585,7 +1567,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1599,7 +1580,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Stun - Golden Tongue" Id="f68a6b8b-8c1b-4945-8a1d-e0ffc3a1b64d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FBE\|">
                     <Actions>
@@ -1608,7 +1588,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Eyeshine" Id="946bd505-fd39-46fb-b67e-fd5711cc9d2a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FE5\|">
                     <Actions>
@@ -1617,7 +1596,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Wooly Inspiration" Id="1932d215-b70d-498c-820b-c987d275ebfa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FBA\|">
                     <Actions>
@@ -1626,7 +1604,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Lunar Cry" Id="9dc6138e-f508-4d5a-9a24-7e1e577b1a7c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2ED3\|">
                     <Actions>
@@ -1635,7 +1612,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1649,7 +1625,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Dragon's Voice" Id="04ed2223-e59c-456e-b9a4-cd53d7971a97" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3090\|">
                     <Actions>
@@ -1658,7 +1633,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - 11-tonze Swipe" Id="71f39a66-7941-43fa-9889-8ac6b95f5059" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|309C\|">
                     <Actions>
@@ -1667,7 +1641,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Hex" Id="1165e397-068d-40fd-be2b-ec16faf3df68" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|309A\|">
                     <Actions>
@@ -1676,7 +1649,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Thunder II" Id="b00a88ee-ce94-46ae-8bd9-83e3e26805af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|309C\|">
                     <Actions>
@@ -1685,7 +1657,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Back - Elbow Drop" Id="1e1e5a90-635c-4e77-b2b5-2cd98d321121" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30A2\|">
                     <Actions>
@@ -1694,7 +1665,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Glower" Id="4148b14d-d473-4054-96c8-29b77ee5bd0d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30A3\|">
                     <Actions>
@@ -1703,7 +1673,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go Out - 100-tonze Swing" Id="489487f4-e835-4a8b-87dc-3dd3e1b1ce50" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30A4\|">
                     <Actions>
@@ -1712,7 +1681,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Moldy Sneeze" Id="5d2a9888-a599-420b-bd12-a62564f5b3f9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30A7\|">
                     <Actions>
@@ -1721,7 +1689,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Go In - Spiral Spin" Id="819ce182-84d4-4943-b744-8dc148da6dc6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30AE\|">
                     <Actions>
@@ -1730,7 +1697,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Ripper Claw" Id="1821e513-cf3f-4f95-b98c-f2ec72dda57c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|30DC\|">
                     <Actions>
@@ -1739,7 +1705,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Ancient Quaga" Id="aa663435-b881-4e23-bc24-9744464ea07c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FB6\|">
                     <Actions>
@@ -1748,7 +1713,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - AoE - Meteor Impact" Id="65f8f8b1-25d0-4c96-95d6-4324b9c259c7" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FB4\|">
                     <Actions>
@@ -1757,7 +1721,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1771,7 +1734,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - KB - Valfodr" Id="d469f6bf-00ad-4619-a3d4-8fcc704593b2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2F83\|">
                     <Actions>
@@ -1780,7 +1742,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Stun - Charybdis" Id="18d0cb8c-60c7-4bc8-97f8-4d64858d05ae" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FF4\|">
                     <Actions>
@@ -1789,7 +1750,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Look Away - Allagan Fear" Id="59e650e1-90bc-4112-8783-a66a705a9541" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FF9\|">
                     <Actions>
@@ -1798,7 +1758,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Stun - Filoplumage" Id="2f159d17-814e-4cc4-b6e4-54ff26915fc1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|2FFA\|">
                     <Actions>
@@ -1807,7 +1766,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Burning Bright" Id="aeb14531-a3e4-44e8-967b-329eb939cdd9" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3011\|">
                     <Actions>
@@ -1816,7 +1774,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Stun - Nicker" Id="f6808754-bac1-4b71-8ab0-1a0c9ec6e302" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|3013\|">
                     <Actions>
@@ -1825,7 +1782,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Trigger>
                 </Triggers>
               </Folder>
@@ -1910,6 +1866,7 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
+
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Diamondback" Id="e260cef0-27d8-4fe5-a1bf-3720ed8e81ad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EAF\|">
                     <Actions>
@@ -2058,6 +2015,7 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                           <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+
                         </Condition>
                       </Action>
                       <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="BOMBE PLONGEANTE" ActionType="UseTTS">
@@ -2648,6 +2606,7 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
+
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Blustering Blink" Id="63a090cd-a800-44d7-9347-88af89cfe622" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FF4\|">
                     <Actions>
@@ -3241,6 +3200,7 @@
               </Trigger>
             </Triggers>
           </Folder>
+
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="c2f0dcbe-7c85-4b1e-9a13-4c61704d319e" Name="87 - Ktisis Hyperboreia" Enabled="true">
             <Folders />
             <Triggers>
@@ -3271,7 +3231,6 @@
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss# - AoE - Intimidation" Id="95412a21-43e0-4ceb-afde-8b0085055ba6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|648D\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
-
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -3915,7 +3874,6 @@
                 </Condition>
               </Action>
               <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para frente" ActionType="UseTTS">
-
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
@@ -3940,7 +3898,6 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
-
               </Action>
               <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez derrière" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="Or">
@@ -4338,7 +4295,7 @@
       </Folder>
       <Folder Id="84ccccf5-e65a-4647-bdf0-cc12dae4d83a" Name="7.0 - Dawntrail" Enabled="true">
         <Folders>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="1167" Id="51c6b376-cf8f-41a7-9468-ec4aed761695" Name="91 - Ihuykatumu" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="1167" Id="51c6b376-cf8f-41a7-9468-ec4aed761695" Name=" 91 - Ihuykatumu" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - High Wind" Id="202b1664-5869-4d91-a2c3-3ec083992fad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DF5\|">
@@ -4423,9 +4380,103 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1193$" Id="4eb3ac90-6695-4ace-888f-7e543b539364" Name="93 - Worqor Zormor" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1193$" Id="4eb3ac90-6695-4ace-888f-7e543b539364" Name=" 93 - Worqor Zormor" Enabled="true">
             <Folders />
             <Triggers />
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1199$" Id="0fc52e86-c440-4d8f-a498-486404ea625f" Name="100 - Alexandria" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Right - Partition (Hit Left)" Id="852c3fb0-514c-4c45-8874-d987d0ce2f91" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9951\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Left - Partition (Hit Right)" Id="74c18295-f3a0-494a-98da-47ee76b31d18" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;946|85F)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Disruption" Id="bea06f89-874f-40da-8f79-25b772f9a687" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F9D\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss3 - CUSTOM - Terminate (Away from hand)" Id="fed759d3-3c5a-42b0-a8f5-a1fa8a748e6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8FA5\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Away from Hand" ActionType="UseTTS" ExecutionDelayExpression="500">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="loin de la main" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go In - Halo of Destruction" Id="b24046e8-cdc7-4ba8-a7e0-4dd713e14f34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8FA8\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="500">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go Sides - Centralized Current" Id="f6bdfbea-cd6e-40de-82ad-defb3bd88d6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DE7\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="cba2e850-8a92-4139-b069-a4b693ab9d0b" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go Middle - Split Current" Id="8addf6d0-3f54-4cac-8f33-d48e4fc06971" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DEA\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="103b0838-f0cf-4913-b9ce-87e14bf85100" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2- TB - Amalgamight" Id="e7d9cb72-4bc9-44d2-8a54-3ff6129a13fe" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DF3\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Electrowave" Id="f1568d1c-5bac-4496-9d03-6801db11f225" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DF[12]\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
           </Folder>
         </Folders>
         <Triggers />
