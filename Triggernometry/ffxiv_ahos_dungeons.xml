@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TriggernometryExport PluginVersion="1.2.0.6">
+<TriggernometryExport PluginVersion="1.2.0.7">
   <ExportedFolder Id="e65a7cc6-9eff-478d-aec3-ef29e28274ff" Name="Dungeons" Enabled="true">
     <Folders>
       <Folder Id="30ef12cc-4b74-4095-af89-11c24c48a3a6" Name="2.0 - A Realm Reborn" Enabled="true">
@@ -4291,6 +4291,116 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go SouthWest" Id="e26668f8-b273-4024-a23c-858c04c18311" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go SouthWest" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para o sudoeste" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez au sud-ouest" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go SouthEast" Id="2e90ef54-426b-4c0c-8197-1402a0325c95" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go SouthEast" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para o sudeste" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez au sud-est" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go East then West" Id="1d94337b-49fe-498c-9208-4c0dc1a77f48" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East then West" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para o leste e depois para o oeste" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez Est puis Ouest" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go West then East" Id="0cee8cb4-1ead-4940-998c-691d3d169b0c" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West then East" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para o Oeste e depois para o leste" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez à l'Ouest puis Est" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Stack" Id="2028c33a-fb9f-4bf4-9ef6-d906807cb43e" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Stack" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Junte" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Packez-vous" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
       <Folder Id="84ccccf5-e65a-4647-bdf0-cc12dae4d83a" Name="7.0 - Dawntrail" Enabled="true">
@@ -4394,7 +4504,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Left - Partition (Hit Right)" Id="74c18295-f3a0-494a-98da-47ee76b31d18" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;946|85F)\|">
                 <Actions>
@@ -4403,7 +4512,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Disruption" Id="bea06f89-874f-40da-8f79-25b772f9a687" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F9D\|">
                 <Actions>
@@ -4412,7 +4520,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss3 - CUSTOM - Terminate (Away from hand)" Id="fed759d3-3c5a-42b0-a8f5-a1fa8a748e6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8FA5\|">
                 <Actions>
@@ -4429,7 +4536,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go In - Halo of Destruction" Id="b24046e8-cdc7-4ba8-a7e0-4dd713e14f34" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8FA8\|">
                 <Actions>
@@ -4438,7 +4544,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go Sides - Centralized Current" Id="f6bdfbea-cd6e-40de-82ad-defb3bd88d6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DE7\|">
                 <Actions>
@@ -4447,7 +4552,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go Middle - Split Current" Id="8addf6d0-3f54-4cac-8f33-d48e4fc06971" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DEA\|">
                 <Actions>
@@ -4456,7 +4560,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2- TB - Amalgamight" Id="e7d9cb72-4bc9-44d2-8a54-3ff6129a13fe" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DF3\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                 <Actions>
@@ -4465,11 +4568,293 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Electrowave" Id="f1568d1c-5bac-4496-9d03-6801db11f225" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8DF[12]\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1198" Id="c3cb6ac1-bb05-41f1-9e57-c0c79d8ba9b6" Name=" 97 - Vanguard" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Electrowave" Id="58c54b3f-ae67-40bf-bafc-3249a8618317" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EDB\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go In - Enhanced Mobility (Go In)" Id="149f1d64-da49-46f8-89bc-d2b6d6b95bad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|914[07]\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerText="${targetName}" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go Out - Enhanced Mobility (Go Out)" Id="d4246cec-df6d-40d2-b265-c263c07f0cee" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8ED[34]\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Electrowave" Id="37ecc5e7-abc5-4a11-9354-74e1a74f3fff" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9129\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Saber Rush" Id="56ede45b-fbbe-4700-b728-029edbe3c7dd" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EF3\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Rapid Thunder" Id="7adb6400-175a-455e-8549-b0d4f0877e6f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|912A\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Electrothermia" Id="75c0388a-d061-4182-b232-b0127128d30d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EF2\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Shade Shot" Id="a8ef973d-1797-4605-9c12-78f942b6619d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EF5\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Behind - Slitherbane Foreguard" Id="4129917e-e088-47a9-9527-d1ce44bce818" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EED\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go in Front - Slitherbane Rearguard" Id="935539e9-b9aa-4954-899d-43e2b2512811" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EEE\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ee54b0ce-3b0e-4692-b1fb-4f13c6391d5b" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Screech" Id="a56d795e-40ed-4858-b229-12f44e8bd10c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EF4\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1208$" Id="a7d42592-cd49-4268-9dd3-8935b1f73065" Name=" 99 - Origenics" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Strident Shriek" Id="6b46de5b-9c4e-41e9-a80a-2e3cda577bd5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EA7\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - TB - Convulsive Crush" Id="de6165be-2c44-4cb7-af6b-2958a215c39f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8EA6\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go West - Venomspill (Boss Hit on its Left)" Id="a9774e39-2e73-47f7-b2ff-f4eb996ccd29" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(924B|8E66)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="ea3a9241-cd56-461c-98b3-292e30d78dbe" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go East - Venomspill (Boss Hit on its Right)" Id="56501ca9-c43b-4c1f-87cc-57ba6a7ab49b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E6[45]\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f9556c39-8de0-4bdb-a611-a8dac8a9611a" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Electrowave" Id="ca1ddebd-98b3-4bbe-a23f-fa4318aa78e1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E13\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go SouthWest - Bionic Trash" Id="10ec6764-022e-43e4-ba5d-8b7f2f835445" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E10\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="e26668f8-b273-4024-a23c-858c04c18311" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go SouthEast - Bionic Trash" Id="272a0540-d6e9-488c-b963-6b3676f92652" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E11\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2e90ef54-426b-4c0c-8197-1402a0325c95" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Boss3 - AoE - Psychic Wave" Id="5019ee71-a067-47dd-be63-11da4f57696d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E54\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Voltaic Slash" Id="6bf787a3-8e28-44b7-a892-f6780e172b3a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E55\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Behind - Overwhelming Charge" Id="cf4b58a8-cd28-4714-81bf-f786e0aeaf5e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9941\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - CUSTOM - Overwhelming Charge (Hidden Cast) (Get KB Behind)" Id="088e4e8f-b399-4541-af04-0f79816b20c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9941\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Get Pushed Behind" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Faites Vous Pousser Derriere" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1194$" Id="b041aa57-c1f0-42d6-9f88-7d13fb7bebf1" Name=" 95 - The Skydeep Cenote" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Immersion" Id="6a271424-8a5f-44d7-8d52-03e6241a36cc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F83\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Dynamic Dominance" Id="30d375c6-5184-4508-96af-787e6d8e7857" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8E60\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go East then West - Stonecarver/Ringing Blows" Id="b0dbd0de-4b96-4a6d-93b4-3f1dd3806046" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F(3C|56)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="1d94337b-49fe-498c-9208-4c0dc1a77f48" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go West then East - Stonecarver/Ringing Blows" Id="57d5198e-9652-41a9-aba5-2c8c76c63407" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F(3D|57)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="0cee8cb4-1ead-4940-998c-691d3d169b0c" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Wrought Fire" Id="88e47399-78f0-49f4-9242-f726be681132" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|98D2\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Ashlayer" Id="7664a46d-6fe5-4b87-a45d-fdddd3967f26" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F67\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Stack - Deep Thunder" Id="5f481995-3389-4ed9-956c-f5779bcaee6b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F4F\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2028c33a-fb9f-4bf4-9ef6-d906807cb43e" TriggerForce="regexp" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
