@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TriggernometryExport PluginVersion="1.2.0.6">
+<TriggernometryExport PluginVersion="1.2.0.7">
   <ExportedFolder Id="06600e27-5f73-48b4-97ad-7e235129453e" Name="A - Misc" Enabled="true">
     <Folders>
       <Folder Id="8483d6fc-47eb-4bc4-acd2-c950d03b62e7" Name="AURA" Enabled="true">
@@ -232,7 +232,7 @@
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="8589934592" Id="e178ba5c-4f1c-4a96-8179-57d03ed00ae9" Name="SAM" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="SAM" Id="cc7d8df8-e4db-4c25-b922-655b9e8818b8" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;1D3[A9])\|[^|]*\|[^|]*\|[^|]*\|(?&gt;43|35[^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="SAM" Id="cc7d8df8-e4db-4c25-b922-655b9e8818b8" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;1D3[A9])\|[^|]*\|[^|]*\|[^|]*\|(?&gt;43|35)[^|]*\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Miss" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
@@ -272,7 +272,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="VPR" Id="9f47b2ea-0f95-4cb9-9a88-fb96e662e6dc" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;skill&gt;873[2345])[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;flags&gt;[^3][^6][^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="VPR" Id="9f47b2ea-0f95-4cb9-9a88-fb96e662e6dc" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&lt;skill&gt;873[2345])[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;flags&gt;[^34][^6][^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Miss" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
