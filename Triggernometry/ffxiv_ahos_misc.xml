@@ -232,7 +232,7 @@
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="8589934592" Id="e178ba5c-4f1c-4a96-8179-57d03ed00ae9" Name="SAM" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="SAM" Id="cc7d8df8-e4db-4c25-b922-655b9e8818b8" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;1D3[A9])\|[^|]*\|[^|]*\|[^|]*\|(?&gt;43|35)[^|]*\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="SAM" Id="cc7d8df8-e4db-4c25-b922-655b9e8818b8" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;1D3[A9])\|[^|]*\|[^|]*\|[^|]*\|(?&gt;43|35|38)[^|]*\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Miss" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
