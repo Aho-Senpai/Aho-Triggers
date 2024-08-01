@@ -498,6 +498,19 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1048$" Id="3009da68-1372-45de-8c4a-d4def1bf2aaa" Name="50 - The Porta Decumana" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss - Out of Front - Citadel Buster" Id="acdbd954-4689-4d03-a4c3-861c0d84a4e3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|715C\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="7336ad6e-6a19-4cdd-b68b-82ad819f5de6" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
@@ -1189,7 +1202,6 @@
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -1244,17 +1256,17 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Left - Scortching Flame" Id="79e5d6fc-de5c-4368-b4c8-813c88f3e085" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4763\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Right - Scortching Flame" Id="79e5d6fc-de5c-4368-b4c8-813c88f3e085" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4763\|">
                 <Actions>
-                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Right - Scortching Flame" Id="f0f0d96b-7a00-4170-a124-52fb54921020" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4762\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Left - Scortching Flame" Id="f0f0d96b-7a00-4170-a124-52fb54921020" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|4762\|">
                 <Actions>
-                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="83fea19f-cd5d-4a02-a3a5-660ac4d7fd5d" TriggerForce="regexp" ActionType="Trigger">
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="84381115-059b-4087-90b7-9e0a9a6ff27b" TriggerForce="regexp" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -1663,6 +1675,7 @@
                       <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="51d52878-8ca5-4565-9826-e77b69641254" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
+
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
@@ -1866,7 +1879,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Mobs - Interupt - Diamondback" Id="e260cef0-27d8-4fe5-a1bf-3720ed8e81ad" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7EAF\|">
                     <Actions>
@@ -2015,7 +2027,6 @@
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                           <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-
                         </Condition>
                       </Action>
                       <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="BOMBE PLONGEANTE" ActionType="UseTTS">
@@ -2606,7 +2617,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mobs - Out of Front - Blustering Blink" Id="63a090cd-a800-44d7-9347-88af89cfe622" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7FF4\|">
                     <Actions>
@@ -3200,7 +3210,6 @@
               </Trigger>
             </Triggers>
           </Folder>
-
           <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^974$" Id="c2f0dcbe-7c85-4b1e-9a13-4c61704d319e" Name="87 - Ktisis Hyperboreia" Enabled="true">
             <Folders />
             <Triggers>
@@ -3881,6 +3890,7 @@
               <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez Devant" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+
                 </Condition>
               </Action>
             </Actions>
@@ -4965,7 +4975,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - CUSTOM - Prickly Left (Go Exact Right)" Id="ae91751a-a8b4-4754-b5b6-48df88c04f8e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|98F3\|">
                 <Actions>
@@ -4982,7 +4991,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - CUSTOM - Prickly Right (Go Exact Left)" Id="0121ba15-6caa-41e0-afc4-471c0852136a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|98F2\|">
                 <Actions>
@@ -4999,7 +5007,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Carbonaceous Combustion" Id="ba75d374-55a4-4c73-a844-fef88edc5b2a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8ECC\|">
                 <Actions>
@@ -5008,7 +5015,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2- TB - Chimney Smack" Id="52269c58-5118-42dd-b2e2-5d654090136b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9643\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                 <Actions>
@@ -5017,7 +5023,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Diubious Tulidisaaster" Id="55cb4885-0172-47ad-abc8-3c5000df31d6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F8C\|">
                 <Actions>
@@ -5026,7 +5031,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Screes of Fury" Id="60afbdcb-bc85-4de4-85e2-ad3f370190ef" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|8F88\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                 <Actions>
@@ -5035,7 +5039,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
