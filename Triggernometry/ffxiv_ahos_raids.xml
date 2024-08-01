@@ -7646,6 +7646,24 @@
                             <Condition Enabled="false" Grouping="Or" />
                             <Conditions />
                           </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Quadruple Crossing - Clock Positions (TODO: add callout)" Id="6241b008-e594-4fca-8733-dd331a0608a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|943C\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="clock positions" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Leaping Quadruple Crossing - Clock Positions (TODO: add callout)" Id="b36aa94d-2594-4980-8e91-3b2528bdb48c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;9457|982F|9853)\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="clock positions" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
                         </Triggers>
                       </Folder>
                     </Folders>
@@ -7688,6 +7706,24 @@
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ae8834ac-2dff-4bf2-bf8e-cb3ab5300cf9" TriggerText="${_ffxivparty[${targetID}],name}" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Leaping One-two Paw - Left/Right then Right/Left" Id="742a78a6-37a0-4a5a-8b44-2fa246e5a575" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|94(?&lt;move&gt;4[DEF]|50)\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go left" TriggerId="3d507e26-237a-44b4-8283-9e0630deda32" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go right" TriggerId="5824b15d-7c63-4455-9a76-9a257a03e552" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="50" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -8006,6 +8042,7 @@
                               <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
+
                           <Action OrderNumber="6" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East" ActionType="UseTTS" Description="Spawn North 319 : East Safe" DescriptionOverride="True">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -9453,7 +9490,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${var:Job1}" ExpressionTypeL="String" ExpressionR="SCH" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-
                           <Action OrderNumber="18" ListVariableOp="Insert" ListVariableName="JobPrio" ListVariableExpression="18${lvar:MarkedPlayersList[1]}" ListVariableIndex="1" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="JobPrio" VariableExpression="1${lvar:MarkedPlayersList[1]}" ActionType="ListVariable">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:Job1}" ExpressionTypeL="String" ExpressionR="AST" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -11155,7 +11191,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${ColorTarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${var:ColorHeadMarkValue}" ExpressionTypeL="String" ExpressionR="48" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                 </Condition>
-
                               </Action>
                               <Action OrderNumber="5" OBSEndPoint="" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="PURPLE D &amp; 4" ActionType="UseTTS">
                                 <Condition Enabled="true" Grouping="And">
@@ -11646,6 +11681,7 @@
       </Folder>
       <Folder Id="b801e7d4-f882-4c45-939f-ccc7fc04382f" Name="! - TTS Callouts" Enabled="true">
         <Folders>
+
           <Folder Id="37ea3f7f-dbb2-4d56-898d-019a229205ee" Name="# - Settings" Enabled="true">
             <Folders />
             <Triggers>
