@@ -7614,7 +7614,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Double Swipe - Healer Groups" Id="a6194218-7bef-494c-856a-1f1cae8cc7c6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|945F\|">
                             <Actions>
@@ -7629,7 +7628,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Quadruple Swipe - Partner Stack" Id="90a9752a-de65-4165-95b4-27a5698f4eaa" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|945D\|">
                             <Actions>
@@ -7644,7 +7642,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Quadruple Crossing - Clock Positions (TODO: add callout)" Id="6241b008-e594-4fca-8733-dd331a0608a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|943C\|">
                             <Actions>
@@ -7653,11 +7650,55 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Leaping Quadruple Crossing - Clock Positions (TODO: add callout)" Id="b36aa94d-2594-4980-8e91-3b2528bdb48c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(?&gt;9457|982F|9853)\|">
                             <Actions>
                               <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="clock positions" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Shockwave - KB Safe (NE/SW or NW/SE) (Map Effect)" Id="8abdcb28-8730-4cc5-8a8e-936085ab36af" RegularExpression="^257\|[^|]*\|[^|]*\|00080004\|(?&lt;location&gt;[^|]*)\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="NorthEast SouthWest Safe" ActionType="UseTTS">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${location}" ExpressionTypeL="String" ExpressionR="03" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="NorthWest SoutEast Safe" ActionType="UseTTS">
+                                <Condition Enabled="true" Grouping="And">
+                                  <ConditionSingle Enabled="true" ExpressionL="${location}" ExpressionTypeL="String" ExpressionR="00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Collect PawPring Headmarker" Id="5452b5fb-73aa-408f-bda6-f0274389dc40" RegularExpression="^27\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|021A\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableName="AhoR1SPawprint" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="AhoR1SPawprint" VariableExpression="${_ffxivparty[targetID].name}" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Elevate and Evicerate - ${player} Launch" Id="12fbfbc8-b13a-46ed-920a-7e84456507a2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9446\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="${var:AhoR1SPawprint} Launch" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Elevate and Evicerate - ${player} Stun" Id="2b4afcb4-c3b5-4378-a00e-861b4dd5052a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9448\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="${var:AhoR1SPawprint} Stun" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="UseTTS">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
@@ -7675,7 +7716,6 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Biscuit Maker - TB on ${player}" Id="8134c2ab-387b-4ecc-8782-7096a6d54572" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9495\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                         <Actions>
@@ -7684,23 +7724,21 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="One-two Paw - Left/Right then Right/Left" Id="189435ae-70f2-458e-9a7b-0d60908e17df" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|943(?&lt;move&gt;[69])\|">
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go left" TriggerId="3d507e26-237a-44b4-8283-9e0630deda32" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
                           <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go right" TriggerId="5824b15d-7c63-4455-9a76-9a257a03e552" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Overshadow - Stack on ${player}" Id="017e14c2-6aff-4f47-8118-31eeba6ac7fb" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9497\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
                         <Actions>
@@ -7709,25 +7747,38 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Leaping One-two Paw - Left/Right then Right/Left" Id="742a78a6-37a0-4a5a-8b44-2fa246e5a575" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|94(?&lt;move&gt;4[DEF]|50)\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Leaping One-two Paw - East/West &gt; In/out then Out/In" Id="742a78a6-37a0-4a5a-8b44-2fa246e5a575" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|94(?&lt;move&gt;4[DEF]|50)\|">
                         <Actions>
-                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go left" TriggerId="3d507e26-237a-44b4-8283-9e0630deda32" TriggerForce="regexp" ActionType="Trigger">
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="9a7a22ed-dc5e-4d12-a084-510abd21b4a0" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-                          <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go right" TriggerId="5824b15d-7c63-4455-9a76-9a257a03e552" TriggerForce="regexp" ActionType="Trigger">
+                          <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TriggerId="de86e94e-cd08-4b02-8631-db019f52e102" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="50" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" ActionType="Placeholder" ExecutionDelayExpression="600">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="4" SoundRouting="None" TTSRouting="None" TriggerId="ef1423e4-0677-41a5-b5fa-58a39eb6d442" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4D" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="50" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="5" SoundRouting="None" TTSRouting="None" TriggerId="42b57adf-3fc6-43d9-8a88-713e1b4d6b3e" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="50" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="4F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -8042,7 +8093,6 @@
                               <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${targetID}].y}" ExpressionTypeL="Numeric" ExpressionR="90" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                             </Condition>
                           </Action>
-
                           <Action OrderNumber="6" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East" ActionType="UseTTS" Description="Spawn North 319 : East Safe" DescriptionOverride="True">
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${count}" ExpressionTypeL="String" ExpressionR="319" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -10987,6 +11037,7 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionGroup Enabled="true" Grouping="And">
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder.size}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder[1]}" ExpressionTypeL="Numeric" ExpressionR="108" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder[2]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                   </ConditionGroup>
@@ -11681,7 +11732,6 @@
       </Folder>
       <Folder Id="b801e7d4-f882-4c45-939f-ccc7fc04382f" Name="! - TTS Callouts" Enabled="true">
         <Folders>
-
           <Folder Id="37ea3f7f-dbb2-4d56-898d-019a229205ee" Name="# - Settings" Enabled="true">
             <Folders />
             <Triggers>
@@ -12416,6 +12466,50 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go In then Out" Id="42b57adf-3fc6-43d9-8a88-713e1b4d6b3e" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go In then Out" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para dentro e depois para fora" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez à l'interieur puis a l'exterieur" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Source="None" Name="Go Out then In" Id="ef1423e4-0677-41a5-b5fa-58a39eb6d442" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Out then In" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Vá para fora e depois para dentro" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="PT" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Allez dehors puis dedans" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
