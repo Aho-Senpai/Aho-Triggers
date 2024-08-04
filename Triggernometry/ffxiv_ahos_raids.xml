@@ -7532,7 +7532,76 @@
           <Folder Id="306aa80f-e895-4e2b-a8d3-0148a9cc6047" Name="7.0 - Dawntrail" Enabled="true">
             <Folders>
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^122[78]$" Id="f7514c85-f3cb-4dd6-b194-78697db5ef85" Name="02 - AAC Light-heavyweight M2" Enabled="true">
-                <Folders />
+                <Folders>
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1228$" Id="08b282e6-3752-4a96-bf0e-f0462be7e276" Name="Savage" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Call Me Honey - AoE" Id="842c3ca9-1411-499c-84a4-896ca039d467" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9183\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Honey Beeline - Go Sides" Id="eb911c1f-7ebb-424b-bbbc-d401c3f7d7bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9186\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="8b532712-89d5-46cc-a802-c0608901395a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tempting Twist - Go In" Id="0a32628a-e408-475a-86c4-f52165742e36" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9187\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="e7d0f416-10f1-474e-b074-881ed2d27f9a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="First/Second/Third Beat - AoE" Id="adc8628e-893c-4644-b992-9d7f444a6e87" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9C2[456]\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Loveseeker - Go Out" Id="5e6a5ffd-6194-48e8-ba9e-d2da1b8bc0f6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9B7D\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="7123cb85-5422-49ab-a933-5283f97dbdae" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Rotten Heart - AoE" Id="97cd6cf6-0ae4-4a6e-abb7-574da09809b3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|91AA\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Honey B. Finale - AoE" Id="bb549e41-3e0b-4842-a5d3-dfe0dd581c0c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|918F\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Blow Kiss - Out of Front" Id="6ce5fedc-c450-4e7d-a6c2-ad228ebe2383" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9173\|">
                     <Actions>
@@ -7673,7 +7742,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Collect PawPring Headmarker" Id="5452b5fb-73aa-408f-bda6-f0274389dc40" RegularExpression="^27\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|021A\|">
                             <Actions>
@@ -7685,7 +7753,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Elevate and Evicerate - ${player} Launch" Id="12fbfbc8-b13a-46ed-920a-7e84456507a2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9446\|">
                             <Actions>
@@ -7694,7 +7761,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Elevate and Evicerate - ${player} Stun" Id="2b4afcb4-c3b5-4378-a00e-861b4dd5052a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9448\|">
                             <Actions>
@@ -7703,7 +7769,6 @@
                               </Action>
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Trigger>
                         </Triggers>
                       </Folder>
@@ -7928,6 +7993,126 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^9230$" Id="353eda0d-93c3-456c-aeb0-74d2dffe5688" Name="Savage" Enabled="true">
+                    <Folders>
+                      <Folder Id="ffd7f091-3daf-49fe-b634-b9c9fdf090ca" Name="Custom Callouts" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knuckle Sandwitch - Shared Buster (TODO : Add global callout)" Id="7ca7f92a-bfed-4ff2-9346-3c34ba577229" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93D5\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Shared Buster" TriggerId="b244f12c-d14a-40dc-9edc-e55911e4b031" TriggerText="${_ffxivparty[${targetID}].name}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octuple Lariat - Out + Spread" Id="0f5895ee-697e-41ff-9b17-0dafbd1e6a78" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93D8\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Out and Sperad" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octuple Lariat - In + Spread" Id="ec4d0684-037c-45fa-ae9e-e605ccd8ea83" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93D9\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="In and Sperad" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octodive Proximity  - Away and Spread" Id="81b26008-c499-41ce-9490-2c18e0d41912" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93DE\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Away and Sperad" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octodive KB - Knockback and Spread" Id="6c7393d7-5816-49bc-a3ae-1234e2889d09" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93DE\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Knockback and Sperad" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Quadroboom Proximity  - Away and Partner" Id="18eed58e-97c4-4966-9a6f-abbd84adee28" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93E0\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Away and Partner" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Quadroboom KB  - Knockback and Partner" Id="3269a743-76da-415f-bea6-3d1d229b5bbf" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93E1\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Knockback and Partner" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Quad Lariat - In + Partner" Id="d9e316e6-90cd-4a25-9498-56820f102d38" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93DB\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="In and Partner" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Quad Lariat - Out + Partner" Id="36d2cdf8-b3b7-4961-9891-7c1f7587c716" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|93DA\|">
+                            <Actions>
+
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Out and Partner" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octoboom Bombarian special - Out &gt; In &gt; KB &gt; Spread" Id="85f23a09-a0ac-4d29-8442-4ee22a17a760" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9752\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Out ... in ... knockback ... spread" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Octoboom Bombarian special - Out &gt; In &gt; KB &gt; Partners" Id="7e7ab873-969a-495a-bfcf-0dff5df764c8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|940A\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Out ... in ... knockback ... Partners" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Brutal Impact - AoE" Id="e247f7f3-8af0-4433-ad3c-b9408ecaf878" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9425\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
                 </Folders>
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Brutal Burn - Stack on ${player}" Id="0304c8b2-be66-491d-8423-9a5fd0a5da16" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9429\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
@@ -8116,6 +8301,87 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1232$" Id="0286e909-500f-43e4-8b0e-74d90003d9b5" Name="Savage" Enabled="true">
+                    <Folders>
+                      <Folder Id="7408ed07-c6b0-430b-9027-76058d544b6d" Name="Custom Callouts" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Bewitching Flight - Go Behind" Id="fe19b785-ed43-40ab-b5a5-c0630ba863e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9671\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go Behind" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wrath of Zeus - AoE" Id="b4163d76-eefd-4b4b-8274-41a3b11e974c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|95EF\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Jolt - TB on ${player}" Id="aaa334e4-cc9a-47ed-97c4-72b67005b5c1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|95F0\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="b244f12c-d14a-40dc-9edc-e55911e4b031" TriggerText="${_ffxivparty[${targetID}].name}" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Left/Right Roll - Go Left/Right" Id="df244816-4c7f-45ed-a272-d63aba184536" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|95D(?&lt;move&gt;[23])\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="bb1a8cb2-a03e-4e7e-b3b9-6b6630d39640" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="c181898f-5b9b-45a8-a7c0-517920bde931" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Azure Thunder - AoE" Id="d3687150-429d-42e6-b227-5755c61b434b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|962F\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Special - Go Sides" Id="ea69a7a2-dff4-4c62-a194-f988f5d0f1e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9610\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="8b532712-89d5-46cc-a802-c0608901395a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wicked Special - Go In" Id="863bab67-a532-4267-92bf-69e7cb42c68a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9612\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="e7d0f416-10f1-474e-b074-881ed2d27f9a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Trigger>
                     </Triggers>
                   </Folder>
@@ -11037,7 +11303,6 @@
                                 <Condition Enabled="true" Grouping="Or">
                                   <ConditionGroup Enabled="true" Grouping="And">
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder.size}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder[1]}" ExpressionTypeL="Numeric" ExpressionR="108" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                     <ConditionSingle Enabled="true" ExpressionL="${lvar:circleorder[2]}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                                   </ConditionGroup>
@@ -11518,6 +11783,7 @@
                                 </Condition>
                               </Action>
                               <Action OrderNumber="5" OBSEndPoint="" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="thrustFlag" VariableExpression="${var:thrustFlag}-2" ActionType="Variable" Asynchronous="False">
+
                                 <Condition Enabled="true" Grouping="And">
                                   <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="String" ExpressionR="83.74" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="String" ExpressionR="116.26" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
@@ -12487,7 +12753,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="None" Name="Go Out then In" Id="ef1423e4-0677-41a5-b5fa-58a39eb6d442" RegularExpression="">
             <Actions>
@@ -12509,7 +12774,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
