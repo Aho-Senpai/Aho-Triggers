@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<TriggernometryExport PluginVersion="1.2.0.4">
+<TriggernometryExport PluginVersion="1.2.0.7">
   <ExportedFolder Id="953b93c6-29d5-41cf-a209-04b4237868e8" Name="FFXIV Battle Jobs" Enabled="true">
     <Folders>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="554226941984" Id="bea01080-6a48-4740-9e11-16e628afd280" Name="Healer" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="554226941984" Id="bea01080-6a48-4740-9e11-16e628afd280" Name="02 - Healer" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="4294967296" Id="36deb24d-44a8-4dbf-8eb7-24decefc80f0" Name="AST" Enabled="true">
             <Folders />
@@ -322,7 +322,6 @@
                     </Condition>
                   </Action>
                   <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}CD" VariableExpression="if(${var:AhoJobCharges${spell}}&lt;2,&#xD;&#xA;${var:AhoJobCharges${spell}CD}+60000,&#xD;&#xA;${_systemtimems})" ActionType="Variable">
-
                     <Condition Enabled="false" Grouping="And" />
                   </Action>
                   <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="AhoJobCharges${spell}" VariableExpression="${var:AhoJobCharges${spell}}-1" ActionType="Variable">
@@ -996,7 +995,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="2216287010880" Id="1a9da9fb-00da-4028-8255-4be1e9cf3133" Name="Magical Ranged DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="2216287010880" Id="1a9da9fb-00da-4028-8255-4be1e9cf3133" Name="05 - Magical Ranged DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="17179869184" Id="61c85011-9311-4605-8823-db782846a115" Name="RDM" Enabled="true">
             <Folders />
@@ -1431,7 +1430,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="None" Name="! - Cancel All PictoTriggers" Id="1d0762f0-fc34-4157-b050-52bb9c9d8726" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+              <Trigger Enabled="true" Source="None" Name="! - Cancel All PCT Triggers" Id="1d0762f0-fc34-4157-b050-52bb9c9d8726" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="d1eb065c-b6b5-4d6f-b6b1-5d3de12414a4" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -1492,7 +1491,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1383787397130" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="Melee DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1383787397130" Id="5475fb61-43b5-4b59-bba4-5d3b9225924a" Name="03 - Melee DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="805306368" Id="86dd4f6d-60b4-48fc-b86b-df4ceb7872d0" Name="NIN" Enabled="true">
             <Folders />
@@ -1933,7 +1932,6 @@
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="8" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="d407d00d-6d7b-49de-85e2-7fad802237e7" ActionType="Trigger">
-
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="9" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="bcd9aa38-a0c8-4ee6-b9ff-29ac4fb3029d" ActionType="Trigger">
@@ -2266,7 +2264,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="None" Name="! - Cancel All Viper Triggers" Id="3b0a3800-039b-449e-b8df-d2493be065eb" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+              <Trigger Enabled="true" Source="None" Name="! - Cancel All VPR Triggers" Id="3b0a3800-039b-449e-b8df-d2493be065eb" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="d85cfd82-4dce-42e1-9a45-c483478b3592" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2337,7 +2335,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="138516889616" Id="c7bb6e29-3a9d-450c-91c8-7ae92d3d5d5a" Name="Physical Ranged DPS" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="138516889616" Id="c7bb6e29-3a9d-450c-91c8-7ae92d3d5d5a" Name="04 - Physical Ranged DPS" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1073741824" Id="e35ac678-dc06-4280-bdbd-f3da6f2b1da5" Name="MCH" Enabled="true">
             <Folders />
@@ -2562,6 +2560,80 @@
                   </Trigger>
                 </Triggers>
               </Folder>
+              <Folder Id="9d2aea53-3f76-4988-bf8c-167b50e6d79f" Name="BRD Configurable Song" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Mage's Ballad" Id="98a2e35c-69b8-4d32-9548-77e5cbfae545" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|72\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Song" ActionType="UseTTS" ExecutionDelayExpression="(45-(if(${eplvar:AhoBRDSongRecast},${plvar:AhoBRDSongRecast[1]},2)))*1000" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="750c01bb-ad23-4e5b-b75b-7a43da8282e3" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="ef3e2540-65cf-41fd-afb1-61f9e4d0b5ae" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="# - Settings" Id="10666478-9968-40a7-85cf-2ce34bf5aab0" RegularExpression="^00\|[^|]*\|0038\|\|AhoBRDSongRecast=(?&lt;Mage&gt;\d+),?(?&lt;Army&gt;\d+)?,?(?&lt;Wanderer&gt;\d+)?">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" ActionType="Placeholder" Description="1 = Mage's Ballad - 2 = Army's Paeon - 3 = Wanderer's Minuet" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="AhoBRDSongRecast" ListVariableExpression="${Mage}" ListVariableIndex="1" ListSourcePersist="True" SoundRouting="None" TTSRouting="None" TableVariableOp="Set" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="AhoBRDSongRecast" ListVariableExpression="${Army}" ListVariableIndex="2" ListSourcePersist="True" SoundRouting="None" TTSRouting="None" TableVariableOp="Set" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="AhoBRDSongRecast" ListVariableExpression="${Wanderer}" ListVariableIndex="3" ListSourcePersist="True" SoundRouting="None" TTSRouting="None" TableVariableOp="Set" ActionType="ListVariable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Army's Paeon" Id="750c01bb-ad23-4e5b-b75b-7a43da8282e3" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|74\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Song" ActionType="UseTTS" ExecutionDelayExpression="(45-(if(${eplvar:AhoBRDSongRecast},${plvar:AhoBRDSongRecast[2]},2)))*1000" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="98a2e35c-69b8-4d32-9548-77e5cbfae545" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="ef3e2540-65cf-41fd-afb1-61f9e4d0b5ae" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Wanderer's Minuet" Id="ef3e2540-65cf-41fd-afb1-61f9e4d0b5ae" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|DE7\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                    <Actions>
+                      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Song" ActionType="UseTTS" ExecutionDelayExpression="(45-(if(${eplvar:AhoBRDSongRecast},${plvar:AhoBRDSongRecast[3]},2)))*1000" RefireInterrupt="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="98a2e35c-69b8-4d32-9548-77e5cbfae545" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerOp="CancelTrigger" TriggerId="750c01bb-ad23-4e5b-b75b-7a43da8282e3" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
             </Folders>
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Barrage" Id="fe2c4d35-d4bb-4bb6-9dfb-df7dd48839b5" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|6B\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -2624,7 +2696,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Song" Id="ac82bee2-a33d-4ff6-bfd9-9a772a323bfc" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;72|74|DE7)\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Name="Song" Id="ac82bee2-a33d-4ff6-bfd9-9a772a323bfc" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|(?&gt;72|74|DE7)\|(?&lt;spell&gt;[^|]+)\|" PrevActions="Interrupt" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Song" ActionType="UseTTS" ExecutionDelayExpression="44000" RefireInterrupt="True">
                     <Condition Enabled="false" Grouping="Or" />
@@ -2839,7 +2911,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="70868271109" Id="d594a7a6-2839-4d55-8598-bbd7bed73803" Name="Tank" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="70868271109" Id="d594a7a6-2839-4d55-8598-bbd7bed73803" Name="01 - Tank" Enabled="true">
         <Folders>
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="262145" Id="61ba453b-9480-4d70-acec-86a06b80a688" Name="PLD" Enabled="true">
             <Folders />
@@ -3177,7 +3249,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Infuriate (Needs Fixing : CD goes down with FC use)" Id="5a7b6e8f-1207-4e09-aed7-179a671deb1b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|34\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Infuriate (Needs Fixing : CD goes down with FC use)" Id="5a7b6e8f-1207-4e09-aed7-179a671deb1b" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|34\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="10">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="AhoJobChargesInfuriate" VariableExpression="2" ActionType="Variable">
                     <Condition Enabled="true" Grouping="And">
@@ -3627,7 +3699,7 @@
         </Folders>
         <Triggers />
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1099511365759" Id="275c4ea2-6501-4392-a35f-f892ffef28ce" Name="# - Role Actions" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="1099511365759" Id="275c4ea2-6501-4392-a35f-f892ffef28ce" Name="00 - Role Actions" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Addle" Id="79a9b9c0-873d-4626-ae4d-9203546a8d3f" RegularExpression="^2[12]\|[^|]*\|[A-Z0-9]{8}\|(?&lt;player&gt;[^|]{2,31})\|1D88\|(?&lt;spell&gt;[^|]+)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
@@ -3816,7 +3888,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="34359738368" Id="c40ef71d-2630-4047-a887-a18fffe4a0ea" Name="## - BLU" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="34359738368" Id="c40ef71d-2630-4047-a887-a18fffe4a0ea" Name="99 - BLU" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="Shock Strike" Id="83bbde71-81c1-444f-a0cd-dacfea799372" RegularExpression="1[56]:[A-F0-9]{8}:(?&lt;player&gt;[^:]{3,21}):2CA5:(?&lt;spell&gt;[^:]+):" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="5000">
@@ -3894,58 +3966,64 @@
           <Action OrderNumber="3" SoundRouting="None" TTSRouting="None" TriggerId="162e3940-94d5-4e62-8199-3d2f497cb9fb" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="4" SoundRouting="None" TTSRouting="None" TriggerId="6d6acd85-3fdf-476d-bd6a-a7cbf0392912" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="4" SoundRouting="None" TTSRouting="None" TriggerId="9f4498e5-826a-4aa2-80bc-950ac3a83860" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="5" SoundRouting="None" TTSRouting="None" TriggerId="d8fe5be2-37f3-4a36-a612-0bacad739605" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="5" SoundRouting="None" TTSRouting="None" TriggerId="6d6acd85-3fdf-476d-bd6a-a7cbf0392912" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="6" SoundRouting="None" TTSRouting="None" TriggerId="886c4756-99e4-4859-bce7-2225640e2b13" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="6" SoundRouting="None" TTSRouting="None" TriggerId="d8fe5be2-37f3-4a36-a612-0bacad739605" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="7" SoundRouting="None" TTSRouting="None" TriggerId="85e25533-ffec-4ed3-b3b0-129cef53a1bd" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="7" SoundRouting="None" TTSRouting="None" TriggerId="1d0762f0-fc34-4157-b050-52bb9c9d8726" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="8" SoundRouting="None" TTSRouting="None" TriggerId="53ffbfc4-9ecc-4d57-a987-a300ecbd4f9c" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="8" SoundRouting="None" TTSRouting="None" TriggerId="886c4756-99e4-4859-bce7-2225640e2b13" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="9" SoundRouting="None" TTSRouting="None" TriggerId="7deccbaf-c740-49c1-9bb5-026116b73e83" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="9" SoundRouting="None" TTSRouting="None" TriggerId="85e25533-ffec-4ed3-b3b0-129cef53a1bd" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="10" SoundRouting="None" TTSRouting="None" TriggerId="98f6f938-48b7-40a5-b7e8-bb0aa0c87073" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="10" SoundRouting="None" TTSRouting="None" TriggerId="53ffbfc4-9ecc-4d57-a987-a300ecbd4f9c" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="11" SoundRouting="None" TTSRouting="None" TriggerId="7059bcf3-29c7-4ccb-b32e-5ce8d9955b06" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="11" SoundRouting="None" TTSRouting="None" TriggerId="7deccbaf-c740-49c1-9bb5-026116b73e83" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="12" SoundRouting="None" TTSRouting="None" TriggerId="6ab1d30f-4e9b-4737-982e-fc77b6d6de1d" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="12" SoundRouting="None" TTSRouting="None" TriggerId="98f6f938-48b7-40a5-b7e8-bb0aa0c87073" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="13" SoundRouting="None" TTSRouting="None" TriggerId="dd09c297-2454-49ad-9544-0555ca918cef" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="13" SoundRouting="None" TTSRouting="None" TriggerId="627e5a67-55f8-40e2-8324-2e8ceec6fe7a" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="14" SoundRouting="None" TTSRouting="None" TriggerId="0b2da619-2ddb-418c-b93b-a0132813d219" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="14" SoundRouting="None" TTSRouting="None" TriggerId="7059bcf3-29c7-4ccb-b32e-5ce8d9955b06" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="15" SoundRouting="None" TTSRouting="None" TriggerId="273664db-138b-49ce-abdd-9a615ef85fe6" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="15" SoundRouting="None" TTSRouting="None" TriggerId="3b0a3800-039b-449e-b8df-d2493be065eb" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="16" SoundRouting="None" TTSRouting="None" TriggerId="7a56478d-463c-43c4-b6f4-2cb9e6e8104e" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="16" SoundRouting="None" TTSRouting="None" TriggerId="6ab1d30f-4e9b-4737-982e-fc77b6d6de1d" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="17" SoundRouting="None" TTSRouting="None" TriggerId="6df757a0-025a-417a-a30b-ece29e11cc79" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="17" SoundRouting="None" TTSRouting="None" TriggerId="dd09c297-2454-49ad-9544-0555ca918cef" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="18" SoundRouting="None" TTSRouting="None" TriggerId="04249281-b2d9-4906-915f-1f40f9da8f13" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="18" SoundRouting="None" TTSRouting="None" TriggerId="0b2da619-2ddb-418c-b93b-a0132813d219" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="19" SoundRouting="None" TTSRouting="None" TriggerId="2b26b1fe-ca36-4b19-8acb-2c71373a646f" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="19" SoundRouting="None" TTSRouting="None" TriggerId="273664db-138b-49ce-abdd-9a615ef85fe6" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="20" SoundRouting="None" TTSRouting="None" TriggerId="627e5a67-55f8-40e2-8324-2e8ceec6fe7a" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="20" SoundRouting="None" TTSRouting="None" TriggerId="7a56478d-463c-43c4-b6f4-2cb9e6e8104e" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="21" SoundRouting="None" TTSRouting="None" TriggerId="9f4498e5-826a-4aa2-80bc-950ac3a83860" TriggerForce="regexp,parent" ActionType="Trigger">
+          <Action OrderNumber="21" SoundRouting="None" TTSRouting="None" TriggerId="6df757a0-025a-417a-a30b-ece29e11cc79" TriggerForce="regexp,parent" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="22" SoundRouting="None" TTSRouting="None" TriggerId="04249281-b2d9-4906-915f-1f40f9da8f13" TriggerForce="regexp,parent" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="23" SoundRouting="None" TTSRouting="None" TriggerId="2b26b1fe-ca36-4b19-8acb-2c71373a646f" TriggerForce="regexp,parent" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
