@@ -202,7 +202,7 @@
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="524288" Id="060e3493-f0b3-45b6-adfc-a7225b047ffd" Name="MNK" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MNK" Id="c6668c77-803d-4987-9ccf-9a5d17ab49e5" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;38|42)\|[^|]+\|[^|]+\|[^|]+\|7">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MNK" Id="c6668c77-803d-4987-9ccf-9a5d17ab49e5" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;38|42|9053)\|[^|]+\|[^|]+\|[^|]+\|7">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Miss" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
