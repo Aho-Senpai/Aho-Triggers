@@ -3205,6 +3205,14 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Downburst - Knockback" Id="7be797f3-3c6b-4f50-b651-42057fc7e55c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|1EDE\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="e0ce1cc3-ea05-4492-b532-d13780da8c41" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
                     </Triggers>
                   </Folder>
                 </Folders>
@@ -3684,7 +3692,6 @@
                   <Trigger Enabled="true" Name="Lullaby" Id="cb25d67e-e782-498b-b354-524f695ebee9" RegularExpression="Goddess Chadarnook readies Lullaby.">
                     <Actions>
                       <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Middle Paint" ActionType="UseTTS" />
-
                     </Actions>
                   </Trigger>
                 </Triggers>
@@ -4430,6 +4437,7 @@
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
                           <Trigger Enabled="true" Name="Bomb Callout - Cardinal/Intercardinal" Id="e6900e50-af89-4dce-93a6-dd3b93186ba6" RegularExpression="15:.{8}:Titan:411B:Landslide:">
+
                             <Actions>
                               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="BombDirection" VariableExpression="${var:BombDirection}+1" ActionType="Variable" Asynchronous="False">
                                 <Condition Enabled="true" Grouping="And">
@@ -6232,6 +6240,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hot/Cold Spell - TODO - Hot/Cold" Id="f517a685-83a7-4c9b-8d76-47855a19d793" RegularExpression="^26\|[^|]*\|(?&lt;debuff&gt;AB[34])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+
                     <Actions>
                       <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go in hot" ActionType="UseTTS">
                         <Condition Enabled="true" Grouping="Or">
@@ -6679,6 +6688,7 @@
                                 <Actions>
                                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Light parties" ActionType="UseTTS">
                                     <Condition Enabled="false" Grouping="Or" />
+
                                   </Action>
                                 </Actions>
                                 <Condition Enabled="false" Grouping="Or" />
@@ -7534,7 +7544,87 @@
               <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^122[78]$" Id="f7514c85-f3cb-4dd6-b194-78697db5ef85" Name="02 - AAC Light-heavyweight M2" Enabled="true">
                 <Folders>
                   <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1228$" Id="08b282e6-3752-4a96-bf0e-f0462be7e276" Name="Savage" Enabled="true">
-                    <Folders />
+                    <Folders>
+                      <Folder Id="195007b8-bc53-472e-a56e-df36ece4b34b" Name="Custom Callouts" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Drop of Venom/Love - Partner" Id="a993352b-e229-4394-9a0b-ea434a408a9d" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;185|B05)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="AhoR2SDropSplashCounter" VariableExpression="${v:AhoR2SDropSplashCounter}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Partners" ActionType="UseTTS" ExecutionDelayExpression="11000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Partners" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="4" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Partners" ActionType="UseTTS" ExecutionDelayExpression="23000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="5" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Partners" ActionType="UseTTS" ExecutionDelayExpression="18000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="6" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Partners" ActionType="UseTTS" ExecutionDelayExpression="7000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Splash of Venom/Spread Love - Spread" Id="1705c604-bd83-45da-8451-0bbc59ab4276" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;184|B08)\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="AhoR2SDropSplashCounter" VariableExpression="${v:AhoR2SDropSplashCounter}+1" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Spread" ActionType="UseTTS" ExecutionDelayExpression="11000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="3" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Spread" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="4" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Spread" ActionType="UseTTS" ExecutionDelayExpression="23000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="5" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Spread" ActionType="UseTTS" ExecutionDelayExpression="18000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="6" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Spread" ActionType="UseTTS" ExecutionDelayExpression="7000">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${v:AhoR2SDropSplashCounter}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="! - Wipe or Clear Reset" Id="362b3352-3645-44ad-8e42-492dfeba5d48" RegularExpression="^33\|[^|]*\|[A-F0-9]{8}\|4000000[3F]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableName="AhoR2SDropSplashCounter" ActionType="Variable">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
                     <Triggers>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Call Me Honey - AoE" Id="842c3ca9-1411-499c-84a4-896ca039d467" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9183\|">
                         <Actions>
@@ -7544,7 +7634,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Honey Beeline - Go Sides" Id="eb911c1f-7ebb-424b-bbbc-d401c3f7d7bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9186\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Honey Beeline - Go Sides" Id="eb911c1f-7ebb-424b-bbbc-d401c3f7d7bc" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;186|B0C)\|">
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="8b532712-89d5-46cc-a802-c0608901395a" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7552,7 +7642,7 @@
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tempting Twist - Go In" Id="0a32628a-e408-475a-86c4-f52165742e36" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9187\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tempting Twist - Go In" Id="0a32628a-e408-475a-86c4-f52165742e36" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9(?&gt;187|B0D)\|">
                         <Actions>
                           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="e7d0f416-10f1-474e-b074-881ed2d27f9a" TriggerForce="regexp" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
@@ -7736,12 +7826,12 @@
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Collect PawPring Headmarker" Id="5452b5fb-73aa-408f-bda6-f0274389dc40" RegularExpression="^27\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|021A\|">
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Collect PawPrint Headmarker" Id="5452b5fb-73aa-408f-bda6-f0274389dc40" RegularExpression="^27\|[^|]*\|(?&lt;targetID&gt;[^|]*)\|[^|]*\|[^|]*\|[^|]*\|021A\|">
                             <Actions>
                               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableName="AhoR1SPawprint" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
-                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="AhoR1SPawprint" VariableExpression="${_ffxivparty[targetID].name}" ActionType="Variable">
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="AhoR1SPawprint" VariableExpression="${_ffxivparty[${targetID}].name}" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
                             </Actions>
@@ -7854,12 +7944,12 @@
                     <Actions>
                       <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go left" TriggerId="3d507e26-237a-44b4-8283-9e0630deda32" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="true" Grouping="Or">
-                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
                       <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go right" TriggerId="5824b15d-7c63-4455-9a76-9a257a03e552" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="true" Grouping="Or">
-                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
                     </Actions>
@@ -7902,13 +7992,13 @@
                       <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go left" TriggerId="3d507e26-237a-44b4-8283-9e0630deda32" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="1F" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="22" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="21" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
                       <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="go right" TriggerId="5824b15d-7c63-4455-9a76-9a257a03e552" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="true" Grouping="Or">
                           <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="20" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="21" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${move}" ExpressionTypeL="String" ExpressionR="22" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                         </Condition>
                       </Action>
                     </Actions>
@@ -10610,6 +10700,7 @@
                               </Action>
                               <Action OrderNumber="15" AuraName="Second Move" AuraImage="https://raw.githubusercontent.com/ayaliz/gaming/master/Icons/motion.png" AuraXIniExpression="${_imageaura[FatePosition].x}+92" AuraYIniExpression="${_imageaura[FatePosition].y}+71" AuraWIniExpression="482" AuraHIniExpression="84" AuraOIniExpression="100" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Motion first" ActionType="Aura" RefireInterrupt="True" Description="Motion Second Image" DescriptionOverride="True">
                                 <Condition Enabled="true" Grouping="And">
+
                                   <ConditionSingle Enabled="true" ExpressionL="${skillID}" ExpressionTypeL="String" ExpressionR="899" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${_imageaura[FatePosition].w}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                                 </Condition>
@@ -11143,7 +11234,6 @@
                                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                 </Condition>
                               </Action>
-
                             </Actions>
                             <Condition Enabled="false" Grouping="Or" />
                           </Trigger>
@@ -11815,7 +11905,6 @@
                           </Trigger>
                           <Trigger Enabled="true" Source="FFXIVNetwork" Name="Flag Reset" Id="65f823d4-0376-4e62-90a2-85f6c57657b3" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
                             <Actions>
-
                               <Action OrderNumber="1" OBSEndPoint="" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="thrustFlag" VariableExpression="15" TableVariableOp="Set" TableVariableExpressionType="Numeric" ActionType="Variable">
                                 <Condition Enabled="false" Grouping="Or" />
                               </Action>
