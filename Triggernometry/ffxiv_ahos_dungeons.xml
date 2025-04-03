@@ -5016,7 +5016,7 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2- TB - Chimney Smack" Id="52269c58-5118-42dd-b2e2-5d654090136b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9643\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Chimney Smack" Id="52269c58-5118-42dd-b2e2-5d654090136b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9643\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -5039,6 +5039,276 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1242$" Id="1dc80c48-1d0d-46a2-ab8d-48978698f5fe" Name="100 - Yuweyawata Field Station" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Spread - Lightning Storm" Id="093f9ca7-c5bb-4df2-8b2b-2515b10ecbbe" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EBD\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="6abd009b-1546-4623-8ffc-d893642a27e6" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="And" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Sparking Fissure" Id="9fc031ff-45fe-47e9-a347-c836d7cf0036" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|(9EB7|A1(33|2A))\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Electrical Overload" Id="d9672905-3b38-48d7-8a81-1b21bef74245" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EBB\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Dark Souls" Id="76c68b80-240e-44b5-b402-978480deeb92" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9ED2\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Free Spirits" Id="9d464653-feee-4307-928b-6a37ed843004" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC0\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go In - Phantom Flood" Id="e99a4a39-b79d-4df0-8bd4-63ecaf19f5f4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC4\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="5d0c4452-3020-4668-875f-b6900036a42f" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Spread - Telltale Tears" Id="35d87afd-beb9-4ac1-afba-6f52672671e6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC9\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="6abd009b-1546-4623-8ffc-d893642a27e6" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="And" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Go Out - Lost Hope" Id="7a669ec6-87af-40d1-a591-a37805280111" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC5\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Necrohazard" Id="4ec569bc-18a5-4002-b206-1d92ba818d2c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC6\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Bloodburst" Id="4f34adf6-c1ac-46e6-8a87-b7139962bd7e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EC7\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - Stack - Soul Douse" Id="3c7ebf2c-21ef-4294-9e89-1a33d9cf0a63" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9ECB\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2028c33a-fb9f-4bf4-9ef6-d906807cb43e" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Behind - Raging Claw" Id="99d852f7-3408-4d8b-87cc-b329c3c848af" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EA4\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Leporine Loaf" Id="b15b30c1-8525-4b85-b818-a1099a66882c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9E9B\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Spread - Jagged Edge" Id="b2a6596e-a7f5-46d9-8699-597c15ee6349" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EA7\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="6abd009b-1546-4623-8ffc-d893642a27e6" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="And" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Go Out - Crater Carve" Id="ae619d30-b042-4aa3-bd42-cbace6b62ba2" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9E9D\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="45b8a806-f8f3-4ffe-a631-6b014060add4" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Stack - Turali Stone IV" Id="0597ae69-f418-4c7c-8226-3bd0ae4511b8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EA8\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2028c33a-fb9f-4bf4-9ef6-d906807cb43e" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Sonic Howl" Id="bd9e3a76-46e3-4f9e-8b9c-f9dd7127f549" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EAA\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - TB - Slabber" Id="26642582-93ce-4f8b-a933-d3463b35d431" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|9EAB\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1266$" Id="daca9f7d-4b7f-40b8-ad76-a3b991c72e06" Name="100 - The Underkeep" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Chilling Chirp" Id="7e17705c-4d3d-4556-8a0b-43b9937667b5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A633\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go Behind - Almighty Racket" Id="9e36bc6f-4aff-40f2-bfad-883836e052f1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A632\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - AoE - Earthsong" Id="9710a7a8-be8a-43db-8a55-ed080c819b8e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A630\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - TB - Trap Jaws" Id="dfc44422-fd5c-4475-9304-ecd621bbc9a1" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A634\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - AoE - Field of Scorn" Id="f2f8b116-e178-48ca-8bde-e8fe5728ee71" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A653\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss2 - TB - Thunderous Slash" Id="1dc07e89-1cb9-4153-86a7-b7459742bba5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A880\|[^|]*\|[^|]*\|(?&lt;targetName&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="bfadf928-dfd4-407c-aad8-179eb9d70bcd" TriggerText="${targetName}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - AoE - Entropic Sphere" Id="2cf1bdd3-6a2f-4122-903c-58d4dfff1a7c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A61D\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="54d17c9d-1f51-4275-8c4c-f40e6fd99675" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - CUSTOM - Electriic Field (Widening AoE)" Id="dede6c8e-7518-49bb-a082-25f0396ae227" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A617\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Widening AoE" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${epvar:AhoTTSCalloutsLang}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="EN" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="AoE s'élargit" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:AhoTTSCalloutsLang}" ExpressionTypeL="String" ExpressionR="FR" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss1 - Go Behind - Neutralize Front Lines" Id="0adbb6a5-60b3-4e33-b6c1-5c842b7250e5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A6F2\|" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="100">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="f87a7950-3aa0-431a-893c-dd81a54d1bbd" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Boss3 - Stack - Deterrent Pulse" Id="3029888d-89ff-4a79-9b69-fffa865b8a8e" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A62C\|">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" TriggerId="2028c33a-fb9f-4bf4-9ef6-d906807cb43e" TriggerForce="regexp" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
