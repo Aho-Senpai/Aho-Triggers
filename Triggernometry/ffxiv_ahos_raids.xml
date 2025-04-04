@@ -8501,6 +8501,146 @@
                   </Trigger>
                 </Triggers>
               </Folder>
+              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^125[67]$" Id="3d2f7dbf-f4ab-4cd7-ba17-a1ec6c60107f" Name="05 - AAC Cruiserweight M1" Enabled="true">
+                <Folders>
+                  <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1257$" Id="9ded7449-4f7b-4cb1-a37c-8581c1a40000" Name="Savage" Enabled="true">
+                    <Folders>
+                      <Folder Id="969f13ec-2672-4407-aa73-42597474f3a7" Name="Snaps" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="3-Snap Twist (East) - East &gt; 3 Snap &gt; RolePos/LightParty" Id="3c646183-004f-41a7-b6d6-99797aa1d2e6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A73[345]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East &gt; 3 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Collect Flip to AB Side" Id="aac66fd4-a28a-4b92-9b00-fec41459925c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A78(?&lt;side&gt;[01])\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="AhoM5SABSide" VariableExpression="RoleGroup" ActionType="Variable">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="0" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                              <Action OrderNumber="2" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="AhoM5SABSide" VariableExpression="LightParty" ActionType="Variable">
+                                <Condition Enabled="true" Grouping="Or">
+                                  <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                </Condition>
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="2-Snap Twist (West) - West &gt; 2 Snap &gt; RolePos/LightParty" Id="d0279f76-b2e1-4c89-924a-5cb3bdd2eb41" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A72[89A]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West &gt; 2 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="3-Snap Twist (West) - West &gt; 3 Snap &gt; RolePos/LightParty" Id="045a52b0-b687-41d6-b5ca-18aaec3a9c78" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A73[012]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West &gt; 3 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="2-Snap Twist (East) - East &gt; 2 Snap &gt; RolePos/LightParty" Id="3d88ffda-6b78-4311-95cc-c30e2fc37d58" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A72[BCD]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East &gt; 2 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="4-Snap Twist (West) - West &gt; 4 Snap &gt; RolePos/LightParty" Id="b7330f93-5f5b-4aaa-969e-3e6eeaef7187" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A73[9AB]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go West &gt; 4 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="4-Snap Twist (East) - East &gt; 4 Snap &gt; RolePos/LightParty" Id="5d837b72-8e30-48a5-9073-d923dd55ec57" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A73[CDE]\|">
+                            <Actions>
+                              <Action OrderNumber="1" SoundRouting="None" TTSRouting="ACT" UseTTSTextExpression="Go East &gt; 4 Snaps &gt; ${var:AhoM5SABSide}" ActionType="UseTTS">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Celebrate Good Times - AoE" Id="59c36f89-97cc-402d-be8b-53bb2b367e31" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A723\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Disco Inferno - AoE" Id="4e7a951c-0792-4206-8eb3-e27be89dc50a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A756\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Inside Out - Go Out then In" Id="22d55bb5-35ad-44dc-a949-5efd5bc1625b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A77C\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ef1423e4-0677-41a5-b5fa-58a39eb6d442" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Outside In - Go In then Out" Id="6981c75f-d6da-4b14-92ad-fbea3634323f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A77E\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="42b57adf-3fc6-43d9-8a88-713e1b4d6b3e" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Eighth Beats - Spread" Id="d4a1cefb-8d1f-468a-81b1-5444b6864649" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A75D\|" PeriodRefire="Deny" RefirePeriodExpression="1000">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="bda7b133-4d82-4e6a-afe1-41449b7872c3" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Let's Pose - AoE" Id="8bd15f3e-db9d-4c12-8a2a-f583f68c1191" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|A770\|">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="aoe" TriggerId="ad145e23-2971-4336-92a9-da026ff29031" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers />
+              </Folder>
             </Folders>
             <Triggers />
           </Folder>
@@ -9645,6 +9785,7 @@
                             <Condition Enabled="true" Grouping="And">
                               <ConditionSingle Enabled="true" ExpressionL="${var:Marker2Priority}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
+
                           </Action>
                           <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="{F2}" KeyPressCode="113" KeyPressWindow="FINAL FANTASY XIV" SoundRouting="None" TTSRouting="None" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" ActionType="KeyPress">
                             <Condition Enabled="true" Grouping="And">
@@ -9913,6 +10054,7 @@
                             </Condition>
                           </Action>
                           <Action OrderNumber="6" ListVariableOp="Insert" ListVariableName="JobPrio" ListVariableExpression="06${lvar:MarkedPlayersList[3]}" ListVariableIndex="3" SoundRouting="None" TTSRouting="None" VariableOp="SetNumeric" VariableName="JobPrio" VariableExpression="1${lvar:MarkedPlayersList[1]}" ActionType="ListVariable">
+
                             <Condition Enabled="true" Grouping="Or">
                               <ConditionSingle Enabled="true" ExpressionL="${var:Job3}" ExpressionTypeL="String" ExpressionR="PLD" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                             </Condition>
@@ -10141,6 +10283,7 @@
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
+
                       </Trigger>
                       <Trigger Enabled="true" Source="FFXIVNetwork" Name="Woken Ifrit" Id="d9559e34-ed78-4b63-819b-9d7086003c29" RegularExpression="^26\|[^|]*\|5F9\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|Ifrit\|">
                         <Actions>
@@ -10700,7 +10843,6 @@
                               </Action>
                               <Action OrderNumber="15" AuraName="Second Move" AuraImage="https://raw.githubusercontent.com/ayaliz/gaming/master/Icons/motion.png" AuraXIniExpression="${_imageaura[FatePosition].x}+92" AuraYIniExpression="${_imageaura[FatePosition].y}+71" AuraWIniExpression="482" AuraHIniExpression="84" AuraOIniExpression="100" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Motion first" ActionType="Aura" RefireInterrupt="True" Description="Motion Second Image" DescriptionOverride="True">
                                 <Condition Enabled="true" Grouping="And">
-
                                   <ConditionSingle Enabled="true" ExpressionL="${skillID}" ExpressionTypeL="String" ExpressionR="899" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                                   <ConditionSingle Enabled="true" ExpressionL="${_imageaura[FatePosition].w}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                                 </Condition>
