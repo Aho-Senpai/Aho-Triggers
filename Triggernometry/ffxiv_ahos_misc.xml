@@ -217,7 +217,7 @@
           <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="536870912" Id="a2950ffe-3caa-496f-b5d8-2a21a8717d31" Name="NIN" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="NIN" Id="13823c11-c566-4085-b4d4-316a2b32d992" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;8CF|DEB)\|[^|]*\|[^|]*\|[^|]*\|2[5F]">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="NIN" Id="13823c11-c566-4085-b4d4-316a2b32d992" RegularExpression="^21\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|(?&gt;8CF|DEB)\|[^|]*\|[^|]*\|[^|]*\|2[4D]">
                 <Actions>
                   <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="Miss" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
